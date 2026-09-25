@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- viewport = makes the page scale correctly on phones/tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SE Command Center</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div>
+        <h1>SE Command Center</h1>
+        <p class="subtitle">Presales intel, AI toolkit, and app launcher — one screen.</p>
+      </div>
+      <!-- app.js fills this in with today's date -->
+      <div class="date" id="today"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ NEWS / BRIEFING RAIL ============ -->
+    <section id="briefing">
+      <h2>Vendor Briefing</h2>
+      <p class="section-note">Morning intel: launches, CVEs, licensing, EOL. Auto-updates daily in v2.</p>
+      <!-- app.js renders briefing.json items here as cards -->
+      <div class="cards" id="briefing-cards"></div>
+    </section>
+
+    <!-- ============ AI TOOLKIT ============ -->
+    <section id="ai-toolkit">
+      <h2>AI Toolkit</h2>
+      <p class="section-note">Workflows that actually save time in presales.</p>
+      <div class="cards" id="ai-cards"></div>
+    </section>
+
+    <!-- ============ APP LAUNCHER ============ -->
+    <section id="apps">
+      <h2>App Launcher</h2>
+      <p class="section-note">Tools we build live here. Empty slots are the roadmap.</p>
+      <div class="tiles" id="app-tiles"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>SE Command Center v1 — static build. Built by ScribNet + Sparky.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
