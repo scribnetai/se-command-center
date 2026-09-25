@@ -1,8 +1,41 @@
-{"date":"2026-09-24","items":[{"summary":"Placeholder — the real morning briefing will list what's actually changed: bundles, pricing, and what to tell customers.","tag":"licensing","title":"Sample: vSphere licensing bundle changes","url":"https://www.broadcom.com","vendor":"Broadcom / VMware"},{"summary":"Placeholder — real CVEs land here with severity and a plain-English blast-radius note.","tag":"cve","title":"Sample: PAN-OS security advisory","url":"https://security.paloaltonetworks.com","vendor":"Palo Alto Networks"},{"summary":"Placeholder — EOL and end-of-sale dates with recommended migration paths.","tag":"eol","title":"Sample: UCS firmware EOL notice","url":"https://www.cisco.com","vendor":"Cisco"},{"summary":"Placeholder — new features worth mentioning on calls, minus the marketing fluff.","tag":"launch","title":"Sample: Falcon platform update","url":"https://www.crowdstrike.com","vendor":"CrowdStrike"}],"note":"SAMPLE DATA — v2 replaces this file every morning via an agent job. Same shape, fresh items."},
 {
-  "vendor": "Pure Storage",
-  "title": "Sample: FlashArray//XL update",
-  "summary": "Placeholder — Pure Storage launches, pricing, and EOL land here.",
-  "url": "https://www.purestorage.com",
-  "tag": "launch"
+  "date": "2026-09-24",
+  "items": [
+    {
+      "vendor": "Broadcom / VMware",
+      "title": "Sample: vSphere licensing bundle changes",
+      "summary": "Placeholder \u2014 the real morning briefing will list what's actually changed: bundles, pricing, and what to tell customers.",
+      "url": "https://www.broadcom.com",
+      "tag": "licensing"
+    },
+    {
+      "vendor": "Palo Alto Networks",
+      "title": "Sample: PAN-OS security advisory",
+      "summary": "Placeholder \u2014 real CVEs land here with severity and a plain-English blast-radius note.",
+      "url": "https://security.paloaltonetworks.com",
+      "tag": "cve"
+    },
+    {
+      "vendor": "Cisco",
+      "title": "Sample: UCS firmware EOL notice",
+      "summary": "Placeholder \u2014 EOL and end-of-sale dates with recommended migration paths.",
+      "url": "https://www.cisco.com",
+      "tag": "eol"
+    },
+    {
+      "vendor": "CrowdStrike",
+      "title": "Sample: Falcon platform update",
+      "summary": "Placeholder \u2014 new features worth mentioning on calls, minus the marketing fluff.",
+      "url": "https://www.crowdstrike.com",
+      "tag": "launch"
+    },
+    {
+      "vendor": "Pure Storage",
+      "title": "Sample: FlashArray//XL update",
+      "summary": "Placeholder \u2014 Pure Storage launches, pricing, and EOL land here.",
+      "url": "https://www.purestorage.com",
+      "tag": "launch"
+    }
+  ],
+  "note": "SAMPLE DATA \u2014 v2 replaces this file every morning via an agent job. Same shape, fresh items."
 }
