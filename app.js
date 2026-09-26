@@ -187,6 +187,7 @@ const apps = [
   { icon: "🔍", name: "RVTools Analyzer", desc: "VMware briefing from RVTools exports", status: "live", link: "https://scribnetai.github.io/rvtools-analyzer/" },
   { icon: "🖥️", name: "Server Sizer", desc: "Size VMware refresh builds", status: "live", link: "https://scribnetai.github.io/server-sizer/" },
   { icon: "💾", name: "Storage Sizer", desc: "Year-by-year storage capacity plans", status: "live", link: "https://scribnetai.github.io/storage-sizer/" },
+  { icon: "🌐", name: "Network Sizer", desc: "TOR & FC SAN switch plans", status: "live", link: "https://scribnetai.github.io/network-sizer/" },
 ];
 
 document.getElementById("app-tiles").innerHTML = apps.map((a) => `
