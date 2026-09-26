@@ -5,6 +5,9 @@
   <!-- viewport = makes the page scale correctly on phones/tablets -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SE Command Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;750;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +15,8 @@
   <header>
     <div class="header-inner">
       <div>
-        <h1>SE Command Center</h1>
+        <div class="pill"><span class="dot"></span>Live intel</div>
+        <h1>SE <span class="grad">Command Center</span></h1>
         <p class="subtitle">Presales intel, AI toolkit, and app launcher — one screen.</p>
       </div>
       <!-- app.js fills this in with today's date -->
@@ -23,6 +27,7 @@
   <main>
     <!-- ============ NEWS / BRIEFING RAIL ============ -->
     <section id="briefing">
+      <div class="eyebrow">Daily intel</div>
       <h2>Vendor Briefing</h2>
       <p class="section-note">Morning intel: launches, CVEs, licensing, EOL. <span id="news-updated"></span></p>
       <!-- app.js renders vendor filter chips here -->
@@ -33,6 +38,7 @@
 
     <!-- ============ AI TOOLKIT ============ -->
     <section id="ai-toolkit">
+      <div class="eyebrow">Workflows</div>
       <h2>AI Toolkit</h2>
       <p class="section-note">Workflows that actually save time in presales.</p>
       <div class="cards" id="ai-cards"></div>
@@ -40,22 +46,25 @@
 
     <!-- ============ APP LAUNCHER ============ -->
     <section id="apps">
+      <div class="eyebrow">Roadmap</div>
       <h2>App Launcher</h2>
       <p class="section-note">Tools we build live here. Empty slots are the roadmap.</p>
       <div class="tiles" id="app-tiles"></div>
     </section>
     <!-- ============ CHANGELOG ============ -->
     <section id="changelog">
+      <div class="eyebrow">History</div>
       <h2>Changelog</h2>
       <details>
-        <summary class="section-note">What changed and when — updated by the morning job.</summary>
+        <summary>What changed and when — updated by the morning job.</summary>
         <div id="changelog-body"></div>
       </details>
     </section>
   </main>
 
   <footer>
-    <p>SE Command Center v2 — static build. Built by ScribNet + Sparky.</p>
+    <p>SE Command Center v2 — static build.</p>
+    <p>Built by ScribNet + <span class="grad">Sparky</span>.</p>
   </footer>
 
   <script src="app.js"></script>
