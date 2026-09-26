@@ -432,6 +432,9 @@ footer {
   gap: 0.5rem;
 }
 
+footer a { color: var(--faint); text-decoration: underline; text-underline-offset: 3px; }
+footer a:hover { color: var(--cyan); }
+
 footer .grad {
   background: var(--grad);
   -webkit-background-clip: text;
