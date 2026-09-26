@@ -190,7 +190,7 @@ const apps = [
 ];
 
 document.getElementById("app-tiles").innerHTML = apps.map((a) => `
-  <a class="tile" href="${esc(a.link)}">
+  <a class="tile" href="${esc(a.link)}"${a.link.startsWith("http") ? ' target="_blank" rel="noopener"' : ""}>
     <div class="icon">${esc(a.icon)}</div>
     <h3>${esc(a.name)}</h3>
     <p>${esc(a.desc)}</p>
