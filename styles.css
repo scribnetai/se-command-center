@@ -441,6 +441,13 @@ footer .grad {
 }
 
 @media (max-width: 640px) {
+  body { padding: 0 1rem 2.5rem; }
+  header { padding: 2.25rem 0 1.75rem; }
   .header-inner { align-items: flex-start; flex-direction: column; }
+  section { margin-bottom: 2.25rem; }
   .cards { grid-template-columns: 1fr; }
+  .prompt-card { padding: 1.25rem 1.2rem; }
+  #prompt-text { font-size: 1rem; }
+  .copy-btn { width: 100%; padding: 0.7rem 1.5rem; }
+  .tile { padding: 1.2rem 1rem 1.1rem; }
 }
