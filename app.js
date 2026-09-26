@@ -80,6 +80,7 @@ fetch("news.json", { cache: "no-store" })
   })
   .then((data) => {
     newsItems = Array.isArray(data.items) ? data.items : [];
+    renderPromptOfTheDay(data);
     const upd = document.getElementById("news-updated");
     if (data.updated_at) upd.textContent = "Updated " + fmtUpdated(data.updated_at) + ".";
     const vendors = [...new Set(newsItems.map((i) => i.vendor).filter(Boolean))].sort();
@@ -94,7 +95,55 @@ fetch("news.json", { cache: "no-store" })
   .catch(() => {
     document.getElementById("briefing-cards").innerHTML =
       "<p class='section-note'>Briefing feed unavailable — the morning update may have failed. Check back later.</p>";
+    renderPromptOfTheDay(null); // fall back to the rotating evergreen prompt
   });
+
+// ---------- 2b. Prompt of the day ----------
+// Uses news.json's prompt_of_the_day when the morning job wrote one;
+// otherwise rotates through evergreen SE prompts by day so the slot
+// is never empty (e.g. if the feed fetch failed).
+const FALLBACK_PROMPTS = [
+  { category: "Customer outreach", prompt: "Write a 4-sentence check-in email to a customer running infrastructure we sold them. Reference one recent vendor update from this week's briefing, ask one open-ended question about their roadmap, and close with a soft offer for a 15-minute whiteboard session. Helpful advisor tone — no pitch." },
+  { category: "Call prep", prompt: "I'm walking into a discovery call with a net-new infrastructure lead in 30 minutes. Give me 5 sharp questions that uncover pain around their current backup and DR posture, plus 2 trap-setting questions I can use if a competitor comes up." },
+  { category: "Competitive", prompt: "A customer just told me 'we're happy with our incumbent.' Give me a 3-part reframe: one question that creates doubt about the status quo, one proof point I can cite, and one low-risk next step that keeps the door open." },
+  { category: "Productivity", prompt: "End-of-day shutdown: based on my open threads below, draft tomorrow's top 3 priorities as a presales SE, each with the single next action that unblocks it. [paste open threads]" },
+  { category: "Learning", prompt: "Explain the top story in today's vendor briefing like I'm briefing a customer CTO in 90 seconds: what it is, why they should care, and what 'good' looks like. No jargon, no FUD." },
+  { category: "Follow-up", prompt: "Turn these rough call notes into a crisp follow-up email: 3 bullets recapping what we heard, 2 bullets on what we promised, and a proposed next step with a date. [paste notes]" },
+  { category: "Productivity", prompt: "It's Monday morning and I have 5 customer meetings this week. Turn the chaos into a prioritized prep list: for each meeting, one discovery question and one relevant vendor update from the latest briefing I can mention." },
+];
+
+function renderPromptOfTheDay(data) {
+  const catEl = document.getElementById("prompt-category");
+  const textEl = document.getElementById("prompt-text");
+  let category, text;
+  const pod = data && data.prompt_of_the_day;
+  if (pod && pod.prompt) {
+    category = pod.category || "SE prompt";
+    text = pod.prompt;
+  } else {
+    const fb = FALLBACK_PROMPTS[Math.floor(Date.now() / 86400000) % FALLBACK_PROMPTS.length];
+    category = fb.category;
+    text = fb.prompt;
+  }
+  catEl.textContent = category;
+  textEl.textContent = "\u201C" + text + "\u201D";
+  const btn = document.getElementById("prompt-copy");
+  btn.onclick = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch (e) {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      ta.remove();
+    }
+    btn.textContent = "Copied \u2713";
+    setTimeout(() => { btn.textContent = "Copy prompt"; }, 1600);
+  };
+}
+
 
 // ---------- 3. AI toolkit ----------
 // Curated workflows, not just links. Edit this array as you find new ones.
