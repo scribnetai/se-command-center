@@ -184,6 +184,7 @@ const apps = [
   { icon: "🤖", name: "AI Toolkit", desc: "Presales prompts & workflows", status: "live", link: "#ai-toolkit" },
   { icon: "🔭", name: "Deal Research", desc: "Account & tech recon", status: "soon", link: "#" },
   { icon: "📊", name: "TCO Calculator", desc: "Quick cost modeling", status: "soon", link: "#" },
+  { icon: "🔍", name: "RVTools Analyzer", desc: "VMware briefing from RVTools exports", status: "live", link: "https://scribnetai.github.io/rvtools-analyzer/" },
 ];
 
 document.getElementById("app-tiles").innerHTML = apps.map((a) => `
