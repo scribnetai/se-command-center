@@ -188,6 +188,7 @@ const apps = [
   { icon: "🖥️", name: "Server Sizer", desc: "Size VMware refresh builds", status: "live", link: "https://scribnetai.github.io/server-sizer/" },
   { icon: "💾", name: "Storage Sizer", desc: "Year-by-year storage capacity plans", status: "live", link: "https://scribnetai.github.io/storage-sizer/" },
   { icon: "🌐", name: "Network Sizer", desc: "TOR & FC SAN switch plans", status: "live", link: "https://scribnetai.github.io/network-sizer/" },
+  { icon: "🤝", name: "Deal Pack", desc: "Proposal builder from sizing exports", status: "live", link: "https://scribnetai.github.io/deal-pack/" },
 ];
 
 document.getElementById("app-tiles").innerHTML = apps.map((a) => `
