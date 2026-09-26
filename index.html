@@ -24,8 +24,10 @@
     <!-- ============ NEWS / BRIEFING RAIL ============ -->
     <section id="briefing">
       <h2>Vendor Briefing</h2>
-      <p class="section-note">Morning intel: launches, CVEs, licensing, EOL. Auto-updates daily in v2.</p>
-      <!-- app.js renders briefing.json items here as cards -->
+      <p class="section-note">Morning intel: launches, CVEs, licensing, EOL. <span id="news-updated"></span></p>
+      <!-- app.js renders vendor filter chips here -->
+      <div class="filters" id="vendor-filters"></div>
+      <!-- app.js renders news.json items here as cards -->
       <div class="cards" id="briefing-cards"></div>
     </section>
 
@@ -45,7 +47,7 @@
   </main>
 
   <footer>
-    <p>SE Command Center v1 — static build. Built by ScribNet + Sparky.</p>
+    <p>SE Command Center v2 — static build. Built by ScribNet + Sparky.</p>
   </footer>
 
   <script src="app.js"></script>
