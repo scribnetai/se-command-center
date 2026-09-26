@@ -1,46 +1,37 @@
 {
   "date": "2026-09-26",
+  "updated_at": "2026-09-26T13:30:00-04:00",
   "items": [
     {
-      "published": "2026-09-17",
-      "summary": "A boot-time process flaw in Secure Firewall Management Center allows authentication bypass with a perfect 10.0 CVSS. Confirmed in-the-wild exploitation by state-sponsored and criminal actors. See Cisco's advisory for fixed builds.",
-      "tag": "cve",
-      "title": "Cisco Secure Firewall Management Center: CVSS 10.0 auth bypass exploited in the wild (CVE-2026-20079)",
-      "url": "https://tech-insider.org/citrix-netscaler-cisa-kev-22000-exposed-2026/",
-      "vendor": "Cisco",
-      "why_it_matters": "Any customer running FMC for firewall management needs this patched now — exploited 10.0s on management-plane gear are how footholds start."
-    },
-    {
-      "published": "2026-09-17",
-      "summary": "Palo Alto published a critical PAN-OS advisory for an out-of-bounds write flaw. Fixed in 12.2.3, 12.1.10, and 11.2.13-h2 (branch-dependent). No confirmed exploitation yet, but it landed alongside Citrix and Check Point perimeter zero-days in the same week.",
-      "tag": "cve",
-      "title": "PAN-OS critical out-of-bounds write in XML parsing (CVE-2026-0310, CVSS 9.1)",
-      "url": "https://tech-insider.org/citrix-netscaler-cisa-kev-22000-exposed-2026/",
-      "vendor": "Palo Alto Networks",
-      "why_it_matters": "Perimeter-firewall week: three vendors, three critical edge flaws. Audit customer PAN-OS versions against the fixed trains before it becomes the next KEV entry."
-    },
-    {
-      "published": "2026-09-24",
-      "summary": "Dell launched a new Private Cloud offering with the Dell Automation Platform, supporting VCF 9.1, Azure Local, and Nutanix AHV on PowerStore. Positioned as the upgrade path for the massive partner-sold VxRail installed base, claiming up to 65% cost savings vs a five-node HCI cluster.",
-      "tag": "launch",
-      "title": "Dell Private Cloud with Automation Platform: hypervisor choice aimed at the VxRail refresh wave",
-      "url": "https://www.crn.com/news/data-center/2026/dell-s-infrastructure-blitz-private-cloud-powerstore-elite-poweredge-in-spotlight-at-dell-technologies-world-2026",
-      "vendor": "Dell Technologies",
-      "why_it_matters": "Dell calls the VxRail refresh one of the largest partner opportunities in years — and they're explicitly not opinionated on hypervisor. That's an opening for VMware-uncertain customers."
-    },
-    {
-      "published": "2026-09-22",
-      "summary": "Coverage this week shows continued VMware-to-Nutanix migration momentum — including Cisco FlashStack with Nutanix and a sovereign-cloud push targeting regulated deployments — while Red Hat and others ship their own alternative-stack updates.",
+      "vendor": "NetApp",
+      "title": "NetApp announces intent to acquire PEAK:AIO to scale AI storage",
+      "summary": "NetApp said September 25 it plans to acquire PEAK:AIO, a small storage-software firm focused on metadata services and parallel file-system technology for AI infrastructure. The goal is to bring PEAK:AIO's approach \u2014 which separates metadata handling from data storage so metadata can scale independently \u2014 into ONTAP, reducing GPU stalls as clusters and file counts grow. PEAK:AIO's pNFS Lattice project is an open-source, scale-out metadata server for NFSv4.2 developed with Los Alamos National Laboratory. Terms were not disclosed.",
+      "why_it_matters": "Gives you a fresh AI-infrastructure talking point on NetApp calls: ONTAP is getting a real answer to the metadata-scale bottleneck in AI training clusters. Watch for customers asking how this competes with Weka/VAST/Lustre-style parallel file systems, and expect NetApp to pitch existing ONTAP shops an 'evolution path' rather than a rip-and-replace.",
+      "url": "https://www.netapp.com/newsroom/press-releases/news-rel-20260925-520072/",
       "tag": "competitive",
-      "title": "Nutanix keeps gaining ex-VMware customers as rivals push alternative stacks",
-      "url": "https://www.theregister.com/tag/nutanix",
-      "vendor": "Nutanix",
-      "why_it_matters": "The Broadcom displacement motion is still live deal flow. Know the Nutanix/Cisco counter-positioning for any customer still on the fence about VCF renewals."
+      "published": "2026-09-25"
+    },
+    {
+      "vendor": "Cisco",
+      "title": "Actively exploited Cisco Secure Email Gateway SQL injection (CVE-2026-76461); hardening release fixes four more CVEs",
+      "summary": "Cisco disclosed September 15 that CVE-2026-76461, an SQL injection flaw in Secure Email Gateway, is under active exploitation, and published indicators of compromise so customers can check whether their gateways were already hit. The same fixed AsyncOS releases (15.5.5-014, 16.0.4-302, 16.5.0-780) also remediate four companion vulnerabilities found in an internal review: CVE-2026-76440, CVE-2026-76441, CVE-2026-20353, and CVE-2026-76443. There is no workaround for the exploited flaw. Cloud SEG appliances were patched by Cisco; on-prem physical and virtual appliances must upgrade, with Cisco recommending the 16.5 branch as the target. This follows a September 16 CVSS-10.0 authentication bypass in ISE (CVE-2026-76460), also confirmed exploited.",
+      "why_it_matters": "Two actively exploited Cisco zero-days in two days (SEG + ISE) is a strong reason to proactively call security contacts, not wait for them. Lead with 'patch or re-image, don't patch in place if compromise is suspected' \u2014 Cisco's own guidance says re-image nodes where malicious activity is suspected. Good opening to talk email-security posture and ISE patch hygiene.",
+      "url": "https://brandefense.io/blog/cve-2026-76461-email-gateway-sql-injection/",
+      "tag": "cve",
+      "published": "2026-09-25"
+    },
+    {
+      "vendor": "NVIDIA",
+      "title": "Neocloud GPU rents climbing again: Nebius raising selected Nvidia GPU tariffs 17-21% from October 1",
+      "summary": "According to Reuters reporting covered this week, neocloud provider Nebius will raise rental tariffs for selected Nvidia GPUs by 17 to 21 percent starting October 1 \u2014 its second increase in three months. The move signals that demand for GPU capacity continues to outpace supply and that end-customer willingness to pay remains strong. Separately, Nvidia rolled out its DSX Ready program (binding requirements for battery storage and cooling in its AI-factory reference designs) and Isaac ROS 5.0 for physical AI.",
+      "why_it_matters": "Useful economics ammo for AI-infrastructure conversations: public/neocloud GPU pricing keeps rising, which strengthens the TCO case for customer-owned GPU infrastructure (and the platforms \u2014 VCF, Nutanix, Dell, HPE \u2014 that run it). If a customer is pricing AI workloads in the cloud, this is a data point for the repatriation talk.",
+      "url": "https://www.ad-hoc-news.de/boerse/unternehmensnachrichten/nvidia-s-standards-offensive-cloud-rivals-hike-gpu-rents-as-huang-maps/70186693",
+      "tag": "pricing",
+      "published": "2026-09-25"
     }
   ],
-  "updated_at": "2026-09-26T12:05:00-04:00",
   "prompt_of_the_day": {
-    "category": "Customer outreach",
-    "prompt": "Draft a short, non-alarmist customer email about CVE-2026-20079 (CVSS 10.0, Cisco Secure Firewall Management Center, confirmed exploited in the wild). Include: what the flaw lets an attacker do in plain English, which versions are affected, the fixed release to upgrade to, and one discovery question I can ask to find out whether the customer is exposed. Tone: helpful SE advisor, not FUD. Keep it under 150 words."
+    "category": "Competitive",
+    "prompt": "You are my presales sparring partner. On September 25, 2026, NetApp announced its intent to acquire PEAK:AIO, a startup whose metadata services and parallel file-system technology (including the open-source pNFS Lattice scale-out metadata server, built with Los Alamos National Laboratory) disaggregate metadata from data so metadata can scale independently. NetApp plans to fold this into ONTAP to cut GPU stalls and help AI clouds scale shared storage alongside growing GPU clusters. I'm an SE heading into a discovery call with a customer running AI training workloads who may be evaluating storage options. Give me: (1) three technical discovery questions that surface metadata-scale pain \u2014 file counts, namespace bottlenecks, GPU stalls waiting on storage; (2) a two-sentence positioning statement for NetApp + PEAK:AIO that is factual and avoids FUD; (3) the two toughest objections I'm likely to hear (e.g., comparisons to Weka, VAST, or Lustre-style parallel file systems) and a concise way to handle each. Keep it technical and direct."
   }
 }
