@@ -145,3 +145,38 @@ document.getElementById("app-tiles").innerHTML = apps.map((a) => `
     <div class="status ${a.status}">${a.status === "live" ? "● LIVE" : "○ SOON"}</div>
   </a>
 `).join("");
+
+// ---------- 5. Changelog ----------
+// CHANGELOG.md uses a strict format: "# Changelog" title,
+// "## YYYY-MM-DD" day headings (newest first), "- " bullets.
+// The morning job appends to it; this just renders it.
+fetch("CHANGELOG.md", { cache: "no-store" })
+  .then((res) => {
+    if (!res.ok) throw new Error("bad status");
+    return res.text();
+  })
+  .then((md) => {
+    let html = "";
+    let inList = false;
+    const closeList = () => { if (inList) { html += "</ul>"; inList = false; } };
+    for (const line of md.split("\n")) {
+      if (line.startsWith("## ")) {
+        closeList();
+        html += `<h4>${esc(line.slice(3).trim())}</h4>`;
+      } else if (line.startsWith("- ")) {
+        if (!inList) { html += "<ul>"; inList = true; }
+        html += `<li>${esc(line.slice(2).trim())}</li>`;
+      } else if (line.trim() === "" || line.startsWith("# ")) {
+        closeList(); // title and blank lines render nothing
+      } else {
+        closeList();
+        html += `<p>${esc(line.trim())}</p>`;
+      }
+    }
+    closeList();
+    document.getElementById("changelog-body").innerHTML = html;
+  })
+  .catch(() => {
+    document.getElementById("changelog-body").innerHTML =
+      "<p class='section-note'>Changelog unavailable.</p>";
+  });
