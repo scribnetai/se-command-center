@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-27
+- Added a favicon (inline SVG monogram badge, matching the other apps) so browser bookmarks and tabs show the app logo instead of a generic globe.
+
 ## 2026-09-26
 - Morning briefing: 3 items (NetApp, Cisco, NVIDIA). Archive created. Prompt of the day: NetApp + PEAK:AIO competitive sparring.
 
