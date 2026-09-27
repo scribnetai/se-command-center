@@ -189,6 +189,7 @@ const apps = [
   { icon: "💾", name: "Storage Sizer", desc: "Year-by-year storage capacity plans", status: "live", link: "https://scribnetai.github.io/storage-sizer/" },
   { icon: "🌐", name: "Network Sizer", desc: "TOR & FC SAN switch plans", status: "live", link: "https://scribnetai.github.io/network-sizer/" },
   { icon: "🤝", name: "Deal Pack", desc: "Proposal builder from sizing exports", status: "live", link: "https://scribnetai.github.io/deal-pack/" },
+  { icon: "⚔️", name: "Battlecards", desc: "Head-to-head vendor comparisons", status: "live", link: "https://scribnetai.github.io/battlecards/" },
 ];
 
 document.getElementById("app-tiles").innerHTML = apps.map((a) => `
