@@ -190,6 +190,7 @@ const apps = [
   { icon: "🌐", name: "Network Sizer", desc: "TOR & FC SAN switch plans", status: "live", link: "https://scribnetai.github.io/network-sizer/" },
   { icon: "🤝", name: "Deal Pack", desc: "Proposal builder from sizing exports", status: "live", link: "https://scribnetai.github.io/deal-pack/" },
   { icon: "⚔️", name: "Battlecards", desc: "Head-to-head vendor comparisons", status: "live", link: "https://scribnetai.github.io/battlecards/" },
+  { icon: "🧮", name: "TCO Calculator", desc: "Year-by-year total cost of ownership", status: "live", link: "https://scribnetai.github.io/tco-calculator/" },
 ];
 
 document.getElementById("app-tiles").innerHTML = apps.map((a) => `
