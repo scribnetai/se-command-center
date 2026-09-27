@@ -1,0 +1,23 @@
+{
+  "name": "SE Command Center",
+  "short_name": "Command Center",
+  "description": "Presales dashboard: vendor news, AI tools, and the app launcher.",
+  "id": "https://se-command-center.scribnet.io/",
+  "start_url": "https://se-command-center.scribnet.io/",
+  "scope": "https://se-command-center.scribnet.io/",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
