@@ -182,7 +182,7 @@ document.getElementById("ai-cards").innerHTML = aiTools.map((t) => `
 const apps = [
   { icon: "📰", name: "Daily Briefing", desc: "Vendor intel, every morning", status: "live", link: "#briefing" },
   { icon: "🤖", name: "AI Toolkit", desc: "Presales prompts & workflows", status: "live", link: "#ai-toolkit" },
-  { icon: "🔭", name: "Deal Research", desc: "Account & tech recon", status: "soon", link: "#" },
+  { icon: "🎙️", name: "Daily Tech News Podcast", desc: "Morning tech podcast with Alex & Jordan", status: "live", link: "https://scribnet.io/podcast.html" },
   { icon: "📊", name: "TCO Calculator", desc: "Quick cost modeling", status: "soon", link: "#" },
   { icon: "🔍", name: "RVTools Analyzer", desc: "VMware briefing from RVTools exports", status: "live", link: "https://scribnetai.github.io/rvtools-analyzer/" },
   { icon: "🖥️", name: "Server Sizer", desc: "Size VMware refresh builds", status: "live", link: "https://scribnetai.github.io/server-sizer/" },
