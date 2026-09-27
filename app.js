@@ -81,6 +81,7 @@ fetch("news.json", { cache: "no-store" })
   .then((data) => {
     newsItems = Array.isArray(data.items) ? data.items : [];
     renderPromptOfTheDay(data);
+    renderJokeOfTheDay(data);
     const upd = document.getElementById("news-updated");
     if (data.updated_at) upd.textContent = "Updated " + fmtUpdated(data.updated_at) + ".";
     const vendors = [...new Set(newsItems.map((i) => i.vendor).filter(Boolean))].sort();
@@ -96,6 +97,7 @@ fetch("news.json", { cache: "no-store" })
     document.getElementById("briefing-cards").innerHTML =
       "<p class='section-note'>Briefing feed unavailable — the morning update may have failed. Check back later.</p>";
     renderPromptOfTheDay(null); // fall back to the rotating evergreen prompt
+    renderJokeOfTheDay(null); // fall back to the rotating evergreen jokes
   });
 
 // ---------- 2b. Prompt of the day ----------
@@ -142,6 +144,60 @@ function renderPromptOfTheDay(data) {
     btn.textContent = "Copied \u2713";
     setTimeout(() => { btn.textContent = "Copy prompt"; }, 1600);
   };
+}
+
+
+// ---------- 2c. Dad joke of the day ----------
+// Uses news.json's joke_of_the_day when the morning job wrote one;
+// otherwise rotates through evergreen tech dad jokes by day so the slot
+// is never empty (e.g. if the feed fetch failed).
+const DAD_JOKES = [
+  { category: "Programming", joke: "Why do programmers prefer dark mode? Because light attracts bugs." },
+  { category: "Programming", joke: "There are only 10 kinds of people in the world: those who understand binary and those who don't." },
+  { category: "Networking", joke: "I would tell you a UDP joke, but you might not get it." },
+  { category: "Networking", joke: "I'd tell you a TCP joke, but I'd just have to keep repeating it until you got it." },
+  { category: "Programming", joke: "Why do Java developers wear glasses? Because they don't C#." },
+  { category: "Databases", joke: "A SQL query walks into a bar, sees two tables and asks\u2026 \u2018Mind if I join you?\u2019" },
+  { category: "Programming", joke: "Why did the programmer quit his job? He didn't get arrays." },
+  { category: "Programming", joke: "There are two hard problems in computer science: cache invalidation, naming things, and off-by-one errors." },
+  { category: "Dad classic", joke: "A programmer's spouse says: \u2018Go to the store and get a loaf of bread. If they have eggs, get a dozen.\u2019 The programmer comes home with twelve loaves of bread." },
+  { category: "Hardware", joke: "Why did the computer catch a cold? It left its Windows open." },
+  { category: "Dad classic", joke: "What does a baby computer call its father? Data." },
+  { category: "Security", joke: "I changed my password to \u2018incorrect\u2019 \u2014 that way, when I forget it, the computer reminds me: \u2018your password is incorrect.\u2019" },
+  { category: "Programming", joke: "Why did the developer go broke? He spent it all on cache." },
+  { category: "Networking", joke: "Why did the Wi-Fi break up with the router? They just couldn't connect." },
+  { category: "Storage", joke: "My RAID array and I are very close. You could say we're redundant like that." },
+  { category: "Cloud", joke: "Why did the cloud engineer bring a ladder to work? To reach the cloud." },
+  { category: "Programming", joke: "Why don't programmers like nature? Too many bugs." },
+  { category: "Storage", joke: "My backup plan has a backup plan. That's not paranoia, that's professionalism." },
+  { category: "Hardware", joke: "Why did the laptop go to therapy? Too many unresolved tickets." },
+  { category: "Programming", joke: "Debugging is like being the detective in a crime movie where you are also the murderer." },
+  { category: "Security", joke: "I asked the firewall to keep a secret. Now nothing gets out." },
+  { category: "Cloud", joke: "Why did the Kubernetes cluster apply for a job? It wanted to orchestrate its career." },
+  { category: "Networking", joke: "My smart speaker told me a UDP joke yesterday. Or was it today? It never confirmed delivery." },
+  { category: "Programming", joke: "There are 10 types of people in this world: those who can extrapolate from incomplete data\u2026" },
+  { category: "Hardware", joke: "I told my computer I needed space. Now it keeps asking about partitioning." },
+  { category: "Dad classic", joke: "My server's uptime is so long, we're basically in a committed relationship." },
+  { category: "Databases", joke: "Why did the database admin leave the party early? He couldn't find his primary key." },
+  { category: "Programming", joke: "Why was the JavaScript developer so sad? He didn't Node how to Express himself." },
+];
+
+function renderJokeOfTheDay(data) {
+  const catEl = document.getElementById("joke-category");
+  const textEl = document.getElementById("joke-text");
+  if (!catEl || !textEl) return;
+  const jod = data && data.joke_of_the_day;
+  let category, text;
+  if (jod && jod.joke) {
+    category = jod.category || "Tech dad joke";
+    text = jod.joke;
+  } else {
+    const j = DAD_JOKES[Math.floor(Date.now() / 86400000) % DAD_JOKES.length];
+    category = j.category;
+    text = j.joke;
+  }
+  catEl.textContent = category;
+  textEl.textContent = "\u201C" + text + "\u201D";
 }
 
 
