@@ -1,6 +1,9 @@
 # Changelog
 
 ## 2026-09-27
+- Favicon: upsized the 'SE' monogram badge lettering so it stays legible at 16px bookmark/tab size.
+
+## 2026-09-27
 - Added a favicon (inline SVG monogram badge, matching the other apps) so browser bookmarks and tabs show the app logo instead of a generic globe.
 
 ## 2026-09-26
