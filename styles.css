@@ -3,6 +3,7 @@
 
 :root {
   --bg: #05070c;
+  --panel: #141a2e;
   --surface: rgba(255, 255, 255, 0.032);
   --surface-strong: rgba(255, 255, 255, 0.06);
   --border: rgba(255, 255, 255, 0.09);
