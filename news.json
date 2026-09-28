@@ -1,37 +1,37 @@
 {
-  "date": "2026-09-26",
-  "updated_at": "2026-09-26T13:30:00-04:00",
+  "date": "2026-09-28",
+  "updated_at": "2026-09-28T07:25:00-04:00",
   "items": [
     {
-      "vendor": "NetApp",
-      "title": "NetApp announces intent to acquire PEAK:AIO to scale AI storage",
-      "summary": "NetApp said September 25 it plans to acquire PEAK:AIO, a small storage-software firm focused on metadata services and parallel file-system technology for AI infrastructure. The goal is to bring PEAK:AIO's approach \u2014 which separates metadata handling from data storage so metadata can scale independently \u2014 into ONTAP, reducing GPU stalls as clusters and file counts grow. PEAK:AIO's pNFS Lattice project is an open-source, scale-out metadata server for NFSv4.2 developed with Los Alamos National Laboratory. Terms were not disclosed.",
-      "why_it_matters": "Gives you a fresh AI-infrastructure talking point on NetApp calls: ONTAP is getting a real answer to the metadata-scale bottleneck in AI training clusters. Watch for customers asking how this competes with Weka/VAST/Lustre-style parallel file systems, and expect NetApp to pitch existing ONTAP shops an 'evolution path' rather than a rip-and-replace.",
-      "url": "https://www.netapp.com/newsroom/press-releases/news-rel-20260925-520072/",
-      "tag": "competitive",
-      "published": "2026-09-25"
+      "vendor": "Citrix",
+      "title": "Two NetScaler zero-days (CVE-2026-88771, CVE-2026-88772) under active exploitation; CISA adds both to KEV with Sept 30 remediation deadline",
+      "summary": "Citrix disclosed eight NetScaler ADC/Gateway flaws on Sept 27 via bulletin CTX697096 and confirmed that CVE-2026-88771 (input validation RCE, no special config needed) and CVE-2026-88772 (memory-buffer flaw leading to RCE/DoS, DTLS enabled by default on VPN virtual servers) were exploited as zero-days before patches existed. Both score CVSS 9.5. CISA added both to its Known Exploited Vulnerabilities catalog on Sept 27 and set a Sept 30 remediation due date for federal agencies. Fixed builds are 14.1-73.37 and 13.1-64.23. Patching alone is not enough: attackers deployed webshells and anti-forensics before the advisory, so Citrix advises checking for compromise before updating.",
+      "why_it_matters": "NetScaler Gateway is the remote-access front door at many enterprise accounts, and this was a true zero-day window \u2014 exposed boxes had nothing to install for at least two days. This is an immediate outreach trigger: ask customers to confirm patch level (14.1-73.37 / 13.1-64.23) AND run forensic checks for webshells, since the fix does not evict an existing foothold. Also a positioning moment for zero-trust edge and managed detection conversations.",
+      "url": "https://www.helpnetsecurity.com/2026/09/28/citrix-netscaler-rce-zero-days-exploited-for-weeks-cve-2026-88771-cve-2026-88772/",
+      "tag": "cve",
+      "published": "2026-09-28"
     },
     {
-      "vendor": "Cisco",
-      "title": "Actively exploited Cisco Secure Email Gateway SQL injection (CVE-2026-76461); hardening release fixes four more CVEs",
-      "summary": "Cisco disclosed September 15 that CVE-2026-76461, an SQL injection flaw in Secure Email Gateway, is under active exploitation, and published indicators of compromise so customers can check whether their gateways were already hit. The same fixed AsyncOS releases (15.5.5-014, 16.0.4-302, 16.5.0-780) also remediate four companion vulnerabilities found in an internal review: CVE-2026-76440, CVE-2026-76441, CVE-2026-20353, and CVE-2026-76443. There is no workaround for the exploited flaw. Cloud SEG appliances were patched by Cisco; on-prem physical and virtual appliances must upgrade, with Cisco recommending the 16.5 branch as the target. This follows a September 16 CVSS-10.0 authentication bypass in ISE (CVE-2026-76460), also confirmed exploited.",
-      "why_it_matters": "Two actively exploited Cisco zero-days in two days (SEG + ISE) is a strong reason to proactively call security contacts, not wait for them. Lead with 'patch or re-image, don't patch in place if compromise is suspected' \u2014 Cisco's own guidance says re-image nodes where malicious activity is suspected. Good opening to talk email-security posture and ISE patch hygiene.",
-      "url": "https://brandefense.io/blog/cve-2026-76461-email-gateway-sql-injection/",
+      "vendor": "Palo Alto Networks",
+      "title": "Operation Master exploited GlobalProtect auth bypass CVE-2026-0257 to seed a 2.4M-message invoice fraud campaign",
+      "summary": "A fraud operation tracked as Operation Master used CVE-2026-0257, a Palo Alto Networks GlobalProtect authentication bypass (originally rated CVSS 4.7, raised to 7.8 after exploitation was confirmed), to establish VPN sessions without valid credentials on seven gateways across four countries. From that foothold the group stole debtor records and sent 2.4 million fraudulent emails plus 1.4 million SMS. Rapid7 observed large-scale exploitation within four days of disclosure, and CISA added the CVE to its KEV catalog in May. Palo Alto Networks confirmed exploitation attempts against unpatched devices.",
+      "why_it_matters": "The CVE itself is older, but this is fresh reporting on a major real-world campaign it enabled \u2014 strong call-prep material for GlobalProtect accounts: the four-day gap between disclosure and mass exploitation is a concrete argument for aggressive patch cadence on edge VPN appliances. Also worth checking that any auth-override cookie configurations in customer GlobalProtect deployments match the advisory's mitigation guidance.",
+      "url": "https://cyberpress.org/globalprotect-flaw-fuels-fraud/",
       "tag": "cve",
-      "published": "2026-09-25"
+      "published": "2026-09-27"
     },
     {
       "vendor": "NVIDIA",
-      "title": "Neocloud GPU rents climbing again: Nebius raising selected Nvidia GPU tariffs 17-21% from October 1",
-      "summary": "According to Reuters reporting covered this week, neocloud provider Nebius will raise rental tariffs for selected Nvidia GPUs by 17 to 21 percent starting October 1 \u2014 its second increase in three months. The move signals that demand for GPU capacity continues to outpace supply and that end-customer willingness to pay remains strong. Separately, Nvidia rolled out its DSX Ready program (binding requirements for battery storage and cooling in its AI-factory reference designs) and Isaac ROS 5.0 for physical AI.",
-      "why_it_matters": "Useful economics ammo for AI-infrastructure conversations: public/neocloud GPU pricing keeps rising, which strengthens the TCO case for customer-owned GPU infrastructure (and the platforms \u2014 VCF, Nutanix, Dell, HPE \u2014 that run it). If a customer is pricing AI workloads in the cloud, this is a data point for the repatriation talk.",
-      "url": "https://www.ad-hoc-news.de/boerse/unternehmensnachrichten/nvidia-s-standards-offensive-cloud-rivals-hike-gpu-rents-as-huang-maps/70186693",
-      "tag": "pricing",
-      "published": "2026-09-25"
+      "title": "NVIDIA launches Open Agent Safety Platform (OpenShell + Sentry) with 100+ partners including Cisco, CrowdStrike, Dell, HPE, Palo Alto Networks, Zscaler, Fortinet",
+      "summary": "NVIDIA announced the Open Agent Safety Platform on Sept 28: an open software platform and reference system design for securing AI agents from testing through deployment, with full-stack governance across the software, hardware/compute, and robotics layers that run agents. It includes OpenShell and Sentry components, the latter able to quarantine agents that move outside their boundaries in milliseconds. Named partners include Anthropic, Cisco, CrowdStrike, Dell Technologies, HPE, Microsoft, Palo Alto Networks, Red Hat, Salesforce, SAP, ServiceNow, Zscaler, and the U.S. Department of Defense.",
+      "why_it_matters": "Agentic AI security is becoming a datacenter architecture conversation, not just an app-layer one \u2014 customers running agent pilots now have to answer how agents are governed at the infrastructure layer. Nearly every vendor on your coverage list is on the partner wall, which makes this a clean discovery question for security and AI-infrastructure conversations: who owns runtime agent controls at your accounts, and is it a platform or a patchwork?",
+      "url": "https://stockhouse.com/news/press-releases/2026/09/28/nvidia-launches-open-agent-safety-platform-to-secure-agents-from-testing-to",
+      "tag": "launch",
+      "published": "2026-09-28"
     }
   ],
   "prompt_of_the_day": {
-    "category": "Competitive",
-    "prompt": "You are my presales sparring partner. On September 25, 2026, NetApp announced its intent to acquire PEAK:AIO, a startup whose metadata services and parallel file-system technology (including the open-source pNFS Lattice scale-out metadata server, built with Los Alamos National Laboratory) disaggregate metadata from data so metadata can scale independently. NetApp plans to fold this into ONTAP to cut GPU stalls and help AI clouds scale shared storage alongside growing GPU clusters. I'm an SE heading into a discovery call with a customer running AI training workloads who may be evaluating storage options. Give me: (1) three technical discovery questions that surface metadata-scale pain \u2014 file counts, namespace bottlenecks, GPU stalls waiting on storage; (2) a two-sentence positioning statement for NetApp + PEAK:AIO that is factual and avoids FUD; (3) the two toughest objections I'm likely to hear (e.g., comparisons to Weka, VAST, or Lustre-style parallel file systems) and a concise way to handle each. Keep it technical and direct."
+    "category": "Customer outreach",
+    "prompt": "Draft a short, professional customer outreach email for a presales SE. The facts: on Sept 27, 2026, Citrix confirmed two NetScaler ADC/Gateway zero-days (CVE-2026-88771 and CVE-2026-88772, both CVSS 9.5) were actively exploited before patches existed; fixed builds are 14.1-73.37 and 13.1-64.23; CISA set a Sept 30 remediation deadline and confirmed global exploitation; patching does NOT remove webshells planted before the fix, so forensic checks are required. The email should: (1) lead with the specific question of whether the customer has NetScaler ADC/Gateway in scope and whether those builds are patched; (2) offer a quick review of exposure plus help checking for compromise; (3) keep it under 120 words with one clear call to action; (4) sound like a trusted advisor, not a scare tactic."
   }
 }
