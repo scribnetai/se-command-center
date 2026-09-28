@@ -239,13 +239,13 @@ const apps = [
   { icon: "📰", name: "Daily Briefing", desc: "Vendor intel, every morning", status: "live", link: "#briefing" },
   { icon: "🤖", name: "AI Toolkit", desc: "Presales prompts & workflows", status: "live", link: "#ai-toolkit" },
   { icon: "🎙️", name: "Daily Tech News Podcast", desc: "Morning tech podcast with Alex & Jordan", status: "live", link: "https://scribnet.io/podcast.html" },
-  { icon: "🔍", name: "RVTools Analyzer", desc: "VMware briefing from RVTools exports", status: "live", link: "https://scribnetai.github.io/rvtools-analyzer/" },
+  { icon: "🔍", name: "RVTools Analyzer", desc: "VMware briefing from RVTools exports", status: "live", link: "https://rvtools-analyzer.scribnet.io/" },
   { icon: "🖥️", name: "Server Sizer", desc: "Size VMware refresh builds", status: "live", link: "https://server-sizer.scribnet.io/" },
-  { icon: "💾", name: "Storage Sizer", desc: "Year-by-year storage capacity plans", status: "live", link: "https://scribnetai.github.io/storage-sizer/" },
+  { icon: "💾", name: "Storage Sizer", desc: "Year-by-year storage capacity plans", status: "live", link: "https://storage-sizer.scribnet.io/" },
   { icon: "🌐", name: "Network Sizer", desc: "TOR & FC SAN switch plans", status: "live", link: "https://network-sizer.scribnet.io/" },
-  { icon: "🤝", name: "Deal Pack", desc: "Proposal builder from sizing exports", status: "live", link: "https://scribnetai.github.io/deal-pack/" },
-  { icon: "⚔️", name: "Battlecards", desc: "Head-to-head vendor comparisons", status: "live", link: "https://scribnetai.github.io/battlecards/" },
-  { icon: "🧮", name: "TCO Calculator", desc: "Year-by-year total cost of ownership", status: "live", link: "https://scribnetai.github.io/tco-calculator/" },
+  { icon: "🤝", name: "Deal Pack", desc: "Proposal builder from sizing exports", status: "live", link: "https://deal-pack.scribnet.io/" },
+  { icon: "⚔️", name: "Battlecards", desc: "Head-to-head vendor comparisons", status: "live", link: "https://battlecards.scribnet.io/" },
+  { icon: "🧮", name: "TCO Calculator", desc: "Year-by-year total cost of ownership", status: "live", link: "https://tco-calculator.scribnet.io/" },
 ];
 
 document.getElementById("app-tiles").innerHTML = apps.map((a) => `
