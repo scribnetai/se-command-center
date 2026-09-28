@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-28
+- Morning briefing: 3 items (Citrix, Palo Alto Networks, NVIDIA). Archive updated.
+
 ## 2026-09-27
 - Favicon: upsized the 'SE' monogram badge lettering so it stays legible at 16px bookmark/tab size.
 
