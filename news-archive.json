@@ -1,6 +1,38 @@
 {
   "days": [
     {
+      "date": "2026-09-28",
+      "items": [
+        {
+          "vendor": "Citrix",
+          "title": "Two NetScaler zero-days (CVE-2026-88771, CVE-2026-88772) under active exploitation; CISA adds both to KEV with Sept 30 remediation deadline",
+          "summary": "Citrix disclosed eight NetScaler ADC/Gateway flaws on Sept 27 via bulletin CTX697096 and confirmed that CVE-2026-88771 (input validation RCE, no special config needed) and CVE-2026-88772 (memory-buffer flaw leading to RCE/DoS, DTLS enabled by default on VPN virtual servers) were exploited as zero-days before patches existed. Both score CVSS 9.5. CISA added both to its Known Exploited Vulnerabilities catalog on Sept 27 and set a Sept 30 remediation due date for federal agencies. Fixed builds are 14.1-73.37 and 13.1-64.23. Patching alone is not enough: attackers deployed webshells and anti-forensics before the advisory, so Citrix advises checking for compromise before updating.",
+          "why_it_matters": "NetScaler Gateway is the remote-access front door at many enterprise accounts, and this was a true zero-day window \u2014 exposed boxes had nothing to install for at least two days. This is an immediate outreach trigger: ask customers to confirm patch level (14.1-73.37 / 13.1-64.23) AND run forensic checks for webshells, since the fix does not evict an existing foothold. Also a positioning moment for zero-trust edge and managed detection conversations.",
+          "url": "https://www.helpnetsecurity.com/2026/09/28/citrix-netscaler-rce-zero-days-exploited-for-weeks-cve-2026-88771-cve-2026-88772/",
+          "tag": "cve",
+          "published": "2026-09-28"
+        },
+        {
+          "vendor": "Palo Alto Networks",
+          "title": "Operation Master exploited GlobalProtect auth bypass CVE-2026-0257 to seed a 2.4M-message invoice fraud campaign",
+          "summary": "A fraud operation tracked as Operation Master used CVE-2026-0257, a Palo Alto Networks GlobalProtect authentication bypass (originally rated CVSS 4.7, raised to 7.8 after exploitation was confirmed), to establish VPN sessions without valid credentials on seven gateways across four countries. From that foothold the group stole debtor records and sent 2.4 million fraudulent emails plus 1.4 million SMS. Rapid7 observed large-scale exploitation within four days of disclosure, and CISA added the CVE to its KEV catalog in May. Palo Alto Networks confirmed exploitation attempts against unpatched devices.",
+          "why_it_matters": "The CVE itself is older, but this is fresh reporting on a major real-world campaign it enabled \u2014 strong call-prep material for GlobalProtect accounts: the four-day gap between disclosure and mass exploitation is a concrete argument for aggressive patch cadence on edge VPN appliances. Also worth checking that any auth-override cookie configurations in customer GlobalProtect deployments match the advisory's mitigation guidance.",
+          "url": "https://cyberpress.org/globalprotect-flaw-fuels-fraud/",
+          "tag": "cve",
+          "published": "2026-09-27"
+        },
+        {
+          "vendor": "NVIDIA",
+          "title": "NVIDIA launches Open Agent Safety Platform (OpenShell + Sentry) with 100+ partners including Cisco, CrowdStrike, Dell, HPE, Palo Alto Networks, Zscaler, Fortinet",
+          "summary": "NVIDIA announced the Open Agent Safety Platform on Sept 28: an open software platform and reference system design for securing AI agents from testing through deployment, with full-stack governance across the software, hardware/compute, and robotics layers that run agents. It includes OpenShell and Sentry components, the latter able to quarantine agents that move outside their boundaries in milliseconds. Named partners include Anthropic, Cisco, CrowdStrike, Dell Technologies, HPE, Microsoft, Palo Alto Networks, Red Hat, Salesforce, SAP, ServiceNow, Zscaler, and the U.S. Department of Defense.",
+          "why_it_matters": "Agentic AI security is becoming a datacenter architecture conversation, not just an app-layer one \u2014 customers running agent pilots now have to answer how agents are governed at the infrastructure layer. Nearly every vendor on your coverage list is on the partner wall, which makes this a clean discovery question for security and AI-infrastructure conversations: who owns runtime agent controls at your accounts, and is it a platform or a patchwork?",
+          "url": "https://stockhouse.com/news/press-releases/2026/09/28/nvidia-launches-open-agent-safety-platform-to-secure-agents-from-testing-to",
+          "tag": "launch",
+          "published": "2026-09-28"
+        }
+      ]
+    },
+    {
       "date": "2026-09-26",
       "items": [
         {
