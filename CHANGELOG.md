@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-29 — Prompts page added to the app-switcher header
+
+- The scribnet.io `/prompts.html` workflow-prompts page is now one click away from the app-switcher dropdown in the header, alongside the other destinations.
 ## 2026-09-29
 - Morning briefing: 8 items (Dell Technologies, Cisco, VMware by Broadcom, NVIDIA, Nutanix, Cohesity, Rubrik, NetApp). Archive updated.
 
