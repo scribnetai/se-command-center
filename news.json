@@ -1,37 +1,82 @@
 {
-  "date": "2026-09-28",
-  "updated_at": "2026-09-28T07:25:00-04:00",
+  "date": "2026-09-29",
+  "updated_at": "2026-09-29T07:20:00-04:00",
   "items": [
     {
-      "vendor": "Citrix",
-      "title": "Two NetScaler zero-days (CVE-2026-88771, CVE-2026-88772) under active exploitation; CISA adds both to KEV with Sept 30 remediation deadline",
-      "summary": "Citrix disclosed eight NetScaler ADC/Gateway flaws on Sept 27 via bulletin CTX697096 and confirmed that CVE-2026-88771 (input validation RCE, no special config needed) and CVE-2026-88772 (memory-buffer flaw leading to RCE/DoS, DTLS enabled by default on VPN virtual servers) were exploited as zero-days before patches existed. Both score CVSS 9.5. CISA added both to its Known Exploited Vulnerabilities catalog on Sept 27 and set a Sept 30 remediation due date for federal agencies. Fixed builds are 14.1-73.37 and 13.1-64.23. Patching alone is not enough: attackers deployed webshells and anti-forensics before the advisory, so Citrix advises checking for compromise before updating.",
-      "why_it_matters": "NetScaler Gateway is the remote-access front door at many enterprise accounts, and this was a true zero-day window \u2014 exposed boxes had nothing to install for at least two days. This is an immediate outreach trigger: ask customers to confirm patch level (14.1-73.37 / 13.1-64.23) AND run forensic checks for webshells, since the fix does not evict an existing foothold. Also a positioning moment for zero-trust edge and managed detection conversations.",
-      "url": "https://www.helpnetsecurity.com/2026/09/28/citrix-netscaler-rce-zero-days-exploited-for-weeks-cve-2026-88771-cve-2026-88772/",
+      "vendor": "Dell Technologies",
+      "title": "Security advisory bundle AV26-966 covers SCG, ThinOS 10, Trusted Device Client, Rugged Control Center",
+      "summary": "The Canadian Centre for Cyber Security published alert AV26-966 on Sept 28 covering four Dell security updates: DSA-2026-410 (Rugged Control Center before 5.2.206), DSA-2026-385 (Secure Connect Gateway Policy Manager before 5.36.00.16), DSA-2026-404 (ThinOS 10), and DSA-2026-408 (Trusted Device Client before 8.1.359.0). Secure Connect Gateway and ThinOS sit in a lot of installed bases.",
+      "why_it_matters": "Cheap, credible discovery fodder: ask installed-base accounts whether they're current on Secure Connect Gateway and ThinOS patches. SCG hygiene questions open security-services conversations.",
+      "url": "https://malware.news/t/dell-security-advisory-av26-966/125950",
       "tag": "cve",
       "published": "2026-09-28"
     },
     {
-      "vendor": "Palo Alto Networks",
-      "title": "Operation Master exploited GlobalProtect auth bypass CVE-2026-0257 to seed a 2.4M-message invoice fraud campaign",
-      "summary": "A fraud operation tracked as Operation Master used CVE-2026-0257, a Palo Alto Networks GlobalProtect authentication bypass (originally rated CVSS 4.7, raised to 7.8 after exploitation was confirmed), to establish VPN sessions without valid credentials on seven gateways across four countries. From that foothold the group stole debtor records and sent 2.4 million fraudulent emails plus 1.4 million SMS. Rapid7 observed large-scale exploitation within four days of disclosure, and CISA added the CVE to its KEV catalog in May. Palo Alto Networks confirmed exploitation attempts against unpatched devices.",
-      "why_it_matters": "The CVE itself is older, but this is fresh reporting on a major real-world campaign it enabled \u2014 strong call-prep material for GlobalProtect accounts: the four-day gap between disclosure and mass exploitation is a concrete argument for aggressive patch cadence on edge VPN appliances. Also worth checking that any auth-override cookie configurations in customer GlobalProtect deployments match the advisory's mitigation guidance.",
-      "url": "https://cyberpress.org/globalprotect-flaw-fuels-fraud/",
-      "tag": "cve",
-      "published": "2026-09-27"
+      "vendor": "Cisco",
+      "title": "Axis cameras now manageable through Meraki Dashboard via Cisco Cloud Control",
+      "summary": "Axis devices can now be managed in the Cisco Meraki Dashboard through Cisco Cloud Control, with an Essentials tier (device health/visibility) and an Advantage tier (video analytics, 30-day cloud storage). Physical-security cameras ride the same management and licensing model as the network.",
+      "why_it_matters": "Cross-sell wedge: accounts with Meraki networks plus Axis cameras can consolidate physical security under one dashboard. Modest story, but it gives Meraki-heavy shops a reason to talk camera refresh.",
+      "url": "https://it-online.co.za/2026/09/29/axis-and-cisco-collaborate-on-cloud-based-management-solution/",
+      "tag": "launch",
+      "published": "2026-09-29"
+    },
+    {
+      "vendor": "VMware by Broadcom",
+      "title": "Broadcom deauthorizes Insight Enterprises, a top-tier VMware Pinnacle partner, in North America",
+      "summary": "Broadcom has deauthorized Insight Enterprises from reselling VMware licenses and Broadcom-funded VCF Entitlement Services in North America. Insight finishes booked work through Oct 31, 2026. Partner executives say WWT and AHEAD are positioned to absorb the share, and some warn Broadcom is punishing partners that recommend competitive alternatives. (Publication date not shown on the page; fresh in the search index, so treat as late-September.)",
+      "why_it_matters": "Another channel-ecosystem shock from Broadcom, and it feeds the VMware-replacement narrative directly. Expect this in every VMware renewal or Nutanix displacement conversation this week.",
+      "url": "https://www.crn.com/news/channel-news/2026/top-vmware-partner-insight-deauthorized-by-broadcom-in-north-america",
+      "tag": "competitive",
+      "published": "2026-09-29"
     },
     {
       "vendor": "NVIDIA",
-      "title": "NVIDIA launches Open Agent Safety Platform (OpenShell + Sentry) with 100+ partners including Cisco, CrowdStrike, Dell, HPE, Palo Alto Networks, Zscaler, Fortinet",
-      "summary": "NVIDIA announced the Open Agent Safety Platform on Sept 28: an open software platform and reference system design for securing AI agents from testing through deployment, with full-stack governance across the software, hardware/compute, and robotics layers that run agents. It includes OpenShell and Sentry components, the latter able to quarantine agents that move outside their boundaries in milliseconds. Named partners include Anthropic, Cisco, CrowdStrike, Dell Technologies, HPE, Microsoft, Palo Alto Networks, Red Hat, Salesforce, SAP, ServiceNow, Zscaler, and the U.S. Department of Defense.",
-      "why_it_matters": "Agentic AI security is becoming a datacenter architecture conversation, not just an app-layer one \u2014 customers running agent pilots now have to answer how agents are governed at the infrastructure layer. Nearly every vendor on your coverage list is on the partner wall, which makes this a clean discovery question for security and AI-infrastructure conversations: who owns runtime agent controls at your accounts, and is it a platform or a patchwork?",
-      "url": "https://stockhouse.com/news/press-releases/2026/09/28/nvidia-launches-open-agent-safety-platform-to-secure-agents-from-testing-to",
+      "title": "Launches Open Agent Safety Platform with 100+ partners, including CrowdStrike and Palo Alto Networks",
+      "summary": "On Sept 28 NVIDIA announced the Open Agent Safety Platform: OpenShell (open-source agent sandbox runtime) plus Sentry (out-of-band enforcement on BlueField-4 DPUs) to contain 'agent drift', with 100+ organizations including CrowdStrike and Palo Alto Networks collaborating.",
+      "why_it_matters": "This is the industry's emerging trust-layer framing for agentic AI. Customers evaluating 'security for AI agents' will hear CrowdStrike's and Palo Alto's pitches against this open framework \u2014 know both positions before the customer asks.",
+      "url": "https://thejoai.com/ai-news/nvidia-launches-open-agent-safety-platform-with-100-partners/",
       "tag": "launch",
+      "published": "2026-09-28"
+    },
+    {
+      "vendor": "Nutanix",
+      "title": "Acquires Ryax Technologies (French AI compute orchestration)",
+      "summary": "Nutanix acquired Ryax, whose GPU-utilization and smart-scheduling technology will be integrated into the Nutanix Kubernetes Platform and Nutanix Enterprise AI to place agentic-AI workloads on the most cost-effective hardware across private data centers, hyperscalers, and neoclouds. (Announcement appears to be ~Sept 26; article dated Sept 28.)",
+      "why_it_matters": "Nutanix is arming its Enterprise AI story with GPU-efficiency tooling \u2014 a direct competitive datapoint against VMware's AI Factory pitch in AI-infra deals.",
+      "url": "https://techcoffeehouse.com/2026/09/28/nutanix-acquires-ryax-to-boost-agentic-ai/",
+      "tag": "competitive",
+      "published": "2026-09-28"
+    },
+    {
+      "vendor": "Cohesity",
+      "title": "\"Agent Resilience\" extends backup/rollback to AI agent infrastructure",
+      "summary": "Cohesity's Agent Resilience discovers, protects (immutable snapshots), and recovers AI agent memory and configuration plus the data systems agents act on. Launch support for Amazon Bedrock AgentCore/Agents; select customers now, GA targeted end of 2026. (Launched at Cohesity Catalyst ~Sept 16; fresh analyst coverage Sept 28-29.)",
+      "why_it_matters": "Direct counterpoint to Rubrik's agentic-cyber-resilience push below \u2014 expect 'who protects our AI agents' to be a discovery question this quarter.",
+      "url": "https://techcoffeehouse.com/2026/09/29/cohesity-launches-agent-resilience-for-ai-infrastructure-recovery/",
+      "tag": "launch",
+      "published": "2026-09-28"
+    },
+    {
+      "vendor": "Rubrik",
+      "title": "Adds MCP (Model Context Protocol) support for agentic cyber resilience",
+      "summary": "Rubrik MCP exposes the Rubrik Security Cloud API schema to customer AI agents so agents can run multi-step recovery and compliance workflows, with role-based access control and OWASP MCP Top 10-aligned guardrails. Private preview now, GA targeted October 2026; Rubrik AI is already used by roughly one-third of customers. (Dateline 'September 2026'; exact announcement date not pinned down.)",
+      "why_it_matters": "Head-to-head with Cohesity's Agent Resilience: 'agentic cyber resilience' is the competitive front in backup/security this week. Know both roadmaps.",
+      "url": "https://mid-east.info/rubrik-adds-new-mcp-support-to-expand-access-to-agentic-cyber-resilience/",
+      "tag": "launch",
+      "published": "2026-09-29"
+    },
+    {
+      "vendor": "NetApp",
+      "title": "Announces intent to acquire PEAK:AIO (next-gen metadata architecture for AI infrastructure)",
+      "summary": "NetApp will acquire UK-based PEAK:AIO, whose next-gen metadata architecture and high-performance parallel file system disaggregate metadata from data so shared storage scales alongside GPU clusters (trillions of files, exabyte-scale). The plan is to combine it with ONTAP while preserving ONTAP's resilience, security, and operational maturity. Also: NetApp INSIGHT 2026 runs Sept 29-Oct 1 in Las Vegas \u2014 watch for product announcements today/tomorrow.",
+      "why_it_matters": "Metadata scaling is the key technical differentiator to use in AI-infra storage conversations. And with INSIGHT starting today, brief yourself on announcements before the customer does.",
+      "url": "https://www.intelligentcio.com/eu/2026/09/28/netapp-proposes-acquisition-of-peak-aio-in-ai-infrastructure-deal/",
+      "tag": "competitive",
       "published": "2026-09-28"
     }
   ],
   "prompt_of_the_day": {
     "category": "Customer outreach",
-    "prompt": "Draft a short, professional customer outreach email for a presales SE. The facts: on Sept 27, 2026, Citrix confirmed two NetScaler ADC/Gateway zero-days (CVE-2026-88771 and CVE-2026-88772, both CVSS 9.5) were actively exploited before patches existed; fixed builds are 14.1-73.37 and 13.1-64.23; CISA set a Sept 30 remediation deadline and confirmed global exploitation; patching does NOT remove webshells planted before the fix, so forensic checks are required. The email should: (1) lead with the specific question of whether the customer has NetScaler ADC/Gateway in scope and whether those builds are patched; (2) offer a quick review of exposure plus help checking for compromise; (3) keep it under 120 words with one clear call to action; (4) sound like a trusted advisor, not a scare tactic."
+    "prompt": "Draft a 3-sentence customer outreach email I can send to VMware-installed accounts this week. Context: Broadcom has just deauthorized Insight Enterprises, a top-tier VMware Pinnacle partner, from reselling VMware licenses and VCF Entitlement Services in North America (Insight winds down booked work through Oct 31, 2026); partners warn Broadcom is squeezing partners that recommend alternatives. My angle: this creates continuity risk for customers whose VMware renewals or entitlement services touch Insight, and it is a natural moment to benchmark Nutanix or other alternatives before the next renewal. Keep it neutral and professional, no FUD, end with one discovery question."
   }
 }
