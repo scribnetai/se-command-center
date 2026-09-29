@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-29
+- Morning briefing: 8 items (Dell Technologies, Cisco, VMware by Broadcom, NVIDIA, Nutanix, Cohesity, Rubrik, NetApp). Archive updated.
+
+
 ## 2026-09-28 — Canonical subdomain links
 - Replaced legacy `scribnetai.github.io/<repo>/` links with canonical
   `https://<repo>.scribnet.io/` URLs (the old URLs 301-redirect, but docs and
