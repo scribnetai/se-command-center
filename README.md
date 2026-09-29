@@ -1,6 +1,6 @@
 # Live Demo
 
-https://scribnetai.github.io/se-command-center/
+https://se-command-center.scribnet.io/
 
 # SE Command Center
 
@@ -11,10 +11,10 @@ Presales dashboard for systems engineers: a daily agent-written tech news feed, 
 - **Daily news feed** — vendor filter chips, "why it matters" callouts, hot CVE/EOL tags, last-updated timestamp. Fed by `news.json`, rewritten every weekday morning.
 - **Prompt of the Day** — a daily SE-ready AI prompt (outreach, call prep, competitive, productivity) with a copy button. Tied to the day's news; evergreen prompts rotate as fallback.
 - **App Launcher** — four live tools, each opening in a new tab so the command center stays open:
-  - [RVTools Analyzer](https://scribnetai.github.io/rvtools-analyzer/) — browser-based RVTools .xlsx analyzer: cluster breakdowns, per-core licensing math (16-core min/socket, phantom cores), refresh scenario modeler, downloadable briefing report. 100% client-side, zero data retention.
-  - [Server Sizer](https://scribnetai.github.io/server-sizer/) — server/HCI sizing wizard: platform presets (Dell, Cisco UCS, HPE, Nutanix, Supermicro), growth and overcommit modeling, N+1/N+2, BOM table, vSphere licensing math.
-  - [Storage Sizer](https://scribnetai.github.io/storage-sizer/) — storage capacity planner: data reduction, RAID/EC and replication modeling, snapshot copies, year-by-year growth projections, SE findings.
-  - [Network Sizer](https://scribnetai.github.io/network-sizer/) — ToR + FC SAN switch planner: per-host port profiles, oversubscription targets, A/B dual-homing, per-fabric switch math.
+  - [RVTools Analyzer](https://rvtools-analyzer.scribnet.io/) — browser-based RVTools .xlsx analyzer: cluster breakdowns, per-core licensing math (16-core min/socket, phantom cores), refresh scenario modeler, downloadable briefing report. 100% client-side, zero data retention.
+  - [Server Sizer](https://server-sizer.scribnet.io/) — server/HCI sizing wizard: platform presets (Dell, Cisco UCS, HPE, Nutanix, Supermicro), growth and overcommit modeling, N+1/N+2, BOM table, vSphere licensing math.
+  - [Storage Sizer](https://storage-sizer.scribnet.io/) — storage capacity planner: data reduction, RAID/EC and replication modeling, snapshot copies, year-by-year growth projections, SE findings.
+  - [Network Sizer](https://network-sizer.scribnet.io/) — ToR + FC SAN switch planner: per-host port profiles, oversubscription targets, A/B dual-homing, per-fabric switch math.
 
 ## Updates — 2026-09-26
 
