@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-29 — Everpure rebrand finished
+
+- Renamed the last Pure Storage references to Everpure: the vendor card URL in
+  `briefing.json` now points at `https://www.everpuredata.com`, and the
+  historical changelog line reads Everpure. No "Pure Storage" string remains
+  anywhere in the repo.
+
 ## 2026-09-29 — Full SEO head tags
 
 - Added canonical URL, meta description, Open Graph + Twitter Card tags, and JSON-LD structured data (`WebApplication`) to the page head.
@@ -53,5 +60,5 @@
 
 ## 2026-09-24
 - v1: static dashboard — page structure, dark ops theme, AI toolkit section, app launcher tiles.
-- `briefing.json` sample data across 5 vendors, later extended with Pure Storage.
+- `briefing.json` sample data across 5 vendors, later extended with Everpure.
 - GitHub Pages enabled (`.nojekyll`); README with local-run instructions.
