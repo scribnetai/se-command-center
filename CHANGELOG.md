@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-30
+
+- Morning briefing: 10 items (Everpure x2, CrowdStrike, Palo Alto Networks x2, Nutanix, Zscaler, Cisco, Dell Technologies, VMware by Broadcom). Archive updated.
+
 ## 2026-09-29 — Everpure rebrand finished
 
 - Renamed the last Pure Storage references to Everpure: the vendor card URL in
