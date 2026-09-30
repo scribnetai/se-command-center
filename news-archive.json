@@ -1,6 +1,101 @@
 {
   "days": [
     {
+      "date": "2026-09-30",
+      "items": [
+        {
+          "published": "2026-09-30",
+          "summary": "Everpure announced a set of FlashBlade data-management capabilities aimed at production AI: native Model Context Protocol (MCP) integration so AI agents and security tools can query live data catalogs in natural language and see each dataset's sensitivity class; privacy-first file intelligence that shows who can access each share and how stale it is without ever reading file content; and turn-key deployment through the existing Pure1 console. On performance, the PureKVA Key-Value Accelerator pre-stages context directly into GPU memory for up to 20x faster time to first token with zero dataset relocation, while Always-On DeepReduce scans blocks continuously for sub-block similarities to expand usable capacity without write-performance impact or manual scheduling.",
+          "tag": "launch",
+          "title": "Everpure adds AI data-management capabilities to FlashBlade: native MCP, PureKVA inference acceleration, always-on DeepReduce",
+          "url": "https://cxotoday.com/media-coverage/everpure-announces-new-data-management-capabilities-for-production-ai-at-scale/",
+          "vendor": "Everpure",
+          "why_it_matters": "Gives storage-refresh conversations a real AI story: 'AI execution at the data, without moving it.' The MCP angle is the presales hook for AI-agent projects \u2014 agents need governed access to live enterprise context, and Everpure is selling the data side of that. File-intelligence-before-AI-access is also a clean risk-reduction pitch for security-minded buyers."
+        },
+        {
+          "published": "2026-09-30",
+          "summary": "Everpure's Global Data Sovereignty Report 2026 (2,100 enterprise leaders across 8 countries) finds 88% of C-suite leaders believe a data sovereignty failure could cost them their jobs and 91% fear financial or reputational damage. Yet 64% of organizations operate with no formal sovereignty strategy, 62% lack full visibility into who can access their data, and 85% say they would compromise on features to work with a local or sovereign provider. 40% are already limiting use of SaaS providers on non-domestic infrastructure.",
+          "tag": "competitive",
+          "title": "Everpure sovereignty survey: 88% of execs fear a sovereignty failure could cost them their jobs",
+          "url": "https://www.prnewswire.com/news-releases/88-of-executives-fear-data-sovereignty-failures-could-cost-them-their-jobs-302893568.html",
+          "vendor": "Everpure",
+          "why_it_matters": "Sovereignty is now a budget-level business risk, not just a compliance checkbox. These stats are ready-made discovery material for security and regulated-industry conversations: ask where their data actually lives, who can touch it, and what the plan is for geopolitical disruption \u2014 most won't have an answer."
+        },
+        {
+          "published": "2026-09-29",
+          "summary": "CrowdStrike announced at OpenAI DevDay that the Falcon platform is available in the OpenAI Marketplace: eligible OpenAI enterprise customers can procure Falcon using a portion of their existing OpenAI commitments. The announcement extends the partnership around securing the 'agentic enterprise': Falcon Guardian brings runtime protection to OpenAI Codex agents (visibility into agent activity, detection of compromised or unauthorized behavior, runtime control enforcement), and OpenAI's GPT-5.6 Cyber powers CrowdStrike's FAIRR service with advanced cyber reasoning.",
+          "tag": "launch",
+          "title": "CrowdStrike brings Falcon to the OpenAI Marketplace; Falcon Guardian protects Codex agents at runtime",
+          "url": "https://thewesterlysun.marketminute.com/article/bizwire-2026-9-29-crowdstrike-brings-the-falcon-platform-to-the-openai-marketplace",
+          "vendor": "CrowdStrike",
+          "why_it_matters": "Removes procurement friction for AI-heavy shops: 'spend your OpenAI commit on security' is a new buying path worth surfacing in accounts. For agent-security conversations, Falcon Guardian gives a concrete runtime-protection story \u2014 and GPT-5.6 Cyber inside FAIRR is competitive ammo in SIEM/SOC modernization bake-offs."
+        },
+        {
+          "published": "2026-09-29",
+          "summary": "Palo Alto Networks is expanding its NVIDIA collaboration around NVIDIA's Open Agent Safety Platform reference design: Prisma AIRS AI Gateway will run on NVIDIA Vera CPUs (described as part of a future architecture) to centrally manage how agents connect to models and tools \u2014 inspecting interactions, restricting tool access, scrubbing sensitive data, tracking usage and cost. Prisma AIRS AI Runtime Security will run on NVIDIA BlueField DPUs for policy enforcement, integrated with DOCA Argus, Cortex XSIAM, OpenShell, and Idira for monitoring, response, and identity management.",
+          "tag": "competitive",
+          "title": "Palo Alto Networks deepens NVIDIA partnership: AI-agent runtime security on Vera CPUs and BlueField DPUs",
+          "url": "https://www.helpnetsecurity.com/2026/09/29/palo-alto-networks-nvidia-ai-agent-security/",
+          "vendor": "Palo Alto Networks",
+          "why_it_matters": "AI-agent runtime security is becoming a real budget line, and PANW is planting the flag at the infrastructure layer \u2014 GPU/DPU-enforced policy. In network and security conversations, expect 'how do we govern what agents can touch?' to show up in RFPs; the BlueField/DPU angle lets PANW talk to datacenter teams, not just SOC buyers."
+        },
+        {
+          "published": "2026-09-29",
+          "summary": "Google Cloud launched AI-powered security agents natively in its infrastructure with Palo Alto Networks, CrowdStrike, and Mandiant: PANW built an agent that plugs into Vertex AI to analyze application behavior across VMs, containers, and serverless, automatically isolating suspicious resources while feeding forensic detail to security teams, alongside Google Cloud Armor integration for traffic filtering. The agents monitor workloads, detect anomalies, and respond with minimal customer configuration.",
+          "tag": "launch",
+          "title": "Google Cloud ships AI security agents with Palo Alto Networks, CrowdStrike, and Mandiant",
+          "url": "https://www.webpronews.com/google-cloud-launches-ai-powered-security-agents-with-palo-alto-crowdstrike-and-mandiant/",
+          "vendor": "Palo Alto Networks",
+          "why_it_matters": "Cloud-embedded security agents are a new attach motion: minimal-config protection baked into the compute/storage/network layers. For GCP accounts, this is a joint-solution angle; for others, it's proof the 'security inside the cloud, not at the perimeter' shift is accelerating."
+        },
+        {
+          "published": "2026-09-30",
+          "summary": "Nutanix announced it was recognized as a Leader in the 2026 Gartner Magic Quadrant for Distributed Hybrid Infrastructure, for both Ability to Execute and Completeness of Vision. The release also notes expanded external-storage support: general availability for Dell PowerStore, updates for Everpure FlashArray and Dell PowerFlex, and limited availability for NetApp ONTAP \u2014 plus NKP Metal bare-metal Kubernetes, new agentic-AI capabilities, and sovereign/regulated deployment options.",
+          "tag": "competitive",
+          "title": "Nutanix named a Leader in the 2026 Gartner Magic Quadrant for Distributed Hybrid Infrastructure",
+          "url": "https://pressportal.co.za/it-new-media-and-software/story/m3jer9p4j7ncdi7j5j3z-20260930.html",
+          "vendor": "Nutanix",
+          "why_it_matters": "Third-party validation to drop into VMware-vs-Nutanix conversations alongside the execution-over-vision story. The external-storage GA list is the sharper presales point: Nutanix no longer requires its own storage \u2014 customers can reuse PowerStore or FlashArray, which kills a common objection in HCI migrations."
+        },
+        {
+          "published": "2026-09-30",
+          "summary": "Zscaler's ThreatLabz 2026 Ransomware Report: ransomware data theft rose more than 275% year over year to 896.2 TB exfiltrated; blockchain transactions tied to ransomware payments hit $328 million; the average ransom payment rose 5.3% to $431,995. Manager-level titles and above made up 62% of victims, and attackers increasingly abuse trusted workplace tools including Microsoft Teams for data theft and lateral movement.",
+          "tag": "competitive",
+          "title": "Zscaler ThreatLabz 2026 Ransomware Report: AI-driven ransomware, 275% jump in data theft, execs targeted",
+          "url": "https://www.globenewswire.com/news-release/2026/09/30/3371551/0/en/new-zscaler-report-reveals-ai-assisted-attackers-move-to-massive-data-theft-executive-targeting-and-millions-in-extortion-payments.html",
+          "vendor": "Zscaler",
+          "why_it_matters": "Fresh, quotable stats for security discovery: exfiltration-not-encryption is the dominant ransomware model, execs are the target set, and trusted collaboration tools are the vector. Good opener for zero-trust and data-security conversations \u2014 ask how they'd spot 900 TB walking out through Teams."
+        },
+        {
+          "published": "2026-09-30",
+          "summary": "Cisco's Relentless Defense Report (survey of 8,000 security practitioners in 30 markets) finds only 8% of organizations qualify as top-tier defenders; just 21% can switch on a new security control within six months of budget approval; 40% of teams spend more time collecting and correlating data from disparate systems than chasing threats; and internal friction \u2014 procurement delays, data silos, unclear decision rights \u2014 is now the biggest drag on defense, weighted above tooling gaps. AI-era threats demand coordination no siloed team can deliver.",
+          "tag": "competitive",
+          "title": "Cisco Relentless Defense Report: only 8% of orgs defend well; internal friction is the top blocker",
+          "url": "https://www.helpnetsecurity.com/2026/09/30/relentless-defense-cisco-cybersecurity-survey/",
+          "vendor": "Cisco",
+          "why_it_matters": "The buyer's problem is org friction, not missing tools \u2014 which is a services story. The 6-month control-deployment stat and the '8% relentless defenders' framing are strong opens for professional-services and platform-consolidation conversations. Also a clean segue into XDR/value-prop talks: teams drowning in data correlation want one pane."
+        },
+        {
+          "published": "2026-09-30",
+          "summary": "At Dell Technologies Forum 2026, Dell unveiled its latest AI commercial portfolio: Dell Pro 3, Pro 5, and Pro 7 AI PCs, Dell Pro Precision workstations, plus new displays and peripherals \u2014 pitched as bringing AI capabilities into the flow of work with security built in as a foundation. Dell also launched uDaan, an India skilling program targeting 23,000 young people for AI, cloud, and electronics-manufacturing careers.",
+          "tag": "launch",
+          "title": "Dell launches Dell Pro 3/5/7 AI PCs and Pro Precision workstations at Technologies Forum 2026",
+          "url": "https://www.electronicsmedia.info/2026/09/30/dell-technologies-forum-2026/",
+          "vendor": "Dell Technologies",
+          "why_it_matters": "New SKUs for client-refresh conversations: the AI PC refresh cycle is still the biggest near-term client opportunity, and Dell is leading with 'security as foundation' messaging \u2014 useful against vendors pitching AI PCs as a commodity spec play."
+        },
+        {
+          "published": "2026-09-30",
+          "summary": "VMware's Cloud Foundation blog details VCF 9.1 VKS (VMware Kubernetes Service) cluster-management improvements: lower cluster overhead, secure-by-default pod security contexts (CIS-benchmarked out of the box \u2014 a direct ask from regulated-industry customers), and policy-insight consolidation moved from in-cluster agents to the VKSM backend for better fleet-scale performance. VCF 9.1 is available now from the Broadcom Support Portal.",
+          "tag": "launch",
+          "title": "VCF 9.1 available: VKS cluster management gets leaner, secure-by-default, backend policy insights",
+          "url": "https://blogs.vmware.com/cloud-foundation/2026/09/30/managing-vks-clusters-at-scale-improvements-in-vcf-9-1/",
+          "vendor": "VMware by Broadcom",
+          "why_it_matters": "Broadcom keeps tightening the Kubernetes-on-VCF story, which matters for private-AI conversations: 'secure by default, CIS-benchmarked' is the compliance talking point for regulated shops running containers on VCF. Watch for vSphere Standard refresh details expected at VMware Explore Frankfurt."
+        }
+      ]
+    },
+    {
       "date": "2026-09-29",
       "items": [
         {
