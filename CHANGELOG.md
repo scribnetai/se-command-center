@@ -62,3 +62,8 @@
 - v1: static dashboard — page structure, dark ops theme, AI toolkit section, app launcher tiles.
 - `briefing.json` sample data across 5 vendors, later extended with Everpure.
 - GitHub Pages enabled (`.nojekyll`); README with local-run instructions.
+
+## 2026-09-29 — Prompts removed from app-switcher dropdown
+
+- Removed the Prompts entry from the in-app dropdown menu so it lists only the SE-job apps (plus the scribnet.io home link). The prompts page itself is untouched.
+
