@@ -1,4 +1,6 @@
 # Changelog
+## 2026-10-01
+- Morning briefing: 3 items (Cisco, HPE, Dell Technologies). Archive updated.
 
 ## 2026-09-30
 
