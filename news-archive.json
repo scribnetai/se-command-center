@@ -1,6 +1,38 @@
 {
   "days": [
     {
+      "date": "2026-10-01",
+      "items": [
+        {
+          "vendor": "Cisco",
+          "title": "Critical SD-WAN Manager zero-day CVE-2026-76504 actively exploited",
+          "summary": "Cisco published advisory cisco-sa-sdwan-webauth-xr8beuuU on Sept 30 for CVE-2026-76504, a CVSS 9.8 unauthenticated API authentication bypass in Cisco Catalyst SD-WAN Manager. A crafted HTTP request with a URI-encoded character in the j_security_check path (e.g. POST /%6a_security_check) lets a remote attacker with no credentials use the Manager API as the admin user, gaining full control of the device and the SD-WAN fabric it manages. Fixed releases are available (20.9.10.1, 20.12.8.2, 20.15.6.1, 20.18.4.1, 26.1.2.1, 26.2.1); there is no workaround. Cisco confirmed active exploitation in September, and CISA added the flaw to its Known Exploited Vulnerabilities catalog on Oct 1, with a remediation deadline of Oct 3 for federal civilian agencies.",
+          "why_it_matters": "Any customer running an on-prem Catalyst SD-WAN Manager is exposed, and Internet-reachable managers are at immediate risk. This is a proactive-outreach moment: tell customers to verify their version, apply the fixed release, restrict Manager access from the public internet to trusted hosts, and check serviceproxy-access.log for encoded j_security_check requests from unknown IPs plus vmanage-server.log for j_security_check calls under viptela-reserved- usernames.",
+          "url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
+          "tag": "cve",
+          "published": "2026-10-01"
+        },
+        {
+          "vendor": "HPE",
+          "title": "$1.2B Vultr order for AMD Helios AI racks; networking growth outlook raised",
+          "summary": "HPE announced Sept 30 a $1.2 billion order from cloud provider Vultr for AMD Helios AI Rack systems to be deployed in Vultr's US data centers - HPE's first order for the new AMD Helios platform. Each rack combines 72 AMD Instinct MI455X GPUs with EPYC 'Venice' CPUs and Pensando Vulcano AI NICs; HPE supplies the networking layer (six HPE Juniper Networking QFX5252 scale-up Ethernet switch trays per rack), direct liquid cooling, and deployment services. At its networking Investor Day the same day, HPE raised its long-term networking revenue CAGR to the high teens for FY26-FY29 (from 5-7%) and FY27 networking growth to high-teens/low-20s, and lifted the Juniper acquisition synergy target to $800M annual run-rate by FY28.",
+          "why_it_matters": "The biggest public proof point that HPE's post-Juniper stack is winning neocloud AI deals against Dell and Supermicro - a citable customer win for AI-infrastructure conversations. The per-rack scale-up Ethernet design (QFX5252) is also a usable counter-position to NVIDIA InfiniBand pitches, and the raised outlook signals HPE expects AI networking budgets to stay strong into FY27.",
+          "url": "https://www.reuters.com/business/hpe-boosts-networking-growth-outlook-gets-12-billion-ai-order-cloud-firm-vultr-2026-09-30/",
+          "tag": "competitive",
+          "published": "2026-09-30"
+        },
+        {
+          "vendor": "Dell Technologies",
+          "title": "MoU with JERA and RHAELM for $15B hyperscale AI data center in Japan",
+          "summary": "On Oct 1, JERA (Japan's biggest power generator), Dell Technologies, and UK-based AI infrastructure developer RHAELM signed an MoU to develop a standardized, repeatable framework for building AI infrastructure at national scale in Japan, starting with a $15 billion, 400-megawatt hyperscale AI data center in Chiba. JERA will provide land next to its Chiba power station plus 400 MW of power under a 15- to 25-year agreement; RHAELM will develop, construct, operate and finance the facility (Apollo Global Management as strategic investment partner); Dell will provide standardized rack-scale AI infrastructure. Phased operation begins in 2028 with full 400 MW capacity targeted for 2029.",
+          "why_it_matters": "National-scale sovereign-AI validation of Dell's rack-scale AI factory positioning - a strong reference-architecture talking point for large AI data-center deals. Also worth watching the financing pattern: infrastructure funds bankrolling multi-billion-dollar builds is a model more customers will ask about.",
+          "url": "https://wixx.com/2026/10/01/jera-teams-up-with-dell-rhaelm-on-ai-infrastructure-development-in-japan/",
+          "tag": "competitive",
+          "published": "2026-10-01"
+        }
+      ]
+    },
+    {
       "date": "2026-09-30",
       "items": [
         {
