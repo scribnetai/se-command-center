@@ -1,6 +1,47 @@
 {
   "days": [
     {
+      "date": "2026-10-02",
+      "items": [
+        {
+          "vendor": "Fortinet",
+          "title": "Critical FortiMail zero-day CVE-2026-104286 under active exploitation",
+          "summary": "Fortinet published advisory FG-IR-26-175 on Oct 1 for CVE-2026-104286, a CVSS 9.8 path-traversal + null-byte flaw in FortiMail that lets an unauthenticated attacker write arbitrary files to the appliance via crafted HTTP/HTTPS requests. It affects FortiMail 8.0.0-8.0.1, 7.6.0-7.6.6, 7.4.0-7.4.8 and 7.2.0-7.2.9. Fortinet confirms active exploitation; fixes (8.0.2, 7.6.7, 7.4.9) were still unreleased at disclosure, so customers on those branches must apply workarounds: disable IBE via CLI or block internet access to the management interface. 7.2 users must upgrade to the 7.4 branch or above. CISA added it to the Known Exploited Vulnerabilities catalog on Oct 1 with an Oct 4 deadline for federal agencies. Fortinet also published IoCs (file hashes, IPs, log entries).",
+          "why_it_matters": "This is the second actively-exploited 9.8 in two days (Cisco SD-WAN Manager yesterday). Any customer with internet-reachable FortiMail is an immediate compromise risk, and there is no full patch yet for most branches. Presales moment: offer a version/internet-exposure check and a compromise-assessment conversation for every FortiMail customer \u2014 the CISA Oct 4 deadline gives you a forcing function.",
+          "url": "https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/",
+          "tag": "cve",
+          "published": "2026-10-01"
+        },
+        {
+          "vendor": "Everpure",
+          "title": "New Data Intelligence capabilities for production AI: native MCP integration, PureKVA inference acceleration",
+          "summary": "At Accelerate London, Everpure announced new Data Intelligence capabilities shipping this October: native Model Context Protocol (MCP) integration so AI agents and security tools can query live data catalogs in natural language and get sensitivity classifications back; Privacy-First File Intelligence (who can access each share + staleness, without reading contents); Pure Key-Value Accelerator (PureKVA) on FlashBlade pre-staging KV cache directly into GPU memory for up to 20x faster time-to-first-token (vendor claim); Always-On DeepReduce continuous sub-block compression including on pre-compressed content; and an Intelligent Token Optimization reference architecture using open-weight models to cut external API token spend. Data Intelligence builds on the 1Touch acquisition and spans the Everpure platform, public clouds, SaaS and third-party storage.",
+          "why_it_matters": "Everpure is turning storage into governed data infrastructure for agents \u2014 this is the counter to NetApp's just-announced Novus AI storage architecture. For AI-storage deals, ask who owns governed agent data access: PureKVA is FlashBlade-only (not FlashArray), and the 20x TTFT claim needs proof on the customer's own dataset. Real differentiator for agent-readiness conversations this quarter.",
+          "url": "https://www.prnewswire.com/news-releases/everpure-announces-new-data-management-capabilities-for-production-ai-at-scale-302893569.html",
+          "tag": "launch",
+          "published": "2026-10-01"
+        },
+        {
+          "vendor": "Everpure",
+          "title": "Analyst day: new long-term outlook, four growth vectors, FY27 reaffirmed + preliminary FY28 guide",
+          "summary": "At its 2026 financial analyst meeting (Oct 1), Everpure outlined durable accelerated growth through four strategic vectors: core enterprise storage, hyperscaler solutions, and new data-management markets. The company reaffirmed its FY2027 outlook, gave a preliminary FY2028 outlook, and highlighted 19% of revenue consistently reinvested in R&D over five years plus eight consecutive quarters of accelerating revenue growth. CEO Charlie Giancarlo framed it as an inflection point expanding from enterprise storage into hyperscaler data management.",
+          "why_it_matters": "Everpure is explicitly telling Wall Street it is going after hyperscaler business \u2014 a competitive escalation signal for Dell, HPE, and NetApp in large AI-infrastructure deals. Expect sharper pricing and more aggressive positioning on mega-deals; flag this when Everpure shows up in AI-data-center bids.",
+          "url": "https://www.storagenewsletter.com/2026/10/01/everpures-expanding-business-model-fuels-new-long-term-outlook/",
+          "tag": "competitive",
+          "published": "2026-10-01"
+        },
+        {
+          "vendor": "NVIDIA",
+          "title": "Amazon hikes EC2 Capacity Block GPU rental prices ~15%; reportedly offloading $8B in Nvidia chips in sale-leaseback",
+          "summary": "Amazon announced ~15% price increases starting next week on EC2 Capacity Blocks (reserved GPU compute on Nvidia A100 through B300 chips), and the FT reports Amazon is looking to offload ~$8B of advanced Nvidia chips to outside investors and lease them back. The moves point to a hyperscaler financing crunch: Amazon plans $220B in 2026 capex and says demand still outstrips supply through 2028. Nvidia also disclosed a $150B buyback authorization (Sept 28), bringing total repurchase capacity to a record $235B.",
+          "why_it_matters": "Hyperscaler GPU rentals just got 15% more expensive \u2014 the on-prem/private-AI TCO story gets stronger every time cloud GPU economics deteriorate. Use the sale-leaseback as evidence customers want GPU capacity without balance-sheet ownership: exactly what Dell/HPE AI-infrastructure deals offer. Good talk track for any 'why not just run it in AWS' objection.",
+          "url": "https://www.morningstar.com/news/marketwatch/2026100294/amazon-is-hiking-chip-rental-prices-and-reportedly-moving-nvidia-processors-off-the-balance-sheet",
+          "tag": "competitive",
+          "published": "2026-10-02"
+        }
+      ]
+    },
+    {
       "date": "2026-10-01",
       "items": [
         {
