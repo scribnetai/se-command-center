@@ -1,4 +1,7 @@
 # Changelog
+## 2026-10-02
+- Morning briefing: 4 items (Fortinet, Everpure, NVIDIA). Archive updated.
+
 ## 2026-10-01
 - Morning briefing: 3 items (Cisco, HPE, Dell Technologies). Archive updated.
 
