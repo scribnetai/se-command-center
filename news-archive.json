@@ -1,6 +1,38 @@
 {
   "days": [
     {
+      "date": "2026-10-05",
+      "items": [
+        {
+          "published": "2026-10-01",
+          "summary": "Nutanix announced the acquisition of France-based Ryax Technologies, an AI-driven compute orchestration and management platform. Nutanix will integrate Ryax's GPU utilization and AI-aware smart scheduling capabilities into Nutanix Kubernetes Platform (NKP) and Nutanix Enterprise AI (NAI). The pitch: as enterprises spread agentic AI across private data centers, hyperscalers, and neoclouds chasing GPU capacity, Ryax automates the infrastructure/data/hardware/code layer so AI projects deploy faster, cheaper, and more reliably.",
+          "tag": "launch",
+          "title": "Nutanix acquires Ryax Technologies for agentic AI compute orchestration",
+          "url": "https://www.intelligenttechchannels.com/2026/10/01/nutanix-acquires-ryax-technologies-to-help-customers-accelerate-agentic-ai-initiatives/",
+          "vendor": "Nutanix",
+          "why_it_matters": "Gives Nutanix a concrete answer to the inference-economics question in AI discovery calls: GPU efficiency across hybrid footprints, not just where you run VMs. The integration is announced, not shipped \u2014 position it as roadmap strength, not something to quote."
+        },
+        {
+          "published": "2026-10-04",
+          "summary": "VCF chief product officer Paul Turner told The Register that Broadcom placed 'too big a focus on VCF,' alienating SMBs with expensive, subscription-based bundles many didn't need \u2014 including sales reps reportedly telling customers lower-priced vSphere Standard editions were unavailable. The company says it has corrected its sales approach and that an updated vSphere Standard (the entry-level offering, unchanged since 2022) is expected to release soon, with details at VMware Explore Frankfurt on October 13-14. Analysts note Nutanix, Proxmox, and Hyper-V already gained ground among disaffected SMBs, and that trust \u2014 not features \u2014 is the deficit.",
+          "tag": "licensing",
+          "title": "Broadcom admits 'too big a focus on VCF'; updated vSphere Standard expected, details at Explore Frankfurt",
+          "url": "https://rocketnews.com/2026/10/trust-not-features-is-the-real-deficit-vmware-tries-to-appease-smbs-10/",
+          "vendor": "VMware by Broadcom",
+          "why_it_matters": "A direct counter to the most common midmarket VMware objection ('VCF bundles too much for us'). Credible to cite in renewal conversations, but don't promise pricing or terms until the refresh actually ships \u2014 customers who already migrated aren't coming back on a promise."
+        },
+        {
+          "published": "2026-10-02",
+          "summary": "Cisco revised advisory cisco-sa-hardening-iosxe-V8NMuMZJ on October 2 to correct the fixed-release guidance for a cluster of AI-found IOS XE flaws (release trains 16.6.2 through 26.1.3). Headline CVE-2026-20272 is a CVSS 9.8 unauthenticated command-injection reachable over the network; there is no workaround. Fixed releases: 17.9.10, 17.12.8, 17.15.6, 17.18.4/17.18.4a, 26.1.2 (per the revised advisory). Catalyst 3650/3850 switches on 16.12 and earlier will not be patched. Cisco says it found the flaws in an internal audit and is aware of no exploitation in the wild.",
+          "tag": "cve",
+          "title": "IOS XE advisory revised Oct 2: CVE-2026-20272 (CVSS 9.8 command injection), no workaround",
+          "url": "https://zerohunt.ai/blog/cisco-ios-xe-cve-2026-20272-hardening-release/",
+          "vendor": "Cisco",
+          "why_it_matters": "The revised fixed-release list is the reason to re-engage customers who checked the original advisory \u2014 make sure they're running the corrected builds, not just 'a 17.x'. Unpatchable 3650/3850s are natural refresh conversations."
+        }
+      ]
+    },
+    {
       "date": "2026-10-02",
       "items": [
         {
