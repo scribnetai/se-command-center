@@ -1,4 +1,8 @@
 # Changelog
+
+## 2026-10-06
+- Morning briefing: 3 items (Dell Technologies, Palo Alto Networks, Zscaler). Archive updated.
+
 ## 2026-10-05
 - Morning briefing: 3 items (Nutanix, VMware by Broadcom, Cisco). Archive updated.
 
