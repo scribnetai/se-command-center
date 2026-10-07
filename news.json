@@ -1,1 +1,46 @@
-{"date":"2026-10-06","items":[{"published":"2026-10-05","summary":"Dell published DSA-2026-324 for Dell System Update, the CLI tool that pushes firmware and driver updates to PowerEdge servers. The lead flaw, CVE-2026-86360, is a path-traversal weakness an unauthenticated remote attacker could leverage for root-level code execution; four more high-severity DSU flaws (two remote code execution, two privilege escalation) were fixed in DSU 2.3.0.0. The same week Dell disclosed critical flaws in Container Storage Modules, including CVE-2026-63688 and CVE-2026-63692, both rated 10.0 and affecting authentication around storage-array management. No exploitation or public proof of concept has been reported.","tag":"cve","title":"Critical DSU path-traversal RCE (CVE-2026-86360, CVSS 9.6) and four more DSU flaws patched; two CVSS 10.0 Container Storage Module bugs disclosed","url":"https://www.bleepingcomputer.com/news/security/new-dell-system-update-flaw-lets-hackers-gain-root-privileges/","vendor":"Dell Technologies","why_it_matters":"DSU runs fleet-wide on PowerEdge estates, so one unpatched build can leave whole data centers exposed. Ask customers which DSU version their server-update workflows run and whether their CSM/Kubernetes-on-Dell-storage deployments are on 1.18.0+. Good excuse for a proactive check-in on firmware hygiene."},{"published":"2026-10-05","summary":"At RSAC 2026 Palo Alto Networks launched Prisma AIRS 3.0, pitched at securing the full agentic AI lifecycle (agent identity, runtime security, governance) rather than just observing AI interactions, and Prisma Browser for Business, a simplified secure browser aimed at small businesses with built-in phishing, ransomware, and data-leakage controls. The company also introduced Cortex XCOR, an AI observability platform that automates root-cause analysis for cloud-native environments.","tag":"launch","title":"Prisma AIRS 3.0 for agentic AI security and Prisma Browser for Business for SMBs debut at RSAC 2026","url":"https://www.crn.com/news/security/2026/10-hot-new-cybersecurity-tools-announced-at-rsac-2026","vendor":"Palo Alto Networks","why_it_matters":"Customers rolling out AI agents are discovering governance and recovery gaps fast. Prisma AIRS 3.0 gives you a presales wedge for discovery around agent identity and runtime controls. The SMB browser is a new door-opener product for small-business accounts where the enterprise browsers never fit."},{"published":"2026-10-05","summary":"Zscaler announced a collaboration with IBM and Red Hat pairing its Autonomous Application Shield (delivered via the Zero Trust Exchange) with IBM/Red Hat's Lightwell solution. The pitch: vulnerabilities are being weaponized faster than patch cycles, so the joint offering provides inline, application-specific protection while remediation is prepared and validated fixes are delivered.","tag":"launch","title":"Zscaler teams with IBM and Red Hat to shield private apps in the disclosure-to-patch window","url":"https://www.globenewswire.com/news-release/2026/10/05/3374476/0/en/zscaler-collaborates-with-ibm-and-red-hat-to-protect-private-applications-from-frontier-ai-powered-threats.html","vendor":"Zscaler","why_it_matters":"Cites Mandiant M-Trends 2026 data that mean time to exploit has dropped below zero (exploited before a public patch exists). Use this in conversations with security teams burned by zero-day patching fire drills, and pair it with ZPA discovery questions."}],"prompt_of_the_day":{"category":"Customer outreach","prompt":"Draft a short, professional check-in email I can send to a customer running Dell PowerEdge servers. Dell published DSA-2026-324 on October 1, 2026 fixing CVE-2026-86360 (CVSS 9.6 path traversal, unauthenticated remote attacker could execute code with root privileges) plus CVE-2026-63697, CVE-2026-71168 (remote code execution), CVE-2026-86361, CVE-2026-86362 (privilege escalation) in Dell System Update, fixed in DSU 2.3.0.0. Separately, Dell disclosed two CVSS 10.0 flaws in Container Storage Modules (CVE-2026-63688, CVE-2026-63692), fixed in 1.18.0. No exploitation has been reported. The email should ask what DSU version they run and whether their CSM deployments are current, offer a quick review call, and stay under 150 words with no fear-mongering."},"updated_at":"2026-10-06T07:20:00-04:00"}
+{
+  "date": "2026-10-07",
+  "updated_at": "2026-10-07T07:25:00-04:00",
+  "items": [
+    {
+      "vendor": "Dell",
+      "title": "Dell expands AI Data Platform with semantic layer, knowledge graph, and AI agents",
+      "summary": "Dell added a Unified Semantic Layer, Enterprise Knowledge Graph, and Knowledge Agents to its AI Data Platform to give AI applications consistent access to governed enterprise data. Dell claims data processing nearly 4x faster than CPUs alone (up to 20x on batch workloads) and says PowerScale now supports up to 500 tenants in a single cluster.",
+      "why_it_matters": "Dell is moving the AI pitch from servers into the data layer feeding agents - the governance/semantic-layer framing lands directly in RAG-readiness discovery. Treat speed numbers as vendor benchmarks until validated.",
+      "url": "https://www.ad-hoc-news.de/boerse/corporate-news/dell-technologies-stock-gains-4-70-percent-on-ai-platform-expansion/70243886",
+      "tag": "launch",
+      "published": "2026-10-06"
+    },
+    {
+      "vendor": "Cisco",
+      "title": "Quantum XChange brings FIPS-validated post-quantum cryptography to the Cisco Networking App Marketplace",
+      "summary": "Quantum XChange's Phio TX-EM, a containerized post-quantum key-management app, is listed in the Cisco Networking App Marketplace - claimed first FIPS-validated PQC solution there. It runs on existing Cisco routers and switches via Cisco's SKIP API with no added hardware or downtime and multi-algorithm crypto-agility.",
+      "why_it_matters": "Gives Cisco estates a software-only path to quantum-safe networking ahead of hardware refresh cycles - lead with the harvest-now/decrypt-later argument in federal and regulated accounts.",
+      "url": "https://www.financialcontent.com/article/bizwire-2026-10-6-quantum-xchange-joins-the-cisco-networking-app-marketplace-as-a-cisco-technology-partner",
+      "tag": "launch",
+      "published": "2026-10-06"
+    },
+    {
+      "vendor": "VMware by Broadcom",
+      "title": "Broadcom explains Insight's VMware resale removal: 'did not meet the program's requirements'",
+      "summary": "Broadcom's Laura Falko told CRN that Insight lost its North America VMware resale authorization because it did not meet program requirements. Insight's EMEA authorization remains; client-funded VMware and Cloud Foundation services in NA continue through October 31, 2026.",
+      "why_it_matters": "Expect renewal-continuity questions from customers who bought VMware through Insight - know which partner of record can actually transact their next renewal before they ask.",
+      "url": "https://channelbuzz.ca/2026/10/the-buzz-broadcom-explains-insights-vmware-removal-schneider-bids-for-ptc-and-anthropic-invests-in-deployment-skills-47584/",
+      "tag": "competitive",
+      "published": "2026-10-06"
+    },
+    {
+      "vendor": "Zscaler",
+      "title": "Zscaler pairs with IBM and Red Hat (Lightwell) to cover the vulnerability disclosure-to-patch gap",
+      "summary": "Zscaler's Autonomous Application Shield on the Zero Trust Exchange combines with IBM/Red Hat's Lightwell to hide private apps (ZPA), segment access, block exploits inline while a patch is pending, then deliver validated open-source remediations. Autonomous App Shield is currently in an Early Access Program; Zscaler cites Mandiant M-Trends 2026 (mean time to exploit below zero).",
+      "why_it_matters": "'Protect now, patch later' is a strong zero-trust talk track where patch cycles lag AI-speed exploitation - but it's early access, so position as direction, not a quote-able feature.",
+      "url": "https://www.globenewswire.com/news-release/2026/10/05/3374476/0/en/zscaler-collaborates-with-ibm-and-red-hat-to-protect-private-applications-from-frontier-ai-powered-threats.html",
+      "tag": "launch",
+      "published": "2026-10-05"
+    }
+  ],
+  "prompt_of_the_day": {
+    "category": "Customer outreach",
+    "prompt": "Draft a short, direct outreach email (under 150 words) to a customer contact who owns application security, themed on the disclosure-to-patch gap: Mandiant M-Trends 2026 found the mean time to exploit a vulnerability has fallen below zero, so attackers strike before patches exist. Mention that Zscaler (Oct 5, 2026) paired its Autonomous Application Shield on the Zero Trust Exchange with IBM and Red Hat's Lightwell to give private apps inline, application-specific protection between disclosure and patch, then validated open-source remediations at the source - noting Shield is in Early Access. Ask two discovery questions: how long their typical patch cycle runs from disclosure to deployment, and which private apps would be most exposed in that window. End with a low-friction CTA offering a 20-minute working session on their riskiest apps. Keep the tone technical and practical, no marketing fluff."
+  }
+}
