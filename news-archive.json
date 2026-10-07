@@ -1,6 +1,47 @@
 {
   "days": [
     {
+      "date": "2026-10-07",
+      "items": [
+        {
+          "vendor": "Dell",
+          "title": "Dell expands AI Data Platform with semantic layer, knowledge graph, and AI agents",
+          "summary": "Dell added a Unified Semantic Layer, Enterprise Knowledge Graph, and Knowledge Agents to its AI Data Platform to give AI applications consistent access to governed enterprise data. Dell claims data processing nearly 4x faster than CPUs alone (up to 20x on batch workloads) and says PowerScale now supports up to 500 tenants in a single cluster.",
+          "why_it_matters": "Dell is moving the AI pitch from servers into the data layer feeding agents - the governance/semantic-layer framing lands directly in RAG-readiness discovery. Treat speed numbers as vendor benchmarks until validated.",
+          "url": "https://www.ad-hoc-news.de/boerse/corporate-news/dell-technologies-stock-gains-4-70-percent-on-ai-platform-expansion/70243886",
+          "tag": "launch",
+          "published": "2026-10-06"
+        },
+        {
+          "vendor": "Cisco",
+          "title": "Quantum XChange brings FIPS-validated post-quantum cryptography to the Cisco Networking App Marketplace",
+          "summary": "Quantum XChange's Phio TX-EM, a containerized post-quantum key-management app, is listed in the Cisco Networking App Marketplace - claimed first FIPS-validated PQC solution there. It runs on existing Cisco routers and switches via Cisco's SKIP API with no added hardware or downtime and multi-algorithm crypto-agility.",
+          "why_it_matters": "Gives Cisco estates a software-only path to quantum-safe networking ahead of hardware refresh cycles - lead with the harvest-now/decrypt-later argument in federal and regulated accounts.",
+          "url": "https://www.financialcontent.com/article/bizwire-2026-10-6-quantum-xchange-joins-the-cisco-networking-app-marketplace-as-a-cisco-technology-partner",
+          "tag": "launch",
+          "published": "2026-10-06"
+        },
+        {
+          "vendor": "VMware by Broadcom",
+          "title": "Broadcom explains Insight's VMware resale removal: 'did not meet the program's requirements'",
+          "summary": "Broadcom's Laura Falko told CRN that Insight lost its North America VMware resale authorization because it did not meet program requirements. Insight's EMEA authorization remains; client-funded VMware and Cloud Foundation services in NA continue through October 31, 2026.",
+          "why_it_matters": "Expect renewal-continuity questions from customers who bought VMware through Insight - know which partner of record can actually transact their next renewal before they ask.",
+          "url": "https://channelbuzz.ca/2026/10/the-buzz-broadcom-explains-insights-vmware-removal-schneider-bids-for-ptc-and-anthropic-invests-in-deployment-skills-47584/",
+          "tag": "competitive",
+          "published": "2026-10-06"
+        },
+        {
+          "vendor": "Zscaler",
+          "title": "Zscaler pairs with IBM and Red Hat (Lightwell) to cover the vulnerability disclosure-to-patch gap",
+          "summary": "Zscaler's Autonomous Application Shield on the Zero Trust Exchange combines with IBM/Red Hat's Lightwell to hide private apps (ZPA), segment access, block exploits inline while a patch is pending, then deliver validated open-source remediations. Autonomous App Shield is currently in an Early Access Program; Zscaler cites Mandiant M-Trends 2026 (mean time to exploit below zero).",
+          "why_it_matters": "'Protect now, patch later' is a strong zero-trust talk track where patch cycles lag AI-speed exploitation - but it's early access, so position as direction, not a quote-able feature.",
+          "url": "https://www.globenewswire.com/news-release/2026/10/05/3374476/0/en/zscaler-collaborates-with-ibm-and-red-hat-to-protect-private-applications-from-frontier-ai-powered-threats.html",
+          "tag": "launch",
+          "published": "2026-10-05"
+        }
+      ]
+    },
+    {
       "date": "2026-10-06",
       "items": [
         {
