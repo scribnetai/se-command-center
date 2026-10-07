@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-07
+- Morning briefing: 4 items (Dell, Cisco, VMware by Broadcom, Zscaler). Archive updated.
+
 ## 2026-10-06
 - Morning briefing: 3 items (Dell Technologies, Palo Alto Networks, Zscaler). Archive updated.
 
