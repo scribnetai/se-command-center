@@ -1,46 +1,37 @@
 {
-  "date": "2026-10-07",
-  "updated_at": "2026-10-07T07:25:00-04:00",
+  "date": "2026-10-08",
+  "updated_at": "2026-10-08T07:20:00-04:00",
   "items": [
     {
-      "vendor": "Dell",
-      "title": "Dell expands AI Data Platform with semantic layer, knowledge graph, and AI agents",
-      "summary": "Dell added a Unified Semantic Layer, Enterprise Knowledge Graph, and Knowledge Agents to its AI Data Platform to give AI applications consistent access to governed enterprise data. Dell claims data processing nearly 4x faster than CPUs alone (up to 20x on batch workloads) and says PowerScale now supports up to 500 tenants in a single cluster.",
-      "why_it_matters": "Dell is moving the AI pitch from servers into the data layer feeding agents - the governance/semantic-layer framing lands directly in RAG-readiness discovery. Treat speed numbers as vendor benchmarks until validated.",
-      "url": "https://www.ad-hoc-news.de/boerse/corporate-news/dell-technologies-stock-gains-4-70-percent-on-ai-platform-expansion/70243886",
-      "tag": "launch",
-      "published": "2026-10-06"
+      "vendor": "Cisco",
+      "title": "Cisco publishes October 7 security advisories for five critical NX-OS flaws",
+      "summary": "Cisco's October 7 NX-OS advisories cover five vulnerabilities rated CVSS 9.8 affecting Nexus platforms across MPLS OAM, NGOAM, and NX-API. Potential impacts include unauthenticated arbitrary code execution, process crashes, and device reloads. MPLS OAM and NX-API are disabled by default, so real exposure depends on configuration. Cisco reports no known exploitation in the wild.",
+      "why_it_matters": "Quick discovery hook for Nexus accounts: ask whether MPLS OAM, NGOAM, or NX-API are enabled before scheduling upgrades. Disabled-by-default features mean many estates have low real exposure, but anything internet-facing or running OAM needs a patch plan now. Expect proof-of-concept code to surface within days of a 9.8 bundle like this.",
+      "url": "https://undercodenews.com/cisco-nx-os-hit-by-five-critical-cvss-98-flaws-allowing-unauthenticated-root-level-code-execution-video/",
+      "tag": "cve",
+      "published": "2026-10-07"
     },
     {
-      "vendor": "Cisco",
-      "title": "Quantum XChange brings FIPS-validated post-quantum cryptography to the Cisco Networking App Marketplace",
-      "summary": "Quantum XChange's Phio TX-EM, a containerized post-quantum key-management app, is listed in the Cisco Networking App Marketplace - claimed first FIPS-validated PQC solution there. It runs on existing Cisco routers and switches via Cisco's SKIP API with no added hardware or downtime and multi-algorithm crypto-agility.",
-      "why_it_matters": "Gives Cisco estates a software-only path to quantum-safe networking ahead of hardware refresh cycles - lead with the harvest-now/decrypt-later argument in federal and regulated accounts.",
-      "url": "https://www.financialcontent.com/article/bizwire-2026-10-6-quantum-xchange-joins-the-cisco-networking-app-marketplace-as-a-cisco-technology-partner",
+      "vendor": "HPE",
+      "title": "HPE launches four enterprise servers on AMD's sixth-generation processors",
+      "summary": "On October 7 HPE announced four new enterprise servers powered by AMD's newest sixth-generation processors, pitched at AI workloads with more compute and faster data movement. The stock hit an all-time intraday high on the news. The launch follows HPE's September 30 announcement of a $1.2 billion AMD Helios AI Rack order from Vultr, with six Juniper QFX5252 Ethernet switch trays per rack.",
+      "why_it_matters": "Fresh compute-refresh talking point for x86 replacement cycles: HPE is leaning hard on the AMD track while Dell pushes AI Data Platform software. In a deal, ask what the actual AI workload plan is before letting any vendor lock the architecture, and remember analysts credit the Juniper acquisition with doubling HPE's networking division \u2014 useful leverage in data-center RFPs.",
+      "url": "https://www.barrons.com/articles/hpe-stock-amd-servers-ai-buildout-dc1fe745",
       "tag": "launch",
-      "published": "2026-10-06"
+      "published": "2026-10-07"
     },
     {
       "vendor": "VMware by Broadcom",
-      "title": "Broadcom explains Insight's VMware resale removal: 'did not meet the program's requirements'",
-      "summary": "Broadcom's Laura Falko told CRN that Insight lost its North America VMware resale authorization because it did not meet program requirements. Insight's EMEA authorization remains; client-funded VMware and Cloud Foundation services in NA continue through October 31, 2026.",
-      "why_it_matters": "Expect renewal-continuity questions from customers who bought VMware through Insight - know which partner of record can actually transact their next renewal before they ask.",
-      "url": "https://channelbuzz.ca/2026/10/the-buzz-broadcom-explains-insights-vmware-removal-schneider-bids-for-ptc-and-anthropic-invests-in-deployment-skills-47584/",
-      "tag": "competitive",
-      "published": "2026-10-06"
-    },
-    {
-      "vendor": "Zscaler",
-      "title": "Zscaler pairs with IBM and Red Hat (Lightwell) to cover the vulnerability disclosure-to-patch gap",
-      "summary": "Zscaler's Autonomous Application Shield on the Zero Trust Exchange combines with IBM/Red Hat's Lightwell to hide private apps (ZPA), segment access, block exploits inline while a patch is pending, then deliver validated open-source remediations. Autonomous App Shield is currently in an Early Access Program; Zscaler cites Mandiant M-Trends 2026 (mean time to exploit below zero).",
-      "why_it_matters": "'Protect now, patch later' is a strong zero-trust talk track where patch cycles lag AI-speed exploitation - but it's early access, so position as direction, not a quote-able feature.",
-      "url": "https://www.globenewswire.com/news-release/2026/10/05/3374476/0/en/zscaler-collaborates-with-ibm-and-red-hat-to-protect-private-applications-from-frontier-ai-powered-threats.html",
-      "tag": "launch",
-      "published": "2026-10-05"
+      "title": "PoC now public for VMware Workstation/Fusion VMXNET3 integer-overflow flaw (CVE-2026-59346)",
+      "summary": "Proof-of-concept code is now circulating for CVE-2026-59346, an integer-overflow vulnerability in the VMXNET3 virtual network adapter that lets an attacker with local administrative privileges inside a VM execute code on the host. It affects Workstation and Fusion 25H2 and 26H1; both are fixed in 26H1u1. A related HGFS stack-based buffer overflow (CVE-2026-59347, CVSS 8.1) shares the advisory.",
+      "why_it_matters": "Low bar for most datacenter estates, but it matters in VDI, lab, and developer-workstation fleets: anyone on Workstation/Fusion 25H2 or 26H1 needs the 26H1u1 update before the PoC gets weaponized. Also a reminder to inventory desktop virtualization alongside the ESXi patching you already track.",
+      "url": "https://securityonline.info/vmware-vmxnet3-vulnerability-cve-2026-59346/",
+      "tag": "cve",
+      "published": "2026-10-08"
     }
   ],
   "prompt_of_the_day": {
     "category": "Customer outreach",
-    "prompt": "Draft a short, direct outreach email (under 150 words) to a customer contact who owns application security, themed on the disclosure-to-patch gap: Mandiant M-Trends 2026 found the mean time to exploit a vulnerability has fallen below zero, so attackers strike before patches exist. Mention that Zscaler (Oct 5, 2026) paired its Autonomous Application Shield on the Zero Trust Exchange with IBM and Red Hat's Lightwell to give private apps inline, application-specific protection between disclosure and patch, then validated open-source remediations at the source - noting Shield is in Early Access. Ask two discovery questions: how long their typical patch cycle runs from disclosure to deployment, and which private apps would be most exposed in that window. End with a low-friction CTA offering a 20-minute working session on their riskiest apps. Keep the tone technical and practical, no marketing fluff."
+    "prompt": "Draft a short, urgent-but-calm outreach email to my Cisco Nexus accounts about Cisco's October 7, 2026 NX-OS security advisories: five CVSS 9.8 vulnerabilities affecting MPLS OAM, NGOAM, and NX-API on Nexus platforms, with possible unauthenticated code execution, process crashes, or device reloads. MPLS OAM and NX-API are disabled by default so exposure is config-dependent, and Cisco reports no known exploitation yet. The email should: 1) state the facts in plain language, 2) ask the customer to confirm whether MPLS OAM, NGOAM, or NX-API are enabled in their environment, 3) offer a 20-minute patch-planning call, and 4) close with a line that turns this into a broader network-hygiene conversation (config audit, lifecycle refresh). Keep it under 150 words, technical and direct, no marketing fluff."
   }
 }
