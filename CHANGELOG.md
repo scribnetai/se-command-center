@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-09
+- Morning briefing: 3 items (Dell Technologies, NVIDIA, Cisco). Archive updated.
+
 ## 2026-10-08
 - Morning briefing: 3 items (Cisco, HPE, VMware by Broadcom). Archive updated.
 
