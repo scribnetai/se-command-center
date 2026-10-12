@@ -1,6 +1,65 @@
 {
   "days": [
     {
+      "date": "2026-10-12",
+      "items": [
+        {
+          "vendor": "Rubrik",
+          "title": "Project Hourglass adds Code Guardian \u2014 Claude-powered red-teaming for code repos",
+          "summary": "Announced Oct 9 at the Rubrik GSI Summit: Rubrik Code Guardian uses Anthropic's Claude Mythos 5 inside a security harness to red-team a cloned, air-gapped copy of customer code repositories \u2014 no live production touched. It reasons across files, services, identity roles, and cloud perimeters to surface chained vulnerabilities that static tools miss; findings are verified for actual exploitability and scored by business criticality. Instant codebase recovery is built in. New partners AHEAD, Trace3, and WWT join Project Hourglass to deliver it alongside Rubrik Agent Cloud.",
+          "why_it_matters": "Rubrik is pushing past data recovery into AI-development security \u2014 a new conversation opener with DevOps/engineering teams, not just backup admins. Delivery is partner-led (joint GTM, certification tracks, direct engineering access), so a VAR can genuinely service it. Crucial caveat: Code Guardian is in private preview with select design partners \u2014 'as is,' not GA. Don't let anyone sell it as shipping today.",
+          "url": "https://www.businesswire.com/news/home/20261008042399/en/Rubrik-Expands-Project-Hourglass-with-Rubrik-Code-Guardian-Powered-by-Claude",
+          "tag": "launch",
+          "published": "2026-10-09"
+        },
+        {
+          "vendor": "NetApp",
+          "title": "Insight 2026: AI Data Engine, Novus file system, Keystone Sovereignty",
+          "summary": "Three headline announcements at NetApp Insight 2026: (1) NetApp AI Data Engine (AIDE), a new SaaS product that maps, catalogs, and classifies unstructured data across NetApp and heterogeneous storage without copying or moving files; (2) NetApp Novus, a zettabyte-scale file system aimed at large multi-GPU AI factories \u2014 separate metadata layer (Novus Data Director on qualified Supermicro infrastructure) with ONTAP on AFF A90 as the data layer; (3) NetApp Keystone Sovereignty, keeping customer data, logs, backups, telemetry, and support inside specified geographic boundaries with European-based support and escalation paths.",
+          "why_it_matters": "NetApp is sharpening its side of the Everpure rivalry on AI data governance. AIDE closes the classification gap Everpure's Data Intelligence was exploiting, Novus is the AI-factory answer to FlashBlade's PureKVA pitch, and Keystone Sovereignty is a ready-made EU-compliance door-opener for regulated deals. Ask the customer whether their AI data story is about training throughput (Novus) or governed agent access (AIDE) \u2014 they're different buyers.",
+          "url": "https://www.techtarget.com/it-infrastructure/opinion/Top-things-to-know-from-NetApp-Insight",
+          "tag": "launch",
+          "published": "2026-10-09"
+        },
+        {
+          "vendor": "Palo Alto Networks",
+          "title": "Advanced DNS Security goes GA inside Amazon Route 53 Resolver DNS Firewall",
+          "summary": "Palo Alto Networks announced (Oct 9) that Advanced DNS Security is now generally available inside Amazon Route 53 Resolver DNS Firewall across 32 AWS regions. 30+ DNS threat detections \u2014 C2, malware, phishing, newly registered domains, fast-flux, DNS tunneling, DGA \u2014 are enforced directly as DNS Firewall rules on VPC and hybrid (Resolver Endpoint) query traffic. No separate PANW firewalls per VPC or VPC config changes needed; subscribe via an AWS Marketplace widget and manage multi-account with License Manager, RAM, Route 53 Profiles, or Firewall Manager.",
+          "why_it_matters": "A security-subscription sell-through path into AWS-native customers with zero appliance footprint \u2014 cloud architects who won't buy a firewall can now buy PANW protection natively. Strong counter when a Fortinet shop claims DNS protection only lives at their edge. Ask customers how they cover hybrid DNS via Resolver Endpoints, and flag that DNS-layer coverage is a good complement to, not a replacement for, endpoint/identity controls.",
+          "url": "https://www.paloaltonetworks.com/blog/network-security/adns_amazon_route_53_general_availability/",
+          "tag": "launch",
+          "published": "2026-10-09"
+        },
+        {
+          "vendor": "Fortinet",
+          "title": "FortiMail zero-day fixes finally shipped \u2014 branches 7.4, 7.6, 8.0 patched",
+          "summary": "CVE-2026-104286 (CVSS 9.8) \u2014 an unauthenticated path-traversal-plus-null-byte file write in the FortiMail management interface (Identity-Based Encryption handler), actively exploited and on CISA's KEV catalog since Oct 1. Update to last week's item: fixed builds are now published for the 7.4, 7.6, and 8.0 branches (7.4.9, 7.6.7, 8.0.2). The 7.2 branch gets no fix \u2014 customers there must move to 7.4 or later. Workaround remains disabling IBE or pulling the management interface off the internet.",
+          "why_it_matters": "Customers who held off waiting for patches can move now \u2014 push upgrades this week while exploit attention is high. Any FortiMail shop still on 7.2 is facing a branch migration, not a patch: that's a professional-services conversation, not a reboot window. Check for the published IOCs (the 'archive234' account) on any appliance that ran an affected build.",
+          "url": "https://brandefense.io/blog/cve-2026-104286-fortimail-zero-day/",
+          "tag": "cve",
+          "published": "2026-10-08"
+        },
+        {
+          "vendor": "VMware by Broadcom",
+          "title": "AVS license-included PayGo deadline hits Oct 31 \u2014 switch to VCF BYOL",
+          "summary": "Azure VMware Solution customers on license-included Pay-As-You-Go must move to portable VCF (bring-your-own-license) by October 31, 2026 \u2014 19 days out. Microsoft stopped selling new license-included nodes in Oct 2025; reserved-instance customers keep bundled licensing until reservation expiry or Aug 30, 2027. Meanwhile a Unisphere Research survey of 269 VMware users (reported Oct 7) found 90% cite higher licensing costs as their reason to evaluate alternatives, with 73% naming cost savings their top future priority.",
+          "why_it_matters": "The deadline is an immediate compliance cliff \u2014 inventory your customers' AVS entitlements this week, because anyone on license-included PayGo needs a portable VCF subscription lined up. The 90% figure is also free ammunition for the 'Broadcom cost' narrative Nutanix and Microsoft reps are already running in your deals \u2014 have a grounded VCF-vs-alternative story ready when customers raise it.",
+          "url": "https://hostingdiscussion.com/news/azure-vmware-customers-face-an-october-deadline-tied-to-broadcoms-licensing-overhaul/",
+          "tag": "licensing",
+          "published": "2026-10-07"
+        },
+        {
+          "vendor": "CrowdStrike",
+          "title": "Attributes Korean bank breaches to attacker using Claude Code + ARTEX agent",
+          "summary": "CrowdStrike published findings (Oct 8) tying a breach campaign against at least nine South Korean banks to a financially motivated, Chinese-speaking attacker (moderate confidence) who used Anthropic's Claude Code alongside ARTEX, an open-source AI pentesting agent published on GitHub earlier this year that routes tasks to external LLMs. Shinhan Bank reported ~25,000 customers' personal info compromised; KB Kookmin confirmed 119. Exfiltration was confirmed at multiple institutions.",
+          "why_it_matters": "Real-world proof that attackers now use AI coding agents as intrusion tooling \u2014 it sharpens the 'secure the AI agent' conversation Rubrik, Cohesity, and PANW are all selling, and it gives CrowdStrike's threat-intel narrative a fresh headline against PANW Cortex and SentinelOne. Worth reading before any security discovery call this week: the question 'what are your AI agents allowed to touch?' just got a concrete horror story.",
+          "url": "https://pondero.ai/news/2026-10-11-crowdstrike-claude-korea-bank-breach/",
+          "tag": "competitive",
+          "published": "2026-10-08"
+        }
+      ]
+    },
+    {
       "date": "2026-10-09",
       "items": [
         {
