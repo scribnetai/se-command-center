@@ -1,6 +1,38 @@
 {
   "days": [
     {
+      "date": "2026-10-13",
+      "items": [
+        {
+          "vendor": "Cisco",
+          "title": "OCP 2026: 51.2T P200 systems in production, new G302 1.6T silicon, USFP optics spec with NVIDIA",
+          "summary": "At OCP Global Summit on Oct 12, Cisco said its 51.2T Silicon One P200 systems are now deployed in production at leading hyperscalers (Microsoft and Alibaba named), introduced Scale-Across \u2014 P200 systems plus coherent optics tying AI fabrics across sites into one cluster \u2014 and expanded Silicon One with G302: 51.2T top-of-rack switching silicon with 200G SerDes, 102.4T capacity and Cisco 1.6T optics, planned to ship before end of 2026. First G300-powered systems are already shipping. With NVIDIA, Cisco will develop USFP, an open 400G-per-lane pluggable optics specification claiming 4x the bandwidth density of 200G-per-lane optics. Cisco also announced the 8001, a Silicon One A100-powered out-of-band management system running SONiC.",
+          "why_it_matters": "This is Cisco's AI-fabric pitch moving from roadmap to production proof points \u2014 useful against Arista and NVIDIA Spectrum-X in hyperscaler, neocloud, and large enterprise AI builds. Watch the dates: G302 is a ship-by-year-end promise, USFP is a spec project not a product, and Scale-Across matters only to customers actually running multi-site AI jobs. In enterprise deals, the SONiC/Nexus One and 8001 management story is the more immediately sellable piece.",
+          "url": "https://crweworld.com/article/news-provided-by-pr-newswire/3926336/cisco-advances-scalability-and-openness-at-ocp-2026",
+          "tag": "launch",
+          "published": "2026-10-12"
+        },
+        {
+          "vendor": "VMware by Broadcom",
+          "title": "VMware HyperArmor introduced \u2014 hypervisor-layer protection for VCF / ESX 8.x+",
+          "summary": "Broadcom introduced VMware HyperArmor on Oct 13, a new software solution protecting the ESX hypervisor in VMware Cloud Foundation. Three pieces: (1) host-layer virtual patching that blocks attempted malicious actions on ESX hosts without host reboots or software upgrades, complementing vDefend's network-layer virtual patching; (2) a positive 'known-good' security baseline \u2014 HyperArmor inventories host scripts/processes and blocks unauthorized executables or scripts, with no in-guest agents; (3) MFA built into the ESX SSH login path (password plus a time-based one-time code tied to a separate identity), aimed at stolen root credentials. Supports ESX 8.x and later. The release states no GA date or pricing.",
+          "why_it_matters": "Hypervisor compromise is the nightmare scenario in every VCF shop, and Broadcom is now selling prevention at that layer instead of just patching cadence. Strong renewal-defense material for VCF accounts worried about patch windows and root-credential theft. Caveats for discovery: availability and licensing were not in the announcement \u2014 do not quote it as GA or bundled until Broadcom confirms \u2014 and it only covers ESX 8.x+, so older hosts are out.",
+          "url": "https://www.tradingview.com/news/globenewswire:6de501136094b:0-broadcom-introduces-vmware-hyperarmor-expanding-hypervisor-security-and-protections-for-vmware-cloud-foundation/",
+          "tag": "launch",
+          "published": "2026-10-13"
+        },
+        {
+          "vendor": "Palo Alto Networks",
+          "title": "CVE-2026-0257 GlobalProtect auth bypass still being exploited by ransomware \u2014 Qilin and Settra named",
+          "summary": "ReliaQuest warned (reported Oct 12) that ransomware operations Qilin and Settra are actively exploiting CVE-2026-0257, the GlobalProtect / Prisma Access authentication-bypass flaw Palo Alto Networks disclosed May 13 (vendor CVSS 7.8, NVD 9.1; CISA KEV since May 29). Attackers forge authentication-override cookies to open unauthorized VPN sessions that look like legitimate remote work, then deploy Cobalt Strike, BloodHound and SharpHound for credential theft and lateral movement. ReliaQuest assesses exploitation is highly likely to continue for the next three months. Guidance: upgrade affected PAN-OS/Prisma Access deployments, disable authentication override cookies where not required, terminate all active GlobalProtect sessions after patching, and hunt for unexpected sessions \u2014 patching alone may not evict access established earlier.",
+          "why_it_matters": "Five months after fixes shipped, unpatched GlobalProtect is still a live ransomware entry point \u2014 this is a concrete, named-threat reason to call every PANW customer this week and verify patch level, auth-override configuration, and session termination, not just 'are you patched?' It is also services work: a GlobalProtect health/ exposure check is an easy, defensible engagement to propose.",
+          "url": "https://www.infosecurity-magazine.com/news/palo-alto-vpn-vulnerability-target/",
+          "tag": "cve",
+          "published": "2026-10-12"
+        }
+      ]
+    },
+    {
       "date": "2026-10-12",
       "items": [
         {
