@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-14
+- Morning briefing: 4 items (Fortinet, Palo Alto Networks, NVIDIA, HPE). Archive updated.
+
 ## 2026-10-13
 - Morning briefing: 3 items (Cisco, VMware by Broadcom, Palo Alto Networks). Archive updated.
 
