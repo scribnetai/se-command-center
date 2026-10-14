@@ -1,37 +1,55 @@
 {
-  "date": "2026-10-13",
-  "updated_at": "2026-10-13T07:15:00-04:00",
+  "date": "2026-10-14",
+  "updated_at": "2026-10-14T07:15:00-04:00",
   "items": [
     {
-      "vendor": "Cisco",
-      "title": "OCP 2026: 51.2T P200 systems in production, new G302 1.6T silicon, USFP optics spec with NVIDIA",
-      "summary": "At OCP Global Summit on Oct 12, Cisco said its 51.2T Silicon One P200 systems are now deployed in production at leading hyperscalers (Microsoft and Alibaba named), introduced Scale-Across \u2014 P200 systems plus coherent optics tying AI fabrics across sites into one cluster \u2014 and expanded Silicon One with G302: 51.2T top-of-rack switching silicon with 200G SerDes, 102.4T capacity and Cisco 1.6T optics, planned to ship before end of 2026. First G300-powered systems are already shipping. With NVIDIA, Cisco will develop USFP, an open 400G-per-lane pluggable optics specification claiming 4x the bandwidth density of 200G-per-lane optics. Cisco also announced the 8001, a Silicon One A100-powered out-of-band management system running SONiC.",
-      "why_it_matters": "This is Cisco's AI-fabric pitch moving from roadmap to production proof points \u2014 useful against Arista and NVIDIA Spectrum-X in hyperscaler, neocloud, and large enterprise AI builds. Watch the dates: G302 is a ship-by-year-end promise, USFP is a spec project not a product, and Scale-Across matters only to customers actually running multi-site AI jobs. In enterprise deals, the SONiC/Nexus One and 8001 management story is the more immediately sellable piece.",
-      "url": "https://crweworld.com/article/news-provided-by-pr-newswire/3926336/cisco-advances-scalability-and-openness-at-ocp-2026",
-      "tag": "launch",
-      "published": "2026-10-12"
-    },
-    {
-      "vendor": "VMware by Broadcom",
-      "title": "VMware HyperArmor introduced \u2014 hypervisor-layer protection for VCF / ESX 8.x+",
-      "summary": "Broadcom introduced VMware HyperArmor on Oct 13, a new software solution protecting the ESX hypervisor in VMware Cloud Foundation. Three pieces: (1) host-layer virtual patching that blocks attempted malicious actions on ESX hosts without host reboots or software upgrades, complementing vDefend's network-layer virtual patching; (2) a positive 'known-good' security baseline \u2014 HyperArmor inventories host scripts/processes and blocks unauthorized executables or scripts, with no in-guest agents; (3) MFA built into the ESX SSH login path (password plus a time-based one-time code tied to a separate identity), aimed at stolen root credentials. Supports ESX 8.x and later. The release states no GA date or pricing.",
-      "why_it_matters": "Hypervisor compromise is the nightmare scenario in every VCF shop, and Broadcom is now selling prevention at that layer instead of just patching cadence. Strong renewal-defense material for VCF accounts worried about patch windows and root-credential theft. Caveats for discovery: availability and licensing were not in the announcement \u2014 do not quote it as GA or bundled until Broadcom confirms \u2014 and it only covers ESX 8.x+, so older hosts are out.",
-      "url": "https://www.tradingview.com/news/globenewswire:6de501136094b:0-broadcom-introduces-vmware-hyperarmor-expanding-hypervisor-security-and-protections-for-vmware-cloud-foundation/",
-      "tag": "launch",
+      "vendor": "Fortinet",
+      "title": "Critical FortiSandbox auth bypass CVE-2026-107656 (CVSS 9.6) patched Oct 13",
+      "summary": "Fortinet advisory FG-IR-26-185, published October 13, covers an authentication bypass in the FortiSandbox GUI that lets an unauthenticated remote attacker execute unauthorized code or commands via crafted HTTP requests. FortiSandbox 5.0.0-5.0.6 and PaaS 5.0 need 5.0.7+, 4.4.0-4.4.9 needs 4.4.10+, PaaS 4.4 must migrate to a fixed release; 5.2 is not affected. The fix was part of a broader October 13 Fortinet batch also covering FortiSIEM and other products.",
+      "why_it_matters": "Any customer running FortiSandbox for malware detonation has a critical, unauthenticated flaw in a security appliance itself \u2014 no workaround or virtual patch, upgrade is the only path. Use it for an immediate inventory-and-patch conversation, and to check management-interface exposure.",
+      "url": "https://gbhackers.com/critical-fortisandbox-vulnerability/",
+      "tag": "cve",
       "published": "2026-10-13"
     },
     {
       "vendor": "Palo Alto Networks",
-      "title": "CVE-2026-0257 GlobalProtect auth bypass still being exploited by ransomware \u2014 Qilin and Settra named",
-      "summary": "ReliaQuest warned (reported Oct 12) that ransomware operations Qilin and Settra are actively exploiting CVE-2026-0257, the GlobalProtect / Prisma Access authentication-bypass flaw Palo Alto Networks disclosed May 13 (vendor CVSS 7.8, NVD 9.1; CISA KEV since May 29). Attackers forge authentication-override cookies to open unauthorized VPN sessions that look like legitimate remote work, then deploy Cobalt Strike, BloodHound and SharpHound for credential theft and lateral movement. ReliaQuest assesses exploitation is highly likely to continue for the next three months. Guidance: upgrade affected PAN-OS/Prisma Access deployments, disable authentication override cookies where not required, terminate all active GlobalProtect sessions after patching, and hunt for unexpected sessions \u2014 patching alone may not evict access established earlier.",
-      "why_it_matters": "Five months after fixes shipped, unpatched GlobalProtect is still a live ransomware entry point \u2014 this is a concrete, named-threat reason to call every PANW customer this week and verify patch level, auth-override configuration, and session termination, not just 'are you patched?' It is also services work: a GlobalProtect health/ exposure check is an easy, defensible engagement to propose.",
-      "url": "https://www.infosecurity-magazine.com/news/palo-alto-vpn-vulnerability-target/",
-      "tag": "cve",
-      "published": "2026-10-12"
+      "title": "Palo Alto Networks details NHS England Secure Boundary role \u2014 2M computers",
+      "summary": "Palo Alto Networks said October 13 it will deliver cloud-based perimeter security through the next iteration of NHS England's Secure Boundary programme, with IBM leading migration and onboarding. The nationally funded service is described as covering more than 1.5 million staff, over 200 trusts, 55,000 organisations holding health data and 2 million computers, with AI-enabled detection and a goal of cyber resilience across UK health and social care by 2030.",
+      "why_it_matters": "A large, centrally funded reference for cloud-delivered perimeter consolidation in healthcare \u2014 useful proof point when a customer wants to retire local firewalls and overlapping tools, and a template for 'defend as one' national/regional health pitches.",
+      "url": "https://www.paloaltonetworks.com/blog/2026/10/nhs-england-evolves-its-cybersecurity-strategy-with-palo-alto-networks/",
+      "tag": "competitive",
+      "published": "2026-10-13"
+    },
+    {
+      "vendor": "Cisco",
+      "title": "Cisco and NVIDIA propose USFP pluggable optics \u2014 4x density, roadmap only",
+      "summary": "Cisco and NVIDIA published plans October 12, reported October 13, for USFP (Ultra-Dense Small Form Factor Pluggable): 400 Gb/s per lane, an initial 16-lane design at 6.4 Tb/s in a footprint comparable to today's 1.6T OSFP modules, with a path to 12.8 Tb/s and about 1.3x better power per bit. It is a design target, not a shipping product \u2014 no ship date, and it requires new cages and ports, so it is not a drop-in OSFP replacement.",
+      "why_it_matters": "Signals where AI fabric optics are heading for 2027-28 planning. Do not let it pause current 1.6T purchases, but do ask vendors about cage/switch roadmaps and second-source commitments (TE Connectivity, Amphenol) on any large AI networking deal.",
+      "url": "https://www.shashi.co/2026/10/cisco-and-nvidia-plan-plug-that-moves.html",
+      "tag": "launch",
+      "published": "2026-10-13"
+    },
+    {
+      "vendor": "NVIDIA",
+      "title": "NVIDIA contributes Vera Rubin rack designs and MGX 1.2 to OCP",
+      "summary": "At the OCP Global Summit, NVIDIA said October 12 it is contributing Vera Rubin rack and compute-tray designs plus an MGX 1.2 specification to the Open Compute Project, covering racks up to 250 kW, with rack-scale liquid cooling, a liquid-cooled busbar and 19-inch support, plus a separate Vera CPU rack design for agentic workloads. No release dates or licence terms were stated for most items.",
+      "why_it_matters": "Open rack/power/cooling specs shape what Dell, HPE and other OEMs can build around Vera Rubin \u2014 relevant to AI factory facility planning (power, cooling, busbar) long before servers ship. Treat vendor efficiency claims as claims until specs and licences publish.",
+      "url": "https://deyronlabs.com/en/news/nvidia-opens-vera-rubin-designs-ocp-2026/",
+      "tag": "launch",
+      "published": "2026-10-13"
+    },
+    {
+      "vendor": "HPE",
+      "title": "HPE pitches open, heterogeneous AI data centers at OCP Global Summit",
+      "summary": "HPE outlined October 12-13 at the OCP Global Summit an open and heterogeneous approach to AI data centers spanning compute, networking and large-scale infrastructure, with a keynote October 13 and emphasis on its direct-liquid-cooling experience. No new shipping product or pricing was announced in the coverage.",
+      "why_it_matters": "Useful positioning contrast in AI infrastructure deals: HPE is leaning on openness/heterogeneity versus more integrated stacks. Press for specifics \u2014 which OCP contributions, which GPUs/networking are actually orderable \u2014 before treating it as more than roadmap messaging.",
+      "url": "https://www.ad-hoc-news.de/boerse/vorboerse/hpe-highlights-open-ai-data-center-strategy-stock-pre-market-at-eur-62-13/70309351",
+      "tag": "launch",
+      "published": "2026-10-13"
     }
   ],
   "prompt_of_the_day": {
     "category": "Customer outreach",
-    "prompt": "Draft a short outreach email to my Palo Alto Networks customers about CVE-2026-0257, the GlobalProtect and Prisma Access authentication-bypass flaw (disclosed May 13, 2026; vendor CVSS 7.8, NVD 9.1; on CISA's KEV list since May 29). ReliaQuest now reports ransomware groups Qilin and Settra are actively exploiting it to open unauthorized VPN sessions using forged authentication-override cookies, then using Cobalt Strike, BloodHound and SharpHound for lateral movement. Include: (1) why patching alone is not enough \u2014 active GlobalProtect sessions must be terminated after upgrading and unexpected sessions investigated, (2) the mitigation to disable authentication override cookies where they are not required, and (3) a low-pressure offer of a 30-minute GlobalProtect patch and configuration check this week. Keep it under 180 words, technical and direct, no fear-mongering."
+    "prompt": "Draft a short, non-alarmist customer outreach email about Fortinet advisory FG-IR-26-185 (CVE-2026-107656, CVSS 9.6, published Oct 13, 2026): an unauthenticated authentication bypass in the FortiSandbox GUI that can allow unauthorized code/command execution. Note affected versions (FortiSandbox 5.0.0-5.0.6 -> upgrade to 5.0.7+, 4.4.0-4.4.9 -> 4.4.10+, FortiSandbox PaaS 4.4 -> migrate to a fixed release; 5.2 not affected), that there is no workaround or virtual patch, and offer a 15-minute inventory check of their FortiSandbox version and management-interface exposure plus a patch window. Keep it under 150 words, include a clear subject line, and do not claim active exploitation \u2014 Fortinet said it was not known to be exploited at publication."
   }
 }
