@@ -21,15 +21,6 @@
       "published": "2026-10-13"
     },
     {
-      "vendor": "Cisco",
-      "title": "Cisco and NVIDIA propose USFP pluggable optics \u2014 4x density, roadmap only",
-      "summary": "Cisco and NVIDIA published plans October 12, reported October 13, for USFP (Ultra-Dense Small Form Factor Pluggable): 400 Gb/s per lane, an initial 16-lane design at 6.4 Tb/s in a footprint comparable to today's 1.6T OSFP modules, with a path to 12.8 Tb/s and about 1.3x better power per bit. It is a design target, not a shipping product \u2014 no ship date, and it requires new cages and ports, so it is not a drop-in OSFP replacement.",
-      "why_it_matters": "Signals where AI fabric optics are heading for 2027-28 planning. Do not let it pause current 1.6T purchases, but do ask vendors about cage/switch roadmaps and second-source commitments (TE Connectivity, Amphenol) on any large AI networking deal.",
-      "url": "https://www.shashi.co/2026/10/cisco-and-nvidia-plan-plug-that-moves.html",
-      "tag": "launch",
-      "published": "2026-10-13"
-    },
-    {
       "vendor": "NVIDIA",
       "title": "NVIDIA contributes Vera Rubin rack designs and MGX 1.2 to OCP",
       "summary": "At the OCP Global Summit, NVIDIA said October 12 it is contributing Vera Rubin rack and compute-tray designs plus an MGX 1.2 specification to the Open Compute Project, covering racks up to 250 kW, with rack-scale liquid cooling, a liquid-cooled busbar and 19-inch support, plus a separate Vera CPU rack design for agentic workloads. No release dates or licence terms were stated for most items.",
