@@ -1,6 +1,47 @@
 {
   "days": [
     {
+      "date": "2026-10-14",
+      "items": [
+        {
+          "vendor": "Fortinet",
+          "title": "Critical FortiSandbox auth bypass CVE-2026-107656 (CVSS 9.6) patched Oct 13",
+          "summary": "Fortinet advisory FG-IR-26-185, published October 13, covers an authentication bypass in the FortiSandbox GUI that lets an unauthenticated remote attacker execute unauthorized code or commands via crafted HTTP requests. FortiSandbox 5.0.0-5.0.6 and PaaS 5.0 need 5.0.7+, 4.4.0-4.4.9 needs 4.4.10+, PaaS 4.4 must migrate to a fixed release; 5.2 is not affected. The fix was part of a broader October 13 Fortinet batch also covering FortiSIEM and other products.",
+          "why_it_matters": "Any customer running FortiSandbox for malware detonation has a critical, unauthenticated flaw in a security appliance itself \u2014 no workaround or virtual patch, upgrade is the only path. Use it for an immediate inventory-and-patch conversation, and to check management-interface exposure.",
+          "url": "https://gbhackers.com/critical-fortisandbox-vulnerability/",
+          "tag": "cve",
+          "published": "2026-10-13"
+        },
+        {
+          "vendor": "Palo Alto Networks",
+          "title": "Palo Alto Networks details NHS England Secure Boundary role \u2014 2M computers",
+          "summary": "Palo Alto Networks said October 13 it will deliver cloud-based perimeter security through the next iteration of NHS England's Secure Boundary programme, with IBM leading migration and onboarding. The nationally funded service is described as covering more than 1.5 million staff, over 200 trusts, 55,000 organisations holding health data and 2 million computers, with AI-enabled detection and a goal of cyber resilience across UK health and social care by 2030.",
+          "why_it_matters": "A large, centrally funded reference for cloud-delivered perimeter consolidation in healthcare \u2014 useful proof point when a customer wants to retire local firewalls and overlapping tools, and a template for 'defend as one' national/regional health pitches.",
+          "url": "https://www.paloaltonetworks.com/blog/2026/10/nhs-england-evolves-its-cybersecurity-strategy-with-palo-alto-networks/",
+          "tag": "competitive",
+          "published": "2026-10-13"
+        },
+        {
+          "vendor": "NVIDIA",
+          "title": "NVIDIA contributes Vera Rubin rack designs and MGX 1.2 to OCP",
+          "summary": "At the OCP Global Summit, NVIDIA said October 12 it is contributing Vera Rubin rack and compute-tray designs plus an MGX 1.2 specification to the Open Compute Project, covering racks up to 250 kW, with rack-scale liquid cooling, a liquid-cooled busbar and 19-inch support, plus a separate Vera CPU rack design for agentic workloads. No release dates or licence terms were stated for most items.",
+          "why_it_matters": "Open rack/power/cooling specs shape what Dell, HPE and other OEMs can build around Vera Rubin \u2014 relevant to AI factory facility planning (power, cooling, busbar) long before servers ship. Treat vendor efficiency claims as claims until specs and licences publish.",
+          "url": "https://deyronlabs.com/en/news/nvidia-opens-vera-rubin-designs-ocp-2026/",
+          "tag": "launch",
+          "published": "2026-10-13"
+        },
+        {
+          "vendor": "HPE",
+          "title": "HPE pitches open, heterogeneous AI data centers at OCP Global Summit",
+          "summary": "HPE outlined October 12-13 at the OCP Global Summit an open and heterogeneous approach to AI data centers spanning compute, networking and large-scale infrastructure, with a keynote October 13 and emphasis on its direct-liquid-cooling experience. No new shipping product or pricing was announced in the coverage.",
+          "why_it_matters": "Useful positioning contrast in AI infrastructure deals: HPE is leaning on openness/heterogeneity versus more integrated stacks. Press for specifics \u2014 which OCP contributions, which GPUs/networking are actually orderable \u2014 before treating it as more than roadmap messaging.",
+          "url": "https://www.ad-hoc-news.de/boerse/vorboerse/hpe-highlights-open-ai-data-center-strategy-stock-pre-market-at-eur-62-13/70309351",
+          "tag": "launch",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
       "date": "2026-10-13",
       "items": [
         {
