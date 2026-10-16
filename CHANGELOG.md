@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-16
+- Morning briefing: 3 items (Cisco, Palo Alto Networks, Everpure). Archive updated.
+
 ## 2026-10-15
 - Morning briefing: 4 items (Cisco, VMware by Broadcom, Dell Technologies, Fortinet). Archive updated.
 
