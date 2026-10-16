@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-10-16",
+    "items": [
+      {
+        "vendor": "Cisco",
+        "title": "Actively exploited Secure Email Gateway flaw CVE-2026-76519 (CVSS 9.8) grants root via crafted attachment",
+        "summary": "Cisco updated its September hardening advisory on Oct 14 to confirm in-the-wild exploitation of CVE-2026-76519, a path-traversal flaw in the AMP File Reputation feature of Secure Email Gateway. A crafted email attachment can write arbitrary files and execute commands as root with no authentication or user interaction, on Content Scanner Tools before 25.3.0.5525. Fixes shipped Sept 14 in AsyncOS 15.5.5-014 and 16.5.0-780; CISA added it to KEV with an Oct 17 federal deadline, and Cisco urges compromise checks, including rebuilding compromised virtual appliances from scratch and rotating credentials and keys.",
+        "why_it_matters": "Second exploited SEG root flaw since mid-September \u2014 any customer running an unpatched gateway should be treated as patch-plus-investigate, not patch-only. Immediate outreach trigger for Cisco email security estates.",
+        "url": "https://www.securityweek.com/cisco-warns-of-exploited-secure-email-gateway-vulnerability/",
+        "tag": "cve",
+        "published": "2026-10-15"
+      },
+      {
+        "vendor": "Palo Alto Networks",
+        "title": "PAN-OS authenticated RCE CVE-2026-0322 (CVSS 8.6) patched amid very limited active exploitation",
+        "summary": "Palo Alto Networks issued updates Oct 14-15 for CVE-2026-0322, a code-injection RCE in the PAN-OS management interface that lets an authenticated attacker with network access run arbitrary code as root. It affects PA-Series and VM-Series firewalls and Panorama (virtual and M-Series) across the 10.2, 11.1, 11.2, 12.1 and 12.2 branches; Cloud NGFW and Prisma Access are not affected. Fixed releases include PAN-OS 12.2.4 and branch hotfixes, the vendor reports very limited exploitation, and CISA KEV mitigation is due Oct 17.",
+        "why_it_matters": "Authenticated plus management-plane exposure is the risk \u2014 customers with internet-reachable management interfaces are the priority. Use it to push patching plus jump-box-only management access, not just the hotfix.",
+        "url": "http://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html",
+        "tag": "cve",
+        "published": "2026-10-15"
+      },
+      {
+        "vendor": "Everpure",
+        "title": "IDC 1Q26 storage standings: Dell widens lead, Everpure moves into third on 37.9% growth",
+        "summary": "New external storage market standings reported Oct 15 for 1Q26 put Dell Technologies first with 31.2% revenue share and 40.8% year-on-year growth, NetApp second at 9.9%, and Everpure third at 8.9% with 37.9% growth attributed to subscription adoption and AI-optimised platforms. HPE rounded out the top five at 5.4%.",
+        "why_it_matters": "Useful competitive context for storage deals: Dell's AI attach story is widening its lead, while Everpure's subscription-led growth is now podium-level \u2014 expect both narratives in head-to-head bake-offs and price accordingly.",
+        "url": "https://channelwise.co.za/enterprise-storage-shakes-off-its-slump/",
+        "tag": "competitive",
+        "published": "2026-10-15"
+      }
+    ]
+  },
+  {
     "date": "2026-10-15",
     "items": [
       {
