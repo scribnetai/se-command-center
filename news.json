@@ -1,46 +1,37 @@
 {
-  "date": "2026-10-15",
-  "updated_at": "2026-10-15T07:15:00-04:00",
+  "date": "2026-10-16",
+  "updated_at": "2026-10-16T07:15:00-04:00",
   "items": [
     {
       "vendor": "Cisco",
-      "title": "Secure Email Gateway CVE-2026-76519 (CVSS 9.8) actively exploited; CISA KEV, deadline Oct 17",
-      "summary": "Cisco warned on October 14 that CVE-2026-76519 in Secure Email Gateway is being actively exploited. The flaw is in the AMP file-reputation handling of email attachments when Content Scanner Tools is older than 25.3.0.5525: a crafted attachment can let an unauthenticated remote attacker write arbitrary files and run commands as root. There is no workaround; fixed AsyncOS releases and an updated Content Scanner package are the remediation, and Cisco published IoCs for hunting. CISA added it to the KEV catalog with an October 17 federal patch deadline. It is the second Secure Email Gateway flaw exploited in the wild since mid-September.",
-      "why_it_matters": "This is an urgent, not theoretical, patch conversation for any SEG customer: check the AMP/file-reputation and Content Scanner version today, hunt with the IoCs and off-box logs (attackers can hide evidence on the appliance), and for virtual appliances Cisco's guidance leans toward rebuilding on a fixed release and rotating credentials if compromise is suspected.",
+      "title": "Actively exploited Secure Email Gateway flaw CVE-2026-76519 (CVSS 9.8) grants root via crafted attachment",
+      "summary": "Cisco updated its September hardening advisory on Oct 14 to confirm in-the-wild exploitation of CVE-2026-76519, a path-traversal flaw in the AMP File Reputation feature of Secure Email Gateway. A crafted email attachment can write arbitrary files and execute commands as root with no authentication or user interaction, on Content Scanner Tools before 25.3.0.5525. Fixes shipped Sept 14 in AsyncOS 15.5.5-014 and 16.5.0-780; CISA added it to KEV with an Oct 17 federal deadline, and Cisco urges compromise checks, including rebuilding compromised virtual appliances from scratch and rotating credentials and keys.",
+      "why_it_matters": "Second exploited SEG root flaw since mid-September \u2014 any customer running an unpatched gateway should be treated as patch-plus-investigate, not patch-only. Immediate outreach trigger for Cisco email security estates.",
       "url": "https://www.securityweek.com/cisco-warns-of-exploited-secure-email-gateway-vulnerability/",
       "tag": "cve",
-      "published": "2026-10-14"
+      "published": "2026-10-15"
     },
     {
-      "vendor": "VMware by Broadcom",
-      "title": "VMware HyperArmor announced for VCF: ESX virtual patching, known-good allowlisting, SSH MFA (add-on, expected Q1 FY27)",
-      "summary": "Broadcom announced VMware HyperArmor on October 13 as an add-on for the ESX hypervisor in VMware Cloud Foundation, supporting ESX 8.x and later. TechTarget reports it is expected to ship in Q1 of Broadcom's fiscal 2027 (which starts in November), at an undisclosed add-on price. The package combines virtual patching that blocks exploit attempts without host reboots or in-guest agents, a known-good execution baseline that blocks unapproved processes/scripts on the host, and MFA for SSH logins to ESX hosts. It sits alongside vDefend, which already does virtual patching at the network layer.",
-      "why_it_matters": "A real VCF renewal-defense story where ESX patch windows and stolen root credentials hurt \u2014 but it is announced, not GA, and it is a paid add-on, so do not quote it as bundled. The SE angle cuts both ways: analysts are already asking whether host MFA belongs in the core platform, which is a fair question to put to Broadcom on the customer's behalf. Note the battlecard row for this already landed on Oct 13.",
-      "url": "https://www.techtarget.com/it-infrastructure/news/366651928/Broadcom-armors-VMware-ESX-hypervisor-with-virtual-patching",
-      "tag": "launch",
-      "published": "2026-10-13"
+      "vendor": "Palo Alto Networks",
+      "title": "PAN-OS authenticated RCE CVE-2026-0322 (CVSS 8.6) patched amid very limited active exploitation",
+      "summary": "Palo Alto Networks issued updates Oct 14-15 for CVE-2026-0322, a code-injection RCE in the PAN-OS management interface that lets an authenticated attacker with network access run arbitrary code as root. It affects PA-Series and VM-Series firewalls and Panorama (virtual and M-Series) across the 10.2, 11.1, 11.2, 12.1 and 12.2 branches; Cloud NGFW and Prisma Access are not affected. Fixed releases include PAN-OS 12.2.4 and branch hotfixes, the vendor reports very limited exploitation, and CISA KEV mitigation is due Oct 17.",
+      "why_it_matters": "Authenticated plus management-plane exposure is the risk \u2014 customers with internet-reachable management interfaces are the priority. Use it to push patching plus jump-box-only management access, not just the hotfix.",
+      "url": "http://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html",
+      "tag": "cve",
+      "published": "2026-10-15"
     },
     {
-      "vendor": "Dell Technologies",
-      "title": "Honeywell Forge Cognition launches on Dell AI infrastructure + NVIDIA models for facility digital twins",
-      "summary": "Honeywell launched Forge Cognition on October 14, a platform that simulates facility operations and coordinates autonomous actions using digital twins and AI agents. It was built with NVIDIA open AI models running on Dell Technologies AI infrastructure. Honeywell is piloting it at its Richardson, Texas and Bangalore sites and at NVIDIA's Voyager campus, with planned use at Vanderbilt University, a Dubai hotel, and a Singapore mall.",
-      "why_it_matters": "A concrete physical-AI reference story Dell can attach to: AI infrastructure sold into buildings/facilities operations, not just model training. Useful for Dell AI Factory conversations with customers whose AI use case is operations and facilities \u2014 and a reminder to qualify where Dell is the infrastructure layer versus the application layer (here, Honeywell owns the app).",
-      "url": "https://www.morningstar.com/news/dow-jones/202610146070/honeywell-rolls-out-ai-facility-simulation-platform-with-nvidia-dell",
-      "tag": "launch",
-      "published": "2026-10-14"
-    },
-    {
-      "vendor": "Fortinet",
-      "title": "Atos expands Fortinet partnership from country-led to a global resell + managed-security framework",
-      "summary": "Atos announced on October 14 that its longstanding Fortinet partnership moves from a country-led model to a global engagement covering reselling and managed cybersecurity services, with aligned joint business development, delivery, and commercial terms. The framework targets hybrid and multi-cloud environments and leans on Atos's managed security operation (17 SOCs, 2,000+ customers cited by Atos) wrapped around Fortinet technology including Secure Networking, Unified SASE, and AI-driven security operations.",
-      "why_it_matters": "Fortinet gains a scaled global MSSP/integrator route \u2014 relevant when a Fortinet deal is really a managed-services deal, and a competitive signal versus Palo Alto platform pitches in global accounts. For a VAR SE, the differentiation question sharpens: if Atos can wrap Fortinet globally, your services wrap has to be visibly local, faster, or deeper.",
-      "url": "https://www.globenewswire.com/news-release/2026/10/14/3380365/0/en/atos-expands-partnership-with-fortinet-to-deliver-a-global-unified-cybersecurity-framework-across-hybrid-and-multi-cloud-environments.html",
+      "vendor": "Everpure",
+      "title": "IDC 1Q26 storage standings: Dell widens lead, Everpure moves into third on 37.9% growth",
+      "summary": "New external storage market standings reported Oct 15 for 1Q26 put Dell Technologies first with 31.2% revenue share and 40.8% year-on-year growth, NetApp second at 9.9%, and Everpure third at 8.9% with 37.9% growth attributed to subscription adoption and AI-optimised platforms. HPE rounded out the top five at 5.4%.",
+      "why_it_matters": "Useful competitive context for storage deals: Dell's AI attach story is widening its lead, while Everpure's subscription-led growth is now podium-level \u2014 expect both narratives in head-to-head bake-offs and price accordingly.",
+      "url": "https://channelwise.co.za/enterprise-storage-shakes-off-its-slump/",
       "tag": "competitive",
-      "published": "2026-10-14"
+      "published": "2026-10-15"
     }
   ],
   "prompt_of_the_day": {
     "category": "Customer outreach",
-    "prompt": "Draft a short customer outreach email plus a 5-point hunt checklist about Cisco CVE-2026-76519 (CVSS 9.8, disclosed as actively exploited on Oct 14, 2026; CISA KEV with an Oct 17 federal deadline). Facts to include: the flaw is in Cisco Secure Email Gateway's AMP file-reputation handling of email attachments when Content Scanner Tools is older than 25.3.0.5525; a crafted attachment can allow an unauthenticated attacker to write arbitrary files and execute commands as root; there is no workaround, so the fix is a patched AsyncOS release plus the updated Content Scanner package. Checklist items: confirm SEG version and Content Scanner version, check whether file reputation is enabled and assigned to a mail policy, review off-appliance network/firewall logs for unexpected external uploads/downloads, run Cisco's published IoCs, and open a TAC case if compromise is suspected (for virtual appliances, plan a rebuild on a fixed release and credential rotation). Keep the email under 150 words, urgent but not alarmist, with a clear subject line and an offer of a 15-minute inventory call today."
+    "prompt": "Draft a short, urgent-but-calm customer email about two actively exploited flaws with an Oct 17, 2026 CISA KEV deadline: (1) Cisco Secure Email Gateway CVE-2026-76519, CVSS 9.8, unauthenticated root via a crafted attachment in the AMP File Reputation feature, fixed in AsyncOS 15.5.5-014 / 16.5.0-780, where Cisco recommends compromise checks and rebuilding compromised virtual appliances; and (2) Palo Alto Networks PAN-OS CVE-2026-0322, CVSS 8.6, authenticated management-interface RCE as root, fixed in PAN-OS 12.2.4 and branch hotfixes, mitigated by restricting management access to a jump box. Ask the customer to confirm current versions today and offer a 15-minute triage call. No FUD, no product pitch."
   }
 }
