@@ -1,4 +1,6 @@
 # Changelog
+## 2026-10-19
+- Morning briefing: 4 items (Fortinet, BeyondTrust, Nutanix, HPE). Archive updated.
 
 ## 2026-10-16
 - Morning briefing: 3 items (Cisco, Palo Alto Networks, Everpure). Archive updated.
