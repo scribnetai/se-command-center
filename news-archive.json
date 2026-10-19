@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-10-19",
+    "items": [
+      {
+        "vendor": "Fortinet",
+        "title": "FortiOS flaw CVE-2025-61624 hits CISA KEV deadline today \u2014 PEERSTITCH implant bypasses VPN checks",
+        "summary": "CISA added CVE-2025-61624, a CLI path-traversal flaw in FortiOS, FortiPAM, FortiProxy and FortiSwitchManager, to the KEV catalog on Oct 16 with a federal remediation deadline of today, Oct 19. Palo Alto Networks Unit 42 reported the flaw was chained after a FortiManager FortiJump (CVE-2024-47575) compromise that exposed configs and credentials for 500+ managed FortiGates, letting attackers escape the restricted admin CLI via system.auto-script, reach root, and deploy PEERSTITCH \u2014 a memory-resident implant that hooks the miglogd and iked daemons to bypass security checks on tagged VPN sessions, leaving no file on disk and no open ports.",
+        "why_it_matters": "The medium CVSS (6.0) understates the risk: with stolen admin creds the chain ends in root on the firewall. Any customer on FortiOS 7.6.0-7.6.4, 7.4.0-7.4.9 or older branches needs 7.6.5 / 7.4.10 or a migration to a fixed release, plus forensic triage for rogue admins, auto-scripts and cleared logs \u2014 a patch-and-hunt services conversation you can open today.",
+        "url": "https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html",
+        "tag": "cve",
+        "published": "2026-10-16"
+      },
+      {
+        "vendor": "BeyondTrust",
+        "title": "BeyondTrust Remote Support zero-day CVE-2026-102764 \u2014 KEV remediation also due today",
+        "summary": "BeyondTrust disclosed CVE-2026-102764 (CVSS 9.3) on Oct 15, an improper origin-validation flaw in Remote Support (through 26.2.3) that lets an unauthenticated remote attacker perform file operations on the appliance. Google Threat Intelligence Group and Mandiant attribute exploitation as a zero-day since Aug 29 to ARMORY CASTLE (UNC5221 / Warp Panda), who planted the SAWFLY web shell, created a SUID root shell, dumped the appliance secrets vault and tunneled through HAProxy. CISA added it to KEV on Oct 16 with an Oct 19 due date. SaaS tenants were patched Oct 9; self-hosted appliances need the BT26-05-RS patch, and Privileged Remote Access got a precautionary patch for shared code.",
+        "why_it_matters": "Remote Support is the front door into customer estates \u2014 a compromised appliance means Jump Item access to downstream systems. Self-hosted customers on 24.3.1-26.2.3 must confirm BT26-05-RS is applied today (older versions upgrade first), and any internet-exposed appliance during the August-October window should be treated as potentially compromised: hunt for the SUID binary and bt-secrets usage, rotate credentials.",
+        "url": "https://breach-signal.com/threat-actors/beyondtrust-zero-day-cve-2026-102764-armory-castle/",
+        "tag": "cve",
+        "published": "2026-10-18"
+      },
+      {
+        "vendor": "Nutanix",
+        "title": "VMware-to-Nutanix migration field report: Broadcom pulled a migration component mid-project, Nutanix Move worked around it",
+        "summary": "Service provider Strategix published a detailed account today of moving its own multi-tenant production cloud from VMware to Nutanix AHV after Broadcom ended its VCSP partner programme access and moved to per-core-everywhere licensing. Mid-migration, Broadcom withdrew public access to a component the standard migration tooling relied on; Nutanix responded with a new Move method that does not need it, which changed the network design. Sizing on a year of real usage instead of allocated capacity cut the server count by roughly two-thirds, and switching from mixed-use to read-intensive drives cut the first hardware block's list price by 48%.",
+        "why_it_matters": "A citable, non-vendor field report for VMware exit conversations: the hypervisor swap is the easy part \u2014 backup jobs, firewall rules, monitoring and hardware-tied licences are the project. Use its three rules in discovery: validate your own estate data twice, cost the whole migration not the licence, and decide who runs the platform on day one before choosing it.",
+        "url": "https://www.itweb.co.za/article/customer-zero-what-we-are-learning-moving-our-own-cloud-from-vmware-to-nutanix/JBwErvn3EPe76Db2",
+        "tag": "competitive",
+        "published": "2026-10-19"
+      },
+      {
+        "vendor": "HPE",
+        "title": "HPE pushes refurbished Juniper gear and recertified GPUs through its Technology Renewal Centers as AI supply crunch bites",
+        "summary": "Reporting from HPE's Erskine, Scotland Technology Renewal Center today: HPE Financial Services says the Juniper acquisition opens 'new and untapped ground' for its upcycle business, with a 'significant' Juniper pipeline as customers re-evaluate budgets against rising memory costs and higher VMware pricing. The TRCs processed 4.3 million assets in 2025, recertify and re-warrant NVIDIA, AMD and Intel GPUs, and have returned $1.25B to customer IT budgets since 2021. HPE is explicitly pitching refurbished, re-warranted kit to mid-market and local government buyers being priced out of new hardware.",
+        "why_it_matters": "A budget-relief lever for stalled deals: when a customer's AI or network refresh dies on capex, HPEFS upcycled Juniper networking and recertified GPUs are a legitimate counter \u2014 but note the flip side for your own new-hardware deals, where HPE can now discount the refurb route against you. Sweating assets longer also raises the security/support-life conversation.",
+        "url": "https://www.sdxcentral.com/news/hpe-upcycle-biz-sees-juniper-opportunity-amid-ai-refurb-surge/",
+        "tag": "promo",
+        "published": "2026-10-19"
+      }
+    ]
+  },
+  {
     "date": "2026-10-16",
     "items": [
       {
