@@ -1,4 +1,7 @@
 # Changelog
+## 2026-10-20
+- Morning briefing: 3 items (VMware by Broadcom, NVIDIA, Dell Technologies). Archive updated.
+
 ## 2026-10-19
 - Morning briefing: 4 items (Fortinet, BeyondTrust, Nutanix, HPE). Archive updated.
 
