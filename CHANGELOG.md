@@ -1,4 +1,7 @@
 # Changelog
+## 2026-10-22
+- Morning briefing: 7 items (Dell Technologies, Cisco, CrowdStrike, Fortinet, Nutanix, NVIDIA, VMware by Broadcom). Archive updated.
+
 ## 2026-10-21
 - Morning briefing: 3 items (Palo Alto Networks, NVIDIA, Fortinet). Archive updated.
 
