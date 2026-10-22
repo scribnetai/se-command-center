@@ -1,37 +1,73 @@
 {
-  "date": "2026-10-21",
-  "updated_at": "2026-10-21T07:15:00-04:00",
+  "date": "2026-10-22",
+  "updated_at": "2026-10-22T07:15:00-04:00",
   "items": [
     {
-      "vendor": "Palo Alto Networks",
-      "title": "Unit 42 update Oct 20: Qilin and INC ransomware actively exploiting PAN-OS GlobalProtect flaw CVE-2026-0257",
-      "summary": "Unit 42 updated its threat brief on October 20, saying ransomware operators Spikey Scorpius (Qilin) and Tarnished Scorpius (INC) \u2014 with separate reporting also tying in Settra \u2014 continue to exploit CVE-2026-0257 (CVSS 7.8), an authentication bypass in the GlobalProtect portal and gateway components of PAN-OS and Prisma Access that was patched in May 2026 and added to CISA's KEV catalog on May 13. Attackers abuse authentication-override cookies to establish unauthorized VPN sessions and bypass MFA, then conduct internal reconnaissance with RMM tools and move laterally via RDP and SMB, in some cases targeting virtualization and backup infrastructure. The Oct 20 update adds hunt guidance: check whether the management interface is reachable externally on ports 4443 and 3879, restrict it with Interface Management profiles, and search GlobalProtect logs for the proof-of-concept's hard-coded host values and published indicators.",
-      "why_it_matters": "This is a five-month-old patch still yielding ransomware footholds \u2014 the conversation is not 'is there a fix?' but 'are you actually on a fixed build, and was the box exposed while vulnerable?' For every Palo Alto account: confirm the fixed PAN-OS / Prisma Access build, verify the management interface is not internet-reachable, and treat any successful gateway-connected event matching the indicators as an incident, not a patch ticket. Patching alone may not clear a compromise made while exposed.",
-      "url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
-      "tag": "cve",
-      "published": "2026-10-20"
+      "vendor": "Dell Technologies",
+      "title": "Dell AI Factory with NVIDIA expands from deskside to data center",
+      "summary": "Dell announced broad Dell AI Factory with NVIDIA advancements on Oct. 21, including Deskside Agentic AI reference templates scaling from a single developer to 1,000+ systems, new validated blueprints, and AI Data Platform updates for PowerScale and ObjectScale. Dell says over 6,500 enterprises have adopted the platform.",
+      "why_it_matters": "Gives SEs a concrete on-prem agentic AI story customers control themselves. Use the 6,500-adopter proof point and deskside-to-DC continuum to counter cloud-only AI pitches and to scope PowerScale/ObjectScale into AI deals.",
+      "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1659/dell-technologies-advances-enterprise-agentic-ai-from-the-deskside-to-data-center-with-nvidia",
+      "tag": "launch",
+      "published": "2026-10-21"
     },
     {
-      "vendor": "NVIDIA",
-      "title": "NVIDIA launches OpenShell Reference Architecture for safe AI agents \u2014 now available",
-      "summary": "At GTC Berlin on October 21, NVIDIA launched the OpenShell Reference Architecture, a full-stack reference design for building, containing, observing and enforcing safe AI agents, and said it is now available. The design assigns roles by layer: Vera Rubin / Vera Rubin NVL72 for model inference, Vera CPUs for running agent harnesses and the open-source OpenShell secure runtime, and BlueField-4 DPUs running NVIDIA Sentry (built on DOCA) for out-of-band monitoring and in-silicon policy enforcement \u2014 NVIDIA says Sentry quarantines an out-of-boundary agent in milliseconds, Vera CPUs deliver 2x x86 performance, and Sentry boosts agent capacity by up to 20% (vendor claims). It runs on Canonical, SUSE and Red Hat Linux/Kubernetes, Windows via Microsoft Execution Containers, and AWS, Google Cloud and Azure. Cybersecurity vendors integrating support include CrowdStrike, Cisco, Fortinet, Palo Alto Networks and Zscaler; system builders named include Dell Technologies, HPE, Cisco, Lenovo and Supermicro; BBVA and Santander are exploring it, SAP is integrating with Joule Studio, and ServiceNow announced GA of its Arc agent enforced by OpenShell.",
-      "why_it_matters": "This turns September's Open Agent Safety Platform announcement into a buyable reference architecture with named OEM builds. For presales, the agent-governance question now has a hardware answer: if a customer is deploying agents in production, ask where enforcement lives \u2014 software-only guardrails, or DPU-level isolation on BlueField-4? It also creates a cross-vendor attach story: Dell/HPE GPU servers plus the customer's existing CrowdStrike, Palo Alto, Fortinet or Zscaler stack all claim OpenShell integration, so position it as architecture, not a rip-and-replace.",
-      "url": "https://www.globenewswire.com/news-release/2026/10/21/3385311/0/en/nvidia-launches-openshell-reference-architecture-for-safe-ai-agents.html",
+      "vendor": "Cisco",
+      "title": "Cisco Unified CM hardening fixes 9.8 CVEs, 20 CVEs total across voice, Expressway and Snort 3",
+      "summary": "Cisco published hardening advisories on Oct. 21 covering 20 CVEs. The Unified CM family advisory covers eight CVEs including CVE-2026-76473 and CVE-2026-76474 at CVSS 9.8, affecting Emergency Responder, Prime Collaboration Deployment, Unified CM, IM & Presence, Session Management Edition and Unity Connection. No exploitation is known. Release 15SU5 fixes the issues; release 14 users must migrate.",
+      "why_it_matters": "Voice is business-critical and often unpatched. Flag every Unified CM customer today: there are no workarounds, and R14 is a forced migration conversation that opens a broader UC refresh discussion.",
+      "url": "https://securityonline.info/cisco-unified-cm-vulnerabilities-hardening/",
+      "tag": "cve",
+      "published": "2026-10-21"
+    },
+    {
+      "vendor": "CrowdStrike",
+      "title": "CrowdStrike expands NVIDIA partnership: Falcon Guardian into OpenShell, Sentry planned",
+      "summary": "CrowdStrike announced Oct. 21 it is integrating Falcon Guardian with NVIDIA OpenShell secure runtime for AI agents, with a planned integration to NVIDIA Sentry for hardware-based enforcement on BlueField-4 DPUs. Sentry is planned for early 2027, not yet GA, and no financial terms were disclosed.",
+      "why_it_matters": "Positions Falcon beyond endpoints into securing autonomous agents at runtime and, later, in silicon. Useful in AI governance deals, but be precise with customers: the OpenShell piece is the current integration, the Sentry/BlueField enforcement is roadmap.",
+      "url": "https://marketspeaker.com/crowdstrike-nvidia-ai-agent-security-silicon-crwd-stock/",
       "tag": "launch",
       "published": "2026-10-21"
     },
     {
       "vendor": "Fortinet",
-      "title": "Public PoC released for critical FortiSIEM RCE CVE-2026-106173 \u2014 unauthenticated file write to root",
-      "summary": "Horizon3.ai researcher Zach Hanley published technical analysis and public proof-of-concept code on October 20 for CVE-2026-106173, a critical vulnerability Fortinet disclosed October 13 in advisory FG-IR-26-180. The flaw is improper pathname validation in FortiSIEM's phQueryMaster gRPC service on TCP port 27918, which binds to all interfaces without requiring client certificates. By abusing the SendQueryResult handler and a null-byte discrepancy, an unauthenticated attacker with network access can write to an exact path outside the intended directory and overwrite a cron-executed Redis health-check script (/opt/charting/redishb.sh, run every 60 seconds), converting the file write into remote code execution. Horizon3 notes no application logs explicitly identify exploitation, so integrity checks should compare timestamps and contents of sensitive executables against trusted baselines. Published reporting says FortiSIEM 7.5.0 users should upgrade to 7.5.1 or later and 7.6 is unaffected; restricting access to port 27918 reduces exposure while patching.",
-      "why_it_matters": "Public PoC is the urgency inflection point: a SIEM \u2014 the tool meant to detect attacks \u2014 is now reproducibly exploitable without credentials, and exploitation may leave no clear log. For Fortinet accounts, move this out of the normal patch queue: upgrade, restrict 27918 to only the systems that need it, and run the file-integrity hunt on redishb.sh and phLicenseTool before assuming a patched box was never touched. For competitive situations, do not overclaim \u2014 public PoC proves reproducibility, not confirmed in-the-wild exploitation.",
-      "url": "https://cyberpress.org/critical-fortinet-fortisiem-rce-vulnerability/",
+      "title": "Fortinet urgent Oct. 22 hardening for FortiOS, FortiManager and FortiAnalyzer - patch before Nov. 10 details",
+      "summary": "Fortinet released coordinated security updates Oct. 22 for FortiOS, FortiManager and FortiAnalyzer, following FortiMail and FortiAuthenticator fixes, addressing critical and high-severity flaws found via AI-assisted testing. FortiOS fixed versions are 8.0.2, 7.6.8, 7.4.13 and 7.2.14. Fortinet urges patching internet-facing devices first and not waiting for full PSIRT advisories on Nov. 10, warning AI-accelerated patch diffing shrinks the exploit window.",
+      "why_it_matters": "This is a same-week patch push for every FortiGate estate. Lead with urgency and sequencing - internet-facing first - and use it to drive managed patching / FortiManager hygiene conversations before exploit code catches up.",
+      "url": "https://www.fortinet.com/blog/ciso-collective/fortinet-releases-security-hardening-release-for-multiple-products",
       "tag": "cve",
-      "published": "2026-10-20"
+      "published": "2026-10-22"
+    },
+    {
+      "vendor": "Nutanix",
+      "title": "Nutanix teams with NVIDIA, Supermicro and Netris for production AI infrastructure",
+      "summary": "At NVIDIA GTC Berlin on Oct. 21, Nutanix announced collaborations to simplify production AI: a planned jointly engineered Supermicro system combining standardized servers with Nutanix Agentic AI full-stack software for private inference, and a Netris integration for multitenant AI infrastructure with network automation and hard tenant isolation across bare-metal and virtualized environments.",
+      "why_it_matters": "Strengthens Nutanix's pitch as the VMware-alternative platform that also runs production AI, not just VMs. The Supermicro system targets lower token costs via private inference; the Netris piece targets neoclouds/service providers selling GPU-as-a-service.",
+      "url": "https://Www.globenewswire.com/news-release/2026/10/21/3385417/0/en/nutanix-builds-a-faster-foundation-for-production-ai.html",
+      "tag": "launch",
+      "published": "2026-10-21"
+    },
+    {
+      "vendor": "NVIDIA",
+      "title": "NVIDIA launches OpenShell Reference Architecture for safe AI agents",
+      "summary": "NVIDIA launched the OpenShell Reference Architecture at GTC Berlin on Oct. 21, a full-stack design to build, contain, observe and enforce safe AI agents. It pairs Vera Rubin infrastructure for models, Vera CPUs for agent harnesses, open-source OpenShell runtime, and BlueField DPUs running NVIDIA Sentry for out-of-band monitoring and in-silicon policy enforcement. Cisco, CrowdStrike, Dell, HPE and Palo Alto Networks are among partners working with it.",
+      "why_it_matters": "This becomes the reference language for enterprise agent governance. SEs selling Dell, HPE, Cisco or security stacks into AI projects should map their offer to OpenShell's think/act/govern split rather than pitching point products.",
+      "url": "https://www.globenewswire.com/news-release/2026/10/21/3385311/0/en/nvidia-launches-openshell-reference-architecture-for-safe-ai-agents.html",
+      "tag": "launch",
+      "published": "2026-10-21"
+    },
+    {
+      "vendor": "VMware by Broadcom",
+      "title": "Broadcom signs first 10-year VMware agreement in Japan with NTT DOCOMO for VCF private cloud",
+      "summary": "Broadcom announced a 10-year comprehensive agreement with NTT DOCOMO covering VMware Cloud Foundation licenses, technical assistance and maintenance - its first 10-year VMware deal in Japan. DOCOMO has run VCF-based private cloud since 2019; the deal aligns long-term roadmaps for VMs, containers and AI workloads, and includes Avi, vDefend, Tanzu Platform and TAM/SAM support.",
+      "why_it_matters": "A counterpoint to the VMware exodus narrative: a major telco just locked VCF for a decade. Use it carefully in renewal defenses - it shows Broadcom will do long, comprehensive deals - while noting no price was disclosed and this deepens an existing relationship.",
+      "url": "https://www.semiconductorforu.com/broadcom-to-advance-ntt-docomos-private-cloud-with-vmware-cloud-foundation/",
+      "tag": "competitive",
+      "published": "2026-10-22"
     }
   ],
   "prompt_of_the_day": {
-    "category": "Customer outreach",
-    "prompt": "You are helping a presales SE write customer outreach and a hunt checklist for Palo Alto Networks CVE-2026-0257. Facts: Unit 42 updated its threat brief on Oct 20, 2026 \u2014 ransomware operators Qilin (Spikey Scorpius) and INC (Tarnished Scorpius) are actively exploiting this GlobalProtect authentication bypass (CVSS 7.8, patched May 2026, CISA KEV since May 13) to establish unauthorized VPN sessions and bypass MFA, then recon with RMM tools and move laterally via RDP/SMB. Draft: (1) a short, non-alarmist email to a Palo Alto customer asking them to confirm they are on a fixed PAN-OS / Prisma Access build; (2) a 6-item hunt checklist including checking whether the management interface is externally reachable on ports 4443 and 3879, restricting it with Interface Management profiles, and searching GlobalProtect logs for suspicious gateway-connected events; and (3) three discovery questions to open a services conversation about patch verification and incident-response readiness if the box was exposed while vulnerable. Do not make pricing or timeline promises."
+    "category": "Call prep",
+    "prompt": "I am a presales SE preparing for a customer call this week. Using these facts - Cisco Unified CM hardening Oct 21 fixes CVE-2026-76473 and CVE-2026-76474 at CVSS 9.8 with no workarounds, fixed in 15SU5 and R14 customers must migrate; Fortinet Oct 22 hardening for FortiOS requires 8.0.2 / 7.6.8 / 7.4.13 / 7.2.14 with full details Nov 10 - draft 8 discovery questions that surface patch posture, internet-facing exposure, and migration readiness without sounding like a scare pitch, plus a 3-sentence opener I can use on the call."
   }
 }
