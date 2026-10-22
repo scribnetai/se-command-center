@@ -1,5 +1,73 @@
 [
   {
+    "date": "2026-10-22",
+    "items": [
+      {
+        "vendor": "Dell Technologies",
+        "title": "Dell AI Factory with NVIDIA expands from deskside to data center",
+        "summary": "Dell announced broad Dell AI Factory with NVIDIA advancements on Oct. 21, including Deskside Agentic AI reference templates scaling from a single developer to 1,000+ systems, new validated blueprints, and AI Data Platform updates for PowerScale and ObjectScale. Dell says over 6,500 enterprises have adopted the platform.",
+        "why_it_matters": "Gives SEs a concrete on-prem agentic AI story customers control themselves. Use the 6,500-adopter proof point and deskside-to-DC continuum to counter cloud-only AI pitches and to scope PowerScale/ObjectScale into AI deals.",
+        "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1659/dell-technologies-advances-enterprise-agentic-ai-from-the-deskside-to-data-center-with-nvidia",
+        "tag": "launch",
+        "published": "2026-10-21"
+      },
+      {
+        "vendor": "Cisco",
+        "title": "Cisco Unified CM hardening fixes 9.8 CVEs, 20 CVEs total across voice, Expressway and Snort 3",
+        "summary": "Cisco published hardening advisories on Oct. 21 covering 20 CVEs. The Unified CM family advisory covers eight CVEs including CVE-2026-76473 and CVE-2026-76474 at CVSS 9.8, affecting Emergency Responder, Prime Collaboration Deployment, Unified CM, IM & Presence, Session Management Edition and Unity Connection. No exploitation is known. Release 15SU5 fixes the issues; release 14 users must migrate.",
+        "why_it_matters": "Voice is business-critical and often unpatched. Flag every Unified CM customer today: there are no workarounds, and R14 is a forced migration conversation that opens a broader UC refresh discussion.",
+        "url": "https://securityonline.info/cisco-unified-cm-vulnerabilities-hardening/",
+        "tag": "cve",
+        "published": "2026-10-21"
+      },
+      {
+        "vendor": "CrowdStrike",
+        "title": "CrowdStrike expands NVIDIA partnership: Falcon Guardian into OpenShell, Sentry planned",
+        "summary": "CrowdStrike announced Oct. 21 it is integrating Falcon Guardian with NVIDIA OpenShell secure runtime for AI agents, with a planned integration to NVIDIA Sentry for hardware-based enforcement on BlueField-4 DPUs. Sentry is planned for early 2027, not yet GA, and no financial terms were disclosed.",
+        "why_it_matters": "Positions Falcon beyond endpoints into securing autonomous agents at runtime and, later, in silicon. Useful in AI governance deals, but be precise with customers: the OpenShell piece is the current integration, the Sentry/BlueField enforcement is roadmap.",
+        "url": "https://marketspeaker.com/crowdstrike-nvidia-ai-agent-security-silicon-crwd-stock/",
+        "tag": "launch",
+        "published": "2026-10-21"
+      },
+      {
+        "vendor": "Fortinet",
+        "title": "Fortinet urgent Oct. 22 hardening for FortiOS, FortiManager and FortiAnalyzer - patch before Nov. 10 details",
+        "summary": "Fortinet released coordinated security updates Oct. 22 for FortiOS, FortiManager and FortiAnalyzer, following FortiMail and FortiAuthenticator fixes, addressing critical and high-severity flaws found via AI-assisted testing. FortiOS fixed versions are 8.0.2, 7.6.8, 7.4.13 and 7.2.14. Fortinet urges patching internet-facing devices first and not waiting for full PSIRT advisories on Nov. 10, warning AI-accelerated patch diffing shrinks the exploit window.",
+        "why_it_matters": "This is a same-week patch push for every FortiGate estate. Lead with urgency and sequencing - internet-facing first - and use it to drive managed patching / FortiManager hygiene conversations before exploit code catches up.",
+        "url": "https://www.fortinet.com/blog/ciso-collective/fortinet-releases-security-hardening-release-for-multiple-products",
+        "tag": "cve",
+        "published": "2026-10-22"
+      },
+      {
+        "vendor": "Nutanix",
+        "title": "Nutanix teams with NVIDIA, Supermicro and Netris for production AI infrastructure",
+        "summary": "At NVIDIA GTC Berlin on Oct. 21, Nutanix announced collaborations to simplify production AI: a planned jointly engineered Supermicro system combining standardized servers with Nutanix Agentic AI full-stack software for private inference, and a Netris integration for multitenant AI infrastructure with network automation and hard tenant isolation across bare-metal and virtualized environments.",
+        "why_it_matters": "Strengthens Nutanix's pitch as the VMware-alternative platform that also runs production AI, not just VMs. The Supermicro system targets lower token costs via private inference; the Netris piece targets neoclouds/service providers selling GPU-as-a-service.",
+        "url": "https://Www.globenewswire.com/news-release/2026/10/21/3385417/0/en/nutanix-builds-a-faster-foundation-for-production-ai.html",
+        "tag": "launch",
+        "published": "2026-10-21"
+      },
+      {
+        "vendor": "NVIDIA",
+        "title": "NVIDIA launches OpenShell Reference Architecture for safe AI agents",
+        "summary": "NVIDIA launched the OpenShell Reference Architecture at GTC Berlin on Oct. 21, a full-stack design to build, contain, observe and enforce safe AI agents. It pairs Vera Rubin infrastructure for models, Vera CPUs for agent harnesses, open-source OpenShell runtime, and BlueField DPUs running NVIDIA Sentry for out-of-band monitoring and in-silicon policy enforcement. Cisco, CrowdStrike, Dell, HPE and Palo Alto Networks are among partners working with it.",
+        "why_it_matters": "This becomes the reference language for enterprise agent governance. SEs selling Dell, HPE, Cisco or security stacks into AI projects should map their offer to OpenShell's think/act/govern split rather than pitching point products.",
+        "url": "https://www.globenewswire.com/news-release/2026/10/21/3385311/0/en/nvidia-launches-openshell-reference-architecture-for-safe-ai-agents.html",
+        "tag": "launch",
+        "published": "2026-10-21"
+      },
+      {
+        "vendor": "VMware by Broadcom",
+        "title": "Broadcom signs first 10-year VMware agreement in Japan with NTT DOCOMO for VCF private cloud",
+        "summary": "Broadcom announced a 10-year comprehensive agreement with NTT DOCOMO covering VMware Cloud Foundation licenses, technical assistance and maintenance - its first 10-year VMware deal in Japan. DOCOMO has run VCF-based private cloud since 2019; the deal aligns long-term roadmaps for VMs, containers and AI workloads, and includes Avi, vDefend, Tanzu Platform and TAM/SAM support.",
+        "why_it_matters": "A counterpoint to the VMware exodus narrative: a major telco just locked VCF for a decade. Use it carefully in renewal defenses - it shows Broadcom will do long, comprehensive deals - while noting no price was disclosed and this deepens an existing relationship.",
+        "url": "https://www.semiconductorforu.com/broadcom-to-advance-ntt-docomos-private-cloud-with-vmware-cloud-foundation/",
+        "tag": "competitive",
+        "published": "2026-10-22"
+      }
+    ]
+  },
+  {
     "date": "2026-10-21",
     "items": [
       {
