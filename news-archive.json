@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-10-23",
+    "items": [
+      {
+        "vendor": "Palo Alto Networks",
+        "title": "PHP2Shell: all PAN-OS and Panorama versions affected, no fixed release yet",
+        "summary": "Palo Alto Networks confirmed all versions of PAN-OS and Panorama are affected by PHP2Shell (CVE-2026-109618 and CVE-2026-109619, CVSS 9.2 in PHP itself; Palo Alto rates the PAN-OS impact 8.7, dropping to 7.1 if the management interface is restricted to a jump host). No fixed PAN-OS release is available yet and no special configuration is needed to be exposed, with risk highest on internet-facing management interfaces. Interim steps: restrict management access to trusted IPs and rely on Threat Prevention / Advanced Threat Prevention signatures 543004 and 97622-97625 (Frontier Virtual Patching). Unit 42 counted over 22.6 million internet-exposed PHP instances potentially vulnerable overall. Elsewhere, Cisco is still investigating 31 products and cloud services (including Catalyst Center, ISE, Expressway and Webex) with none yet confirmed affected, and Fortinet has cleared 12 products including FortiOS, FortiManager, FortiAnalyzer and FortiWeb while 12 others remain under review.",
+        "why_it_matters": "Every PAN customer has an open, unpatched exposure on their firewall management plane right now. Lead with the compensating controls - lock the management interface to trusted IPs / a jump host today, confirm Threat Prevention signatures are active - and set expectations that a PAN-OS upgrade train is coming. Also use the Cisco/Fortinet status to answer 'are our other vendors affected?' accurately instead of speculating.",
+        "url": "https://www.helpnetsecurity.com/2026/10/22/php2shell-vulnerability-fortinet-cisco-palo-alto-networks/",
+        "tag": "cve",
+        "published": "2026-10-22"
+      },
+      {
+        "vendor": "Cisco",
+        "title": "Cisco October hardening tally reaches 34 vulnerabilities, including Expressway root RCE",
+        "summary": "Fuller reporting on Cisco's Oct. 21 hardening release puts the total at 34 patched vulnerabilities across Expressway Series, Unified Communications, Snort 3, IOS XR and Secure Client. Headliners: CVE-2026-76466, a critical Expressway RCE allowing unauthenticated root command execution in certain clustered configurations, fixed in X15.5.20; nine Unified Communications CVEs including critical CVE-2026-76473, CVE-2026-76474 and CVE-2026-76475; 13 Snort 3 CVEs (including critical CVE-2026-20236 and CVE-2026-20043) fixed in Snort 3.12.4.0 and updates for Secure Firewall ASA/FTD/FMC, Meraki MX, Cyber Vision and others; plus high-severity IOS XR DoS CVE-2026-76505 and Secure Client privilege escalation CVE-2026-76462. Cisco reports no known exploitation in the wild.",
+        "why_it_matters": "This expands yesterday's Unified CM item into a full-estate patch program: Expressway is internet-adjacent by design, so CVE-2026-76466 to X15.5.20 is the priority, followed by Unified CM 15SU5 (R14 must migrate) and the Snort 3 / Secure Firewall updates. Bundle these into one change window proposal per customer rather than dribbling out single-CVE alerts.",
+        "url": "https://www.securityweek.com/cisco-patches-34-vulnerabilities-across-multiple-products/",
+        "tag": "cve",
+        "published": "2026-10-22"
+      },
+      {
+        "vendor": "HPE",
+        "title": "HPE, Schneider Electric and NVIDIA launch Industrial AI Agents at the Edge on HPE Private Cloud AI",
+        "summary": "Schneider Electric, NVIDIA and HPE announced Oct. 22 the first Industrial AI Agents at the Edge for process and heavy industries, built on HPE Private Cloud AI (co-engineered with NVIDIA in the HPE AI Factory portfolio) plus Schneider's EcoStruxure Industrial Insights and OT Monitoring System, using NVIDIA Nemotron open models. The first three agents cover OT monitoring, cybersecurity and energy optimization, running inside the plant to address data sovereignty, OT cybersecurity and cloud inference/token costs. Schneider cites CMPC Chile's three-year production OTMS deployment as the foundation customer example. Availability and pricing were not detailed in the release.",
+        "why_it_matters": "A concrete vertical wedge for HPE Private Cloud AI beyond generic 'AI factory' talk: manufacturing, pulp/paper, energy and utilities customers with OT data they cannot move to cloud. Use it to start edge AI conversations anchored on sovereignty and inference cost, and position against Dell AI Factory pitches in industrial accounts - but press HPE on GA status and licensing before quoting it.",
+        "url": "https://www.globenewswire.com/news-release/2026/10/22/3386200/0/en/schneider-electric-nvidia-hpe-announce-strategic-collaboration-to-accelerate-physical-ai-for-process-industries.html",
+        "tag": "launch",
+        "published": "2026-10-22"
+      }
+    ]
+  },
+  {
     "date": "2026-10-22",
     "items": [
       {
