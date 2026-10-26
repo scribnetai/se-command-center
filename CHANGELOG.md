@@ -1,4 +1,7 @@
 # Changelog
+## 2026-10-26
+- Morning briefing: 3 items (Dell Technologies, NVIDIA, Palo Alto Networks). Archive updated.
+
 ## 2026-10-23
 - Morning briefing: 3 items (Palo Alto Networks, Cisco, HPE). Archive updated.
 
