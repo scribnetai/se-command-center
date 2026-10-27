@@ -1,37 +1,46 @@
 {
-  "date": "2026-10-26",
-  "updated_at": "2026-10-26T07:15:00-04:00",
+  "date": "2026-10-27",
+  "updated_at": "2026-10-27T07:20:00-04:00",
   "items": [
     {
-      "vendor": "Dell Technologies",
-      "title": "Honeywell launches Forge Plant Cognition at Dangote's Lekki refinery on Dell AI infrastructure and NVIDIA AI",
-      "summary": "Honeywell Technologies launched Forge Plant Cognition, an industrial/physical AI platform for refining, petrochemical and LNG operators, built with NVIDIA AI and accelerated computing and Dell Technologies' AI infrastructure. First deployment is Dangote's Lekki refinery in Nigeria, one of the world's largest single-train refineries, targeting higher throughput. Honeywell estimates, based on preliminary data, more than 29 cents per barrel in operational benefit — over $60 million a year in gross benefit at full-capacity throughput for that facility (vendor estimate, not guaranteed).",
-      "why_it_matters": "A named, production-scale reference for Dell AI infrastructure outside the usual hyperscaler/AI-lab story: industrial and OT-adjacent customers with existing plants. Useful proof point when an SE conversation is about AI on owned infrastructure for operations, not model training — and a reminder the Dell/NVIDIA factory pitch now has a refinery-scale deployment attached.",
-      "url": "https://www.businesswire.com/news/home/20261026802169/en/Honeywell-Technologies-Launches-Forge-Plant-Cognition-with-Dangote-Built-with-NVIDIA-AI-and-Dell-Technologies-Capabilities",
+      "vendor": "Palo Alto Networks",
+      "title": "PAN-OS hit by critical Brotli decoder flaw CVE-2026-111497",
+      "summary": "Palo Alto confirmed on October 26 that a critical out-of-bounds write in Google's Brotli decoder affects PAN-OS 12.2, 12.1 and 11.2, plus the Prisma Cloud Application Security Transporter Client. Hotfixes are listed per branch; PAN-OS 11.1 and 10.2 are not affected.",
+      "why_it_matters": "CVSS 9.2 with no known exploitation yet, but it lands days after the PAN-OS PHP2Shell hotfixes, so firewall admins face a second patch round. Lead with version checks and restricting management-interface access to trusted addresses.",
+      "url": "https://cybersecuritynews.com/brotli-vulnerability-affects-pan-os/",
+      "tag": "cve",
+      "published": "2026-10-26"
+    },
+    {
+      "vendor": "Fortinet",
+      "title": "FortiGuard Inline AI Security Service brings AI inspection to existing FortiGates",
+      "summary": "Fortinet announced on October 26 a cloud-delivered service that adds AI-specific inspection to FortiGate firewalls customers already own. FortiAIGate guardrails inspect prompts, responses and MCP tool calls in real time, mask sensitive data, and enforce compliance policy; Fortinet cites 35 PII types and 50+ predefined policies.",
+      "why_it_matters": "This is Fortinet's answer to the AI-security land grab, and it lands as a service on installed firewalls rather than a new box. It reframes FortiGate refresh conversations around shadow AI and data leakage, and it is the direct counter to Palo Alto's Prisma AIRS story.",
+      "url": "https://letsdatascience.com/news/fortinet-extends-fortigate-firewalls-into-ai-security-with-f-e0a45a00",
       "tag": "launch",
       "published": "2026-10-26"
     },
     {
-      "vendor": "NVIDIA",
-      "title": "SWI Compute emerges from stealth as Preferred NVIDIA Cloud Partner with ~$1B in NVIDIA systems ordered",
-      "summary": "SWI Compute, part of Euronext Amsterdam-listed SWI Group, emerged from stealth to build and operate NVIDIA AI factories, starting in Europe. It became a Preferred NVIDIA Cloud Partner in August, says it has ordered approximately $1 billion of NVIDIA systems and signed its first customers, backed by 3.6 GW of secured power capacity. Its first large-scale UK factory starts at 30 MW with close to 7,000 Rubin GPUs and 3,500 Vera CPUs in Vera Rubin NVL72 racks on Quantum-X800 InfiniBand and Spectrum-X Ethernet, expected online by end of 2027, as the first phase of a UK campus planned to grow to 530 MW and a step toward 2.3 GW by 2029 (company roadmap claims).",
-      "why_it_matters": "Power, not GPUs, is the stated bottleneck — SWI spent six years securing grid access before ordering silicon. For datacenter presales this is the competitive frame shifting: neocloud AI capacity in Europe will be sold on secured megawatts and Vera Rubin NVL72 density. Expect customers to ask how Dell/HPE/Cisco factory offers compare on power and time-to-capacity, not just rack specs.",
-      "url": "https://www.prnewswire.com/news-releases/swi-compute-emerges-from-stealth-to-turn-gigawatts-of-power-into-nvidia-ai-factories-starting-in-europe-302918805.html",
-      "tag": "competitive",
+      "vendor": "Cohesity",
+      "title": "Cohesity cloud rebuild validated with IBM Terraform Self-Managed",
+      "summary": "Cohesity announced on October 26 that HashiCorp (IBM) has validated its Data Cloud cloud-rebuild capability for interoperability with Terraform Self-Managed, the first such validation. Cloud rebuild recreates declared infrastructure from Terraform code, then restores the latest usable application data, and shows the timing gap when code and data backups differ. Available now in Data Cloud Enterprise Edition.",
+      "why_it_matters": "It turns 'recover as code' from a slide into a validated workflow for Terraform shops, and it sharpens the Cohesity-vs-Rubrik recovery argument: rebuilding declared infrastructure plus data, not just restoring data. Ask prospects whether their cloud estate is Terraform-managed.",
+      "url": "https://www.cohesity.com/newsroom/press/cohesity-data-cloud-becomes-the-first-cloud-recovery-method-validated-for-interoperability-with-ibm-terraform-self-managed/",
+      "tag": "launch",
       "published": "2026-10-26"
     },
     {
-      "vendor": "Palo Alto Networks",
-      "title": "Palo Alto Networks unveils Cortex XDR One, unifying XDR and agentic endpoint security in a single sensor",
-      "summary": "Palo Alto Networks announced Cortex XDR One, merging Cortex XDR with Cortex Agentic Endpoint Security (built on the Koi team it brought in-house) into one interface and one lightweight sensor. It is aimed at threats to both traditional operating systems and autonomous AI agents — coding agents, copilots, MCP servers and personal AI tools that inherit user permissions. Capabilities Palo Alto describes include real-time inventory and governance of AI artifacts and shadow AI on endpoints, runtime guardrails against prompt injection and destructive commands, OS-level process-chain monitoring, and small language models running on the sensor itself to block fileless threats offline. Regional launch coverage ran Oct 26; Palo Alto's own product blog is dated Oct 19 — verify GA status and licensing against the current price book before quoting it as available.",
-      "why_it_matters": "This is Palo Alto's direct move against CrowdStrike's endpoint stronghold in the agentic era: 'EDR without integrated agentic security is incomplete' is their framing. The discovery question for any endpoint deal is now what AI agents and MCP servers are already running on customer endpoints and who inventories them. Note the standalone Agentic Endpoint Security / targeted-sensor option also lets Palo Alto land alongside an incumbent third-party EDR instead of requiring a rip-and-replace.",
-      "url": "https://cxotoday.com/media-coverage/palo-alto-networks-unveils-cortex-xdr-one-to-reinvent-endpoint-security-for-the-agentic-ai-era/",
+      "vendor": "HPE",
+      "title": "HPE Private Cloud AI now mixes NVIDIA H200 and RTX PRO 6000 GPUs in one cluster",
+      "summary": "HPE expanded its Private Cloud AI offering so customers can combine NVIDIA H200 and RTX PRO 6000 Blackwell Server Edition GPUs in a single cluster, with scheduling by workload priority and quota. Developer-access features are scheduled for late 2026, with a self-service developer experience in 2027.",
+      "why_it_matters": "Mixed-GPU clusters let customers match GPU cost to workload instead of standardizing on one accelerator, which is a real TCO talking point in private-AI deals. The staged developer rollout is also a reason to time follow-ups rather than pitch the full vision today.",
+      "url": "https://www.tradingview.com/news/gurufocus:3e2a038e0094b:0-hpe-stocks-gain-4-1-with-mixed-gpu-private-ai-expansion/",
       "tag": "launch",
       "published": "2026-10-26"
     }
   ],
   "prompt_of_the_day": {
-    "category": "Competitive",
-    "prompt": "You are helping a presales SE prepare for a customer discovery call. Palo Alto Networks has announced Cortex XDR One, which merges Cortex XDR with Cortex Agentic Endpoint Security (from its Koi acquisition) into a single sensor, claiming real-time inventory of AI artifacts and shadow AI on endpoints, runtime guardrails against prompt injection, and on-sensor small language models that block fileless threats offline. CrowdStrike Falcon's published agent-security path centers on its NVIDIA OpenShell runtime integration (Falcon Guardian). Draft: (1) five discovery questions that surface how many AI coding agents, copilots and MCP servers are running on the customer's endpoints today and who governs them, (2) a neutral two-column comparison of the endpoint-native vs runtime-partner approaches, flagging every vendor claim as a claim and listing what to verify in a PoC, and (3) three questions to ask each vendor about GA status, licensing and sensor performance impact. Keep it factual, no FUD."
+    "category": "Customer outreach",
+    "prompt": "Draft a short, technical customer outreach email about the Palo Alto Networks Brotli vulnerability CVE-2026-111497 (CVSS 9.2, advisory published October 26, 2026). It affects PAN-OS 12.2, 12.1 and 11.2 and the Prisma Cloud Application Security Transporter Client; PAN-OS 11.1 and 10.2 are not affected, and Palo Alto reports no known malicious exploitation so far. The email should: (1) ask which PAN-OS versions the customer runs and whether management-interface access is restricted to trusted internal addresses, (2) offer a hotfix check against their branch, and (3) note this is the second PAN-OS patch round in a week after the PHP2Shell hotfixes, so propose bundling both patch verifications into one maintenance window. Keep it under 150 words, direct, no marketing fluff, and end with one clear next step."
   }
 }
