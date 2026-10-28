@@ -39,15 +39,6 @@
       "published": "2026-10-27"
     },
     {
-      "vendor": "Cohesity",
-      "title": "Cohesity Data Cloud cloud rebuild validated for interoperability with IBM Terraform Self-Managed",
-      "summary": "Announced Oct 27: Cohesity Data Cloud is the first cloud recovery method validated for interoperability with HashiCorp (IBM) Terraform Self-Managed. Cloud rebuild pairs infrastructure-as-code recreation of a compromised cloud app with the closest Cohesity data backup, surfacing the timing gap between the two, and is available now in Cohesity Data Cloud Enterprise Edition.",
-      "why_it_matters": "Recovery stories usually stop at 'restore the data.' This one covers infrastructure, config, and data together, which matters for customers rebuilding in cloud after a destructive attack. For Terraform shops, it turns a generic cyber-resilience claim into a validated workflow; check whether the customer runs Data Protect/NetBackup and needs the Enterprise Edition upgrade to get it.",
-      "url": "https://hkbusinesswire.com/cohesity-data-cloud-becomes-the-first-cloud-recovery-method-validated-for-interoperability-with-ibm-terraform-self-managed/",
-      "tag": "launch",
-      "published": "2026-10-27"
-    },
-    {
       "vendor": "VMware by Broadcom",
       "title": "FluidCloud launches vHOP, a VDDK-free engine for VMware exits to cloud and Nutanix",
       "summary": "Launched Oct 27: FluidCloud's vHOP (VM Hopping Engine) copies VMware disks with its own cloning engine instead of the VMware Virtual Disk Development Kit, which Broadcom stopped offering as a download in Aug 2026 and says is licensed for backup/recovery, not a customer entitlement. vHOP also maps the VMware environment, translates NSX firewall policy, and generates Terraform for the target before data moves, supporting AWS, Azure, GCP, OCI, and Nutanix, available now in the FluidCloud platform and AWS Marketplace.",
