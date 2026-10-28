@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-28
+- Morning briefing: 5 items (Dell Technologies, Palo Alto Networks, Cisco, HPE, VMware by Broadcom). Archive updated.
+
 ## 2026-10-27
 - Morning briefing: 4 items (Palo Alto Networks, Fortinet, Cohesity, HPE). Archive updated.
 ## 2026-10-26
