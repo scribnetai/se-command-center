@@ -1,46 +1,64 @@
 {
-  "date": "2026-10-27",
-  "updated_at": "2026-10-27T07:20:00-04:00",
+  "date": "2026-10-28",
+  "updated_at": "2026-10-28T07:20:00-04:00",
   "items": [
     {
+      "vendor": "Dell Technologies",
+      "title": "Dell expands PowerProtect cyber resilience to AI environments, identity, and quantum-safe crypto",
+      "summary": "Announced Oct 27: PowerProtect identity resilience for Active Directory, Entra ID, and Okta is now available, alongside MDR for Identity, Resilience Operations for AI, and expanded PowerProtect AI Assistant risk briefs. Security Hardening for Dell AI Factory lands in Oct 2026; PowerStore software with quantum-safe in-flight Fibre Channel encryption and a Post-Quantum Readiness Assessment arrive in Nov 2026, with PowerProtect/PowerScale snapshot orchestration in Dec 2026.",
+      "why_it_matters": "Identity is now the recovery bottleneck Dell is selling against: customers can have clean backups and still be locked out if AD/Entra is untrusted. This gives SEs a concrete attach to every PowerProtect and AI Factory conversation, plus a dated roadmap (Nov/Dec) to anchor follow-ups instead of a vague 'quantum-ready' claim.",
+      "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1660/dell-technologies-strengthens-cybersecurity-and-resilience-across-ai-environments-identity-and-infrastructure",
+      "tag": "launch",
+      "published": "2026-10-27"
+    },
+    {
       "vendor": "Palo Alto Networks",
-      "title": "PAN-OS hit by critical Brotli decoder flaw CVE-2026-111497",
-      "summary": "Palo Alto confirmed on October 26 that a critical out-of-bounds write in Google's Brotli decoder affects PAN-OS 12.2, 12.1 and 11.2, plus the Prisma Cloud Application Security Transporter Client. Hotfixes are listed per branch; PAN-OS 11.1 and 10.2 are not affected.",
-      "why_it_matters": "CVSS 9.2 with no known exploitation yet, but it lands days after the PAN-OS PHP2Shell hotfixes, so firewall admins face a second patch round. Lead with version checks and restricting management-interface access to trusted addresses.",
-      "url": "https://cybersecuritynews.com/brotli-vulnerability-affects-pan-os/",
+      "title": "PAN-OS confirmed affected by critical Brotli flaw CVE-2026-111497; hotfixes rolling out Oct 27-30, CISA adds it to KEV",
+      "summary": "Palo Alto confirmed CVE-2026-111497 (Brotli decoder out-of-bounds write, CVSS 9.2) affects PAN-OS and the Prisma Cloud Application Security Transporter Client. Fixes include PAN-OS 12.2.4-h1, 12.1.7-h11, and 11.2.10-h17, with remaining trains due through Oct 30; Transporter Client 0.2.9. Workaround is disabling Brotli inspection; Threat ID 97686 gives only conditional, partial coverage. CISA added the CVE to its Known Exploited Vulnerabilities catalog Oct 27, with a Nov 10 remediation deadline for federal civilian agencies.",
+      "why_it_matters": "This is a patch-the-firewall-itself week, and the workaround has a real trade-off (lose Brotli inspection). SEs should proactively check customer PAN-OS trains against the hotfix list rather than wait for the next maintenance window, and note that 11.2.10-h16 fixes PHP only while h17 covers PHP plus Brotli.",
+      "url": "https://security.paloaltonetworks.com/CVE-2026-111497",
       "tag": "cve",
-      "published": "2026-10-26"
+      "published": "2026-10-27"
     },
     {
-      "vendor": "Fortinet",
-      "title": "FortiGuard Inline AI Security Service brings AI inspection to existing FortiGates",
-      "summary": "Fortinet announced on October 26 a cloud-delivered service that adds AI-specific inspection to FortiGate firewalls customers already own. FortiAIGate guardrails inspect prompts, responses and MCP tool calls in real time, mask sensitive data, and enforce compliance policy; Fortinet cites 35 PII types and 50+ predefined policies.",
-      "why_it_matters": "This is Fortinet's answer to the AI-security land grab, and it lands as a service on installed firewalls rather than a new box. It reframes FortiGate refresh conversations around shadow AI and data leakage, and it is the direct counter to Palo Alto's Prisma AIRS story.",
-      "url": "https://letsdatascience.com/news/fortinet-extends-fortigate-firewalls-into-ai-security-with-f-e0a45a00",
-      "tag": "launch",
-      "published": "2026-10-26"
-    },
-    {
-      "vendor": "Cohesity",
-      "title": "Cohesity cloud rebuild validated with IBM Terraform Self-Managed",
-      "summary": "Cohesity announced on October 26 that HashiCorp (IBM) has validated its Data Cloud cloud-rebuild capability for interoperability with Terraform Self-Managed, the first such validation. Cloud rebuild recreates declared infrastructure from Terraform code, then restores the latest usable application data, and shows the timing gap when code and data backups differ. Available now in Data Cloud Enterprise Edition.",
-      "why_it_matters": "It turns 'recover as code' from a slide into a validated workflow for Terraform shops, and it sharpens the Cohesity-vs-Rubrik recovery argument: rebuilding declared infrastructure plus data, not just restoring data. Ask prospects whether their cloud estate is Terraform-managed.",
-      "url": "https://www.cohesity.com/newsroom/press/cohesity-data-cloud-becomes-the-first-cloud-recovery-method-validated-for-interoperability-with-ibm-terraform-self-managed/",
-      "tag": "launch",
-      "published": "2026-10-26"
+      "vendor": "Cisco",
+      "title": "Cisco revises Oct 21 hardening advisories Oct 27: Critical UC voice flaws, High Expressway flaws, no workarounds",
+      "summary": "Cisco updated its Oct 2026 hardening releases Oct 27, including a Critical advisory for Unified Communications Manager, IM & Presence, Emergency Responder, and Prime Collaboration Deployment (CVE-2026-76473 through CVE-2026-76481) and a High advisory for Expressway Core/Edge (CVE-2026-76490 through CVE-2026-76497). Both say software updates only, with no workarounds. Related Oct 27 updates also cover Node.js flaws (including CVE-2026-111497) and PHP flaws affecting Cisco products.",
+      "why_it_matters": "UC and Expressway estates are easy to leave unpatched because they are not the firewall, but Cisco is explicit: patch or nothing. SEs with collaboration customers should drive the hardening-release upgrade conversation now, and use the Node.js/PHP updates as a reason to inventory which Cisco products embed those runtimes.",
+      "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-voice-hardening-twgbH9e3",
+      "tag": "cve",
+      "published": "2026-10-27"
     },
     {
       "vendor": "HPE",
-      "title": "HPE Private Cloud AI now mixes NVIDIA H200 and RTX PRO 6000 GPUs in one cluster",
-      "summary": "HPE expanded its Private Cloud AI offering so customers can combine NVIDIA H200 and RTX PRO 6000 Blackwell Server Edition GPUs in a single cluster, with scheduling by workload priority and quota. Developer-access features are scheduled for late 2026, with a self-service developer experience in 2027.",
-      "why_it_matters": "Mixed-GPU clusters let customers match GPU cost to workload instead of standardizing on one accelerator, which is a real TCO talking point in private-AI deals. The staged developer rollout is also a reason to time follow-ups rather than pitch the full vision today.",
-      "url": "https://www.tradingview.com/news/gurufocus:3e2a038e0094b:0-hpe-stocks-gain-4-1-with-mixed-gpu-private-ai-expansion/",
+      "title": "HPE unifies EdgeConnect SASE with Mist and Aruba Central under one agentic framework",
+      "summary": "Announced Oct 27: HPE Networking EdgeConnect (SASE/SD-WAN + SSE) is now integrated with HPE Mist and HPE Aruba Central, giving SASE customers the Marvis AI engine, agentic NetOps/SecOps actions, user-experience twinning, and a Large Experience Model aimed at predicting issues with apps like Zoom and Teams, with end-to-end visibility from edge to cloud.",
+      "why_it_matters": "HPE is collapsing the wired/wireless/SASE management story into a single AI-ops pitch, which directly challenges point SASE and separate LAN/WLAN management in branch refresh deals. Ask prospects how many consoles touch a branch ticket today; that is the wedge for this integration.",
+      "url": "https://www.fierce-network.com/newswire/hpe-unifies-visibility-wired-wireless-and-sase-solutions",
       "tag": "launch",
-      "published": "2026-10-26"
+      "published": "2026-10-27"
+    },
+    {
+      "vendor": "Cohesity",
+      "title": "Cohesity Data Cloud cloud rebuild validated for interoperability with IBM Terraform Self-Managed",
+      "summary": "Announced Oct 27: Cohesity Data Cloud is the first cloud recovery method validated for interoperability with HashiCorp (IBM) Terraform Self-Managed. Cloud rebuild pairs infrastructure-as-code recreation of a compromised cloud app with the closest Cohesity data backup, surfacing the timing gap between the two, and is available now in Cohesity Data Cloud Enterprise Edition.",
+      "why_it_matters": "Recovery stories usually stop at 'restore the data.' This one covers infrastructure, config, and data together, which matters for customers rebuilding in cloud after a destructive attack. For Terraform shops, it turns a generic cyber-resilience claim into a validated workflow; check whether the customer runs Data Protect/NetBackup and needs the Enterprise Edition upgrade to get it.",
+      "url": "https://hkbusinesswire.com/cohesity-data-cloud-becomes-the-first-cloud-recovery-method-validated-for-interoperability-with-ibm-terraform-self-managed/",
+      "tag": "launch",
+      "published": "2026-10-27"
+    },
+    {
+      "vendor": "VMware by Broadcom",
+      "title": "FluidCloud launches vHOP, a VDDK-free engine for VMware exits to cloud and Nutanix",
+      "summary": "Launched Oct 27: FluidCloud's vHOP (VM Hopping Engine) copies VMware disks with its own cloning engine instead of the VMware Virtual Disk Development Kit, which Broadcom stopped offering as a download in Aug 2026 and says is licensed for backup/recovery, not a customer entitlement. vHOP also maps the VMware environment, translates NSX firewall policy, and generates Terraform for the target before data moves, supporting AWS, Azure, GCP, OCI, and Nutanix, available now in the FluidCloud platform and AWS Marketplace.",
+      "why_it_matters": "The VDDK cutoff stranded agentless migration tooling mid-exit, and vHOP removes that dependency. For any customer weighing a VMware renewal against an exit, this changes the migration risk conversation: ask which tools in their current plan still depend on VDDK, and whether NSX policy translation is scoped, since that is where exits usually stall.",
+      "url": "https://www.networkworld.com/article/4241265/fluidcloud-replaces-vddk-with-its-own-disk-copy-engine-for-vmware-exits.html",
+      "tag": "competitive",
+      "published": "2026-10-27"
     }
   ],
   "prompt_of_the_day": {
     "category": "Customer outreach",
-    "prompt": "Draft a short, technical customer outreach email about the Palo Alto Networks Brotli vulnerability CVE-2026-111497 (CVSS 9.2, advisory published October 26, 2026). It affects PAN-OS 12.2, 12.1 and 11.2 and the Prisma Cloud Application Security Transporter Client; PAN-OS 11.1 and 10.2 are not affected, and Palo Alto reports no known malicious exploitation so far. The email should: (1) ask which PAN-OS versions the customer runs and whether management-interface access is restricted to trusted internal addresses, (2) offer a hotfix check against their branch, and (3) note this is the second PAN-OS patch round in a week after the PHP2Shell hotfixes, so propose bundling both patch verifications into one maintenance window. Keep it under 150 words, direct, no marketing fluff, and end with one clear next step."
+    "prompt": "Draft a short, direct customer email for a Palo Alto Networks PAN-OS customer running PAN-OS 11.2 or 12.1: explain that CVE-2026-111497, a critical Brotli decoder flaw (CVSS 9.2), affects PAN-OS, that CISA added it to the Known Exploited Vulnerabilities catalog on Oct 27, 2026, and that fixes include 12.2.4-h1, 12.1.7-h11, and 11.2.10-h17 (note 11.2.10-h16 fixes PHP only, h17 covers PHP plus Brotli), with remaining hotfixes due through Oct 30. Offer the interim workaround of disabling Brotli inspection, note that Threat ID 97686 is only conditional partial coverage, and close with one question asking which PAN-OS train and build they are on so we can confirm their exact hotfix. Keep it under 150 words, no hype."
   }
 }
