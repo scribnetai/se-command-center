@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-29
+- Morning briefing: 6 items (Cisco, Palo Alto Networks, Dell Technologies, VMware by Broadcom, Cohesity, NVIDIA). Archive updated.
+
 ## 2026-10-28
 - Morning briefing: 5 items (Dell Technologies, Palo Alto Networks, Cisco, HPE, VMware by Broadcom). Archive updated.
 
