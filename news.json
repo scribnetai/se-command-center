@@ -1,64 +1,28 @@
 {
-  "date": "2026-10-29",
-  "updated_at": "2026-10-29T07:15:00-04:00",
+  "date": "2026-10-30",
+  "updated_at": "2026-10-30T07:15:33-04:00",
   "items": [
     {
       "vendor": "Cisco",
-      "title": "Actively exploited SSL VPN flaw in Secure Firewall ASA/FTD can force device reloads (CVE-2026-76418)",
-      "summary": "Cisco published an advisory on October 28 for CVE-2026-76418, a high-severity (CVSS 8.6) denial-of-service flaw in the Remote Access SSL VPN service of Secure Firewall ASA and FTD software. An unauthenticated remote attacker can send a crafted request when secondary authentication is configured on a tunnel group and force the device to reload. Cisco says exploitation was observed in October; no data theft or remote code execution is reported, and there are no workarounds \u2014 only software updates.",
-      "why_it_matters": "Any customer with internet-facing ASA/FTD SSL VPN and secondary authentication on a tunnel group is in scope. Lead with patching urgency and a config check, not a rip-and-replace pitch \u2014 availability of the remote-access edge is the risk, and the fix is a software update.",
-      "url": "https://cybersecuritynews.com/cisco-secure-firewall-0-day-vulnerability-exploited/",
+      "title": "Talos: APT actor planted KeyDrift malware on SD-WAN controllers to steal site-to-site keying material (CVE-2026-20127)",
+      "summary": "Cisco Talos published research on October 28 on UAT-11473, a sophisticated APT actor that exploited CVE-2026-20127, a CVSS 10.0 authentication bypass in Cisco Catalyst SD-WAN Controller instances, to gain unauthorized access and install a custom malware framework called KeyDrift. KeyDrift is built for long-term residence inside the SD-WAN control plane: it intercepts decrypted control traffic and extracts data-plane keying material (AES-256 IPsec keys) for later exfiltration. Talos calls the activity historical, names no victims, and assesses with high confidence that the actor's infrastructure overlaps Volt Typhoon's Silent Train network. The flaw was fixed in February 2026, and Cisco has published a hardening guide plus new Snort rules.",
+      "why_it_matters": "A patch applied now does not answer whether a controller was already compromised, so this is a hunt conversation, not just a patch check: confirm controllers run a fixed release, then look for KeyDrift traces in runit service paths and vdaemon processes. Any customer with Catalyst SD-WAN controllers should be asked about controller patch status and compromise assessment, especially in defense, aerospace, and satellite-adjacent accounts Talos names as targets.",
+      "url": "https://blog.talosintelligence.com/uat-11473-keydrift/",
       "tag": "cve",
       "published": "2026-10-28"
     },
     {
-      "vendor": "Palo Alto Networks",
-      "title": "PHP2Shell flaws under active exploitation; PAN-OS hotfixes rolling out through October 30 (CVE-2026-109618, CVE-2026-109619)",
-      "summary": "Palo Alto Networks confirmed active exploitation of two critical PHP2Shell vulnerabilities (both CVSS 9.2) in internet-exposed PAN-OS management interfaces, enabling unauthenticated remote code execution. Three additional PAN-OS hotfixes landed October 28, following four on October 27, with remaining fixes scheduled for October 29\u201330. The flaws were reportedly chained with a Linux kernel bug (CVE-2026-46300) to gain root on 25 servers, and CISA ordered federal agencies to patch the kernel flaw by October 31.",
-      "why_it_matters": "This is an immediate patch-and-exposure conversation: confirm no management interface is internet-facing, apply hotfixes as they land per release train, and check for web shells. It also reopens the segmentation talk \u2014 management plane access should never be broadly reachable.",
-      "url": "https://zubiqo.com/news/palo-alto-networks-warns-of-active-php2shell-exploits-on-firewalls-m269t3",
+      "vendor": "Cisco",
+      "title": "Cisco ASA/FTD SSL VPN flaw CVE-2026-76418 added to CISA exploited list, federal fix deadline November 1",
+      "summary": "CISA added CVE-2026-76418 to its Known Exploited Vulnerabilities catalog on October 29, one day after Cisco's advisory. The flaw is a CVSS 8.6 denial-of-service bug in the Remote Access SSL VPN service of Secure Firewall ASA and FTD software: an unauthenticated remote attacker can send a crafted request when secondary authentication is configured on a tunnel group and force the device to reload. CISA set a November 1, 2026 remediation deadline for federal civilian agencies; Cisco lists no workaround, only software updates, with disabling secondary authentication as a temporary exposure reducer.",
+      "why_it_matters": "This escalates yesterday's advisory into a dated deadline: customers with internet-facing ASA/FTD SSL VPN and secondary authentication on any tunnel group need the fixed release scheduled now, not in the next maintenance cycle. Unexplained firewall reloads in October should be treated as possible exploitation indicators and checked against crash records.",
+      "url": "https://zerodayfeed.com/article/cisco-asa-ftd-vpn-flaw-cve-2026-76418-exploited-reboot-october-2026",
       "tag": "cve",
-      "published": "2026-10-28"
-    },
-    {
-      "vendor": "Dell Technologies",
-      "title": "Critical Data Domain flaws allow unauthenticated root access (DSA-2026-416)",
-      "summary": "Dell's October 28 advisory DSA-2026-416 covers more than 180 CVEs in PowerProtect Data Domain, including four scoring 9.8 that need no login \u2014 among them CVE-2026-86400 (unauthenticated root command execution) and CVE-2026-86397 (unauthenticated privileged account creation). Fixed DD OS builds are 8.9.0.0 (Feature Release), 7.13.1.90 (LTS2024), 8.3.1.50 (LTS2025), and 8.6.1.30 (LTS2026) or later. No active exploitation is reported.",
-      "why_it_matters": "Backup appliances are prime ransomware targets, so a 9.8 unauthenticated flaw on the last line of defense is a top-priority patch conversation. Verify the DD OS branch each customer runs, schedule the matching fixed build, and confirm management interfaces are isolated from general network access.",
-      "url": "https://securityonline.info/dell-powerprotect-data-domain-vulnerabilities/",
-      "tag": "cve",
-      "published": "2026-10-28"
-    },
-    {
-      "vendor": "VMware by Broadcom",
-      "title": "VMware ESX logging flaw added to CISA Known Exploited list (CVE-2026-41709)",
-      "summary": "CISA added CVE-2026-41709, an insufficient-logging flaw in VMware ESX, to its Known Exploited Vulnerabilities catalog on October 28, with a November 11 remediation deadline for federal agencies. The flaw requires admin access and lets an admin-level actor perform certain operations without log entries. Broadcom disclosed and fixed it July 29 in VMSA-2026-0006 (Low severity, CVSS 2.7) in builds including ESXi 9.1.0.0-25370933 and VCF 5.2.4.",
-      "why_it_matters": "Low severity but now KEV-listed, so compliance-driven customers will ask about it. The SE angle is patch currency and audit logging: confirm ESXi/VCF builds are at or past the July fixed builds, and flag that unlogged admin actions undermine forensic confidence even when exploitation needs admin rights.",
-      "url": "https://thecircuitry.to/article/cisa-adds-vmware-esx-logging-flaw-cve-2026-41709-to-kev-due-nov-11-mvskypq1",
-      "tag": "cve",
-      "published": "2026-10-28"
-    },
-    {
-      "vendor": "Cohesity",
-      "title": "Cohesity cloud rebuild validated for interoperability with IBM Terraform Self-Managed",
-      "summary": "Cohesity announced October 28 that HashiCorp (IBM) has validated Cohesity Data Cloud's cloud rebuild capability for interoperability with Terraform Self-Managed \u2014 the first cloud recovery method so validated, according to Cohesity. After a destructive attack, Terraform recreates the declared cloud configuration and Cohesity Data Cloud restores the latest usable application data from backup. Cloud rebuild is part of Cohesity Data Cloud Enterprise Edition.",
-      "why_it_matters": "This turns cyber recovery from 'restore the data' into 'rebuild the whole cloud app, config plus data, from code.' For customers already standardizing on Terraform, it is a concrete recovery-runbook story and a differentiator against restore-only approaches \u2014 ask how their current plan rebuilds the environment, not just the data.",
-      "url": "https://www.storagenewsletter.com/2026/10/28/cohesity-data-cloud-becomes-the-first-cloud-recovery-method-validated-for-interoperability-with-ibm-terraform-self-managed/",
-      "tag": "launch",
-      "published": "2026-10-28"
-    },
-    {
-      "vendor": "NVIDIA",
-      "title": "DOJ probing NVIDIA's $12.9B Hugging Face acquisition over AI competition concerns",
-      "summary": "Reuters reported October 28 that the U.S. Justice Department is asking whether NVIDIA's $12.9 billion acquisition of Hugging Face, agreed in September, would give NVIDIA control of a key AI model distribution point and harm competition. The inquiry sits within a broader probe of NVIDIA's acquisitions, investments, and sales practices. NVIDIA has said Hugging Face would stay open to the wider ecosystem; the deal is expected to close in the first half of 2027, subject to approvals. An investigation is not evidence of wrongdoing.",
-      "why_it_matters": "For customers building AI stacks on open models, this is a supply-chain neutrality question, not a product change. Expect questions about model-portability and whether pipelines depend solely on one hub \u2014 a good discovery prompt for AI infrastructure deals, with no action needed on NVIDIA hardware itself.",
-      "url": "https://www.pymnts.com/legal/2026/doj-probes-nvidias-hugging-face-deal-over-ai-competition-concerns/",
-      "tag": "competitive",
-      "published": "2026-10-28"
+      "published": "2026-10-29"
     }
   ],
   "prompt_of_the_day": {
-    "category": "Customer outreach",
-    "prompt": "Draft a short, urgent customer email (under 150 words, no fluff) alerting an IT director that three of their platforms have October 28 security news needing action this week: (1) Cisco Secure Firewall ASA/FTD \u2014 CVE-2026-76418, CVSS 8.6, actively exploited, unauthenticated SSL VPN denial-of-service forcing device reloads when secondary authentication is configured on a tunnel group, fix is a software update with no workaround; (2) Palo Alto Networks PAN-OS \u2014 PHP2Shell flaws CVE-2026-109618 and CVE-2026-109619, both CVSS 9.2, actively exploited on internet-exposed management interfaces for unauthenticated remote code execution, hotfixes rolling out October 27\u201330; (3) Dell PowerProtect Data Domain \u2014 DSA-2026-416, including CVE-2026-86400 (CVSS 9.8, unauthenticated root command execution) and CVE-2026-86397 (CVSS 9.8, privileged account creation), fixed in DD OS 8.9.0.0 / 7.13.1.90 / 8.3.1.50 / 8.6.1.30 or later. For each, give one sentence on the risk and one on the next step, then close with an offer of a 15-minute call to check their exposure. Keep the tone direct and technical, not alarmist."
+    "category": "Call prep",
+    "prompt": "You are prepping for a discovery call with a customer running Cisco Catalyst SD-WAN controllers and Cisco Secure Firewall ASA/FTD remote-access VPN. Two October 2026 security items frame the call: (1) Cisco Talos reported on October 28 that APT actor UAT-11473 exploited CVE-2026-20127 (CVSS 10.0, authentication bypass in Catalyst SD-WAN Controller, fixed February 2026) to install KeyDrift malware that steals site-to-site IPsec keying material from the control plane \u2014 a patch today does not prove a controller was never compromised, so ask about compromise checks in runit service paths and vdaemon processes. (2) CVE-2026-76418 (CVSS 8.6) in ASA/FTD Remote Access SSL VPN, actively exploited, was added to CISA's Known Exploited list on October 29 with a November 1, 2026 federal remediation deadline; it forces device reloads when secondary authentication is configured on a tunnel group, and the only fix is a software update. Draft 8 sharp discovery questions: 4 that establish whether their SD-WAN controllers are on fixed releases and have been checked for KeyDrift traces, and 4 that establish ASA/FTD SSL VPN exposure, secondary-authentication tunnel groups, and patch scheduling before November 1. Keep each question under 25 words, technical and direct, no fluff."
   }
 }
