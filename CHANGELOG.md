@@ -1,4 +1,6 @@
 # Changelog
+## 2026-10-30
+- Morning briefing: 2 items (Cisco: SD-WAN KeyDrift research, ASA/FTD CVE-2026-76418 added to CISA KEV with Nov 1 deadline). Archive updated.
 
 ## 2026-10-29
 - Morning briefing: 6 items (Cisco, Palo Alto Networks, Dell Technologies, VMware by Broadcom, Cohesity, NVIDIA). Archive updated.
