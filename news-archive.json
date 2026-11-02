@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-11-02",
+    "items": [
+      {
+        "vendor": "Palo Alto Networks",
+        "title": "Palo Alto Networks launches Cortex Cloud SaaS Security",
+        "summary": "SaaS security is now folded into Cortex Cloud, unifying posture, identity, data, and AI risk across SaaS and cloud environments in one dashboard. It covers about 100 SaaS applications with continuous configuration assessment, correlation of SaaS exposures with cloud risk to surface attack paths, and agentic-AI remediation through Cortex AgentiX.",
+        "why_it_matters": "SaaS-to-cloud attack paths are now a CNAPP conversation, not a standalone SSPM sale. For existing Cortex Cloud estates this is a consolidation play; the discovery question is which SaaS apps the customer actually runs and who owns SaaS posture today.",
+        "url": "https://www.cioandleader.com/palo-alto-networks-introduces-cortex-cloud-saas-security-to-protect-connected-enterprise-environments/",
+        "tag": "launch",
+        "published": "2026-11-02"
+      },
+      {
+        "vendor": "Nutanix",
+        "title": "Nutanix confirms critical Linux kernel flaw across AOS, AHV, and Prism Central",
+        "summary": "Security Advisory #0059 (Oct 27, Critical) covers CVE-2026-99999, a 9.3-rated Linux kernel networking flaw that lets a guest leak host memory and crash the host. It spans all versions of AOS, AHV, Prism Central, NKP, MSP, and Objects. It is one of twelve Nutanix advisories in October, five of them Critical. Patching means a kernel update and a reboot on every host; no real-world exploitation is known and the attack requires code already running inside a guest.",
+        "why_it_matters": "A fleet-wide reboot is a maintenance-window conversation, not a silent patch. Note the irony for VMware-migration talks: the kernel flaw hits the hypervisor layer on both sides, so position Nutanix patching as operational discipline rather than letting it become a competitive cudgel.",
+        "url": "https://theinference.org/article/nutanix-confirms-a-critical-9-3-rated-linux-kernel-flaw-across-its-whole-stack-before-earnings",
+        "tag": "cve",
+        "published": "2026-11-01"
+      }
+    ]
+  },
+  {
     "date": "2026-10-30",
     "items": [
       {
@@ -780,174 +803,6 @@
         "url": "https://zerohunt.ai/blog/cisco-ios-xe-cve-2026-20272-hardening-release/",
         "vendor": "Cisco",
         "why_it_matters": "The revised fixed-release list is the reason to re-engage customers who checked the original advisory \u2014 make sure they're running the corrected builds, not just 'a 17.x'. Unpatchable 3650/3850s are natural refresh conversations."
-      }
-    ]
-  },
-  {
-    "date": "2026-10-02",
-    "items": [
-      {
-        "vendor": "Fortinet",
-        "title": "Critical FortiMail zero-day CVE-2026-104286 under active exploitation",
-        "summary": "Fortinet published advisory FG-IR-26-175 on Oct 1 for CVE-2026-104286, a CVSS 9.8 path-traversal + null-byte flaw in FortiMail that lets an unauthenticated attacker write arbitrary files to the appliance via crafted HTTP/HTTPS requests. It affects FortiMail 8.0.0-8.0.1, 7.6.0-7.6.6, 7.4.0-7.4.8 and 7.2.0-7.2.9. Fortinet confirms active exploitation; fixes (8.0.2, 7.6.7, 7.4.9) were still unreleased at disclosure, so customers on those branches must apply workarounds: disable IBE via CLI or block internet access to the management interface. 7.2 users must upgrade to the 7.4 branch or above. CISA added it to the Known Exploited Vulnerabilities catalog on Oct 1 with an Oct 4 deadline for federal agencies. Fortinet also published IoCs (file hashes, IPs, log entries).",
-        "why_it_matters": "This is the second actively-exploited 9.8 in two days (Cisco SD-WAN Manager yesterday). Any customer with internet-reachable FortiMail is an immediate compromise risk, and there is no full patch yet for most branches. Presales moment: offer a version/internet-exposure check and a compromise-assessment conversation for every FortiMail customer \u2014 the CISA Oct 4 deadline gives you a forcing function.",
-        "url": "https://www.helpnetsecurity.com/2026/10/02/fortinet-fortimail-vulnerability-cve-2026-104286/",
-        "tag": "cve",
-        "published": "2026-10-01"
-      },
-      {
-        "vendor": "Everpure",
-        "title": "New Data Intelligence capabilities for production AI: native MCP integration, PureKVA inference acceleration",
-        "summary": "At Accelerate London, Everpure announced new Data Intelligence capabilities shipping this October: native Model Context Protocol (MCP) integration so AI agents and security tools can query live data catalogs in natural language and get sensitivity classifications back; Privacy-First File Intelligence (who can access each share + staleness, without reading contents); Pure Key-Value Accelerator (PureKVA) on FlashBlade pre-staging KV cache directly into GPU memory for up to 20x faster time-to-first-token (vendor claim); Always-On DeepReduce continuous sub-block compression including on pre-compressed content; and an Intelligent Token Optimization reference architecture using open-weight models to cut external API token spend. Data Intelligence builds on the 1Touch acquisition and spans the Everpure platform, public clouds, SaaS and third-party storage.",
-        "why_it_matters": "Everpure is turning storage into governed data infrastructure for agents \u2014 this is the counter to NetApp's just-announced Novus AI storage architecture. For AI-storage deals, ask who owns governed agent data access: PureKVA is FlashBlade-only (not FlashArray), and the 20x TTFT claim needs proof on the customer's own dataset. Real differentiator for agent-readiness conversations this quarter.",
-        "url": "https://www.prnewswire.com/news-releases/everpure-announces-new-data-management-capabilities-for-production-ai-at-scale-302893569.html",
-        "tag": "launch",
-        "published": "2026-10-01"
-      },
-      {
-        "vendor": "Everpure",
-        "title": "Analyst day: new long-term outlook, four growth vectors, FY27 reaffirmed + preliminary FY28 guide",
-        "summary": "At its 2026 financial analyst meeting (Oct 1), Everpure outlined durable accelerated growth through four strategic vectors: core enterprise storage, hyperscaler solutions, and new data-management markets. The company reaffirmed its FY2027 outlook, gave a preliminary FY2028 outlook, and highlighted 19% of revenue consistently reinvested in R&D over five years plus eight consecutive quarters of accelerating revenue growth. CEO Charlie Giancarlo framed it as an inflection point expanding from enterprise storage into hyperscaler data management.",
-        "why_it_matters": "Everpure is explicitly telling Wall Street it is going after hyperscaler business \u2014 a competitive escalation signal for Dell, HPE, and NetApp in large AI-infrastructure deals. Expect sharper pricing and more aggressive positioning on mega-deals; flag this when Everpure shows up in AI-data-center bids.",
-        "url": "https://www.storagenewsletter.com/2026/10/01/everpures-expanding-business-model-fuels-new-long-term-outlook/",
-        "tag": "competitive",
-        "published": "2026-10-01"
-      },
-      {
-        "vendor": "NVIDIA",
-        "title": "Amazon hikes EC2 Capacity Block GPU rental prices ~15%; reportedly offloading $8B in Nvidia chips in sale-leaseback",
-        "summary": "Amazon announced ~15% price increases starting next week on EC2 Capacity Blocks (reserved GPU compute on Nvidia A100 through B300 chips), and the FT reports Amazon is looking to offload ~$8B of advanced Nvidia chips to outside investors and lease them back. The moves point to a hyperscaler financing crunch: Amazon plans $220B in 2026 capex and says demand still outstrips supply through 2028. Nvidia also disclosed a $150B buyback authorization (Sept 28), bringing total repurchase capacity to a record $235B.",
-        "why_it_matters": "Hyperscaler GPU rentals just got 15% more expensive \u2014 the on-prem/private-AI TCO story gets stronger every time cloud GPU economics deteriorate. Use the sale-leaseback as evidence customers want GPU capacity without balance-sheet ownership: exactly what Dell/HPE AI-infrastructure deals offer. Good talk track for any 'why not just run it in AWS' objection.",
-        "url": "https://www.morningstar.com/news/marketwatch/2026100294/amazon-is-hiking-chip-rental-prices-and-reportedly-moving-nvidia-processors-off-the-balance-sheet",
-        "tag": "competitive",
-        "published": "2026-10-02"
-      }
-    ]
-  },
-  {
-    "date": "2026-10-01",
-    "items": [
-      {
-        "vendor": "Cisco",
-        "title": "Critical SD-WAN Manager zero-day CVE-2026-76504 actively exploited",
-        "summary": "Cisco published advisory cisco-sa-sdwan-webauth-xr8beuuU on Sept 30 for CVE-2026-76504, a CVSS 9.8 unauthenticated API authentication bypass in Cisco Catalyst SD-WAN Manager. A crafted HTTP request with a URI-encoded character in the j_security_check path (e.g. POST /%6a_security_check) lets a remote attacker with no credentials use the Manager API as the admin user, gaining full control of the device and the SD-WAN fabric it manages. Fixed releases are available (20.9.10.1, 20.12.8.2, 20.15.6.1, 20.18.4.1, 26.1.2.1, 26.2.1); there is no workaround. Cisco confirmed active exploitation in September, and CISA added the flaw to its Known Exploited Vulnerabilities catalog on Oct 1, with a remediation deadline of Oct 3 for federal civilian agencies.",
-        "why_it_matters": "Any customer running an on-prem Catalyst SD-WAN Manager is exposed, and Internet-reachable managers are at immediate risk. This is a proactive-outreach moment: tell customers to verify their version, apply the fixed release, restrict Manager access from the public internet to trusted hosts, and check serviceproxy-access.log for encoded j_security_check requests from unknown IPs plus vmanage-server.log for j_security_check calls under viptela-reserved- usernames.",
-        "url": "http://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
-        "tag": "cve",
-        "published": "2026-10-01"
-      },
-      {
-        "vendor": "HPE",
-        "title": "$1.2B Vultr order for AMD Helios AI racks; networking growth outlook raised",
-        "summary": "HPE announced Sept 30 a $1.2 billion order from cloud provider Vultr for AMD Helios AI Rack systems to be deployed in Vultr's US data centers - HPE's first order for the new AMD Helios platform. Each rack combines 72 AMD Instinct MI455X GPUs with EPYC 'Venice' CPUs and Pensando Vulcano AI NICs; HPE supplies the networking layer (six HPE Juniper Networking QFX5252 scale-up Ethernet switch trays per rack), direct liquid cooling, and deployment services. At its networking Investor Day the same day, HPE raised its long-term networking revenue CAGR to the high teens for FY26-FY29 (from 5-7%) and FY27 networking growth to high-teens/low-20s, and lifted the Juniper acquisition synergy target to $800M annual run-rate by FY28.",
-        "why_it_matters": "The biggest public proof point that HPE's post-Juniper stack is winning neocloud AI deals against Dell and Supermicro - a citable customer win for AI-infrastructure conversations. The per-rack scale-up Ethernet design (QFX5252) is also a usable counter-position to NVIDIA InfiniBand pitches, and the raised outlook signals HPE expects AI networking budgets to stay strong into FY27.",
-        "url": "https://www.reuters.com/business/hpe-boosts-networking-growth-outlook-gets-12-billion-ai-order-cloud-firm-vultr-2026-09-30/",
-        "tag": "competitive",
-        "published": "2026-09-30"
-      },
-      {
-        "vendor": "Dell Technologies",
-        "title": "MoU with JERA and RHAELM for $15B hyperscale AI data center in Japan",
-        "summary": "On Oct 1, JERA (Japan's biggest power generator), Dell Technologies, and UK-based AI infrastructure developer RHAELM signed an MoU to develop a standardized, repeatable framework for building AI infrastructure at national scale in Japan, starting with a $15 billion, 400-megawatt hyperscale AI data center in Chiba. JERA will provide land next to its Chiba power station plus 400 MW of power under a 15- to 25-year agreement; RHAELM will develop, construct, operate and finance the facility (Apollo Global Management as strategic investment partner); Dell will provide standardized rack-scale AI infrastructure. Phased operation begins in 2028 with full 400 MW capacity targeted for 2029.",
-        "why_it_matters": "National-scale sovereign-AI validation of Dell's rack-scale AI factory positioning - a strong reference-architecture talking point for large AI data-center deals. Also worth watching the financing pattern: infrastructure funds bankrolling multi-billion-dollar builds is a model more customers will ask about.",
-        "url": "https://wixx.com/2026/10/01/jera-teams-up-with-dell-rhaelm-on-ai-infrastructure-development-in-japan/",
-        "tag": "competitive",
-        "published": "2026-10-01"
-      }
-    ]
-  },
-  {
-    "date": "2026-09-30",
-    "items": [
-      {
-        "published": "2026-09-30",
-        "summary": "Everpure announced a set of FlashBlade data-management capabilities aimed at production AI: native Model Context Protocol (MCP) integration so AI agents and security tools can query live data catalogs in natural language and see each dataset's sensitivity class; privacy-first file intelligence that shows who can access each share and how stale it is without ever reading file content; and turn-key deployment through the existing Pure1 console. On performance, the PureKVA Key-Value Accelerator pre-stages context directly into GPU memory for up to 20x faster time to first token with zero dataset relocation, while Always-On DeepReduce scans blocks continuously for sub-block similarities to expand usable capacity without write-performance impact or manual scheduling.",
-        "tag": "launch",
-        "title": "Everpure adds AI data-management capabilities to FlashBlade: native MCP, PureKVA inference acceleration, always-on DeepReduce",
-        "url": "https://cxotoday.com/media-coverage/everpure-announces-new-data-management-capabilities-for-production-ai-at-scale/",
-        "vendor": "Everpure",
-        "why_it_matters": "Gives storage-refresh conversations a real AI story: 'AI execution at the data, without moving it.' The MCP angle is the presales hook for AI-agent projects \u2014 agents need governed access to live enterprise context, and Everpure is selling the data side of that. File-intelligence-before-AI-access is also a clean risk-reduction pitch for security-minded buyers."
-      },
-      {
-        "published": "2026-09-30",
-        "summary": "Everpure's Global Data Sovereignty Report 2026 (2,100 enterprise leaders across 8 countries) finds 88% of C-suite leaders believe a data sovereignty failure could cost them their jobs and 91% fear financial or reputational damage. Yet 64% of organizations operate with no formal sovereignty strategy, 62% lack full visibility into who can access their data, and 85% say they would compromise on features to work with a local or sovereign provider. 40% are already limiting use of SaaS providers on non-domestic infrastructure.",
-        "tag": "competitive",
-        "title": "Everpure sovereignty survey: 88% of execs fear a sovereignty failure could cost them their jobs",
-        "url": "https://www.prnewswire.com/news-releases/88-of-executives-fear-data-sovereignty-failures-could-cost-them-their-jobs-302893568.html",
-        "vendor": "Everpure",
-        "why_it_matters": "Sovereignty is now a budget-level business risk, not just a compliance checkbox. These stats are ready-made discovery material for security and regulated-industry conversations: ask where their data actually lives, who can touch it, and what the plan is for geopolitical disruption \u2014 most won't have an answer."
-      },
-      {
-        "published": "2026-09-29",
-        "summary": "CrowdStrike announced at OpenAI DevDay that the Falcon platform is available in the OpenAI Marketplace: eligible OpenAI enterprise customers can procure Falcon using a portion of their existing OpenAI commitments. The announcement extends the partnership around securing the 'agentic enterprise': Falcon Guardian brings runtime protection to OpenAI Codex agents (visibility into agent activity, detection of compromised or unauthorized behavior, runtime control enforcement), and OpenAI's GPT-5.6 Cyber powers CrowdStrike's FAIRR service with advanced cyber reasoning.",
-        "tag": "launch",
-        "title": "CrowdStrike brings Falcon to the OpenAI Marketplace; Falcon Guardian protects Codex agents at runtime",
-        "url": "https://thewesterlysun.marketminute.com/article/bizwire-2026-9-29-crowdstrike-brings-the-falcon-platform-to-the-openai-marketplace",
-        "vendor": "CrowdStrike",
-        "why_it_matters": "Removes procurement friction for AI-heavy shops: 'spend your OpenAI commit on security' is a new buying path worth surfacing in accounts. For agent-security conversations, Falcon Guardian gives a concrete runtime-protection story \u2014 and GPT-5.6 Cyber inside FAIRR is competitive ammo in SIEM/SOC modernization bake-offs."
-      },
-      {
-        "published": "2026-09-29",
-        "summary": "Palo Alto Networks is expanding its NVIDIA collaboration around NVIDIA's Open Agent Safety Platform reference design: Prisma AIRS AI Gateway will run on NVIDIA Vera CPUs (described as part of a future architecture) to centrally manage how agents connect to models and tools \u2014 inspecting interactions, restricting tool access, scrubbing sensitive data, tracking usage and cost. Prisma AIRS AI Runtime Security will run on NVIDIA BlueField DPUs for policy enforcement, integrated with DOCA Argus, Cortex XSIAM, OpenShell, and Idira for monitoring, response, and identity management.",
-        "tag": "competitive",
-        "title": "Palo Alto Networks deepens NVIDIA partnership: AI-agent runtime security on Vera CPUs and BlueField DPUs",
-        "url": "https://www.helpnetsecurity.com/2026/09/29/palo-alto-networks-nvidia-ai-agent-security/",
-        "vendor": "Palo Alto Networks",
-        "why_it_matters": "AI-agent runtime security is becoming a real budget line, and PANW is planting the flag at the infrastructure layer \u2014 GPU/DPU-enforced policy. In network and security conversations, expect 'how do we govern what agents can touch?' to show up in RFPs; the BlueField/DPU angle lets PANW talk to datacenter teams, not just SOC buyers."
-      },
-      {
-        "published": "2026-09-29",
-        "summary": "Google Cloud launched AI-powered security agents natively in its infrastructure with Palo Alto Networks, CrowdStrike, and Mandiant: PANW built an agent that plugs into Vertex AI to analyze application behavior across VMs, containers, and serverless, automatically isolating suspicious resources while feeding forensic detail to security teams, alongside Google Cloud Armor integration for traffic filtering. The agents monitor workloads, detect anomalies, and respond with minimal customer configuration.",
-        "tag": "launch",
-        "title": "Google Cloud ships AI security agents with Palo Alto Networks, CrowdStrike, and Mandiant",
-        "url": "https://www.webpronews.com/google-cloud-launches-ai-powered-security-agents-with-palo-alto-crowdstrike-and-mandiant/",
-        "vendor": "Palo Alto Networks",
-        "why_it_matters": "Cloud-embedded security agents are a new attach motion: minimal-config protection baked into the compute/storage/network layers. For GCP accounts, this is a joint-solution angle; for others, it's proof the 'security inside the cloud, not at the perimeter' shift is accelerating."
-      },
-      {
-        "published": "2026-09-30",
-        "summary": "Nutanix announced it was recognized as a Leader in the 2026 Gartner Magic Quadrant for Distributed Hybrid Infrastructure, for both Ability to Execute and Completeness of Vision. The release also notes expanded external-storage support: general availability for Dell PowerStore, updates for Everpure FlashArray and Dell PowerFlex, and limited availability for NetApp ONTAP \u2014 plus NKP Metal bare-metal Kubernetes, new agentic-AI capabilities, and sovereign/regulated deployment options.",
-        "tag": "competitive",
-        "title": "Nutanix named a Leader in the 2026 Gartner Magic Quadrant for Distributed Hybrid Infrastructure",
-        "url": "https://pressportal.co.za/it-new-media-and-software/story/m3jer9p4j7ncdi7j5j3z-20260930.html",
-        "vendor": "Nutanix",
-        "why_it_matters": "Third-party validation to drop into VMware-vs-Nutanix conversations alongside the execution-over-vision story. The external-storage GA list is the sharper presales point: Nutanix no longer requires its own storage \u2014 customers can reuse PowerStore or FlashArray, which kills a common objection in HCI migrations."
-      },
-      {
-        "published": "2026-09-30",
-        "summary": "Zscaler's ThreatLabz 2026 Ransomware Report: ransomware data theft rose more than 275% year over year to 896.2 TB exfiltrated; blockchain transactions tied to ransomware payments hit $328 million; the average ransom payment rose 5.3% to $431,995. Manager-level titles and above made up 62% of victims, and attackers increasingly abuse trusted workplace tools including Microsoft Teams for data theft and lateral movement.",
-        "tag": "competitive",
-        "title": "Zscaler ThreatLabz 2026 Ransomware Report: AI-driven ransomware, 275% jump in data theft, execs targeted",
-        "url": "https://www.globenewswire.com/news-release/2026/09/30/3371551/0/en/new-zscaler-report-reveals-ai-assisted-attackers-move-to-massive-data-theft-executive-targeting-and-millions-in-extortion-payments.html",
-        "vendor": "Zscaler",
-        "why_it_matters": "Fresh, quotable stats for security discovery: exfiltration-not-encryption is the dominant ransomware model, execs are the target set, and trusted collaboration tools are the vector. Good opener for zero-trust and data-security conversations \u2014 ask how they'd spot 900 TB walking out through Teams."
-      },
-      {
-        "published": "2026-09-30",
-        "summary": "Cisco's Relentless Defense Report (survey of 8,000 security practitioners in 30 markets) finds only 8% of organizations qualify as top-tier defenders; just 21% can switch on a new security control within six months of budget approval; 40% of teams spend more time collecting and correlating data from disparate systems than chasing threats; and internal friction \u2014 procurement delays, data silos, unclear decision rights \u2014 is now the biggest drag on defense, weighted above tooling gaps. AI-era threats demand coordination no siloed team can deliver.",
-        "tag": "competitive",
-        "title": "Cisco Relentless Defense Report: only 8% of orgs defend well; internal friction is the top blocker",
-        "url": "https://www.helpnetsecurity.com/2026/09/30/relentless-defense-cisco-cybersecurity-survey/",
-        "vendor": "Cisco",
-        "why_it_matters": "The buyer's problem is org friction, not missing tools \u2014 which is a services story. The 6-month control-deployment stat and the '8% relentless defenders' framing are strong opens for professional-services and platform-consolidation conversations. Also a clean segue into XDR/value-prop talks: teams drowning in data correlation want one pane."
-      },
-      {
-        "published": "2026-09-30",
-        "summary": "At Dell Technologies Forum 2026, Dell unveiled its latest AI commercial portfolio: Dell Pro 3, Pro 5, and Pro 7 AI PCs, Dell Pro Precision workstations, plus new displays and peripherals \u2014 pitched as bringing AI capabilities into the flow of work with security built in as a foundation. Dell also launched uDaan, an India skilling program targeting 23,000 young people for AI, cloud, and electronics-manufacturing careers.",
-        "tag": "launch",
-        "title": "Dell launches Dell Pro 3/5/7 AI PCs and Pro Precision workstations at Technologies Forum 2026",
-        "url": "https://www.electronicsmedia.info/2026/09/30/dell-technologies-forum-2026/",
-        "vendor": "Dell Technologies",
-        "why_it_matters": "New SKUs for client-refresh conversations: the AI PC refresh cycle is still the biggest near-term client opportunity, and Dell is leading with 'security as foundation' messaging \u2014 useful against vendors pitching AI PCs as a commodity spec play."
-      },
-      {
-        "published": "2026-09-30",
-        "summary": "VMware's Cloud Foundation blog details VCF 9.1 VKS (VMware Kubernetes Service) cluster-management improvements: lower cluster overhead, secure-by-default pod security contexts (CIS-benchmarked out of the box \u2014 a direct ask from regulated-industry customers), and policy-insight consolidation moved from in-cluster agents to the VKSM backend for better fleet-scale performance. VCF 9.1 is available now from the Broadcom Support Portal.",
-        "tag": "launch",
-        "title": "VCF 9.1 available: VKS cluster management gets leaner, secure-by-default, backend policy insights",
-        "url": "https://blogs.vmware.com/cloud-foundation/2026/09/30/managing-vks-clusters-at-scale-improvements-in-vcf-9-1/",
-        "vendor": "VMware by Broadcom",
-        "why_it_matters": "Broadcom keeps tightening the Kubernetes-on-VCF story, which matters for private-AI conversations: 'secure by default, CIS-benchmarked' is the compliance talking point for regulated shops running containers on VCF. Watch for vSphere Standard refresh details expected at VMware Explore Frankfurt."
       }
     ]
   }
