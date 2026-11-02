@@ -1,28 +1,28 @@
 {
-  "date": "2026-10-30",
-  "updated_at": "2026-10-30T07:15:33-04:00",
+  "date": "2026-11-02",
+  "updated_at": "2026-11-02T07:20:00-05:00",
   "items": [
     {
-      "vendor": "Cisco",
-      "title": "Talos: APT actor planted KeyDrift malware on SD-WAN controllers to steal site-to-site keying material (CVE-2026-20127)",
-      "summary": "Cisco Talos published research on October 28 on UAT-11473, a sophisticated APT actor that exploited CVE-2026-20127, a CVSS 10.0 authentication bypass in Cisco Catalyst SD-WAN Controller instances, to gain unauthorized access and install a custom malware framework called KeyDrift. KeyDrift is built for long-term residence inside the SD-WAN control plane: it intercepts decrypted control traffic and extracts data-plane keying material (AES-256 IPsec keys) for later exfiltration. Talos calls the activity historical, names no victims, and assesses with high confidence that the actor's infrastructure overlaps Volt Typhoon's Silent Train network. The flaw was fixed in February 2026, and Cisco has published a hardening guide plus new Snort rules.",
-      "why_it_matters": "A patch applied now does not answer whether a controller was already compromised, so this is a hunt conversation, not just a patch check: confirm controllers run a fixed release, then look for KeyDrift traces in runit service paths and vdaemon processes. Any customer with Catalyst SD-WAN controllers should be asked about controller patch status and compromise assessment, especially in defense, aerospace, and satellite-adjacent accounts Talos names as targets.",
-      "url": "https://blog.talosintelligence.com/uat-11473-keydrift/",
-      "tag": "cve",
-      "published": "2026-10-28"
+      "vendor": "Palo Alto Networks",
+      "title": "Palo Alto Networks launches Cortex Cloud SaaS Security",
+      "summary": "SaaS security is now folded into Cortex Cloud, unifying posture, identity, data, and AI risk across SaaS and cloud environments in one dashboard. It covers about 100 SaaS applications with continuous configuration assessment, correlation of SaaS exposures with cloud risk to surface attack paths, and agentic-AI remediation through Cortex AgentiX.",
+      "why_it_matters": "SaaS-to-cloud attack paths are now a CNAPP conversation, not a standalone SSPM sale. For existing Cortex Cloud estates this is a consolidation play; the discovery question is which SaaS apps the customer actually runs and who owns SaaS posture today.",
+      "url": "https://www.cioandleader.com/palo-alto-networks-introduces-cortex-cloud-saas-security-to-protect-connected-enterprise-environments/",
+      "tag": "launch",
+      "published": "2026-11-02"
     },
     {
-      "vendor": "Cisco",
-      "title": "Cisco ASA/FTD SSL VPN flaw CVE-2026-76418 added to CISA exploited list, federal fix deadline November 1",
-      "summary": "CISA added CVE-2026-76418 to its Known Exploited Vulnerabilities catalog on October 29, one day after Cisco's advisory. The flaw is a CVSS 8.6 denial-of-service bug in the Remote Access SSL VPN service of Secure Firewall ASA and FTD software: an unauthenticated remote attacker can send a crafted request when secondary authentication is configured on a tunnel group and force the device to reload. CISA set a November 1, 2026 remediation deadline for federal civilian agencies; Cisco lists no workaround, only software updates, with disabling secondary authentication as a temporary exposure reducer.",
-      "why_it_matters": "This escalates yesterday's advisory into a dated deadline: customers with internet-facing ASA/FTD SSL VPN and secondary authentication on any tunnel group need the fixed release scheduled now, not in the next maintenance cycle. Unexplained firewall reloads in October should be treated as possible exploitation indicators and checked against crash records.",
-      "url": "https://zerodayfeed.com/article/cisco-asa-ftd-vpn-flaw-cve-2026-76418-exploited-reboot-october-2026",
+      "vendor": "Nutanix",
+      "title": "Nutanix confirms critical Linux kernel flaw across AOS, AHV, and Prism Central",
+      "summary": "Security Advisory #0059 (Oct 27, Critical) covers CVE-2026-99999, a 9.3-rated Linux kernel networking flaw that lets a guest leak host memory and crash the host. It spans all versions of AOS, AHV, Prism Central, NKP, MSP, and Objects. It is one of twelve Nutanix advisories in October, five of them Critical. Patching means a kernel update and a reboot on every host; no real-world exploitation is known and the attack requires code already running inside a guest.",
+      "why_it_matters": "A fleet-wide reboot is a maintenance-window conversation, not a silent patch. Note the irony for VMware-migration talks: the kernel flaw hits the hypervisor layer on both sides, so position Nutanix patching as operational discipline rather than letting it become a competitive cudgel.",
+      "url": "https://theinference.org/article/nutanix-confirms-a-critical-9-3-rated-linux-kernel-flaw-across-its-whole-stack-before-earnings",
       "tag": "cve",
-      "published": "2026-10-29"
+      "published": "2026-11-01"
     }
   ],
   "prompt_of_the_day": {
-    "category": "Call prep",
-    "prompt": "You are prepping for a discovery call with a customer running Cisco Catalyst SD-WAN controllers and Cisco Secure Firewall ASA/FTD remote-access VPN. Two October 2026 security items frame the call: (1) Cisco Talos reported on October 28 that APT actor UAT-11473 exploited CVE-2026-20127 (CVSS 10.0, authentication bypass in Catalyst SD-WAN Controller, fixed February 2026) to install KeyDrift malware that steals site-to-site IPsec keying material from the control plane \u2014 a patch today does not prove a controller was never compromised, so ask about compromise checks in runit service paths and vdaemon processes. (2) CVE-2026-76418 (CVSS 8.6) in ASA/FTD Remote Access SSL VPN, actively exploited, was added to CISA's Known Exploited list on October 29 with a November 1, 2026 federal remediation deadline; it forces device reloads when secondary authentication is configured on a tunnel group, and the only fix is a software update. Draft 8 sharp discovery questions: 4 that establish whether their SD-WAN controllers are on fixed releases and have been checked for KeyDrift traces, and 4 that establish ASA/FTD SSL VPN exposure, secondary-authentication tunnel groups, and patch scheduling before November 1. Keep each question under 25 words, technical and direct, no fluff."
+    "category": "Customer outreach",
+    "prompt": "Draft a short customer outreach email (under 150 words) about Palo Alto Networks' Cortex Cloud SaaS Security, announced Nov 2, 2026: it folds SaaS security into Cortex Cloud, unifying posture, identity, data, and AI risk across about 100 SaaS applications and cloud environments in one dashboard, with continuous configuration assessment and agentic-AI remediation via Cortex AgentiX. Open by asking which SaaS apps they run and who owns SaaS security posture today, note that a single misconfiguration or overprivileged identity in one app can expose connected environments, and close by offering a 30-minute review of their top SaaS exposures. Keep the tone consultative, not salesy, and end with one clear call to action."
   }
 }
