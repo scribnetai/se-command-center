@@ -1,4 +1,7 @@
 # Changelog
+## 2026-11-02
+- Morning briefing: 2 items (Palo Alto Networks, Nutanix). Archive updated.
+
 ## 2026-10-30
 - Morning briefing: 2 items (Cisco: SD-WAN KeyDrift research, ASA/FTD CVE-2026-76418 added to CISA KEV with Nov 1 deadline). Archive updated.
 
