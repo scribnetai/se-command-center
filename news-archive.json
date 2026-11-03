@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-11-03",
+    "items": [
+      {
+        "vendor": "Dell Technologies",
+        "title": "CrowdStrike Falcon joins the Dell AI Factory with NVIDIA",
+        "summary": "Announced Nov 2 at Fal.Con Europe, customers can buy CrowdStrike security together with Dell AI infrastructure through Dell's AI Ecosystem Program, aligned with NVIDIA's AI Factory Reference Architecture. Three Falcon capabilities are included: Falcon Guardian for runtime protection of AI agents (prompt injection, malicious behavior, data exposure) on NVIDIA OpenShell, Falcon Cloud Security for containers and Kubernetes, and Falcon Next-Gen SIEM; Dell MDR Services will exclusively manage these capabilities with 24x7 monitoring across the AI stack.",
+        "why_it_matters": "AI infrastructure deals now carry a security line item from day one, sold through Dell rather than bolted on later. For Dell AI Factory prospects, the discovery question is who owns agent and workload security in their AI build \u2014 and whether they want it on the Dell order.",
+        "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-dell-technologies-announce-integrated-ai-security-dell-ai-factory-nvidia/",
+        "tag": "launch",
+        "published": "2026-11-02"
+      },
+      {
+        "vendor": "CrowdStrike",
+        "title": "CrowdStrike buys Fiddler AI and Dreadnode, adds Falcon Guardian kill switch",
+        "summary": "Announced Nov 3 at Fal.Con Europe, CrowdStrike agreed to acquire Fiddler AI (agent observability and explainability, to become Falcon Observe) and Dreadnode (automated pre-deployment AI security testing across 100+ attack strategies, mapped to OWASP, MITRE ATLAS and NIST). Both deals are expected to close in CrowdStrike's Q4 FY27 with capabilities generally available then; the combined price was reported by WSJ at about $495M (about $400M Fiddler, $95M Dreadnode) while CrowdStrike itself did not disclose terms. Separately, Falcon Guardian gained a kill switch that terminates agents acting abnormally.",
+        "why_it_matters": "CrowdStrike is now selling the full agent lifecycle: Dreadnode tests before deployment, Guardian enforces at runtime (including kill), Falcon Observe explains what the agent did afterward. That audit-trail story lands with regulated customers; the catch is timing \u2014 none of it is GA until Q4 FY27, so don't quote it as shipping today.",
+        "url": "https://cryptobriefing.com/crowdstrike-acquires-fiddler-ai-dreadnode/",
+        "tag": "competitive",
+        "published": "2026-11-03"
+      },
+      {
+        "vendor": "NetApp",
+        "title": "NetApp completes PEAK:AIO acquisition for AI-scale storage",
+        "summary": "Announced Nov 2, NetApp completed its acquisition of PEAK:AIO, a UK software-defined storage vendor specializing in metadata services and parallel file systems. The technology will feed NetApp Novus, aimed at zettabyte-scale file systems for AI clouds and GPU-as-a-service providers, integrated into NetApp's ONTAP-based architecture. Terms were not disclosed and no commercial availability date or pricing for Novus was announced.",
+        "why_it_matters": "NetApp's AI-storage answer is now a metadata story: keep GPUs fed by scaling metadata and namespace independently of data. For AI-infrastructure prospects, ask about their metadata bottleneck and namespace growth \u2014 but position Novus as a direction, not a shippable product, until a GA date lands.",
+        "url": "https://www.hpcwire.com/off-the-wire/netapp-completes-acquisition-of-peakaio/",
+        "tag": "competitive",
+        "published": "2026-11-02"
+      },
+      {
+        "vendor": "VMware by Broadcom",
+        "title": "LSEG renews VMware for five years on VCF 9 as NHS board exits to Nutanix",
+        "summary": "The London Stock Exchange Group renewed its Broadcom agreement for another five years, with professional services to roll out VMware Cloud Foundation 9 across its private cloud. In the same week, the UK's NHS North East London Integrated Care Board said it exited legacy NetApp and VMware infrastructure for a Nutanix Cloud Infrastructure private cloud, cutting 22 NetApp nodes to eight Nutanix nodes and citing cost savings, simpler administration, and single-pane management.",
+        "why_it_matters": "Two opposite reference points in one week: a flagship financial-infrastructure customer doubling down on VCF 9, and a public-sector board using the Broadcom pricing change as its exit business case. Use LSEG against 'everyone is fleeing' claims with full-stack accounts, and the NHS story with cost-driven shops \u2014 but note the NHS win is about consolidation (22 nodes to 8), not just the hypervisor swap.",
+        "url": "https://www.datacenterdynamics.com/en/news/lseg-renews-agreement-with-broadcom-to-continue-using-vmware/",
+        "tag": "competitive",
+        "published": "2026-11-02"
+      }
+    ]
+  },
+  {
     "date": "2026-11-02",
     "items": [
       {
