@@ -1,4 +1,7 @@
 # Changelog
+## 2026-11-03
+- Morning briefing: 4 items (Dell Technologies, CrowdStrike, NetApp, VMware by Broadcom). Archive updated.
+
 ## 2026-11-02
 - Morning briefing: 2 items (Palo Alto Networks, Nutanix). Archive updated.
 
