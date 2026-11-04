@@ -1,4 +1,8 @@
 # Changelog
+
+## 2026-11-04
+- Morning briefing: 3 items (Cisco, Palo Alto Networks, Nutanix). Archive updated.
+
 ## 2026-11-03
 - Morning briefing: 4 items (Dell Technologies, CrowdStrike, NetApp, VMware by Broadcom). Archive updated.
 
@@ -140,4 +144,3 @@
 ## 2026-09-29 — Prompts removed from app-switcher dropdown
 
 - Removed the Prompts entry from the in-app dropdown menu so it lists only the SE-job apps (plus the scribnet.io home link). The prompts page itself is untouched.
-
