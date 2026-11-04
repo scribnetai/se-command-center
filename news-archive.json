@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-11-04",
+    "items": [
+      {
+        "vendor": "Cisco",
+        "title": "Critical Secure Email Gateway flaw allows unauthenticated remote code execution as root (CVE-2026-76461)",
+        "summary": "Cisco's Nov 3 advisory describes a SQL injection flaw in email parsing in AsyncOS for Secure Email Gateway that lets an unauthenticated remote attacker send a crafted email and run arbitrary commands with root privileges. Cisco reports no workarounds; the fixed release is 16.5.0-780, and customers on 15.5.5-014 should confirm they have the updated fix and that the Retro Remediation Engine is at version 4.0.2 or later. Cisco Secure Email Cloud devices have already been upgraded by Cisco, and Cisco says it contacted cloud customers where it found signs of compromise.",
+        "why_it_matters": "Any on-prem Secure Email Gateway on an affected release is a patch-now conversation, not a next-maintenance-window one. Ask customers to confirm their AsyncOS train, check mail_logs for suspicious SQL statements across every cluster member, and note that a compromised appliance may expose cluster SSH keys, so Cisco recommends restoring every member of an affected cluster to a secure configuration.",
+        "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX",
+        "tag": "cve",
+        "published": "2026-11-03"
+      },
+      {
+        "vendor": "Palo Alto Networks",
+        "title": "25 PAN-OS systems compromised by chaining PHP2Shell flaws with a Linux privilege-escalation flaw",
+        "summary": "F5 Labs' Nov 4 threat bulletin reports attackers compromised 25 PAN-OS systems (24 perimeter firewalls and one internal management server) by chaining the critical PHP2Shell remote code execution flaws (CVE-2026-109618 and CVE-2026-109619, CVSS 9.2) with the Fragnesia Linux kernel privilege-escalation flaw (CVE-2026-46300). The exploit targeted the PAN-OS appweb management server's PHP 8.0.30 build, escalated to root, and established a persistent reverse SSH tunnel used to pivot internally and harvest directory-service credentials.",
+        "why_it_matters": "This turns a PHP patch story into a firewall-compromise story: PAN-OS customers should apply vendor-supported PAN-OS remediations urgently and check management-plane exposure, not just edge patch status. For standalone PHP deployments the mitigations are upgrading to PHP 8.2.35, 8.3.36, 8.4.27 or 8.5.12, or temporarily disabling session.upload_progress.enabled.",
+        "url": "https://www.f5.com/labs/articles/weekly-threat-bulletin-november-4th-2026",
+        "tag": "cve",
+        "published": "2026-11-04"
+      },
+      {
+        "vendor": "Nutanix",
+        "title": "Nutanix and Supermicro plan a jointly engineered private AI inference system for early 2027",
+        "summary": "Nutanix and Supermicro announced plans for a jointly engineered AI infrastructure solution for private inference, combining the Nutanix Cloud Platform and Nutanix Agentic AI with Supermicro servers, NVIDIA GPUs and NVIDIA Spectrum-X networking. The system is described as using Supermicro nodes with eight NVIDIA Blackwell Ultra GPUs each, aimed at moving AI projects from experimentation to production without integrating multiple infrastructure technologies. Availability is planned for early 2027 through Supermicro and its channel partners.",
+        "why_it_matters": "The pitch is inference cost control on-prem versus per-token cloud billing, with GPU resources kept under the customer's control. Position it as a planned system, not a quotable SKU: discovery should focus on private inference cost and data-control requirements, and any quote must wait for validated configurations and GA dates.",
+        "url": "https://www.intelligentcio.com/me/2026/11/04/nutanix-and-supermicro-collaborate-to-reduce-enterprise-ai-inference-costs/",
+        "tag": "launch",
+        "published": "2026-11-04"
+      }
+    ]
+  },
+  {
     "date": "2026-11-03",
     "items": [
       {
