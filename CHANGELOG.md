@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-05
+- Morning briefing: 3 items (Cisco, VMware by Broadcom, Palo Alto Networks). Archive updated.
+
+
 ## 2026-11-04
 - Morning briefing: 3 items (Cisco, Palo Alto Networks, Nutanix). Archive updated.
 
