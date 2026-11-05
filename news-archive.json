@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-11-05",
+    "items": [
+      {
+        "vendor": "Cisco",
+        "title": "Nov 4 advisories: UCS Central RCE (CVE-2026-76506), ISE auth bypass, Unified CM XSS \u2014 no workarounds",
+        "summary": "Cisco's Nov 4 PSIRT batch fixes three flaws: CVE-2026-76506 (CVSS 7.6), an authenticated remote code execution flaw in the UCS Central web interface via insufficient input validation; CVE-2026-20241 (CVSS 5.3), an authorization bypass in ISE/ISE-PIC that lets an unauthenticated remote attacker obtain an endpoint identity certificate; and CVE-2026-76419 (CVSS 6.1), a cross-site scripting flaw in the Unified CM web interface. Cisco lists no workarounds for any of the three and says it is not aware of public announcements or malicious use.",
+        "why_it_matters": "UCS Central is the patch-now item: any authenticated user can turn a web session into command execution, file writes, or data disclosure, and the fix is 2.1(2c) or migrating off 2.0 and earlier. ISE customers should check certificate issuance, and Unified CM shops should confirm they are on 15SU5 or a fixed release. Cisco also notes it does not plan to publish more security hardening advisories for the rest of calendar 2026.",
+        "url": "https://securityonline.info/cisco-ucs-central-cve-2026-76506-rce-patched/",
+        "tag": "cve",
+        "published": "2026-11-04"
+      },
+      {
+        "vendor": "VMware by Broadcom",
+        "title": "vSphere Express launches: standalone VMware returns as a 128-core tier; legacy standalone SKUs end Oct 11, 2027",
+        "summary": "Broadcom's Nov 4 VMware portfolio update introduces VMware vSphere Express, a fixed subscription SKU (VCF-VSP-EXP) built on vSphere 9 and available immediately in all regions, covering up to 128 cores per customer with vCenter Standard, ESX, Distributed Switch, vMotion, HA and vTPM 2.0 \u2014 but no vSAN or DRS, and one bundle maximum per customer. The same update adds VMware Live Recovery and VMware Compliance and Configuration Management to the VCF Advanced Services catalog, and previews AI Infrastructure Quickstart and native vSAN S3 object storage for the next VCF release in Broadcom's fiscal Q1 2027. Standalone vSphere Standard and Enterprise Plus reach end of service Oct 11, 2027; in the EEA they stay on sale until Oct 31, 2027 with extended support to Oct 31, 2028.",
+        "why_it_matters": "This is the answer for every small VMware shop that has been pushed toward VCF since perpetual licensing ended \u2014 a right-sized standalone tier finally exists. But Broadcom has not published pricing, so do not quote third-party channel estimates as official. Discovery should separate 'just need a hypervisor' accounts (Express fits) from shops that also need storage and networking (the Express math changes fast without vSAN/DRS), and every legacy standalone customer now has a hard Oct 11, 2027 deadline to plan around.",
+        "url": "https://blogs.vmware.com/cloud-foundation/2026/11/04/broadcom-vcf-portfolio-updates/",
+        "tag": "launch",
+        "published": "2026-11-04"
+      },
+      {
+        "vendor": "Palo Alto Networks",
+        "title": "Reportedly in talks to acquire AI-agent identity startup Clutch Security for ~$500M",
+        "summary": "The Information reported Nov 4 that Palo Alto Networks is in talks to acquire Clutch Security, an Israeli startup whose software tracks the passwords and identity verification codes AI agents use to access systems (non-human identity security), for about $500 million. Neither side has confirmed a price or a deal. A separate Nov 5 report says Palo Alto is also in talks to acquire Beacon Security, a startup that builds AI agents for threat detection, investigation and response. If signed, Clutch would be Palo Alto's fifth announced acquisition this year.",
+        "why_it_matters": "Non-human identity is becoming the next platformization battleground: Palo Alto already bought Console (~$500M) in the same space this year, and CrowdStrike is buying Fiddler and Dreadnode for agent security. For SEs, this is a positioning signal, not a product yet \u2014 ask customers how they govern what their AI agents can log into, and note that agent identity is now a board-level acquisition theme across the security vendors.",
+        "url": "https://aiweekly.co/alerts/palo-alto-in-talks-to-buy-ai-agent-startup-clutch-for-500m",
+        "tag": "competitive",
+        "published": "2026-11-04"
+      }
+    ]
+  },
+  {
     "date": "2026-11-04",
     "items": [
       {
@@ -844,38 +876,6 @@
         "url": "https://www.globenewswire.com/news-release/2026/10/05/3374476/0/en/zscaler-collaborates-with-ibm-and-red-hat-to-protect-private-applications-from-frontier-ai-powered-threats.html",
         "vendor": "Zscaler",
         "why_it_matters": "Cites Mandiant M-Trends 2026 data that mean time to exploit has dropped below zero (exploited before a public patch exists). Use this in conversations with security teams burned by zero-day patching fire drills, and pair it with ZPA discovery questions."
-      }
-    ]
-  },
-  {
-    "date": "2026-10-05",
-    "items": [
-      {
-        "published": "2026-10-01",
-        "summary": "Nutanix announced the acquisition of France-based Ryax Technologies, an AI-driven compute orchestration and management platform. Nutanix will integrate Ryax's GPU utilization and AI-aware smart scheduling capabilities into Nutanix Kubernetes Platform (NKP) and Nutanix Enterprise AI (NAI). The pitch: as enterprises spread agentic AI across private data centers, hyperscalers, and neoclouds chasing GPU capacity, Ryax automates the infrastructure/data/hardware/code layer so AI projects deploy faster, cheaper, and more reliably.",
-        "tag": "launch",
-        "title": "Nutanix acquires Ryax Technologies for agentic AI compute orchestration",
-        "url": "https://www.intelligenttechchannels.com/2026/10/01/nutanix-acquires-ryax-technologies-to-help-customers-accelerate-agentic-ai-initiatives/",
-        "vendor": "Nutanix",
-        "why_it_matters": "Gives Nutanix a concrete answer to the inference-economics question in AI discovery calls: GPU efficiency across hybrid footprints, not just where you run VMs. The integration is announced, not shipped \u2014 position it as roadmap strength, not something to quote."
-      },
-      {
-        "published": "2026-10-04",
-        "summary": "VCF chief product officer Paul Turner told The Register that Broadcom placed 'too big a focus on VCF,' alienating SMBs with expensive, subscription-based bundles many didn't need \u2014 including sales reps reportedly telling customers lower-priced vSphere Standard editions were unavailable. The company says it has corrected its sales approach and that an updated vSphere Standard (the entry-level offering, unchanged since 2022) is expected to release soon, with details at VMware Explore Frankfurt on October 13-14. Analysts note Nutanix, Proxmox, and Hyper-V already gained ground among disaffected SMBs, and that trust \u2014 not features \u2014 is the deficit.",
-        "tag": "licensing",
-        "title": "Broadcom admits 'too big a focus on VCF'; updated vSphere Standard expected, details at Explore Frankfurt",
-        "url": "https://rocketnews.com/2026/10/trust-not-features-is-the-real-deficit-vmware-tries-to-appease-smbs-10/",
-        "vendor": "VMware by Broadcom",
-        "why_it_matters": "A direct counter to the most common midmarket VMware objection ('VCF bundles too much for us'). Credible to cite in renewal conversations, but don't promise pricing or terms until the refresh actually ships \u2014 customers who already migrated aren't coming back on a promise."
-      },
-      {
-        "published": "2026-10-02",
-        "summary": "Cisco revised advisory cisco-sa-hardening-iosxe-V8NMuMZJ on October 2 to correct the fixed-release guidance for a cluster of AI-found IOS XE flaws (release trains 16.6.2 through 26.1.3). Headline CVE-2026-20272 is a CVSS 9.8 unauthenticated command-injection reachable over the network; there is no workaround. Fixed releases: 17.9.10, 17.12.8, 17.15.6, 17.18.4/17.18.4a, 26.1.2 (per the revised advisory). Catalyst 3650/3850 switches on 16.12 and earlier will not be patched. Cisco says it found the flaws in an internal audit and is aware of no exploitation in the wild.",
-        "tag": "cve",
-        "title": "IOS XE advisory revised Oct 2: CVE-2026-20272 (CVSS 9.8 command injection), no workaround",
-        "url": "https://zerohunt.ai/blog/cisco-ios-xe-cve-2026-20272-hardening-release/",
-        "vendor": "Cisco",
-        "why_it_matters": "The revised fixed-release list is the reason to re-engage customers who checked the original advisory \u2014 make sure they're running the corrected builds, not just 'a 17.x'. Unpatchable 3650/3850s are natural refresh conversations."
       }
     ]
   }
