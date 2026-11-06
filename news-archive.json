@@ -1,5 +1,73 @@
 [
   {
+    "date": "2026-11-06",
+    "items": [
+      {
+        "vendor": "Dell Technologies",
+        "title": "Dell expands cyber resilience: quantum-safe PowerStore encryption, identity resilience, MDR for Identity",
+        "summary": "Dell broadened its security and resilience portfolio: the latest PowerStore software adds quantum-safe data-in-flight encryption over Fibre Channel (available November 2026), PowerProtect gains identity resilience for Active Directory, Entra ID and Okta, Managed Detection and Response for Identity is now available, and Resilience Operations for AI plus an expanded PowerProtect AI Assistant are live. A Post-Quantum Readiness Assessment service also lands in November, with PowerProtect/PowerScale snapshot orchestration following in December.",
+        "why_it_matters": "Identity is now the front door in most breaches, and Dell is selling resilience as a bundle \u2014 storage encryption, identity recovery, and AI-factory hardening in one conversation. For SEs this is a cross-sell wedge into existing PowerStore/PowerProtect accounts: ask who owns identity recovery today, and whether their FC encryption story covers harvest-now-decrypt-later risk.",
+        "url": "https://techbuzzireland.com/2026/11/05/dell-technologies-strengthens-cybersecurity-and-resilience-across-ai-environments-identity-and-infrastructure/",
+        "tag": "launch",
+        "published": "2026-11-05"
+      },
+      {
+        "vendor": "Cisco",
+        "title": "Second critical Secure Email Gateway RCE (CVE-2026-76519, CVSS 9.8) actively exploited \u2014 patch Content Scanner Tools",
+        "summary": "Cisco rates CVE-2026-76519 critical (CVSS 9.8): a single email with a crafted attachment can give an unauthenticated attacker root on Secure Email Gateway, with Cisco aware of active exploitation in October. Only gateways with the File Reputation service (AMP) enabled on a mail policy and Content Scanner Tools below 25.3.0.5525 are affected. Fix is Content Scanner Tools 25.3.0.5525 or later (no reboot), or AsyncOS 15.5.5-014 / 16.5.0-780. There is no workaround.",
+        "why_it_matters": "A second critical SEG remote-root flaw in as many days (yesterday's briefing covered CVE-2026-76461) means every self-hosted SEG customer needs a version check this week, not next quarter. The fix is a tools update, not a full upgrade \u2014 low friction, so there is no good reason to defer. Ask customers whether File Reputation is even enabled; if it is off, they are not exposed to this one.",
+        "url": "https://clearsecurity.vision/en/blog/2026-11-04-patches-that-cannot-wait-november-2026/",
+        "tag": "cve",
+        "published": "2026-11-05"
+      },
+      {
+        "vendor": "VMware by Broadcom",
+        "title": "vSphere 8 gets an EEA-only lifeline: Standard and Enterprise Plus on sale to Oct 31, 2027, support to Oct 31, 2028",
+        "summary": "Broadcom quietly carved out European Economic Area customers from the vSphere 8 end-of-life calendar: in the EEA, vSphere Standard 8 and Enterprise Plus 8 stay on sale until October 31, 2027, with Extended Support included in active subscriptions until the earlier of the subscription end date or October 31, 2028. Everywhere else, end of general support is still October 11, 2027. The carve-out follows an EU antitrust investigation into Broadcom's VMware channel changes and a General Court ruling on November 3.",
+        "why_it_matters": "VMware's EOL date is now a regional variable \u2014 a US customer and an EEA customer on the same vSphere 8 build have different deadlines, and the EEA one gets roughly a year more. That changes renewal conversations immediately: EEA accounts can slow-walk a VCF 9 migration, while US accounts cannot. It also signals Broadcom will bend under regulatory pressure, which is leverage in renewal negotiations.",
+        "url": "https://www.theregister.com/virtualization/2026/11/05/vmware-quietly-offers-european-users-extended-sales-and-support-for-low-end-vsphere/5307732",
+        "tag": "eol",
+        "published": "2026-11-05"
+      },
+      {
+        "vendor": "Rubrik",
+        "title": "Rubrik-Hosted Protection for on-prem NAS goes GA \u2014 hosted backup storage, no customer hardware",
+        "summary": "Rubrik announced Rubrik-Hosted Protection for On-Premise Unstructured Data, generally available since November 3, 2026. Built on NAS Cloud Direct, Rubrik operates the backup storage, capacity and updates in its own cloud while lightweight data movers on the customer's existing servers connect NAS to it \u2014 no backup appliances to buy, rack or maintain. Backups land in an isolated, immutable vault on a separate identity domain; recovery can target a different array, cloud storage, or an isolated recovery environment. Anomaly detection runs on every backup; sensitive-data discovery for primary shares is still in preview.",
+        "why_it_matters": "This removes the biggest objection in NAS backup deals \u2014 the customer having to buy and size backup hardware for petabytes of unstructured data. It turns a capex-heavy conversation into an opex one and directly challenges Cohesity's appliance/software story. Ask NAS-heavy accounts (medical imaging, seismic, design, AI datasets) how much unstructured data sits unprotected because the hardware business case never cleared.",
+        "url": "https://www.businesswire.com/news/home/20261105439575/en/Rubrik-Extends-Cyber-Resilience-Across-Enterprise-Unstructured-Data",
+        "tag": "launch",
+        "published": "2026-11-05"
+      },
+      {
+        "vendor": "Nutanix",
+        "title": "Expedient adds multitenant cloud on Nutanix SP Central, lowering the on-ramp to managed cloud and governed AI",
+        "summary": "Expedient expanded its Nutanix partnership with a multitenant deployment model for Expedient Cloud Powered by Nutanix, built on Nutanix SP Central. The same AHV-based platform now spans multitenant and dedicated cloud, edge, disaster recovery and AI workloads, with workloads portable across on-premises, dedicated and multitenant environments without conversion. Expedient earned Powered by Nutanix: Verified Solutions qualification for its dedicated private cloud, multitenant private cloud and DR-as-a-service offerings.",
+        "why_it_matters": "Multitenancy is the service-provider story Nutanix has been building toward \u2014 it lets SPs serve smaller customers profitably on the same platform, which is exactly the segment VMware's VCSP changes stranded. For SEs, this is a proof point that the Nutanix SP ecosystem is maturing: ask VMware-dependent SPs and midmarket accounts whether their provider can offer a managed Nutanix path at a price point dedicated cloud never reached.",
+        "url": "https://www.prnewswire.com/news-releases/expedient-expands-partnership-with-nutanix-with-multitenant-cloud-lowering-the-barrier-to-modern-cloud-and-governed-ai-302930942.html",
+        "tag": "competitive",
+        "published": "2026-11-05"
+      },
+      {
+        "vendor": "NVIDIA",
+        "title": "NVIDIA publishes Vera CPU benchmarks: 2x agent speed, 1.6x more agents per watt than the fastest x86",
+        "summary": "NVIDIA published Vera CPU results from a 100 MW datacenter comparison, claiming 2x faster agent speed than the most energy-efficient x86 CPU and 1.6x more agents per watt than the fastest x86 CPU. Partner data: Perplexity ran agentic coding tasks ~1.5x faster and plans a production Vera deployment; DeepInfra measured up to 2.2x on agentic orchestration; ClickHouse topped the ClickBench leaderboard on a dual-socket Vera box; Daytona spun up 1,000 agent sandboxes in 10.8s. Vera is an 88-core (176-thread) Arm CPU that can host Vera Rubin systems or run standalone for agentic AI and analytics.",
+        "why_it_matters": "NVIDIA is now benchmarking a CPU against x86 on agent workloads \u2014 the host CPU is becoming a selling point in AI deals, not an afterthought. Dell is already shipping Vera servers (PowerEdge R8822 this month, M9882 in Q1 2027), so expect Vera to show up in AI Factory quotes. Treat the numbers as vendor benchmarks: the Perplexity/DeepInfra production data points are the credible part, not the headline multiples.",
+        "url": "https://www.unite.ai/nvidia-pits-vera-cpu-against-x86-on-agent-speed-and-power-capacity/",
+        "tag": "competitive",
+        "published": "2026-11-05"
+      },
+      {
+        "vendor": "CrowdStrike",
+        "title": "CrowdStrike launches sovereign cloud in Saudi Arabia for in-country data residency",
+        "summary": "CrowdStrike launched a sovereign cloud deployment of the Falcon platform in Saudi Arabia, available immediately to customers and authorized partners. Government entities, critical national infrastructure and enterprises get the full Falcon platform with in-country data residency combined with global threat intelligence.",
+        "why_it_matters": "Data residency is the gating requirement in regulated and government deals across the Gulf, and Falcon being available in-country removes a common objection in those accounts. For SEs with Middle East exposure, this is a check-box win against vendors still routing regional telemetry offshore \u2014 ask prospects whether their current EDR/XDR keeps their data inside the Kingdom.",
+        "url": "https://mid-east.info/crowdstrike-launches-sovereign-cloud-in-saudi-arabia-bringing-ai-native-cybersecurity-to-the-kingdom/",
+        "tag": "launch",
+        "published": "2026-11-06"
+      }
+    ]
+  },
+  {
     "date": "2026-11-05",
     "items": [
       {
@@ -844,38 +912,6 @@
         "url": "https://www.globenewswire.com/news-release/2026/10/05/3374476/0/en/zscaler-collaborates-with-ibm-and-red-hat-to-protect-private-applications-from-frontier-ai-powered-threats.html",
         "tag": "launch",
         "published": "2026-10-05"
-      }
-    ]
-  },
-  {
-    "date": "2026-10-06",
-    "items": [
-      {
-        "published": "2026-10-05",
-        "summary": "Dell published DSA-2026-324 for Dell System Update, the CLI tool that pushes firmware and driver updates to PowerEdge servers. The lead flaw, CVE-2026-86360, is a path-traversal weakness an unauthenticated remote attacker could leverage for root-level code execution; four more high-severity DSU flaws (two remote code execution, two privilege escalation) were fixed in DSU 2.3.0.0. The same week Dell disclosed critical flaws in Container Storage Modules, including CVE-2026-63688 and CVE-2026-63692, both rated 10.0 and affecting authentication around storage-array management. No exploitation or public proof of concept has been reported.",
-        "tag": "cve",
-        "title": "Critical DSU path-traversal RCE (CVE-2026-86360, CVSS 9.6) and four more DSU flaws patched; two CVSS 10.0 Container Storage Module bugs disclosed",
-        "url": "https://www.bleepingcomputer.com/news/security/new-dell-system-update-flaw-lets-hackers-gain-root-privileges/",
-        "vendor": "Dell Technologies",
-        "why_it_matters": "DSU runs fleet-wide on PowerEdge estates, so one unpatched build can leave whole data centers exposed. Ask customers which DSU version their server-update workflows run and whether their CSM/Kubernetes-on-Dell-storage deployments are on 1.18.0+. Good excuse for a proactive check-in on firmware hygiene."
-      },
-      {
-        "published": "2026-10-05",
-        "summary": "At RSAC 2026 Palo Alto Networks launched Prisma AIRS 3.0, pitched at securing the full agentic AI lifecycle (agent identity, runtime security, governance) rather than just observing AI interactions, and Prisma Browser for Business, a simplified secure browser aimed at small businesses with built-in phishing, ransomware, and data-leakage controls. The company also introduced Cortex XCOR, an AI observability platform that automates root-cause analysis for cloud-native environments.",
-        "tag": "launch",
-        "title": "Prisma AIRS 3.0 for agentic AI security and Prisma Browser for Business for SMBs debut at RSAC 2026",
-        "url": "https://www.crn.com/news/security/2026/10-hot-new-cybersecurity-tools-announced-at-rsac-2026",
-        "vendor": "Palo Alto Networks",
-        "why_it_matters": "Customers rolling out AI agents are discovering governance and recovery gaps fast. Prisma AIRS 3.0 gives you a presales wedge for discovery around agent identity and runtime controls. The SMB browser is a new door-opener product for small-business accounts where the enterprise browsers never fit."
-      },
-      {
-        "published": "2026-10-05",
-        "summary": "Zscaler announced a collaboration with IBM and Red Hat pairing its Autonomous Application Shield (delivered via the Zero Trust Exchange) with IBM/Red Hat's Lightwell solution. The pitch: vulnerabilities are being weaponized faster than patch cycles, so the joint offering provides inline, application-specific protection while remediation is prepared and validated fixes are delivered.",
-        "tag": "launch",
-        "title": "Zscaler teams with IBM and Red Hat to shield private apps in the disclosure-to-patch window",
-        "url": "https://www.globenewswire.com/news-release/2026/10/05/3374476/0/en/zscaler-collaborates-with-ibm-and-red-hat-to-protect-private-applications-from-frontier-ai-powered-threats.html",
-        "vendor": "Zscaler",
-        "why_it_matters": "Cites Mandiant M-Trends 2026 data that mean time to exploit has dropped below zero (exploited before a public patch exists). Use this in conversations with security teams burned by zero-day patching fire drills, and pair it with ZPA discovery questions."
       }
     ]
   }
