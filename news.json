@@ -1,73 +1,46 @@
 {
-  "date": "2026-11-06",
-  "updated_at": "2026-11-06T07:20:00-05:00",
+  "date": "2026-11-09",
+  "updated_at": "2026-11-09T07:16:00-05:00",
   "items": [
     {
-      "vendor": "Dell Technologies",
-      "title": "Dell expands cyber resilience: quantum-safe PowerStore encryption, identity resilience, MDR for Identity",
-      "summary": "Dell broadened its security and resilience portfolio: the latest PowerStore software adds quantum-safe data-in-flight encryption over Fibre Channel (available November 2026), PowerProtect gains identity resilience for Active Directory, Entra ID and Okta, Managed Detection and Response for Identity is now available, and Resilience Operations for AI plus an expanded PowerProtect AI Assistant are live. A Post-Quantum Readiness Assessment service also lands in November, with PowerProtect/PowerScale snapshot orchestration following in December.",
-      "why_it_matters": "Identity is now the front door in most breaches, and Dell is selling resilience as a bundle \u2014 storage encryption, identity recovery, and AI-factory hardening in one conversation. For SEs this is a cross-sell wedge into existing PowerStore/PowerProtect accounts: ask who owns identity recovery today, and whether their FC encryption story covers harvest-now-decrypt-later risk.",
-      "url": "https://techbuzzireland.com/2026/11/05/dell-technologies-strengthens-cybersecurity-and-resilience-across-ai-environments-identity-and-infrastructure/",
-      "tag": "launch",
-      "published": "2026-11-05"
-    },
-    {
-      "vendor": "Cisco",
-      "title": "Second critical Secure Email Gateway RCE (CVE-2026-76519, CVSS 9.8) actively exploited \u2014 patch Content Scanner Tools",
-      "summary": "Cisco rates CVE-2026-76519 critical (CVSS 9.8): a single email with a crafted attachment can give an unauthenticated attacker root on Secure Email Gateway, with Cisco aware of active exploitation in October. Only gateways with the File Reputation service (AMP) enabled on a mail policy and Content Scanner Tools below 25.3.0.5525 are affected. Fix is Content Scanner Tools 25.3.0.5525 or later (no reboot), or AsyncOS 15.5.5-014 / 16.5.0-780. There is no workaround.",
-      "why_it_matters": "A second critical SEG remote-root flaw in as many days (yesterday's briefing covered CVE-2026-76461) means every self-hosted SEG customer needs a version check this week, not next quarter. The fix is a tools update, not a full upgrade \u2014 low friction, so there is no good reason to defer. Ask customers whether File Reputation is even enabled; if it is off, they are not exposed to this one.",
-      "url": "https://clearsecurity.vision/en/blog/2026-11-04-patches-that-cannot-wait-november-2026/",
-      "tag": "cve",
-      "published": "2026-11-05"
-    },
-    {
-      "vendor": "VMware by Broadcom",
-      "title": "vSphere 8 gets an EEA-only lifeline: Standard and Enterprise Plus on sale to Oct 31, 2027, support to Oct 31, 2028",
-      "summary": "Broadcom quietly carved out European Economic Area customers from the vSphere 8 end-of-life calendar: in the EEA, vSphere Standard 8 and Enterprise Plus 8 stay on sale until October 31, 2027, with Extended Support included in active subscriptions until the earlier of the subscription end date or October 31, 2028. Everywhere else, end of general support is still October 11, 2027. The carve-out follows an EU antitrust investigation into Broadcom's VMware channel changes and a General Court ruling on November 3.",
-      "why_it_matters": "VMware's EOL date is now a regional variable \u2014 a US customer and an EEA customer on the same vSphere 8 build have different deadlines, and the EEA one gets roughly a year more. That changes renewal conversations immediately: EEA accounts can slow-walk a VCF 9 migration, while US accounts cannot. It also signals Broadcom will bend under regulatory pressure, which is leverage in renewal negotiations.",
-      "url": "https://www.theregister.com/virtualization/2026/11/05/vmware-quietly-offers-european-users-extended-sales-and-support-for-low-end-vsphere/5307732",
-      "tag": "eol",
-      "published": "2026-11-05"
-    },
-    {
-      "vendor": "Rubrik",
-      "title": "Rubrik-Hosted Protection for on-prem NAS goes GA \u2014 hosted backup storage, no customer hardware",
-      "summary": "Rubrik announced Rubrik-Hosted Protection for On-Premise Unstructured Data, generally available since November 3, 2026. Built on NAS Cloud Direct, Rubrik operates the backup storage, capacity and updates in its own cloud while lightweight data movers on the customer's existing servers connect NAS to it \u2014 no backup appliances to buy, rack or maintain. Backups land in an isolated, immutable vault on a separate identity domain; recovery can target a different array, cloud storage, or an isolated recovery environment. Anomaly detection runs on every backup; sensitive-data discovery for primary shares is still in preview.",
-      "why_it_matters": "This removes the biggest objection in NAS backup deals \u2014 the customer having to buy and size backup hardware for petabytes of unstructured data. It turns a capex-heavy conversation into an opex one and directly challenges Cohesity's appliance/software story. Ask NAS-heavy accounts (medical imaging, seismic, design, AI datasets) how much unstructured data sits unprotected because the hardware business case never cleared.",
-      "url": "https://www.businesswire.com/news/home/20261105439575/en/Rubrik-Extends-Cyber-Resilience-Across-Enterprise-Unstructured-Data",
-      "tag": "launch",
-      "published": "2026-11-05"
-    },
-    {
-      "vendor": "Nutanix",
-      "title": "Expedient adds multitenant cloud on Nutanix SP Central, lowering the on-ramp to managed cloud and governed AI",
-      "summary": "Expedient expanded its Nutanix partnership with a multitenant deployment model for Expedient Cloud Powered by Nutanix, built on Nutanix SP Central. The same AHV-based platform now spans multitenant and dedicated cloud, edge, disaster recovery and AI workloads, with workloads portable across on-premises, dedicated and multitenant environments without conversion. Expedient earned Powered by Nutanix: Verified Solutions qualification for its dedicated private cloud, multitenant private cloud and DR-as-a-service offerings.",
-      "why_it_matters": "Multitenancy is the service-provider story Nutanix has been building toward \u2014 it lets SPs serve smaller customers profitably on the same platform, which is exactly the segment VMware's VCSP changes stranded. For SEs, this is a proof point that the Nutanix SP ecosystem is maturing: ask VMware-dependent SPs and midmarket accounts whether their provider can offer a managed Nutanix path at a price point dedicated cloud never reached.",
-      "url": "https://www.prnewswire.com/news-releases/expedient-expands-partnership-with-nutanix-with-multitenant-cloud-lowering-the-barrier-to-modern-cloud-and-governed-ai-302930942.html",
+      "vendor": "Everpure",
+      "title": "Everpure joins Proxmox partner ecosystem; FlashArray now officially supported on Proxmox VE",
+      "summary": "Proxmox announced on Nov 5 that Everpure is now an official Proxmox Solution Provider, with Proxmox VE supported across the full FlashArray family over iSCSI, Fibre Channel, NVMe/TCP and NFS. FlashArray gives Proxmox clusters shared storage, so VMs live-migrate between nodes and HA restarts them elsewhere without copying disks; ActiveCluster cross-site recovery was validated at about 170 seconds with zero RPO. A native Proxmox storage plugin is in development.",
+      "why_it_matters": "Storage was a real blocker in VMware-exit conversations \u2014 customers didn't want to rip out their array to leave vSphere. This removes it for FlashArray shops and lets an SE position Everpure as the storage layer that survives a hypervisor swap. Expect Proxmox to come up more often in VMware renewal pushback.",
+      "url": "https://www.proxmox.com/en/about/company-details/press-releases/proxmox-ve-everpure-flasharray",
       "tag": "competitive",
       "published": "2026-11-05"
     },
     {
       "vendor": "NVIDIA",
-      "title": "NVIDIA publishes Vera CPU benchmarks: 2x agent speed, 1.6x more agents per watt than the fastest x86",
-      "summary": "NVIDIA published Vera CPU results from a 100 MW datacenter comparison, claiming 2x faster agent speed than the most energy-efficient x86 CPU and 1.6x more agents per watt than the fastest x86 CPU. Partner data: Perplexity ran agentic coding tasks ~1.5x faster and plans a production Vera deployment; DeepInfra measured up to 2.2x on agentic orchestration; ClickHouse topped the ClickBench leaderboard on a dual-socket Vera box; Daytona spun up 1,000 agent sandboxes in 10.8s. Vera is an 88-core (176-thread) Arm CPU that can host Vera Rubin systems or run standalone for agentic AI and analytics.",
-      "why_it_matters": "NVIDIA is now benchmarking a CPU against x86 on agent workloads \u2014 the host CPU is becoming a selling point in AI deals, not an afterthought. Dell is already shipping Vera servers (PowerEdge R8822 this month, M9882 in Q1 2027), so expect Vera to show up in AI Factory quotes. Treat the numbers as vendor benchmarks: the Perplexity/DeepInfra production data points are the credible part, not the headline multiples.",
-      "url": "https://www.unite.ai/nvidia-pits-vera-cpu-against-x86-on-agent-speed-and-power-capacity/",
-      "tag": "competitive",
-      "published": "2026-11-05"
+      "title": "NVIDIA opens NVLink Fusion to Rebellions' R200 NPUs for Korean sovereign AI",
+      "summary": "NVIDIA, Rebellions and SK Telecom announced on Nov 8 a collaboration to connect Rebellions' next-generation R200 neural processing units to NVLink Fusion and build rack-scale systems on NVIDIA's MGX architecture, for deployment in SK Telecom's AI data center. Systems are expected ready in 2028, with backing from Korea's Ministry of Science and ICT. NVIDIA also published Dynamo deployment recipes for four Korean open models, claiming up to 2x performance on B200 GPUs.",
+      "why_it_matters": "NVLink Fusion is NVIDIA's pitch that third-party silicon can ride its scale-up fabric instead of competing with it \u2014 this is the first sovereign-AI proof point of that model. Worth knowing when customers ask whether NVIDIA's moat is the chip or the interconnect: the answer is increasingly the interconnect.",
+      "url": "https://www.unite.ai/rebellions-to-use-nvidia-nvlink-fusion-for-korean-sovereign-ai/",
+      "tag": "launch",
+      "published": "2026-11-08"
     },
     {
       "vendor": "CrowdStrike",
-      "title": "CrowdStrike launches sovereign cloud in Saudi Arabia for in-country data residency",
-      "summary": "CrowdStrike launched a sovereign cloud deployment of the Falcon platform in Saudi Arabia, available immediately to customers and authorized partners. Government entities, critical national infrastructure and enterprises get the full Falcon platform with in-country data residency combined with global threat intelligence.",
-      "why_it_matters": "Data residency is the gating requirement in regulated and government deals across the Gulf, and Falcon being available in-country removes a common objection in those accounts. For SEs with Middle East exposure, this is a check-box win against vendors still routing regional telemetry offshore \u2014 ask prospects whether their current EDR/XDR keeps their data inside the Kingdom.",
-      "url": "https://mid-east.info/crowdstrike-launches-sovereign-cloud-in-saudi-arabia-bringing-ai-native-cybersecurity-to-the-kingdom/",
+      "title": "CrowdStrike adds Agentic Adversary Emulation and Agent Insider Threat Detection to Falcon",
+      "summary": "Announced Nov 4 at Fal.Con Europe, Agentic Adversary Emulation uses SafeMind's Red Tempest offensive AI model to autonomously chain vulnerabilities and weaknesses into attack paths to critical assets, drive prioritized remediation, and re-run the attack to confirm the path is closed. Agent Insider Threat Detection watches AI agents for rogue, misconfigured or drifted behavior. Emulation is in early access for select customers through Project QuiltWorks partners; no GA date or pricing yet.",
+      "why_it_matters": "Turns the 'AI agents are the new insider threat' pitch into a Falcon-native test-and-validate loop \u2014 a concrete answer when customers ask how to prove their agent estate is safe. But it is early access, not GA: don't let anyone quote it as generally available, and ask which customer environments qualify for the early-access program.",
+      "url": "https://www.tradingview.com/news/business_wire:d044a51b6fcc7:0-crowdstrike-unveils-agentic-adversary-emulation-on-the-falcon-platform-to-identify-and-close-exploitable-attack-paths/",
       "tag": "launch",
-      "published": "2026-11-06"
+      "published": "2026-11-04"
+    },
+    {
+      "vendor": "Nutanix",
+      "title": "Nutanix expands Elevate partner program to systems integrators for FY27",
+      "summary": "Nutanix expanded its FY27 Elevate Partner Program (announced Nov 5) to formally include systems integrators, adding incentives for referrals, renewals and customer expansion plus support for partner-led services, and introducing a 'Powered by Nutanix: Verified Services' badge. An AI-powered Deal Coach tool in Partner Central is planned for later in the fiscal year.",
+      "why_it_matters": "As a VAR, the SI inclusion and expansion incentives change who gets paid for Nutanix influence \u2014 worth knowing before the next joint Nutanix pursuit, and Verified Services is a new badge to ask about in partner conversations.",
+      "url": "https://www.computerweekly.com/microscope/news/366653716/Expansion-the-theme-with-Nutanix-Elevate-enhancements",
+      "tag": "promo",
+      "published": "2026-11-05"
     }
   ],
   "prompt_of_the_day": {
     "category": "Customer outreach",
-    "prompt": "Draft a short, urgent customer email (under 150 words) warning owners of Cisco Secure Email Gateway about CVE-2026-76519: a critical flaw (CVSS 9.8) where a single email with a crafted attachment can give an unauthenticated attacker root access, with active exploitation observed in October 2026. Only gateways with the File Reputation service (AMP) enabled and Content Scanner Tools below 25.3.0.5525 are affected; the fix is updating Content Scanner Tools to 25.3.0.5525 or later (no reboot needed) or moving to AsyncOS 15.5.5-014 / 16.5.0-780, and there is no workaround. Include: a one-line risk statement, how the customer can check whether they are affected, the exact fix, and a call to action to confirm their version by end of day. Tone: direct and technical, no marketing language."
+    "prompt": "Draft a short outreach email to a VMware customer who runs Everpure FlashArray storage, about the Nov 5, 2026 Proxmox\u2013Everpure announcement: Everpure is now an official Proxmox Solution Provider, Proxmox VE is supported across the full FlashArray family (iSCSI, Fibre Channel, NVMe/TCP, NFS), FlashArray gives Proxmox clusters shared storage for live migration and HA, and a native Proxmox storage plugin is in development. The angle: they can evaluate Proxmox as a VMware alternative without replacing their storage. Keep it to 120 words, lead with the customer's renewal leverage, end with one specific question about when their VMware agreement comes up for renewal, and do not claim the plugin is available today."
   }
 }
