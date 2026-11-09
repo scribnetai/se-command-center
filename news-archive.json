@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-11-09",
+    "items": [
+      {
+        "vendor": "Everpure",
+        "title": "Everpure joins Proxmox partner ecosystem; FlashArray now officially supported on Proxmox VE",
+        "summary": "Proxmox announced on Nov 5 that Everpure is now an official Proxmox Solution Provider, with Proxmox VE supported across the full FlashArray family over iSCSI, Fibre Channel, NVMe/TCP and NFS. FlashArray gives Proxmox clusters shared storage, so VMs live-migrate between nodes and HA restarts them elsewhere without copying disks; ActiveCluster cross-site recovery was validated at about 170 seconds with zero RPO. A native Proxmox storage plugin is in development.",
+        "why_it_matters": "Storage was a real blocker in VMware-exit conversations \u2014 customers didn't want to rip out their array to leave vSphere. This removes it for FlashArray shops and lets an SE position Everpure as the storage layer that survives a hypervisor swap. Expect Proxmox to come up more often in VMware renewal pushback.",
+        "url": "https://www.proxmox.com/en/about/company-details/press-releases/proxmox-ve-everpure-flasharray",
+        "tag": "competitive",
+        "published": "2026-11-05"
+      },
+      {
+        "vendor": "NVIDIA",
+        "title": "NVIDIA opens NVLink Fusion to Rebellions' R200 NPUs for Korean sovereign AI",
+        "summary": "NVIDIA, Rebellions and SK Telecom announced on Nov 8 a collaboration to connect Rebellions' next-generation R200 neural processing units to NVLink Fusion and build rack-scale systems on NVIDIA's MGX architecture, for deployment in SK Telecom's AI data center. Systems are expected ready in 2028, with backing from Korea's Ministry of Science and ICT. NVIDIA also published Dynamo deployment recipes for four Korean open models, claiming up to 2x performance on B200 GPUs.",
+        "why_it_matters": "NVLink Fusion is NVIDIA's pitch that third-party silicon can ride its scale-up fabric instead of competing with it \u2014 this is the first sovereign-AI proof point of that model. Worth knowing when customers ask whether NVIDIA's moat is the chip or the interconnect: the answer is increasingly the interconnect.",
+        "url": "https://www.unite.ai/rebellions-to-use-nvidia-nvlink-fusion-for-korean-sovereign-ai/",
+        "tag": "launch",
+        "published": "2026-11-08"
+      },
+      {
+        "vendor": "CrowdStrike",
+        "title": "CrowdStrike adds Agentic Adversary Emulation and Agent Insider Threat Detection to Falcon",
+        "summary": "Announced Nov 4 at Fal.Con Europe, Agentic Adversary Emulation uses SafeMind's Red Tempest offensive AI model to autonomously chain vulnerabilities and weaknesses into attack paths to critical assets, drive prioritized remediation, and re-run the attack to confirm the path is closed. Agent Insider Threat Detection watches AI agents for rogue, misconfigured or drifted behavior. Emulation is in early access for select customers through Project QuiltWorks partners; no GA date or pricing yet.",
+        "why_it_matters": "Turns the 'AI agents are the new insider threat' pitch into a Falcon-native test-and-validate loop \u2014 a concrete answer when customers ask how to prove their agent estate is safe. But it is early access, not GA: don't let anyone quote it as generally available, and ask which customer environments qualify for the early-access program.",
+        "url": "https://www.tradingview.com/news/business_wire:d044a51b6fcc7:0-crowdstrike-unveils-agentic-adversary-emulation-on-the-falcon-platform-to-identify-and-close-exploitable-attack-paths/",
+        "tag": "launch",
+        "published": "2026-11-04"
+      },
+      {
+        "vendor": "Nutanix",
+        "title": "Nutanix expands Elevate partner program to systems integrators for FY27",
+        "summary": "Nutanix expanded its FY27 Elevate Partner Program (announced Nov 5) to formally include systems integrators, adding incentives for referrals, renewals and customer expansion plus support for partner-led services, and introducing a 'Powered by Nutanix: Verified Services' badge. An AI-powered Deal Coach tool in Partner Central is planned for later in the fiscal year.",
+        "why_it_matters": "As a VAR, the SI inclusion and expansion incentives change who gets paid for Nutanix influence \u2014 worth knowing before the next joint Nutanix pursuit, and Verified Services is a new badge to ask about in partner conversations.",
+        "url": "https://www.computerweekly.com/microscope/news/366653716/Expansion-the-theme-with-Nutanix-Elevate-enhancements",
+        "tag": "promo",
+        "published": "2026-11-05"
+      }
+    ]
+  },
+  {
     "date": "2026-11-06",
     "items": [
       {
@@ -807,111 +848,6 @@
         "url": "https://pondero.ai/news/2026-10-11-crowdstrike-claude-korea-bank-breach/",
         "tag": "competitive",
         "published": "2026-10-08"
-      }
-    ]
-  },
-  {
-    "date": "2026-10-09",
-    "items": [
-      {
-        "vendor": "Dell Technologies",
-        "title": "Dell and Accenture form the 'Accenture Dell Business Group' for private AI and infra modernization",
-        "summary": "Accenture and Dell announced a dedicated joint unit (Oct 8) built on their 20+ year partnership, aimed at moving enterprises from AI pilots to scaled deployment on private, hybrid, and sovereign infrastructure. It pairs Accenture's industry/strategy practice with Dell's AI-ready infrastructure and services, leaning on relationships with sovereign and neocloud providers.",
-        "why_it_matters": "Expect Accenture-led discovery decks pitching Dell AI infrastructure for private/agentic AI \u2014 this is the services-led AI-infra motion customers will hear. If you're competing an AI-infrastructure deal (vs HPE, NVIDIA DGX, neocloud), know the private-AI framing: data control, predictable economics, and sovereign deployment. Good discovery wedge: ask customers what their AI pilots are hitting on data locality and cost predictability.",
-        "url": "https://www.businesswire.com/news/home/20261008242307/en/Accenture-and-Dell-Technologies-Expand-Collaboration-to-Help-Enterprises-Scale-Private-AI-and-Modernize-Infrastructure",
-        "tag": "competitive",
-        "published": "2026-10-08"
-      },
-      {
-        "vendor": "NVIDIA",
-        "title": "RTX Spark opens for preorder; DGX Station for Windows preview unveiled with Microsoft collaboration",
-        "summary": "NVIDIA opened RTX Spark preorders (Oct 8) and unveiled DGX Station for Windows \u2014 its first Windows-native DGX desktop (GB300 Grace Blackwell Ultra, 748GB coherent memory, 20 PFLOPs FP4), landing before year-end. Jensen Huang and Satya Nadella also announced a joint effort to optimize hardware and software so AI agents run natively on Windows PCs. Separately, NVIDIA committed $1B over five years to U.S. science research under the Genesis Mission.",
-        "why_it_matters": "Local agentic AI on Windows desks pushes inference/compute conversations from the data center to the desktop and workstation tier \u2014 expect GPU-workstation attach opportunities and customers asking about local model dev vs cloud. Note Dell also just pitched 'Dell Pro Precision with GB300 on Windows' (Oct 7) \u2014 same deskside-AI lane, so expect Dell vs NVIDIA-partner positioning questions.",
-        "url": "https://tech-insider.org/nvidia-dgx-station-windows-748gb-2026/",
-        "tag": "launch",
-        "published": "2026-10-08"
-      },
-      {
-        "vendor": "Cisco",
-        "title": "WebexOne 2026: Claude Managed Agents in Webex, Dialog agentic CX harness, RoomOS 27",
-        "summary": "At WebexOne 2026 (Oct 7), Cisco unveiled agentic collaboration: Claude Managed Agents that run inside Webex spaces/meetings to analyze shared context and execute multi-step actions; Dialog, a new agentic harness for the Webex AI Agent platform (beta early 2027); RoomOS 27 for Cisco devices (November); and fully-featured Google Meet on Cisco room devices. Agents run under Cisco AI Defense guardrails with Splunk observability.",
-        "why_it_matters": "This is Cisco's real counter to Teams Copilot in collaboration deals \u2014 'digital teammates' embedded in the flow of work, not bolted-on chatbots. Dialog is the discovery wedge for contact-center/CX customers (agents that keep working after the call ends). RoomOS 27 gives a device-refresh hook for November. Ask about governance requirements \u2014 Cisco is writing the governance layer itself, which differentiates in regulated industries.",
-        "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m10/cisco-unveils-new-agentic-collaboration-experiences.html",
-        "tag": "launch",
-        "published": "2026-10-07"
-      }
-    ]
-  },
-  {
-    "date": "2026-10-08",
-    "items": [
-      {
-        "vendor": "Cisco",
-        "title": "Cisco publishes October 7 security advisories for five critical NX-OS flaws",
-        "summary": "Cisco's October 7 NX-OS advisories cover five vulnerabilities rated CVSS 9.8 affecting Nexus platforms across MPLS OAM, NGOAM, and NX-API. Potential impacts include unauthenticated arbitrary code execution, process crashes, and device reloads. MPLS OAM and NX-API are disabled by default, so real exposure depends on configuration. Cisco reports no known exploitation in the wild.",
-        "why_it_matters": "Quick discovery hook for Nexus accounts: ask whether MPLS OAM, NGOAM, or NX-API are enabled before scheduling upgrades. Disabled-by-default features mean many estates have low real exposure, but anything internet-facing or running OAM needs a patch plan now. Expect proof-of-concept code to surface within days of a 9.8 bundle like this.",
-        "url": "https://undercodenews.com/cisco-nx-os-hit-by-five-critical-cvss-98-flaws-allowing-unauthenticated-root-level-code-execution-video/",
-        "tag": "cve",
-        "published": "2026-10-07"
-      },
-      {
-        "vendor": "HPE",
-        "title": "HPE launches four enterprise servers on AMD's sixth-generation processors",
-        "summary": "On October 7 HPE announced four new enterprise servers powered by AMD's newest sixth-generation processors, pitched at AI workloads with more compute and faster data movement. The stock hit an all-time intraday high on the news. The launch follows HPE's September 30 announcement of a $1.2 billion AMD Helios AI Rack order from Vultr, with six Juniper QFX5252 Ethernet switch trays per rack.",
-        "why_it_matters": "Fresh compute-refresh talking point for x86 replacement cycles: HPE is leaning hard on the AMD track while Dell pushes AI Data Platform software. In a deal, ask what the actual AI workload plan is before letting any vendor lock the architecture, and remember analysts credit the Juniper acquisition with doubling HPE's networking division \u2014 useful leverage in data-center RFPs.",
-        "url": "https://www.barrons.com/articles/hpe-stock-amd-servers-ai-buildout-dc1fe745",
-        "tag": "launch",
-        "published": "2026-10-07"
-      },
-      {
-        "vendor": "VMware by Broadcom",
-        "title": "PoC now public for VMware Workstation/Fusion VMXNET3 integer-overflow flaw (CVE-2026-59346)",
-        "summary": "Proof-of-concept code is now circulating for CVE-2026-59346, an integer-overflow vulnerability in the VMXNET3 virtual network adapter that lets an attacker with local administrative privileges inside a VM execute code on the host. It affects Workstation and Fusion 25H2 and 26H1; both are fixed in 26H1u1. A related HGFS stack-based buffer overflow (CVE-2026-59347, CVSS 8.1) shares the advisory.",
-        "why_it_matters": "Low bar for most datacenter estates, but it matters in VDI, lab, and developer-workstation fleets: anyone on Workstation/Fusion 25H2 or 26H1 needs the 26H1u1 update before the PoC gets weaponized. Also a reminder to inventory desktop virtualization alongside the ESXi patching you already track.",
-        "url": "https://securityonline.info/vmware-vmxnet3-vulnerability-cve-2026-59346/",
-        "tag": "cve",
-        "published": "2026-10-08"
-      }
-    ]
-  },
-  {
-    "date": "2026-10-07",
-    "items": [
-      {
-        "vendor": "Dell",
-        "title": "Dell expands AI Data Platform with semantic layer, knowledge graph, and AI agents",
-        "summary": "Dell added a Unified Semantic Layer, Enterprise Knowledge Graph, and Knowledge Agents to its AI Data Platform to give AI applications consistent access to governed enterprise data. Dell claims data processing nearly 4x faster than CPUs alone (up to 20x on batch workloads) and says PowerScale now supports up to 500 tenants in a single cluster.",
-        "why_it_matters": "Dell is moving the AI pitch from servers into the data layer feeding agents - the governance/semantic-layer framing lands directly in RAG-readiness discovery. Treat speed numbers as vendor benchmarks until validated.",
-        "url": "https://www.ad-hoc-news.de/boerse/corporate-news/dell-technologies-stock-gains-4-70-percent-on-ai-platform-expansion/70243886",
-        "tag": "launch",
-        "published": "2026-10-06"
-      },
-      {
-        "vendor": "Cisco",
-        "title": "Quantum XChange brings FIPS-validated post-quantum cryptography to the Cisco Networking App Marketplace",
-        "summary": "Quantum XChange's Phio TX-EM, a containerized post-quantum key-management app, is listed in the Cisco Networking App Marketplace - claimed first FIPS-validated PQC solution there. It runs on existing Cisco routers and switches via Cisco's SKIP API with no added hardware or downtime and multi-algorithm crypto-agility.",
-        "why_it_matters": "Gives Cisco estates a software-only path to quantum-safe networking ahead of hardware refresh cycles - lead with the harvest-now/decrypt-later argument in federal and regulated accounts.",
-        "url": "https://www.financialcontent.com/article/bizwire-2026-10-6-quantum-xchange-joins-the-cisco-networking-app-marketplace-as-a-cisco-technology-partner",
-        "tag": "launch",
-        "published": "2026-10-06"
-      },
-      {
-        "vendor": "VMware by Broadcom",
-        "title": "Broadcom explains Insight's VMware resale removal: 'did not meet the program's requirements'",
-        "summary": "Broadcom's Laura Falko told CRN that Insight lost its North America VMware resale authorization because it did not meet program requirements. Insight's EMEA authorization remains; client-funded VMware and Cloud Foundation services in NA continue through October 31, 2026.",
-        "why_it_matters": "Expect renewal-continuity questions from customers who bought VMware through Insight - know which partner of record can actually transact their next renewal before they ask.",
-        "url": "https://channelbuzz.ca/2026/10/the-buzz-broadcom-explains-insights-vmware-removal-schneider-bids-for-ptc-and-anthropic-invests-in-deployment-skills-47584/",
-        "tag": "competitive",
-        "published": "2026-10-06"
-      },
-      {
-        "vendor": "Zscaler",
-        "title": "Zscaler pairs with IBM and Red Hat (Lightwell) to cover the vulnerability disclosure-to-patch gap",
-        "summary": "Zscaler's Autonomous Application Shield on the Zero Trust Exchange combines with IBM/Red Hat's Lightwell to hide private apps (ZPA), segment access, block exploits inline while a patch is pending, then deliver validated open-source remediations. Autonomous App Shield is currently in an Early Access Program; Zscaler cites Mandiant M-Trends 2026 (mean time to exploit below zero).",
-        "why_it_matters": "'Protect now, patch later' is a strong zero-trust talk track where patch cycles lag AI-speed exploitation - but it's early access, so position as direction, not a quote-able feature.",
-        "url": "https://www.globenewswire.com/news-release/2026/10/05/3374476/0/en/zscaler-collaborates-with-ibm-and-red-hat-to-protect-private-applications-from-frontier-ai-powered-threats.html",
-        "tag": "launch",
-        "published": "2026-10-05"
       }
     ]
   }
