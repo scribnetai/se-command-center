@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-11-10",
+    "items": [
+      {
+        "vendor": "Cisco",
+        "title": "Cisco adds Claude Mythos red teaming to AI Defense, plus Splunk agent observability",
+        "summary": "At Cisco Live APJC, Cisco announced Anthropic's Claude Mythos is joining AI Defense for adaptive AI red teaming, letting defenders stress-test AI agents with frontier adversarial reasoning. Splunk Agent Observability gains Tokenomics cost governance (private preview in December, GA on AWS Marketplace early 2027) and eval models/Tuner go GA this month. Cisco IQ now correlates live threat data with exposed network infrastructure to speed remediation.",
+        "why_it_matters": "AI agent security is now a budget line, not a lab topic: red teaming, agent observability, and token-spend governance arrive as one story. For shops already on Splunk or Cisco security, this is the discovery opener for AI governance conversations \u2014 ask what agents are already running in production without oversight.",
+        "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-unveils-frontier-ai-red-teaming-and-agent-observability-to-secure-the-agentic-enterprise.html",
+        "tag": "launch",
+        "published": "2026-11-09"
+      },
+      {
+        "vendor": "VMware by Broadcom",
+        "title": "Broadcom contributes VM API to CNCF Sandbox; 20+ partner solutions validated for VKS",
+        "summary": "At KubeCon North America, Broadcom announced the VM API project \u2014 a vendor-neutral Kubernetes API for provisioning and managing VMs across heterogeneous infrastructure \u2014 has been accepted into the CNCF Sandbox. Broadcom is also co-chairing a new Workload Conformance Working Group, and more than 20 new partner solutions were validated for VMware vSphere Kubernetes Service (VKS), spanning observability (Datadog, Splunk), security (CrowdStrike Falcon, Sysdig), data/AI, and storage (Dell PowerProtect Data Manager, Scality RING).",
+        "why_it_matters": "Broadcom is positioning VKS/VCF as the place where VMs and containers share one Kubernetes control plane \u2014 and now trying to own the open standard for it. For VMware shops modernizing toward Kubernetes, VKS is the 'no second stack' pitch; for Nutanix NKP conversations, ask whether the customer wants an open API standard or a complete platform, and note VM API is Sandbox-stage, not a shipped product.",
+        "url": "https://www.globenewswire.com/news-release/2026/11/09/3398447/19933/en/broadcom-contributes-vm-api-open-source-project-to-cloud-native-computing-foundation.html",
+        "tag": "launch",
+        "published": "2026-11-09"
+      },
+      {
+        "vendor": "NVIDIA",
+        "title": "NVIDIA board opens independent probe into CEO Jensen Huang",
+        "summary": "NVIDIA's board announced an independent investigation, led by independent directors with outside counsel, into reports that CEO Jensen Huang was targeted by a foreign intelligence effort, following a New York Times report about his relationship with a former executive of Singapore-based Megaspeed, whom US authorities concluded was a Chinese intelligence asset. The board said it has no reason to believe national security or NVIDIA secrets were compromised; Huang remains CEO. Shares fell about 4% on Monday, November 9, ahead of earnings scheduled for November 17.",
+        "why_it_matters": "Customers will ask about this \u2014 it's the biggest AI-vendor governance story of the week. Nothing in the probe touches product, supply, or support today, so don't let it derail an AI infrastructure conversation, but be ready with the facts: board-led inquiry, no finding of compromised secrets, earnings November 17.",
+        "url": "https://bworldonline.com/technology/2026/11/09/792352/nvidias-shares-slide-as-chip-giant-probes-ceo-over-spy-claims/",
+        "tag": "competitive",
+        "published": "2026-11-09"
+      }
+    ]
+  },
+  {
     "date": "2026-11-09",
     "items": [
       {
