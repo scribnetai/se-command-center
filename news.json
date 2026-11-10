@@ -1,46 +1,37 @@
 {
-  "date": "2026-11-09",
-  "updated_at": "2026-11-09T07:16:00-05:00",
+  "date": "2026-11-10",
+  "updated_at": "2026-11-10T07:15:00-05:00",
   "items": [
     {
-      "vendor": "Everpure",
-      "title": "Everpure joins Proxmox partner ecosystem; FlashArray now officially supported on Proxmox VE",
-      "summary": "Proxmox announced on Nov 5 that Everpure is now an official Proxmox Solution Provider, with Proxmox VE supported across the full FlashArray family over iSCSI, Fibre Channel, NVMe/TCP and NFS. FlashArray gives Proxmox clusters shared storage, so VMs live-migrate between nodes and HA restarts them elsewhere without copying disks; ActiveCluster cross-site recovery was validated at about 170 seconds with zero RPO. A native Proxmox storage plugin is in development.",
-      "why_it_matters": "Storage was a real blocker in VMware-exit conversations \u2014 customers didn't want to rip out their array to leave vSphere. This removes it for FlashArray shops and lets an SE position Everpure as the storage layer that survives a hypervisor swap. Expect Proxmox to come up more often in VMware renewal pushback.",
-      "url": "https://www.proxmox.com/en/about/company-details/press-releases/proxmox-ve-everpure-flasharray",
-      "tag": "competitive",
-      "published": "2026-11-05"
+      "vendor": "Cisco",
+      "title": "Cisco adds Claude Mythos red teaming to AI Defense, plus Splunk agent observability",
+      "summary": "At Cisco Live APJC, Cisco announced Anthropic's Claude Mythos is joining AI Defense for adaptive AI red teaming, letting defenders stress-test AI agents with frontier adversarial reasoning. Splunk Agent Observability gains Tokenomics cost governance (private preview in December, GA on AWS Marketplace early 2027) and eval models/Tuner go GA this month. Cisco IQ now correlates live threat data with exposed network infrastructure to speed remediation.",
+      "why_it_matters": "AI agent security is now a budget line, not a lab topic: red teaming, agent observability, and token-spend governance arrive as one story. For shops already on Splunk or Cisco security, this is the discovery opener for AI governance conversations \u2014 ask what agents are already running in production without oversight.",
+      "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-unveils-frontier-ai-red-teaming-and-agent-observability-to-secure-the-agentic-enterprise.html",
+      "tag": "launch",
+      "published": "2026-11-09"
+    },
+    {
+      "vendor": "VMware by Broadcom",
+      "title": "Broadcom contributes VM API to CNCF Sandbox; 20+ partner solutions validated for VKS",
+      "summary": "At KubeCon North America, Broadcom announced the VM API project \u2014 a vendor-neutral Kubernetes API for provisioning and managing VMs across heterogeneous infrastructure \u2014 has been accepted into the CNCF Sandbox. Broadcom is also co-chairing a new Workload Conformance Working Group, and more than 20 new partner solutions were validated for VMware vSphere Kubernetes Service (VKS), spanning observability (Datadog, Splunk), security (CrowdStrike Falcon, Sysdig), data/AI, and storage (Dell PowerProtect Data Manager, Scality RING).",
+      "why_it_matters": "Broadcom is positioning VKS/VCF as the place where VMs and containers share one Kubernetes control plane \u2014 and now trying to own the open standard for it. For VMware shops modernizing toward Kubernetes, VKS is the 'no second stack' pitch; for Nutanix NKP conversations, ask whether the customer wants an open API standard or a complete platform, and note VM API is Sandbox-stage, not a shipped product.",
+      "url": "https://www.globenewswire.com/news-release/2026/11/09/3398447/19933/en/broadcom-contributes-vm-api-open-source-project-to-cloud-native-computing-foundation.html",
+      "tag": "launch",
+      "published": "2026-11-09"
     },
     {
       "vendor": "NVIDIA",
-      "title": "NVIDIA opens NVLink Fusion to Rebellions' R200 NPUs for Korean sovereign AI",
-      "summary": "NVIDIA, Rebellions and SK Telecom announced on Nov 8 a collaboration to connect Rebellions' next-generation R200 neural processing units to NVLink Fusion and build rack-scale systems on NVIDIA's MGX architecture, for deployment in SK Telecom's AI data center. Systems are expected ready in 2028, with backing from Korea's Ministry of Science and ICT. NVIDIA also published Dynamo deployment recipes for four Korean open models, claiming up to 2x performance on B200 GPUs.",
-      "why_it_matters": "NVLink Fusion is NVIDIA's pitch that third-party silicon can ride its scale-up fabric instead of competing with it \u2014 this is the first sovereign-AI proof point of that model. Worth knowing when customers ask whether NVIDIA's moat is the chip or the interconnect: the answer is increasingly the interconnect.",
-      "url": "https://www.unite.ai/rebellions-to-use-nvidia-nvlink-fusion-for-korean-sovereign-ai/",
-      "tag": "launch",
-      "published": "2026-11-08"
-    },
-    {
-      "vendor": "CrowdStrike",
-      "title": "CrowdStrike adds Agentic Adversary Emulation and Agent Insider Threat Detection to Falcon",
-      "summary": "Announced Nov 4 at Fal.Con Europe, Agentic Adversary Emulation uses SafeMind's Red Tempest offensive AI model to autonomously chain vulnerabilities and weaknesses into attack paths to critical assets, drive prioritized remediation, and re-run the attack to confirm the path is closed. Agent Insider Threat Detection watches AI agents for rogue, misconfigured or drifted behavior. Emulation is in early access for select customers through Project QuiltWorks partners; no GA date or pricing yet.",
-      "why_it_matters": "Turns the 'AI agents are the new insider threat' pitch into a Falcon-native test-and-validate loop \u2014 a concrete answer when customers ask how to prove their agent estate is safe. But it is early access, not GA: don't let anyone quote it as generally available, and ask which customer environments qualify for the early-access program.",
-      "url": "https://www.tradingview.com/news/business_wire:d044a51b6fcc7:0-crowdstrike-unveils-agentic-adversary-emulation-on-the-falcon-platform-to-identify-and-close-exploitable-attack-paths/",
-      "tag": "launch",
-      "published": "2026-11-04"
-    },
-    {
-      "vendor": "Nutanix",
-      "title": "Nutanix expands Elevate partner program to systems integrators for FY27",
-      "summary": "Nutanix expanded its FY27 Elevate Partner Program (announced Nov 5) to formally include systems integrators, adding incentives for referrals, renewals and customer expansion plus support for partner-led services, and introducing a 'Powered by Nutanix: Verified Services' badge. An AI-powered Deal Coach tool in Partner Central is planned for later in the fiscal year.",
-      "why_it_matters": "As a VAR, the SI inclusion and expansion incentives change who gets paid for Nutanix influence \u2014 worth knowing before the next joint Nutanix pursuit, and Verified Services is a new badge to ask about in partner conversations.",
-      "url": "https://www.computerweekly.com/microscope/news/366653716/Expansion-the-theme-with-Nutanix-Elevate-enhancements",
-      "tag": "promo",
-      "published": "2026-11-05"
+      "title": "NVIDIA board opens independent probe into CEO Jensen Huang",
+      "summary": "NVIDIA's board announced an independent investigation, led by independent directors with outside counsel, into reports that CEO Jensen Huang was targeted by a foreign intelligence effort, following a New York Times report about his relationship with a former executive of Singapore-based Megaspeed, whom US authorities concluded was a Chinese intelligence asset. The board said it has no reason to believe national security or NVIDIA secrets were compromised; Huang remains CEO. Shares fell about 4% on Monday, November 9, ahead of earnings scheduled for November 17.",
+      "why_it_matters": "Customers will ask about this \u2014 it's the biggest AI-vendor governance story of the week. Nothing in the probe touches product, supply, or support today, so don't let it derail an AI infrastructure conversation, but be ready with the facts: board-led inquiry, no finding of compromised secrets, earnings November 17.",
+      "url": "https://bworldonline.com/technology/2026/11/09/792352/nvidias-shares-slide-as-chip-giant-probes-ceo-over-spy-claims/",
+      "tag": "competitive",
+      "published": "2026-11-09"
     }
   ],
   "prompt_of_the_day": {
     "category": "Customer outreach",
-    "prompt": "Draft a short outreach email to a VMware customer who runs Everpure FlashArray storage, about the Nov 5, 2026 Proxmox\u2013Everpure announcement: Everpure is now an official Proxmox Solution Provider, Proxmox VE is supported across the full FlashArray family (iSCSI, Fibre Channel, NVMe/TCP, NFS), FlashArray gives Proxmox clusters shared storage for live migration and HA, and a native Proxmox storage plugin is in development. The angle: they can evaluate Proxmox as a VMware alternative without replacing their storage. Keep it to 120 words, lead with the customer's renewal leverage, end with one specific question about when their VMware agreement comes up for renewal, and do not claim the plugin is available today."
+    "prompt": "Draft a short customer outreach email (under 150 words) about Cisco's November 9 announcement: Anthropic's Claude Mythos is joining Cisco AI Defense for adaptive AI red teaming of AI agents, Splunk Agent Observability adds Tokenomics cost governance (private preview December, GA on AWS Marketplace early 2027), and Cisco IQ now correlates live threat data with exposed infrastructure. The audience is a CISO whose team is already deploying AI agents. Open with one question about whether anyone is red-teaming their production agents today, tie Tokenomics to the CFO's concern about runaway AI token spend, and close with a 30-minute working session offer. Keep it direct, no hype, no exclamation points."
   }
 }
