@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-10
+- Morning briefing: 3 items (Cisco, VMware by Broadcom, NVIDIA). Archive updated.
+
+
 ## 2026-11-09
 - Morning briefing: 4 items (Everpure, NVIDIA, CrowdStrike, Nutanix). Archive updated.
 
