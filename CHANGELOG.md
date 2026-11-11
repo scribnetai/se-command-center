@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-11
+- Morning briefing: 5 items (Cisco, Rubrik, Everpure, NetApp). Archive updated.
+
+
 ## 2026-11-10
 - Morning briefing: 3 items (Cisco, VMware by Broadcom, NVIDIA). Archive updated.
 
