@@ -1,37 +1,55 @@
 {
-  "date": "2026-11-10",
-  "updated_at": "2026-11-10T07:15:00-05:00",
-  "items": [
-    {
-      "vendor": "Cisco",
-      "title": "Cisco adds Claude Mythos red teaming to AI Defense, plus Splunk agent observability",
-      "summary": "At Cisco Live APJC, Cisco announced Anthropic's Claude Mythos is joining AI Defense for adaptive AI red teaming, letting defenders stress-test AI agents with frontier adversarial reasoning. Splunk Agent Observability gains Tokenomics cost governance (private preview in December, GA on AWS Marketplace early 2027) and eval models/Tuner go GA this month. Cisco IQ now correlates live threat data with exposed network infrastructure to speed remediation.",
-      "why_it_matters": "AI agent security is now a budget line, not a lab topic: red teaming, agent observability, and token-spend governance arrive as one story. For shops already on Splunk or Cisco security, this is the discovery opener for AI governance conversations \u2014 ask what agents are already running in production without oversight.",
-      "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-unveils-frontier-ai-red-teaming-and-agent-observability-to-secure-the-agentic-enterprise.html",
-      "tag": "launch",
-      "published": "2026-11-09"
-    },
-    {
-      "vendor": "VMware by Broadcom",
-      "title": "Broadcom contributes VM API to CNCF Sandbox; 20+ partner solutions validated for VKS",
-      "summary": "At KubeCon North America, Broadcom announced the VM API project \u2014 a vendor-neutral Kubernetes API for provisioning and managing VMs across heterogeneous infrastructure \u2014 has been accepted into the CNCF Sandbox. Broadcom is also co-chairing a new Workload Conformance Working Group, and more than 20 new partner solutions were validated for VMware vSphere Kubernetes Service (VKS), spanning observability (Datadog, Splunk), security (CrowdStrike Falcon, Sysdig), data/AI, and storage (Dell PowerProtect Data Manager, Scality RING).",
-      "why_it_matters": "Broadcom is positioning VKS/VCF as the place where VMs and containers share one Kubernetes control plane \u2014 and now trying to own the open standard for it. For VMware shops modernizing toward Kubernetes, VKS is the 'no second stack' pitch; for Nutanix NKP conversations, ask whether the customer wants an open API standard or a complete platform, and note VM API is Sandbox-stage, not a shipped product.",
-      "url": "https://www.globenewswire.com/news-release/2026/11/09/3398447/19933/en/broadcom-contributes-vm-api-open-source-project-to-cloud-native-computing-foundation.html",
-      "tag": "launch",
-      "published": "2026-11-09"
-    },
-    {
-      "vendor": "NVIDIA",
-      "title": "NVIDIA board opens independent probe into CEO Jensen Huang",
-      "summary": "NVIDIA's board announced an independent investigation, led by independent directors with outside counsel, into reports that CEO Jensen Huang was targeted by a foreign intelligence effort, following a New York Times report about his relationship with a former executive of Singapore-based Megaspeed, whom US authorities concluded was a Chinese intelligence asset. The board said it has no reason to believe national security or NVIDIA secrets were compromised; Huang remains CEO. Shares fell about 4% on Monday, November 9, ahead of earnings scheduled for November 17.",
-      "why_it_matters": "Customers will ask about this \u2014 it's the biggest AI-vendor governance story of the week. Nothing in the probe touches product, supply, or support today, so don't let it derail an AI infrastructure conversation, but be ready with the facts: board-led inquiry, no finding of compromised secrets, earnings November 17.",
-      "url": "https://bworldonline.com/technology/2026/11/09/792352/nvidias-shares-slide-as-chip-giant-probes-ceo-over-spy-claims/",
-      "tag": "competitive",
-      "published": "2026-11-09"
-    }
-  ],
-  "prompt_of_the_day": {
-    "category": "Customer outreach",
-    "prompt": "Draft a short customer outreach email (under 150 words) about Cisco's November 9 announcement: Anthropic's Claude Mythos is joining Cisco AI Defense for adaptive AI red teaming of AI agents, Splunk Agent Observability adds Tokenomics cost governance (private preview December, GA on AWS Marketplace early 2027), and Cisco IQ now correlates live threat data with exposed infrastructure. The audience is a CISO whose team is already deploying AI agents. Open with one question about whether anyone is red-teaming their production agents today, tie Tokenomics to the CFO's concern about runaway AI token spend, and close with a 30-minute working session offer. Keep it direct, no hype, no exclamation points."
+ "date": "2026-11-11",
+ "updated_at": "2026-11-11T07:20:00-05:00",
+ "items": [
+  {
+   "vendor": "Cisco",
+   "title": "CISA adds actively exploited Cisco BroadWorks XXE flaw (CVE-2026-20320) to KEV; federal patch deadline Nov 24",
+   "summary": "CISA added CVE-2026-20320, an XML External Entity flaw in Cisco BroadWorks' Open Client Interface, to its Known Exploited Vulnerabilities catalog on Nov 10, confirming exploitation in the wild. The unauthenticated flaw (CVSS 7.5) lets a remote attacker read sensitive files via crafted XML sent to the OCI-P service. Cisco fixed it in BroadWorks release RI.2026.07 back in August; there is no workaround. Federal civilian agencies must patch by Nov 24, 2026.",
+   "why_it_matters": "BroadWorks underpins many service-provider voice platforms, so this lands directly in SP and large-enterprise voice estates. The KEV listing means exploitation is confirmed, not theoretical \u2014 any customer still on a pre-RI.2026.07 release needs the upgrade now, and the fix is a version upgrade, not a config toggle. Good opener for a BroadWorks version audit in accounts you haven't touched in a while.",
+   "url": "https://undercodenews.com/cisa-adds-two-actively-exploited-vulnerabilities-to-kev-catalog-urges-federal-agencies-to-patch-cisco-and-openwave-systems-video/",
+   "tag": "cve",
+   "published": "2026-11-10"
+  },
+  {
+   "vendor": "Rubrik",
+   "title": "Rubrik expands Project Hourglass with Code Guardian, adding Anthropic Claude Mythos red teaming for AI-generated code",
+   "summary": "Rubrik expanded Project Hourglass, its partner alliance built around Rubrik Agent Cloud, with Rubrik Code Guardian: a service that lets partners proactively red-team client code in air-gapped environments using Anthropic's Claude Mythos 5, prioritizing realistic multi-step attack chains and keeping instant codebase recovery. AHEAD, Trace3, and WWT join the alliance alongside Cognizant, Deloitte, HCLTech, NTT DATA, and Wipro. Rubrik Zero Labs cites 86% of security and IT leaders expecting AI agent proliferation to outpace their security guardrails within a year.",
+   "why_it_matters": "Rubrik is moving from backup-and-recovery into AI-agent governance, and doing it through the channel \u2014 Code Guardian is a partner-delivered service, not a product SKU, so it creates services attach for AHEAD/Trace3/WWT-type partners. For Cohesity-leaning accounts, this is the 'what does Rubrik do that Cohesity doesn't' talking point to prepare for; for Rubrik accounts, it's a discovery hook into AI code pipelines customers are already running without guardrails.",
+   "url": "https://securitymea.com/2026/11/10/rubrik-expands-project-hourglass-with-rubrik-code-guardian/",
+   "tag": "launch",
+   "published": "2026-11-10"
+  },
+  {
+   "vendor": "Rubrik",
+   "title": "Rubrik Autonomous Business Recovery for AWS Cloud Applications goes GA, with expanded cyber recovery for AWS workloads",
+   "summary": "Rubrik announced general availability of Autonomous Business Recovery (ABR) for AWS Cloud Applications, extending automated, policy-driven recovery to cloud-native architectures. Alongside it, Rubrik is expanding cyber recovery for critical AWS workloads with near real-time deletion detection, impact investigation, sensitive-data blast-radius reporting, and surgical recovery; those expanded capabilities are expected to be generally available in the coming months. Rubrik is presenting the details at its virtual Cloud Resilience Summit on Nov 10.",
+   "why_it_matters": "ABR on AWS closes a real gap: cloud-native apps have historically recovered slower than VM-based ones because recovery logic lived outside the platform. GA status means it is sellable today for AWS-heavy accounts, and the deletion-detection plus blast-radius reporting speaks directly to ransomware scenarios. In Cohesity conversations, ask whether their AWS recovery is equally automated or still runbook-driven.",
+   "url": "https://business.am-news.com/am-news/article/bizwire-2026-11-10-rubrik-accelerates-cyber-recovery-for-applications-running-on-amazon-web-services-aws",
+   "tag": "launch",
+   "published": "2026-11-10"
+  },
+  {
+   "vendor": "Everpure",
+   "title": "Portworx unveils pre-staged volumes and GA of Kube Datastore for VMs on Kubernetes at KubeCon; named IDC MarketScape Leader",
+   "summary": "At KubeCon 2026, Portworx by Everpure announced pre-staged volumes for AI/ML workloads (expected Q1 2027), which distribute warm local copies of persistent volume data across cluster nodes so inference workloads start faster, and general availability of Kube Datastore (KDS) for VMs on Kubernetes on supported SAN arrays, extending enterprise storage capabilities to virtual machines running on Kubernetes. Everpure was also named a Leader in the 2026 IDC MarketScape for Container Data and Infrastructure Management Software.",
+   "why_it_matters": "KDS going GA matters for VMware-alternative conversations: it gives K8s-native VM storage with enterprise SAN backing, which is exactly the story Nutanix NKP and VCF/VKS are also telling. Pre-staged volumes are a roadmap item (Q1 2027), not shipping \u2014 don't let it be sold as available today. The IDC Leader badge is a useful third-party proof point for Portworx in competitive deals.",
+   "url": "https://blog.everpuredata.com/news-events/portworx-unveils-advanced-ai-and-vm-capabilities-on-kubernetes/",
+   "tag": "launch",
+   "published": "2026-11-10"
+  },
+  {
+   "vendor": "NetApp",
+   "title": "Nebul becomes first neocloud to adopt NetApp Novus for its sovereign AI cloud",
+   "summary": "NetApp announced Nov 10 that Nebul, a European AI-native cloud provider, is the first neocloud to adopt its Novus storage architecture for sovereign AI infrastructure. Novus, which went GA after its Sept 29 launch, separates metadata from data movement and is designed for up to 100 TB/s aggregate throughput, scaling performance, capacity, and concurrency independently under one namespace. Nebul will use it in its sovereign Intelligent Cloud, citing performance, security, and compliance for regulated workloads.",
+   "why_it_matters": "This is Novus's first public neocloud win and a proof point that the architecture is real and shipping, not just a launch slide. For sovereign-AI and regulated-industry conversations in EMEA, Novus now has a named reference customer. In Everpure/Portworx deals, expect NetApp to lead with throughput and multi-tenancy; ask how the customer's AI storage needs map to metadata-heavy vs raw-throughput workloads.",
+   "url": "https://www.unite.ai/nebul-selects-netapp-novus-to-scale-its-sovereign-ai-cloud/",
+   "tag": "competitive",
+   "published": "2026-11-10"
   }
+ ],
+ "prompt_of_the_day": {
+  "category": "Customer outreach",
+  "prompt": "Draft a short, urgent customer outreach email about CVE-2026-20320, an actively exploited XML External Entity flaw (CVSS 7.5) in Cisco BroadWorks that CISA added to its Known Exploited Vulnerabilities catalog on Nov 10, 2026, with a federal patch deadline of Nov 24, 2026. The flaw affects BroadWorks' Open Client Interface (OCI-P service), lets an unauthenticated remote attacker read sensitive files, and is fixed in BroadWorks release RI.2026.07 with no workaround. The email should: (1) explain the risk in plain language for a service-provider or enterprise voice-platform owner, (2) ask what BroadWorks release the customer is running and whether they have applied RI.2026.07, (3) offer a 30-minute call to walk through the upgrade path and check for exposure, and (4) keep it under 150 words with a clear subject line. Tone: direct and helpful, not alarmist."
+ }
 }
