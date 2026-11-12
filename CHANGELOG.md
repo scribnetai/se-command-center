@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-12
+- Morning briefing: 4 items (Fortinet, Dell Technologies, Rubrik, VMware by Broadcom). Archive updated.
+
+
 ## 2026-11-11
 - Morning briefing: 5 items (Cisco, Rubrik, Everpure, NetApp). Archive updated.
 
