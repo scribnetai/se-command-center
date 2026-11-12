@@ -1,55 +1,46 @@
 {
- "date": "2026-11-11",
- "updated_at": "2026-11-11T07:20:00-05:00",
- "items": [
-  {
-   "vendor": "Cisco",
-   "title": "CISA adds actively exploited Cisco BroadWorks XXE flaw (CVE-2026-20320) to KEV; federal patch deadline Nov 24",
-   "summary": "CISA added CVE-2026-20320, an XML External Entity flaw in Cisco BroadWorks' Open Client Interface, to its Known Exploited Vulnerabilities catalog on Nov 10, confirming exploitation in the wild. The unauthenticated flaw (CVSS 7.5) lets a remote attacker read sensitive files via crafted XML sent to the OCI-P service. Cisco fixed it in BroadWorks release RI.2026.07 back in August; there is no workaround. Federal civilian agencies must patch by Nov 24, 2026.",
-   "why_it_matters": "BroadWorks underpins many service-provider voice platforms, so this lands directly in SP and large-enterprise voice estates. The KEV listing means exploitation is confirmed, not theoretical \u2014 any customer still on a pre-RI.2026.07 release needs the upgrade now, and the fix is a version upgrade, not a config toggle. Good opener for a BroadWorks version audit in accounts you haven't touched in a while.",
-   "url": "https://undercodenews.com/cisa-adds-two-actively-exploited-vulnerabilities-to-kev-catalog-urges-federal-agencies-to-patch-cisco-and-openwave-systems-video/",
-   "tag": "cve",
-   "published": "2026-11-10"
-  },
-  {
-   "vendor": "Rubrik",
-   "title": "Rubrik expands Project Hourglass with Code Guardian, adding Anthropic Claude Mythos red teaming for AI-generated code",
-   "summary": "Rubrik expanded Project Hourglass, its partner alliance built around Rubrik Agent Cloud, with Rubrik Code Guardian: a service that lets partners proactively red-team client code in air-gapped environments using Anthropic's Claude Mythos 5, prioritizing realistic multi-step attack chains and keeping instant codebase recovery. AHEAD, Trace3, and WWT join the alliance alongside Cognizant, Deloitte, HCLTech, NTT DATA, and Wipro. Rubrik Zero Labs cites 86% of security and IT leaders expecting AI agent proliferation to outpace their security guardrails within a year.",
-   "why_it_matters": "Rubrik is moving from backup-and-recovery into AI-agent governance, and doing it through the channel \u2014 Code Guardian is a partner-delivered service, not a product SKU, so it creates services attach for AHEAD/Trace3/WWT-type partners. For Cohesity-leaning accounts, this is the 'what does Rubrik do that Cohesity doesn't' talking point to prepare for; for Rubrik accounts, it's a discovery hook into AI code pipelines customers are already running without guardrails.",
-   "url": "https://securitymea.com/2026/11/10/rubrik-expands-project-hourglass-with-rubrik-code-guardian/",
-   "tag": "launch",
-   "published": "2026-11-10"
-  },
-  {
-   "vendor": "Rubrik",
-   "title": "Rubrik Autonomous Business Recovery for AWS Cloud Applications goes GA, with expanded cyber recovery for AWS workloads",
-   "summary": "Rubrik announced general availability of Autonomous Business Recovery (ABR) for AWS Cloud Applications, extending automated, policy-driven recovery to cloud-native architectures. Alongside it, Rubrik is expanding cyber recovery for critical AWS workloads with near real-time deletion detection, impact investigation, sensitive-data blast-radius reporting, and surgical recovery; those expanded capabilities are expected to be generally available in the coming months. Rubrik is presenting the details at its virtual Cloud Resilience Summit on Nov 10.",
-   "why_it_matters": "ABR on AWS closes a real gap: cloud-native apps have historically recovered slower than VM-based ones because recovery logic lived outside the platform. GA status means it is sellable today for AWS-heavy accounts, and the deletion-detection plus blast-radius reporting speaks directly to ransomware scenarios. In Cohesity conversations, ask whether their AWS recovery is equally automated or still runbook-driven.",
-   "url": "https://business.am-news.com/am-news/article/bizwire-2026-11-10-rubrik-accelerates-cyber-recovery-for-applications-running-on-amazon-web-services-aws",
-   "tag": "launch",
-   "published": "2026-11-10"
-  },
-  {
-   "vendor": "Everpure",
-   "title": "Portworx unveils pre-staged volumes and GA of Kube Datastore for VMs on Kubernetes at KubeCon; named IDC MarketScape Leader",
-   "summary": "At KubeCon 2026, Portworx by Everpure announced pre-staged volumes for AI/ML workloads (expected Q1 2027), which distribute warm local copies of persistent volume data across cluster nodes so inference workloads start faster, and general availability of Kube Datastore (KDS) for VMs on Kubernetes on supported SAN arrays, extending enterprise storage capabilities to virtual machines running on Kubernetes. Everpure was also named a Leader in the 2026 IDC MarketScape for Container Data and Infrastructure Management Software.",
-   "why_it_matters": "KDS going GA matters for VMware-alternative conversations: it gives K8s-native VM storage with enterprise SAN backing, which is exactly the story Nutanix NKP and VCF/VKS are also telling. Pre-staged volumes are a roadmap item (Q1 2027), not shipping \u2014 don't let it be sold as available today. The IDC Leader badge is a useful third-party proof point for Portworx in competitive deals.",
-   "url": "https://blog.everpuredata.com/news-events/portworx-unveils-advanced-ai-and-vm-capabilities-on-kubernetes/",
-   "tag": "launch",
-   "published": "2026-11-10"
-  },
-  {
-   "vendor": "NetApp",
-   "title": "Nebul becomes first neocloud to adopt NetApp Novus for its sovereign AI cloud",
-   "summary": "NetApp announced Nov 10 that Nebul, a European AI-native cloud provider, is the first neocloud to adopt its Novus storage architecture for sovereign AI infrastructure. Novus, which went GA after its Sept 29 launch, separates metadata from data movement and is designed for up to 100 TB/s aggregate throughput, scaling performance, capacity, and concurrency independently under one namespace. Nebul will use it in its sovereign Intelligent Cloud, citing performance, security, and compliance for regulated workloads.",
-   "why_it_matters": "This is Novus's first public neocloud win and a proof point that the architecture is real and shipping, not just a launch slide. For sovereign-AI and regulated-industry conversations in EMEA, Novus now has a named reference customer. In Everpure/Portworx deals, expect NetApp to lead with throughput and multi-tenancy; ask how the customer's AI storage needs map to metadata-heavy vs raw-throughput workloads.",
-   "url": "https://www.unite.ai/nebul-selects-netapp-novus-to-scale-its-sovereign-ai-cloud/",
-   "tag": "competitive",
-   "published": "2026-11-10"
+  "date": "2026-11-12",
+  "updated_at": "2026-11-12T07:20:00-05:00",
+  "items": [
+    {
+      "vendor": "Fortinet",
+      "title": "Fortinet drops 89 advisories fixing nearly 100 flaws, ~17 critical \u2014 including pre-auth RCE on FortiManager",
+      "summary": "Fortinet's November PSIRT batch (published Nov 10) covers nearly 100 vulnerabilities across FortiOS, FortiManager, FortiAnalyzer, FortiMail, FortiAuthenticator, FortiSASE and FortiClient. Around 17 are critical, several allowing unauthenticated remote code execution \u2014 worst is CVE-2026-126170 (CVSS 9.8) in the FortiManager/FortiAnalyzer JSON-RPC API, plus CVE-2026-126261 (CVSS 9.0, FGFM pre-auth RCE) and CVE-2026-126262 (CVSS 9.3, OFTP SQL injection). Fortinet reports no known exploitation and none of the flaws were in CISA KEV as of Nov 11. Some fixes are still listed as upcoming.",
+      "why_it_matters": "FortiManager/FortiAnalyzer control whole FortiGate fleets, so a pre-auth RCE there is a worst-case management-plane exposure. Any customer with FortiManager, FortiAnalyzer or FortiMail should be patching this week \u2014 check whether FGFM (TCP/541) and OFTP (TCP/514) are internet-reachable first, and confirm the JSON-RPC API is disabled where the 9.8 fix is still pending.",
+      "url": "https://www.securityweek.com/fortinet-patches-nearly-100-vulnerabilities/",
+      "tag": "cve",
+      "published": "2026-11-10"
+    },
+    {
+      "vendor": "Dell Technologies",
+      "title": "KIOXIA and Dell claim the first 157 PB single-rack object store, built on ObjectScale and 245.76 TB SSDs",
+      "summary": "KIOXIA's 245.76 TB LC9 Series SSDs power a Dell ObjectScale deployment delivering 157 PB of raw flash in one 42U rack: 16 PowerEdge R7725xd servers with 640 LC9 drives. Positioned for AI training, data lakes and cloud-native apps, with SIE/SED and FIPS 140-3 drive security options. Announced Nov 11.",
+      "why_it_matters": "A concrete density datapoint for AI-storage conversations: one rack of object storage now holds what used to take a row. Useful when a customer is sizing AI data lakes or pushing back on footprint/power \u2014 and a reason to re-open ObjectScale where object capacity, not block performance, is the constraint.",
+      "url": "https://www.businesswire.com/news/home/20261111365949/en/KIOXIA-and-Dell-Technologies-Collaborate-on-the-Industrys-First-157-PB-Single-Rack-Object-Store-Redefining-Storage-Economics",
+      "tag": "launch",
+      "published": "2026-11-11"
+    },
+    {
+      "vendor": "Rubrik",
+      "title": "Rubrik makes agentless, immutable BigQuery backup GA; Google Cloud Storage protection follows in coming months",
+      "summary": "Announced Nov 10 at Rubrik's Cloud Resilience Summit: agentless, immutable backup for Google BigQuery is now generally available \u2014 whole-dataset or single-table restore with views and routines intact, backups in the customer's own GCS bucket or Rubrik Cloud Vault, unlimited retention past BigQuery's native 7-day Time Travel. Extended protection for Google Cloud Storage itself is announced but not yet GA, expected in the coming months.",
+      "why_it_matters": "Rubrik's pitch is that BigQuery is now the layer AI agents reason over, so it needs recoverability beyond native snapshots. In GCP-heavy shops this closes a real gap \u2014 ask whether the customer's analytics estate is covered by anything beyond 7-day Time Travel, and keep the GCS half straight: announced, not shipping yet.",
+      "url": "https://www.businesswire.com/news/home/20261110610408/en/Rubrik-Extends-Protection-to-Google-BigQuery-and-Google-Cloud-Storage",
+      "tag": "launch",
+      "published": "2026-11-10"
+    },
+    {
+      "vendor": "VMware by Broadcom",
+      "title": "Site Recovery Manager is now included with VCF and VVF subscriptions \u2014 no longer sold standalone",
+      "summary": "Broadcom's Nov 2 packaging change (KB 461219) folds VMware Site Recovery Manager into active VMware Cloud Foundation and VMware vSphere Foundation subscriptions; SRM is no longer sold standalone. Customers on the new Nov 2 packaging already have it included. Existing subscribers on older packaging get an interim key via the Support Portal until the integrated entitlement lands in Protection and Recovery 9.1.3, anticipated Feb\u2013Apr 2027; the interim key expires May 2, 2027.",
+      "why_it_matters": "Every VCF/VVF renewal conversation now has a DR line item to check: customers who never bought SRM may already be entitled, and customers on older packaging need the interim key before May 2, 2027. Ask whether DR is actually licensed and tested \u2014 this is a free entitlement many accounts are sitting on unclaimed.",
+      "url": "https://www.pkguild.com/2026/11/09/vmware-srm-included-vcf-vvf-disaster-recovery-license-guide-2026/",
+      "tag": "licensing",
+      "published": "2026-11-09"
+    }
+  ],
+  "prompt_of_the_day": {
+    "category": "Customer outreach",
+    "prompt": "Draft a short, urgent customer email about Fortinet's November 10, 2026 PSIRT batch: 89 advisories fixing nearly 100 vulnerabilities, about 17 critical, including CVE-2026-126170 (CVSS 9.8, unauthenticated RCE in the FortiManager/FortiAnalyzer JSON-RPC API), CVE-2026-126261 (CVSS 9.0, pre-auth RCE in FortiManager's FGFM service) and CVE-2026-126262 (CVSS 9.3, SQL injection in FortiAnalyzer's OFTP service). No known exploitation as of Nov 11 and none in CISA KEV yet, but FortiManager controls whole FortiGate fleets. The email should: (1) state the risk in one plain sentence a non-technical sponsor understands, (2) list the three actions to take this week \u2014 patch FortiManager/FortiAnalyzer/FortiMail first, check whether FGFM TCP/541 and OFTP TCP/514 are internet-reachable, and disable the JSON-RPC API where the 9.8 fix is still pending \u2014 and (3) offer a 30-minute call to walk through their patch plan. Keep it under 150 words, no scare tactics, and end with a clear next step."
   }
- ],
- "prompt_of_the_day": {
-  "category": "Customer outreach",
-  "prompt": "Draft a short, urgent customer outreach email about CVE-2026-20320, an actively exploited XML External Entity flaw (CVSS 7.5) in Cisco BroadWorks that CISA added to its Known Exploited Vulnerabilities catalog on Nov 10, 2026, with a federal patch deadline of Nov 24, 2026. The flaw affects BroadWorks' Open Client Interface (OCI-P service), lets an unauthenticated remote attacker read sensitive files, and is fixed in BroadWorks release RI.2026.07 with no workaround. The email should: (1) explain the risk in plain language for a service-provider or enterprise voice-platform owner, (2) ask what BroadWorks release the customer is running and whether they have applied RI.2026.07, (3) offer a 30-minute call to walk through the upgrade path and check for exposure, and (4) keep it under 150 words with a clear subject line. Tone: direct and helpful, not alarmist."
- }
 }
