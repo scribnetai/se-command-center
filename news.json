@@ -1,28 +1,37 @@
 {
-  "date": "2026-11-16",
-  "updated_at": "2026-11-16T07:20:00-05:00",
+  "date": "2026-11-17",
+  "updated_at": "2026-11-17T07:20:00-05:00",
   "items": [
     {
       "vendor": "Dell Technologies",
-      "title": "Critical PowerStore T advisory fixes ~40 flaws, including seven unauthenticated 9.8s in SDNAS",
-      "summary": "Dell published DSA-2026-479 for PowerStore T covering roughly 40 CVEs. The worst are seven unauthenticated 9.8 flaws in the SDNAS NAS service: stack/heap buffer overflows, OS command injection as root, and path traversal in the TFTP, NFS and NAS services (CVE-2026-116443, CVE-2026-116440, CVE-2026-116448, CVE-2026-116449, CVE-2026-116439, CVE-2026-116446, CVE-2026-67271). Also fixed: root command injection (CVE-2026-111508, 9.1) and authorization-bypass privilege escalation to admin (CVE-2026-82156, CVE-2026-86356, 8.8). Fix is PowerStoreT OS 5.1.0.0-2798105. The advisory is dated Oct 30; the CVE records hit public databases Nov 16.",
-      "why_it_matters": "PowerStore is a flagship storage line and the SDNAS flaws are unauthenticated and network-reachable \u2014 a NAS-exposed array can be owned without credentials. Any customer on PowerStoreT OS 5.1.x below 5.1.0.0-2798105 needs the upgrade scheduled now, and NAS file services exposed beyond the storage network are the first thing to check. Strong opener for storage security reviews and PowerStore health-check conversations.",
-      "url": "https://www.dell.com/support/kbdoc/en-us/000527640/dsa-2026-479-dell-powerstore-t-security-update-for-multiple-vulnerabilities",
-      "tag": "cve",
+      "title": "Dell expands AI Factory with NVIDIA at SC26: agentic infra management, B300 servers, AI Data Platform upgrades",
+      "summary": "Announced Nov 16 at SC26 in Chicago: Dell OpenManage Rack Scale, a new agentic platform to deploy, manage and automate physical infrastructure from servers to full racks, is available now; PowerEdge XE9785 servers with NVIDIA HGX B300 GPUs are validated and available; Dell AI Data Platform gains new data orchestration and storage engine capabilities from December 2026; and new validated solutions cover AI security (F5, JFrog), agentic AI (DataRobot), observability (Dynatrace) and AI governance. Dell Supported NVIDIA AI Enterprise is available now.",
+      "why_it_matters": "Gives SEs a fresh, quotable AI-infrastructure story for customers sizing AI factories: Rack Scale is a concrete management-layer differentiator to demo, XE9785/B300 is orderable now, and the validated-solution stack (especially the F5/JFrog AI security blueprints) answers the 'how do we secure agents?' objection in AI discovery calls.",
+      "url": "https://www.dell.com/en-us/newsroom/announcements/dell-technologies-delivers-the-trusted-data-and-ai-infrastructure-foundation-needed-to-scale-enterprise-ai",
+      "tag": "launch",
       "published": "2026-11-16"
     },
     {
-      "vendor": "Cisco",
-      "title": "Interlock exploited critical FMC flaw CVE-2026-20131 for five-plus weeks before the fix \u2014 compromise review still owed",
-      "summary": "A new Nov 15 technical analysis reconstructs how Interlock ransomware exploited CVE-2026-20131, a CVSS 10.0 unauthenticated RCE in Cisco Secure Firewall Management Center's web interface, from Jan 26 \u2014 more than five weeks before Cisco disclosed and patched it on Mar 4. Fixed software is now available for every supported on-prem FMC branch and Cisco's hosted SCC service is patched. The key point: patching alone is not enough \u2014 any FMC that ran vulnerable software after Jan 26 needs a compromise check against the published Interlock indicators.",
-      "why_it_matters": "Customers who patched in March may assume they are done; the analysis makes clear a compromise review is still owed for any FMC exposed during the Jan-Mar window. Good reason to re-open FMC patch status in security reviews and to push managed firewall customers toward the hosted SCC option where Cisco patches centrally.",
-      "url": "https://www.cyberkendra.com/2026/11/cve-2026-20131-cisco-fmc-rce-interlock-ransomware.html",
-      "tag": "cve",
-      "published": "2026-11-15"
+      "vendor": "NVIDIA",
+      "title": "NVIDIA previews Rubin HPC GPU (50,000+ CUDA cores, ships 2028) and ships DGX Spark HPC Developer Kit at SC26",
+      "summary": "Announced Nov 16 at SC26: Rubin HPC, a new Vera Rubin-platform GPU aimed at simulation and data processing with more than 50,000 CUDA cores, is slated to ship in 2028 \u2014 no FP64, memory, power or price figures disclosed yet. The DGX Spark HPC Developer Kit is available now: four DGX Spark systems linked in a ring over ConnectX-7 (no switch), 512 GB combined memory and 20 TB NVMe, aimed at desk-side multi-node scientific and AI workloads. CUDA-X libraries were also expanded.",
+      "why_it_matters": "Rubin HPC is roadmap-only for now \u2014 position it as a 2028 exascale-procurement talking point, not a buying decision. The DGX Spark kit is the actionable piece: a compact, orderable desk-side cluster for research and AI-dev customers who want local multi-node work without waiting on shared GPU clusters.",
+      "url": "https://siliconangle.com/2026/11/16/nvidia-debuts-new-rubin-hpc-chip-scientific-research-libraries/",
+      "tag": "launch",
+      "published": "2026-11-16"
+    },
+    {
+      "vendor": "Palo Alto Networks",
+      "title": "State of Cloud Security Report 2026: 40% of orgs can't retrace what their AI agents did",
+      "summary": "Palo Alto Networks' State of Cloud Security Report 2026, published Nov 17: 99% of organizations now use AI agents for autonomous or semi-autonomous actions in development pipelines, but 40% have been unable to reconstruct an AI agent's actions, and 43% found AI agents or automated workflows operating without security approval or oversight in the past 12 months.",
+      "why_it_matters": "Strong discovery-call ammunition for Prisma AIRS / Cortex conversations: the 'we can't audit what our agents did' stat lands with security buyers, and the 43% shadow-agent figure reframes AI security from a future concern to a governance gap customers already have. Use it to open AI-security assessments.",
+      "url": "https://www.helpnetsecurity.com/2026/11/17/palo-alto-networks-ai-cloud-security-risks-report/",
+      "tag": "competitive",
+      "published": "2026-11-17"
     }
   ],
   "prompt_of_the_day": {
     "category": "Customer outreach",
-    "prompt": "Draft a short, plain-English customer email about Dell DSA-2026-479 (PowerStore T security update, published Oct 30, CVE records public Nov 16). Facts to include: roughly 40 CVEs, seven unauthenticated CVSS 9.8 flaws in the SDNAS NAS service (CVE-2026-116443, CVE-2026-116440, CVE-2026-116448, CVE-2026-116449, CVE-2026-116439, CVE-2026-116446, CVE-2026-67271) including unauthenticated remote code execution and root command injection, plus authorization-bypass privilege escalation to admin (CVE-2026-82156, 8.8). Fix: upgrade to PowerStoreT OS 5.1.0.0-2798105. Tone: calm and factual, no hype. Structure: what the flaw is in one sentence, which customers are affected (PowerStore T models on 5.1.x below the fixed build), the action to take (schedule the upgrade, check NAS services are not exposed beyond the storage network), and a one-line offer to help plan the upgrade window. End with a subject line."
+    "prompt": "Draft a short customer outreach email (under 150 words) for a CIO at a mid-size enterprise that is piloting AI workloads. Lead with Dell's Nov 16 SC26 announcement: Dell OpenManage Rack Scale is now available as an agentic platform to deploy and manage AI infrastructure from servers to full racks, PowerEdge XE9785 servers with NVIDIA HGX B300 GPUs are validated and available, and Dell AI Data Platform upgrades arrive December 2026 \u2014 plus NVIDIA's DGX Spark HPC Developer Kit (four desk-side systems, 512 GB combined memory) is orderable now for local AI/scientific work. Tie it to their governance concern using Palo Alto Networks' State of Cloud Security Report 2026 stat that 40% of organizations cannot reconstruct what their AI agents did. End with one specific call to action: a 30-minute AI infrastructure readiness review. Keep the tone consultative, not salesy."
   }
 }
