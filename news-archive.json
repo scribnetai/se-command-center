@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-11-17",
+    "items": [
+      {
+        "vendor": "Dell Technologies",
+        "title": "Dell expands AI Factory with NVIDIA at SC26: agentic infra management, B300 servers, AI Data Platform upgrades",
+        "summary": "Announced Nov 16 at SC26 in Chicago: Dell OpenManage Rack Scale, a new agentic platform to deploy, manage and automate physical infrastructure from servers to full racks, is available now; PowerEdge XE9785 servers with NVIDIA HGX B300 GPUs are validated and available; Dell AI Data Platform gains new data orchestration and storage engine capabilities from December 2026; and new validated solutions cover AI security (F5, JFrog), agentic AI (DataRobot), observability (Dynatrace) and AI governance. Dell Supported NVIDIA AI Enterprise is available now.",
+        "why_it_matters": "Gives SEs a fresh, quotable AI-infrastructure story for customers sizing AI factories: Rack Scale is a concrete management-layer differentiator to demo, XE9785/B300 is orderable now, and the validated-solution stack (especially the F5/JFrog AI security blueprints) answers the 'how do we secure agents?' objection in AI discovery calls.",
+        "url": "https://www.dell.com/en-us/newsroom/announcements/dell-technologies-delivers-the-trusted-data-and-ai-infrastructure-foundation-needed-to-scale-enterprise-ai",
+        "tag": "launch",
+        "published": "2026-11-16"
+      },
+      {
+        "vendor": "NVIDIA",
+        "title": "NVIDIA previews Rubin HPC GPU (50,000+ CUDA cores, ships 2028) and ships DGX Spark HPC Developer Kit at SC26",
+        "summary": "Announced Nov 16 at SC26: Rubin HPC, a new Vera Rubin-platform GPU aimed at simulation and data processing with more than 50,000 CUDA cores, is slated to ship in 2028 \u2014 no FP64, memory, power or price figures disclosed yet. The DGX Spark HPC Developer Kit is available now: four DGX Spark systems linked in a ring over ConnectX-7 (no switch), 512 GB combined memory and 20 TB NVMe, aimed at desk-side multi-node scientific and AI workloads. CUDA-X libraries were also expanded.",
+        "why_it_matters": "Rubin HPC is roadmap-only for now \u2014 position it as a 2028 exascale-procurement talking point, not a buying decision. The DGX Spark kit is the actionable piece: a compact, orderable desk-side cluster for research and AI-dev customers who want local multi-node work without waiting on shared GPU clusters.",
+        "url": "https://siliconangle.com/2026/11/16/nvidia-debuts-new-rubin-hpc-chip-scientific-research-libraries/",
+        "tag": "launch",
+        "published": "2026-11-16"
+      },
+      {
+        "vendor": "Palo Alto Networks",
+        "title": "State of Cloud Security Report 2026: 40% of orgs can't retrace what their AI agents did",
+        "summary": "Palo Alto Networks' State of Cloud Security Report 2026, published Nov 17: 99% of organizations now use AI agents for autonomous or semi-autonomous actions in development pipelines, but 40% have been unable to reconstruct an AI agent's actions, and 43% found AI agents or automated workflows operating without security approval or oversight in the past 12 months.",
+        "why_it_matters": "Strong discovery-call ammunition for Prisma AIRS / Cortex conversations: the 'we can't audit what our agents did' stat lands with security buyers, and the 43% shadow-agent figure reframes AI security from a future concern to a governance gap customers already have. Use it to open AI-security assessments.",
+        "url": "https://www.helpnetsecurity.com/2026/11/17/palo-alto-networks-ai-cloud-security-risks-report/",
+        "tag": "competitive",
+        "published": "2026-11-17"
+      }
+    ]
+  },
+  {
     "date": "2026-11-16",
     "items": [
       {
