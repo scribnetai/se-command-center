@@ -21,15 +21,6 @@
         "published": "2026-11-17"
       },
       {
-        "vendor": "Rubrik",
-        "title": "Rubrik adds MCP support so AI agents can work inside Rubrik Security Cloud",
-        "summary": "Announced Nov 16: Rubrik MCP exposes the Rubrik Security Cloud API schema directly to an organisation's AI agents, giving them a secure, programmable path to Rubrik's data, identity and application intelligence, with role-based access control parity, configurable permissions and OWASP MCP Top 10-aligned guardrails. Teams can save multi-step recovery or compliance workflows as reusable, deterministic tools. Built with Anthropic's Claude; Rubrik AI is now used by one-third of Rubrik's global customers. Currently in private preview for existing customers.",
-        "why_it_matters": "Backup and recovery becomes an agentic surface: customers will ask how agent access to recovery actions is governed, and this is Rubrik's direct answer to Cohesity Gaia's AI-data story. Discovery angle: which recovery workflows would you trust an agent to run unsupervised, and what guardrails do you require?",
-        "url": "https://ir.rubrik.com/news-events/press-releases/news-details/2026/Rubrik-Adds-New-MCP-Support-to-Expand-Access-to-Agentic-Cyber-Resilience/default.aspx",
-        "tag": "launch",
-        "published": "2026-11-16"
-      },
-      {
         "vendor": "OpenJDK",
         "title": "Java4Shell: critical unauthenticated RCE in OpenJDK (CVE-2026-114938, CVSS 9.2)",
         "summary": "Cisco Talos disclosed Nov 17: a critical flaw in OpenJDK Java (CVE-2026-114938, dubbed Java4Shell, CVSS 4.0 9.2) where a malformed Base64 input to affected JVMs can lead to unauthenticated remote code execution. Affects OpenJDK 17.0.6 and later running on x86-64 CPUs with AVX-512 VBMI enabled. Talos has not observed in-the-wild exploitation yet; Snort SIDs 1:67502-1:67513 cover it, and Cisco is evaluating its own products for exposure.",
