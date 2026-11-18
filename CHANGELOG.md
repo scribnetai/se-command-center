@@ -1,6 +1,6 @@
 # Changelog
 ## 2026-11-18
-- Morning briefing: 4 items (NVIDIA, Cisco, Rubrik, OpenJDK). Archive updated.
+- Morning briefing: 3 items (NVIDIA, Cisco, OpenJDK). Archive updated.
 
 
 ## 2026-11-17
