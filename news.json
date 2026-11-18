@@ -1,37 +1,46 @@
 {
-  "date": "2026-11-17",
-  "updated_at": "2026-11-17T07:20:00-05:00",
+  "date": "2026-11-18",
+  "updated_at": "2026-11-18T07:15:55-05:00",
   "items": [
     {
-      "vendor": "Dell Technologies",
-      "title": "Dell expands AI Factory with NVIDIA at SC26: agentic infra management, B300 servers, AI Data Platform upgrades",
-      "summary": "Announced Nov 16 at SC26 in Chicago: Dell OpenManage Rack Scale, a new agentic platform to deploy, manage and automate physical infrastructure from servers to full racks, is available now; PowerEdge XE9785 servers with NVIDIA HGX B300 GPUs are validated and available; Dell AI Data Platform gains new data orchestration and storage engine capabilities from December 2026; and new validated solutions cover AI security (F5, JFrog), agentic AI (DataRobot), observability (Dynatrace) and AI governance. Dell Supported NVIDIA AI Enterprise is available now.",
-      "why_it_matters": "Gives SEs a fresh, quotable AI-infrastructure story for customers sizing AI factories: Rack Scale is a concrete management-layer differentiator to demo, XE9785/B300 is orderable now, and the validated-solution stack (especially the F5/JFrog AI security blueprints) answers the 'how do we secure agents?' objection in AI discovery calls.",
-      "url": "https://www.dell.com/en-us/newsroom/announcements/dell-technologies-delivers-the-trusted-data-and-ai-infrastructure-foundation-needed-to-scale-enterprise-ai",
-      "tag": "launch",
-      "published": "2026-11-16"
-    },
-    {
       "vendor": "NVIDIA",
-      "title": "NVIDIA previews Rubin HPC GPU (50,000+ CUDA cores, ships 2028) and ships DGX Spark HPC Developer Kit at SC26",
-      "summary": "Announced Nov 16 at SC26: Rubin HPC, a new Vera Rubin-platform GPU aimed at simulation and data processing with more than 50,000 CUDA cores, is slated to ship in 2028 \u2014 no FP64, memory, power or price figures disclosed yet. The DGX Spark HPC Developer Kit is available now: four DGX Spark systems linked in a ring over ConnectX-7 (no switch), 512 GB combined memory and 20 TB NVMe, aimed at desk-side multi-node scientific and AI workloads. CUDA-X libraries were also expanded.",
-      "why_it_matters": "Rubin HPC is roadmap-only for now \u2014 position it as a 2028 exascale-procurement talking point, not a buying decision. The DGX Spark kit is the actionable piece: a compact, orderable desk-side cluster for research and AI-dev customers who want local multi-node work without waiting on shared GPU clusters.",
-      "url": "https://siliconangle.com/2026/11/16/nvidia-debuts-new-rubin-hpc-chip-scientific-research-libraries/",
+      "title": "NVIDIA launches Vera CPU rack-scale platform for HPC and agentic science",
+      "summary": "Announced at SC26 on Nov 17: a rack-scale platform built on NVIDIA's first fully custom data center CPU, packing 192 Vera CPUs with Quantum-X800 InfiniBand networking, ~300 TB of memory and 1 PB of storage in a fully liquid-cooled MGX design. DKRZ has selected Vera CPUs for its HLRE-5 climate-science system. Racks from Dell Technologies, HPE, Lenovo and Supermicro are expected beginning in early 2027.",
+      "why_it_matters": "NVIDIA now has a CPU-only rack play for HPC and agentic workloads, not just GPU racks. SEs selling Dell or HPE HPC/AI should expect Vera-based configs in early 2027 and customer questions about Arm vs x86 for agent orchestration and simulation workloads.",
+      "url": "https://www.storagenewsletter.com/2026/11/17/sc26-nvidia-expands-vera-cpu-platform-to-accelerate-scientific-discovery/",
+      "tag": "launch",
+      "published": "2026-11-17"
+    },
+    {
+      "vendor": "Cisco",
+      "title": "Cisco adds Anthropic Claude Mythos to AI Defense adaptive red teaming",
+      "summary": "Announced at Cisco Live Melbourne on Nov 17: AI Defense will use Anthropic's Claude Mythos to reason about attack paths and generate adaptive, multi-step red-team tests against deployed AI agents and models, not just the models themselves. Tests run only against customer-owned, registered and authorised targets, tied to a named operator, recorded for audit and stoppable on demand. Coming soon for select enterprises; not generally available, with timelines subject to change.",
+      "why_it_matters": "Gives the AI Defense story a concrete differentiator: red-teaming agents, not just models. Good discovery question for customers deploying agents: how do you test what your agents can be tricked into doing? Note the 'coming soon / select enterprises' caveat when positioning against shipping competitors.",
+      "url": "https://www.techfinitive.com/features/cisco-brings-claude-mythos-to-ai-defense-to-stress-test-enterprise-agents/",
+      "tag": "launch",
+      "published": "2026-11-17"
+    },
+    {
+      "vendor": "Rubrik",
+      "title": "Rubrik adds MCP support so AI agents can work inside Rubrik Security Cloud",
+      "summary": "Announced Nov 16: Rubrik MCP exposes the Rubrik Security Cloud API schema directly to an organisation's AI agents, giving them a secure, programmable path to Rubrik's data, identity and application intelligence, with role-based access control parity, configurable permissions and OWASP MCP Top 10-aligned guardrails. Teams can save multi-step recovery or compliance workflows as reusable, deterministic tools. Built with Anthropic's Claude; Rubrik AI is now used by one-third of Rubrik's global customers. Currently in private preview for existing customers.",
+      "why_it_matters": "Backup and recovery becomes an agentic surface: customers will ask how agent access to recovery actions is governed, and this is Rubrik's direct answer to Cohesity Gaia's AI-data story. Discovery angle: which recovery workflows would you trust an agent to run unsupervised, and what guardrails do you require?",
+      "url": "https://ir.rubrik.com/news-events/press-releases/news-details/2026/Rubrik-Adds-New-MCP-Support-to-Expand-Access-to-Agentic-Cyber-Resilience/default.aspx",
       "tag": "launch",
       "published": "2026-11-16"
     },
     {
-      "vendor": "Palo Alto Networks",
-      "title": "State of Cloud Security Report 2026: 40% of orgs can't retrace what their AI agents did",
-      "summary": "Palo Alto Networks' State of Cloud Security Report 2026, published Nov 17: 99% of organizations now use AI agents for autonomous or semi-autonomous actions in development pipelines, but 40% have been unable to reconstruct an AI agent's actions, and 43% found AI agents or automated workflows operating without security approval or oversight in the past 12 months.",
-      "why_it_matters": "Strong discovery-call ammunition for Prisma AIRS / Cortex conversations: the 'we can't audit what our agents did' stat lands with security buyers, and the 43% shadow-agent figure reframes AI security from a future concern to a governance gap customers already have. Use it to open AI-security assessments.",
-      "url": "https://www.helpnetsecurity.com/2026/11/17/palo-alto-networks-ai-cloud-security-risks-report/",
-      "tag": "competitive",
+      "vendor": "OpenJDK",
+      "title": "Java4Shell: critical unauthenticated RCE in OpenJDK (CVE-2026-114938, CVSS 9.2)",
+      "summary": "Cisco Talos disclosed Nov 17: a critical flaw in OpenJDK Java (CVE-2026-114938, dubbed Java4Shell, CVSS 4.0 9.2) where a malformed Base64 input to affected JVMs can lead to unauthenticated remote code execution. Affects OpenJDK 17.0.6 and later running on x86-64 CPUs with AVX-512 VBMI enabled. Talos has not observed in-the-wild exploitation yet; Snort SIDs 1:67502-1:67513 cover it, and Cisco is evaluating its own products for exposure.",
+      "why_it_matters": "Java runs in a huge share of enterprise apps, so expect 'are we exposed?' questions from security-minded customers this week. The patching conversation is straightforward (update the JVM), but the follow-up matters: which vendor products embed affected JVMs, and what do their advisories say?",
+      "url": "https://blog.talosintelligence.com/java4shell/",
+      "tag": "cve",
       "published": "2026-11-17"
     }
   ],
   "prompt_of_the_day": {
     "category": "Customer outreach",
-    "prompt": "Draft a short customer outreach email (under 150 words) for a CIO at a mid-size enterprise that is piloting AI workloads. Lead with Dell's Nov 16 SC26 announcement: Dell OpenManage Rack Scale is now available as an agentic platform to deploy and manage AI infrastructure from servers to full racks, PowerEdge XE9785 servers with NVIDIA HGX B300 GPUs are validated and available, and Dell AI Data Platform upgrades arrive December 2026 \u2014 plus NVIDIA's DGX Spark HPC Developer Kit (four desk-side systems, 512 GB combined memory) is orderable now for local AI/scientific work. Tie it to their governance concern using Palo Alto Networks' State of Cloud Security Report 2026 stat that 40% of organizations cannot reconstruct what their AI agents did. End with one specific call to action: a 30-minute AI infrastructure readiness review. Keep the tone consultative, not salesy."
+    "prompt": "Draft a short, plain-language customer email (under 150 words) about CVE-2026-114938 ('Java4Shell'), a critical unauthenticated remote code execution flaw in OpenJDK Java disclosed Nov 17, 2026 by Cisco Talos, CVSS 4.0 score 9.2. It affects OpenJDK 17.0.6 and later on x86-64 CPUs with AVX-512 VBMI enabled, triggered by a malformed Base64 input; no in-the-wild exploitation has been observed yet. The email should: (1) explain the risk in one sentence without jargon, (2) ask the customer to confirm which of their systems run OpenJDK 17+ and whether their JVMs are patched, (3) offer a 15-minute call to review exposure across their Java estate and any vendor products that embed affected JVMs, and (4) close with a clear next step and a calm, non-alarmist tone."
   }
 }
