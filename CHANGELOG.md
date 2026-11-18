@@ -1,4 +1,7 @@
 # Changelog
+## 2026-11-18
+- Morning briefing: 4 items (NVIDIA, Cisco, Rubrik, OpenJDK). Archive updated.
+
 
 ## 2026-11-17
 - Morning briefing: 3 items (Dell Technologies, NVIDIA, Palo Alto Networks). Archive updated.
