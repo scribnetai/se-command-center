@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "updated_at": "2026-11-18T07:15:55-05:00",
+  "updated_at": "2026-11-18T07:16:37-05:00",
   "items": [
     {
       "vendor": "NVIDIA",
@@ -19,15 +19,6 @@
       "url": "https://www.techfinitive.com/features/cisco-brings-claude-mythos-to-ai-defense-to-stress-test-enterprise-agents/",
       "tag": "launch",
       "published": "2026-11-17"
-    },
-    {
-      "vendor": "Rubrik",
-      "title": "Rubrik adds MCP support so AI agents can work inside Rubrik Security Cloud",
-      "summary": "Announced Nov 16: Rubrik MCP exposes the Rubrik Security Cloud API schema directly to an organisation's AI agents, giving them a secure, programmable path to Rubrik's data, identity and application intelligence, with role-based access control parity, configurable permissions and OWASP MCP Top 10-aligned guardrails. Teams can save multi-step recovery or compliance workflows as reusable, deterministic tools. Built with Anthropic's Claude; Rubrik AI is now used by one-third of Rubrik's global customers. Currently in private preview for existing customers.",
-      "why_it_matters": "Backup and recovery becomes an agentic surface: customers will ask how agent access to recovery actions is governed, and this is Rubrik's direct answer to Cohesity Gaia's AI-data story. Discovery angle: which recovery workflows would you trust an agent to run unsupervised, and what guardrails do you require?",
-      "url": "https://ir.rubrik.com/news-events/press-releases/news-details/2026/Rubrik-Adds-New-MCP-Support-to-Expand-Access-to-Agentic-Cyber-Resilience/default.aspx",
-      "tag": "launch",
-      "published": "2026-11-16"
     },
     {
       "vendor": "OpenJDK",
