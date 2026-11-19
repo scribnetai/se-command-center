@@ -1,4 +1,6 @@
 # Changelog
+## 2026-11-19
+- Morning briefing: 5 items (Palo Alto Networks, Rubrik, Cisco, Everpure, Fortinet). Archive updated.
 ## 2026-11-18
 - Morning briefing: 3 items (NVIDIA, Cisco, OpenJDK). Archive updated.
 
