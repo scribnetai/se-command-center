@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-11-20",
+    "items": [
+      {
+        "vendor": "VMware by Broadcom",
+        "title": "Critical vCenter auth bypass CVE-2026-123890 was exploited by espionage group months before the patch",
+        "summary": "Broadcom patched a CVSS 9.8 authentication bypass in the VMware Directory Service (CVE-2026-123890) that lets an attacker with network access bypass authentication and gain unauthorized vCenter access. Google Threat Intelligence links exploitation to the ARMORY CASTLE espionage group, which used the flaw in early September with a tool called BONESAW to create admin accounts, extract the directory database, and forge SAML tokens. Fixes are vCenter 8.0 U3m, 9.0.2.0200, and 9.1.1.0200; there is no workaround, and vCenter 7.0 extended-support customers must contact Broadcom.",
+        "why_it_matters": "vCenter is the control plane for the whole virtual estate, so a compromised vCenter is a compromised cluster. Any customer with vCenter reachable beyond a trusted admin network needs the patch plus a compromise review for rogue admin accounts and unusual directory activity \u2014 this was exploited in the wild for ~2 months before the fix landed.",
+        "url": "https://www.isec.news/2026/11/20/broadcom-patches-vmware-vcenter-flaw-exploited-by-espionage-group/",
+        "tag": "cve",
+        "published": "2026-11-19"
+      },
+      {
+        "vendor": "Cisco",
+        "title": "Critical Expressway flaw CVE-2026-76466 now exploited in the wild, a month after the fix",
+        "summary": "Russian security firm F6 reports the first confirmed exploitation of CVE-2026-76466, a CVSS 9.8 unauthenticated root RCE in clustered Cisco Expressway Core/Edge, used to breach a Russian organization through two internet-facing Expressway servers shortly after a public exploit appeared. The fix is Expressway X15.5.20; X14 and earlier have no in-place fix and must upgrade. Cisco's October 21 advisory still says it knows of no malicious use and has not been revised. F6 recommends blocking TCP 4371/4372 except from trusted cluster nodes if patching is not immediate.",
+        "why_it_matters": "Expressway is edge-facing by design, so unpatched clustered deployments are directly reachable. This is the second Cisco edge flaw in a week to go from patch to active exploitation \u2014 customers who deferred the October fix now have a live-exploit reason to move, and X14 estates face an upgrade, not a patch.",
+        "url": "https://www.kbytechnologies.com/news-security/cisco-expressway-cve-2026-76466-exploited-f6-november-2026",
+        "tag": "cve",
+        "published": "2026-11-19"
+      },
+      {
+        "vendor": "Cisco",
+        "title": "Qumulo and Cisco pair storage-layer ransomware detection with Hypershield network isolation",
+        "summary": "Qumulo and Cisco announced a joint ransomware defense solution pairing Qumulo NeuralProtect with Cisco Hypershield and N9300 Series Smart Switches. NeuralProtect scans file writes in real time and, on detection, locks snapshots at the storage layer and signals Hypershield, which pushes updated L4 microsegmentation policy to the N9300 switches to isolate the source host at line rate. Available now through Qumulo, Cisco, and channel partners.",
+        "why_it_matters": "This is a credible storage-plus-network ransomware story for Cisco/Hypershield accounts: detection where the data lives, containment enforced in the fabric without a separate appliance. Useful as a Hypershield attach conversation in Qumulo shops \u2014 and a competitive answer where customers ask how Cisco counters storage-vendor ransomware detection.",
+        "url": "https://www.businesswire.com/news/home/20261119996793/en/Qumulo-and-Cisco-Turn-Storage-and-Network-Into-a-Unified-Ransomware-Defense",
+        "tag": "launch",
+        "published": "2026-11-19"
+      }
+    ]
+  },
+  {
     "date": "2026-11-19",
     "items": [
       {
@@ -907,38 +939,6 @@
         "url": "https://cyberpress.org/critical-fortinet-fortisiem-rce-vulnerability/",
         "tag": "cve",
         "published": "2026-10-20"
-      }
-    ]
-  },
-  {
-    "date": "2026-10-20",
-    "items": [
-      {
-        "vendor": "VMware by Broadcom",
-        "title": "Broadcom signs 10-year VMware Cloud Foundation agreement with NTT DOCOMO",
-        "summary": "Broadcom announced a 10-year comprehensive agreement with NTT DOCOMO to advance the private cloud underpinning DOCOMO's digital services, with VMware Cloud Foundation at the core \u2014 described as Broadcom Japan's first 10-year agreement covering VMware licenses, technical assistance and maintenance support. The deal covers VCF, VMware Avi Load Balancer, VMware vDefend and VMware Tanzu Platform, plus Support Account Manager, Technical Account Manager and VCF Forte Support, building on a collaboration running since 2019. Broadcom says the platform will run virtual machines, containers and AI workloads on a common foundation, with the two engineering teams aligning long-term roadmaps.",
-        "why_it_matters": "A flagship telco just committed to VCF for a decade \u2014 strong counter-evidence to the 'everyone is fleeing VMware' narrative in renewal fights. Use it with large full-stack VCF accounts: long-term Broadcom deals exist when the customer actually uses Avi, vDefend and Tanzu. For midmarket shops, flip it around \u2014 a 10-year lock-in is exactly what smaller customers should price against exit options before signing anything multi-year.",
-        "url": "https://rss.globenewswire.com/news-release/2026/10/20/3383992/19933/en/broadcom-to-advance-ntt-docomo-s-private-cloud-with-vmware-cloud-foundation.html",
-        "tag": "competitive",
-        "published": "2026-10-19"
-      },
-      {
-        "vendor": "NVIDIA",
-        "title": "NVIDIA launches Nemotron 3.5 open models for enterprise agents \u2014 120B Super VL available now",
-        "summary": "NVIDIA launched the Nemotron 3.5 open-weight model family for enterprise agents and local PCs. The headline model, Nemotron 3.5 Super VL, is a 120-billion-parameter multimodal model (text, images, video) that NVIDIA says organizations can post-train on their own data and deploy on their own infrastructure; early users named include CrowdStrike, EY, Ramp, Perplexity, Salesforce and Skydance. Two smaller Bolt models target local deployment: Bolt 74B-A9B 24GB for on-device agentic tasks, available now alongside Super VL, and the smaller Bolt E4B for conversational agents, due later this month. NVIDIA's speed and accuracy comparisons against closed frontier models are vendor claims, not independently verified.",
-        "why_it_matters": "This is the on-prem agent story in product form: a capable open model customers can own and run in their own data center instead of paying per-token API rates. It feeds directly into Dell AI Factory, HPE Private Cloud AI and VCF Private AI conversations \u2014 the presales question shifts from 'which API?' to 'what GPU, memory and storage footprint does a 120B post-trained agent need here?' Get the sizing conversation started before a cloud-only competitor frames it.",
-        "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
-        "tag": "launch",
-        "published": "2026-10-19"
-      },
-      {
-        "vendor": "Dell Technologies",
-        "title": "Dell to deliver MDR and XDR services through PureCS's Abu Dhabi SOC for UAE customers",
-        "summary": "PureCS, the sovereign digital infrastructure and cybersecurity company within the UAE's PureHealth Group, signed an agreement with Dell Technologies on Oct 19 under which Dell will deliver enhanced Managed Detection and Response (MDR) and Extended Detection and Response (XDR) services through PureCS's Security Operations Centre in Abu Dhabi. The services target UAE government entities and private enterprises, pairing Dell's global threat detection and response capabilities with PureCS's local SOC, digital infrastructure and regional operational support for locally delivered monitoring and incident response.",
-        "why_it_matters": "A sovereign-SOC delivery model worth noting for services presales: Dell is not just reselling MDR/XDR, it is anchoring delivery in a local partner SOC to meet in-country expectations. For customers with data-residency or sovereign-operations pressure, this is the pattern to replicate in discovery \u2014 ask where they require detection and response to physically sit before proposing a purely global managed service.",
-        "url": "https://thegulfweekly.com/purecs-dell-technologies-collaborate-to-enhance-cybersecurity-services-in-uae/",
-        "tag": "competitive",
-        "published": "2026-10-19"
       }
     ]
   }
