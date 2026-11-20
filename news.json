@@ -1,55 +1,37 @@
 {
-  "date": "2026-11-19",
-  "updated_at": "2026-11-19T07:20:00-05:00",
+  "date": "2026-11-20",
+  "updated_at": "2026-11-20T07:15:00-05:00",
   "items": [
     {
-      "vendor": "Palo Alto Networks",
-      "title": "Palo Alto Networks to acquire Applied Compute for $4.5B in stock; Q1 FY27 beats with NGS ARR up 66%",
-      "summary": "Palo Alto Networks signed a definitive agreement Nov 18 to acquire Applied Compute, a platform for post-training and inference of open-weight AI models, in an all-stock deal valued at $4.5 billion, expected to close in fiscal Q3 2027. Applied Compute's research team joins Palo Alto Networks and co-founder/CEO Yash Patil becomes co-chief AI officer. The same day, Palo Alto Networks reported fiscal Q1 2027 revenue of $3.44 billion, up 39% year over year, with next-generation security ARR of $9.73 billion, up 66%, and raised full-year fiscal 2027 revenue guidance to $14.52-14.57 billion.",
-      "why_it_matters": "Palo Alto Networks is buying its way into owning the AI model layer, not just securing it: open-weight model training and serving becomes a first-party capability, and Prisma AIRS is already at roughly $170M ARR five quarters after GA. In AI-security deals, expect Palo Alto Networks to pitch a full stack from model training to SASE enforcement, and expect SASE AI-agent traffic (up about 9x year over year) to become a capacity-pricing conversation within six to nine months.",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/palo-alto-networks-plans-4-5-billion-acquisition-of-ai-startup-applied-compute/",
-      "tag": "competitive",
-      "published": "2026-11-18"
-    },
-    {
-      "vendor": "Rubrik",
-      "title": "Rubrik launches DevOps Protection with cyber recovery for Azure DevOps and GitHub",
-      "summary": "Rubrik announced Nov 18 cyber recovery capabilities for Microsoft Azure DevOps and GitHub. DevOps Protection Enterprise Edition connects anomaly detection (baselining GitHub and Azure DevOps audit logs against backup metadata), blast-radius investigation across repositories, commits, pipelines, workflows, pull requests and settings, and surgical recovery of only the attacker's changes from air-gapped, immutable backups. General availability is expected in the coming months. Foundation Edition now also backs up broader collaboration metadata including issues, boards, wikis, packages and organization settings.",
-      "why_it_matters": "Source code is now an explicit cyber-recovery workload: a stolen token or poisoned dependency can spread across thousands of repos before anyone notices, and native platform history is not a recovery plan. Note the timing \u2014 Cohesity previewed GitHub/Azure DevOps protection six days earlier (Nov 12), so both vendors are racing to the same DevOps buyer and both are pre-GA; the differentiator to probe is the investigation workflow, not the backup itself.",
-      "url": "https://cxotoday.com/media-coverage/rubrik-introduces-devops-protection-with-cyber-recovery-for-microsoft-azure-devops-and-github/",
-      "tag": "launch",
-      "published": "2026-11-18"
+      "vendor": "VMware by Broadcom",
+      "title": "Critical vCenter auth bypass CVE-2026-123890 was exploited by espionage group months before the patch",
+      "summary": "Broadcom patched a CVSS 9.8 authentication bypass in the VMware Directory Service (CVE-2026-123890) that lets an attacker with network access bypass authentication and gain unauthorized vCenter access. Google Threat Intelligence links exploitation to the ARMORY CASTLE espionage group, which used the flaw in early September with a tool called BONESAW to create admin accounts, extract the directory database, and forge SAML tokens. Fixes are vCenter 8.0 U3m, 9.0.2.0200, and 9.1.1.0200; there is no workaround, and vCenter 7.0 extended-support customers must contact Broadcom.",
+      "why_it_matters": "vCenter is the control plane for the whole virtual estate, so a compromised vCenter is a compromised cluster. Any customer with vCenter reachable beyond a trusted admin network needs the patch plus a compromise review for rogue admin accounts and unusual directory activity \u2014 this was exploited in the wild for ~2 months before the fix landed.",
+      "url": "https://www.isec.news/2026/11/20/broadcom-patches-vmware-vcenter-flaw-exploited-by-espionage-group/",
+      "tag": "cve",
+      "published": "2026-11-19"
     },
     {
       "vendor": "Cisco",
-      "title": "Cisco lists products hit by Java4Shell (CVE-2026-114938); fixes still TBD, no workarounds",
-      "summary": "Cisco's Nov 18 advisory for Java4Shell (CVE-2026-114938, the OpenJDK Base64-decoder flaw enabling unauthenticated remote code execution, CVSS 4.0 9.2 per Talos) names affected products including Catalyst Center, Secure Workload, Intersight Virtual Appliance, Smart Software Manager On-Prem, cnBNG, Smart PHY, Optical Network Planner and the Splunk AppDynamics on-prem virtual appliance. Fixed releases are still to be determined and Cisco lists no workarounds; proof-of-concept exploit code is publicly available. Hardware without AVX-512 VBMI support, and ARM or Cisco Silicon One systems, are not affected.",
-      "why_it_matters": "This is the vendor-specific follow-up to the Nov 18 OpenJDK disclosure: customers running the named Cisco products on x86-64 with AVX-512 VBMI are exposed with no patch and no workaround yet, so the immediate action is inventory and exposure triage, not patching. Prioritize internet-facing deployments and plan JVM updates where the product embeds Java; watch for Cisco's fixed-release update to this advisory.",
-      "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nov2026-java-rce-eCa6ss9z",
+      "title": "Critical Expressway flaw CVE-2026-76466 now exploited in the wild, a month after the fix",
+      "summary": "Russian security firm F6 reports the first confirmed exploitation of CVE-2026-76466, a CVSS 9.8 unauthenticated root RCE in clustered Cisco Expressway Core/Edge, used to breach a Russian organization through two internet-facing Expressway servers shortly after a public exploit appeared. The fix is Expressway X15.5.20; X14 and earlier have no in-place fix and must upgrade. Cisco's October 21 advisory still says it knows of no malicious use and has not been revised. F6 recommends blocking TCP 4371/4372 except from trusted cluster nodes if patching is not immediate.",
+      "why_it_matters": "Expressway is edge-facing by design, so unpatched clustered deployments are directly reachable. This is the second Cisco edge flaw in a week to go from patch to active exploitation \u2014 customers who deferred the October fix now have a live-exploit reason to move, and X14 estates face an upgrade, not a patch.",
+      "url": "https://www.kbytechnologies.com/news-security/cisco-expressway-cve-2026-76466-exploited-f6-november-2026",
       "tag": "cve",
-      "published": "2026-11-18"
+      "published": "2026-11-19"
     },
     {
-      "vendor": "Everpure",
-      "title": "Everpure Q3 FY27: revenue up 51% to $1.46B, second top-5 hyperscaler DirectFlash design win",
-      "summary": "Everpure (formerly Pure Storage) reported fiscal Q3 2027 results Nov 18: revenue of $1.46 billion, up 51% year over year, with product revenue up 77% to $947.8 million. The company secured a design win with a second top-five hyperscaler for its DirectFlash technology, highlighted FlashBlade//EXA performance in MLPerf Storage v3.0 and introduced PureKVA on FlashBlade for LLM inference data access. Full-year fiscal 2027 revenue guidance was raised to $5.20-5.21 billion.",
-      "why_it_matters": "A second top-five hyperscaler adopting DirectFlash is a real competitive signal in storage deals: Everpure's flash architecture is winning where the largest buyers set the bar, and PureKVA gives the FlashBlade line a named LLM-inference story. In enterprise array bake-offs, expect Everpure to lean on hyperscaler validation and AI-workload proof points; make them show the MLPerf Storage numbers behind the claim.",
-      "url": "https://www.minichart.com.sg/2026/11/19/everpure-q3-fy27-revenue-jumps-51-to-1-5b-full-year-guidance-raised-again/",
-      "tag": "competitive",
-      "published": "2026-11-18"
-    },
-    {
-      "vendor": "Fortinet",
-      "title": "Access broker selling 500+ stolen FortiGate SSL VPN logins; no new FortiGate flaw involved",
-      "summary": "Security researchers reported Nov 17 on a Russian-speaking access broker (tcherber) selling corporate network access via more than 500 stolen or guessed FortiGate SSL VPN credentials, alongside an automated Go toolkit for VPN login and internal reconnaissance and Rust tooling including a stealer, hidden-desktop implant and ENIGMA ransomware. The operator's control panel showed 178 active infected machines and was still live when examined. There is no new FortiGate vulnerability here \u2014 the way in is weak and reused VPN credentials.",
-      "why_it_matters": "This is a credential-hygiene story, not a patch story: FortiGate SSL VPN customers without MFA and without credential auditing are the target set, and the fix is entirely within the customer's control today. Use it in security reviews to push MFA on every SSL VPN, a credential audit, and failed-login monitoring \u2014 and to position FortiToken or SAML-backed VPN auth where password-only logins still exist.",
-      "url": "https://www.reef-sentinel.net/i/202",
-      "tag": "cve",
-      "published": "2026-11-17"
+      "vendor": "Cisco",
+      "title": "Qumulo and Cisco pair storage-layer ransomware detection with Hypershield network isolation",
+      "summary": "Qumulo and Cisco announced a joint ransomware defense solution pairing Qumulo NeuralProtect with Cisco Hypershield and N9300 Series Smart Switches. NeuralProtect scans file writes in real time and, on detection, locks snapshots at the storage layer and signals Hypershield, which pushes updated L4 microsegmentation policy to the N9300 switches to isolate the source host at line rate. Available now through Qumulo, Cisco, and channel partners.",
+      "why_it_matters": "This is a credible storage-plus-network ransomware story for Cisco/Hypershield accounts: detection where the data lives, containment enforced in the fabric without a separate appliance. Useful as a Hypershield attach conversation in Qumulo shops \u2014 and a competitive answer where customers ask how Cisco counters storage-vendor ransomware detection.",
+      "url": "https://www.businesswire.com/news/home/20261119996793/en/Qumulo-and-Cisco-Turn-Storage-and-Network-Into-a-Unified-Ransomware-Defense",
+      "tag": "launch",
+      "published": "2026-11-19"
     }
   ],
   "prompt_of_the_day": {
     "category": "Customer outreach",
-    "prompt": "Draft a short customer email about Palo Alto Networks' Nov 18 announcement that it will acquire Applied Compute for $4.5 billion in stock (expected to close in fiscal Q3 2027), adding open-weight AI model post-training and inference plus an in-house AI research team led by co-founder Yash Patil as co-chief AI officer. Facts to include: Palo Alto Networks also reported fiscal Q1 2027 revenue of $3.44 billion (up 39% year over year) and next-generation security ARR of $9.73 billion (up 66%); Prisma AIRS is at roughly $170 million ARR five quarters after GA; AI agent traffic through Palo Alto Networks' SASE service is up about 9x year over year, and the company signaled it could start charging for traffic above licensed capacity in six to nine months. Tone: consultative, not salesy. Structure: what the acquisition means in one sentence (Palo Alto Networks is moving from securing AI to owning the model layer), why it matters for customers running open-weight models or heavy AI-agent traffic, two questions to ask the customer (are they running open-weight models on their own data, and do they know how much AI-agent traffic is crossing their SASE?), and a one-line offer to review their AI security posture. End with a subject line."
+    "prompt": "Draft a short, urgent customer outreach email for a VMware/Cisco account about two actively exploited CVEs: VMware vCenter CVE-2026-123890 (CVSS 9.8 auth bypass in the Directory Service, exploited since September by the ARMORY CASTLE group; fix in vCenter 8.0 U3m, 9.0.2.0200, 9.1.1.0200, no workaround) and Cisco Expressway CVE-2026-76466 (CVSS 9.8 unauthenticated root RCE in clustered Expressway, now exploited in the wild; fix is X15.5.20, X14 and earlier must upgrade, no in-place patch). The email should: open with the business risk in one sentence, give the exact affected products and fixed versions, ask the customer to confirm patch status or schedule a maintenance window this week, offer a compromise check for rogue vCenter admin accounts, and close with a single clear call to action. Keep it under 200 words, no jargon, no scare tactics \u2014 just facts and a next step."
   }
 }
