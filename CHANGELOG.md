@@ -1,4 +1,8 @@
 # Changelog
+
+## 2026-11-23
+- Morning briefing: 2 items (CrowdStrike, CrowdStrike). Archive updated.
+
 ## 2026-11-20
 - Morning briefing: 3 items (VMware by Broadcom, Cisco). Archive updated.
 ## 2026-11-19
