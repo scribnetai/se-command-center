@@ -1,37 +1,28 @@
 {
-  "date": "2026-11-20",
-  "updated_at": "2026-11-20T07:15:00-05:00",
+  "date": "2026-11-23",
+  "updated_at": "2026-11-23T07:20:00-05:00",
   "items": [
     {
-      "vendor": "VMware by Broadcom",
-      "title": "Critical vCenter auth bypass CVE-2026-123890 was exploited by espionage group months before the patch",
-      "summary": "Broadcom patched a CVSS 9.8 authentication bypass in the VMware Directory Service (CVE-2026-123890) that lets an attacker with network access bypass authentication and gain unauthorized vCenter access. Google Threat Intelligence links exploitation to the ARMORY CASTLE espionage group, which used the flaw in early September with a tool called BONESAW to create admin accounts, extract the directory database, and forge SAML tokens. Fixes are vCenter 8.0 U3m, 9.0.2.0200, and 9.1.1.0200; there is no workaround, and vCenter 7.0 extended-support customers must contact Broadcom.",
-      "why_it_matters": "vCenter is the control plane for the whole virtual estate, so a compromised vCenter is a compromised cluster. Any customer with vCenter reachable beyond a trusted admin network needs the patch plus a compromise review for rogue admin accounts and unusual directory activity \u2014 this was exploited in the wild for ~2 months before the fix landed.",
-      "url": "https://www.isec.news/2026/11/20/broadcom-patches-vmware-vcenter-flaw-exploited-by-espionage-group/",
-      "tag": "cve",
-      "published": "2026-11-19"
+      "vendor": "CrowdStrike",
+      "title": "CrowdStrike to acquire Zscaler in $43.9B all-stock deal, adding network security to the Falcon platform",
+      "summary": "CrowdStrike announced a definitive agreement to acquire Zscaler in an all-stock transaction valued at approximately $43.9 billion. Zscaler shareholders receive 1.135 CrowdStrike shares per share (about $260.41, a 34% premium). The deal brings Zscaler's Zero Trust Exchange and SASE portfolio onto the Falcon platform, with Zscaler's $3.9B ARR and roughly 8,000 customers CrowdStrike doesn't yet have; the combined company is expected to start with more than $10B in ARR. Zscaler CEO Jay Chaudhry will run the Zscaler business and join CrowdStrike's board. The transaction is expected to close in the second half of CrowdStrike's fiscal 2028, pending shareholder and regulatory approval; both companies operate independently until then.",
+      "why_it_matters": "This is the biggest platform-consolidation move in security in years: the endpoint leader is buying the SSE leader, directly answering Palo Alto Networks' platformization pitch. Expect CrowdStrike reps to lead with 'one platform, one data layer, one Falcon Flex contract' and Zscaler's 50%-of-the-Fortune-500 footprint. Until close it's a roadmap story, not a shipped integration \u2014 customers should not be told the products are already unified, and Zscaler renewals in the interim stay on Zscaler paper.",
+      "url": "https://www.businesswire.com/news/home/20261123522174/en/CrowdStrike-to-Acquire-Zscaler-Bringing-Network-Security-and-Zero-Trust-to-the-Falcon-Platform",
+      "tag": "competitive",
+      "published": "2026-11-23"
     },
     {
-      "vendor": "Cisco",
-      "title": "Critical Expressway flaw CVE-2026-76466 now exploited in the wild, a month after the fix",
-      "summary": "Russian security firm F6 reports the first confirmed exploitation of CVE-2026-76466, a CVSS 9.8 unauthenticated root RCE in clustered Cisco Expressway Core/Edge, used to breach a Russian organization through two internet-facing Expressway servers shortly after a public exploit appeared. The fix is Expressway X15.5.20; X14 and earlier have no in-place fix and must upgrade. Cisco's October 21 advisory still says it knows of no malicious use and has not been revised. F6 recommends blocking TCP 4371/4372 except from trusted cluster nodes if patching is not immediate.",
-      "why_it_matters": "Expressway is edge-facing by design, so unpatched clustered deployments are directly reachable. This is the second Cisco edge flaw in a week to go from patch to active exploitation \u2014 customers who deferred the October fix now have a live-exploit reason to move, and X14 estates face an upgrade, not a patch.",
-      "url": "https://www.kbytechnologies.com/news-security/cisco-expressway-cve-2026-76466-exploited-f6-november-2026",
-      "tag": "cve",
-      "published": "2026-11-19"
-    },
-    {
-      "vendor": "Cisco",
-      "title": "Qumulo and Cisco pair storage-layer ransomware detection with Hypershield network isolation",
-      "summary": "Qumulo and Cisco announced a joint ransomware defense solution pairing Qumulo NeuralProtect with Cisco Hypershield and N9300 Series Smart Switches. NeuralProtect scans file writes in real time and, on detection, locks snapshots at the storage layer and signals Hypershield, which pushes updated L4 microsegmentation policy to the N9300 switches to isolate the source host at line rate. Available now through Qumulo, Cisco, and channel partners.",
-      "why_it_matters": "This is a credible storage-plus-network ransomware story for Cisco/Hypershield accounts: detection where the data lives, containment enforced in the fabric without a separate appliance. Useful as a Hypershield attach conversation in Qumulo shops \u2014 and a competitive answer where customers ask how Cisco counters storage-vendor ransomware detection.",
-      "url": "https://www.businesswire.com/news/home/20261119996793/en/Qumulo-and-Cisco-Turn-Storage-and-Network-Into-a-Unified-Ransomware-Defense",
-      "tag": "launch",
-      "published": "2026-11-19"
+      "vendor": "CrowdStrike",
+      "title": "CrowdStrike Q3 FY27: record $419M net new ARR, ARR up 27% to $6.26B; Falcon Guardian crosses $100M ARR in year one",
+      "summary": "CrowdStrike reported fiscal Q3 2027 results alongside the Zscaler deal: total revenue of $1.58B (up 28%), ending ARR of $6.26B (up 27%), and record net new ARR of $419M. Falcon Guardian, its AI-agent security offering, crossed $100M in ARR in its first year. The quarter also included the Fiddler and Dreadnode AI-security acquisitions and expanded partnerships with Anthropic and OpenAI. CrowdStrike raised its FY27 net new ARR growth guidance by 1,060 basis points to 45% at the midpoint.",
+      "why_it_matters": "Falcon Guardian crossing $100M ARR in its first year is a concrete proof point that AI-agent security is now a real budget line, not a roadmap slide \u2014 useful when a customer asks whether anyone is actually buying agent security. The record net new ARR also gives CrowdStrike reps a momentum story to pair with the Zscaler acquisition in competitive deals against Palo Alto Networks.",
+      "url": "https://www.morningstar.com/news/business-wire/20261123147150/crowdstrike-reports-third-quarter-fiscal-year-2027-financial-results",
+      "tag": "competitive",
+      "published": "2026-11-23"
     }
   ],
   "prompt_of_the_day": {
     "category": "Customer outreach",
-    "prompt": "Draft a short, urgent customer outreach email for a VMware/Cisco account about two actively exploited CVEs: VMware vCenter CVE-2026-123890 (CVSS 9.8 auth bypass in the Directory Service, exploited since September by the ARMORY CASTLE group; fix in vCenter 8.0 U3m, 9.0.2.0200, 9.1.1.0200, no workaround) and Cisco Expressway CVE-2026-76466 (CVSS 9.8 unauthenticated root RCE in clustered Expressway, now exploited in the wild; fix is X15.5.20, X14 and earlier must upgrade, no in-place patch). The email should: open with the business risk in one sentence, give the exact affected products and fixed versions, ask the customer to confirm patch status or schedule a maintenance window this week, offer a compromise check for rogue vCenter admin accounts, and close with a single clear call to action. Keep it under 200 words, no jargon, no scare tactics \u2014 just facts and a next step."
+    "prompt": "Draft a short customer outreach email about CrowdStrike's announcement today (Nov 23, 2026) that it will acquire Zscaler in a $43.9B all-stock deal (1.135 CrowdStrike shares per Zscaler share, ~34% premium, expected to close in the second half of CrowdStrike's fiscal 2028). Key facts to use: the combined company will start with over $10B in ARR, Zscaler brings its Zero Trust Exchange and SASE portfolio plus ~8,000 customers CrowdStrike doesn't have yet, Zscaler CEO Jay Chaudhry will run the Zscaler business and join CrowdStrike's board, and both companies operate independently until close. Write two versions: one for an existing CrowdStrike customer who also uses Zscaler, and one for a Zscaler-only customer. Each should be under 150 words, lead with what changes for them (one Falcon Flex contract, one platform, one data layer eventually), state plainly what does NOT change until close, and end with one discovery question about their zero-trust or AI-agent security plans. Keep the tone direct and factual \u2014 no hype about the products being unified today."
   }
 }
