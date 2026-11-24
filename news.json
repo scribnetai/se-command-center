@@ -1,28 +1,28 @@
 {
-  "date": "2026-11-23",
-  "updated_at": "2026-11-23T07:20:00-05:00",
+  "date": "2026-11-24",
+  "updated_at": "2026-11-24T07:16:10-05:00",
   "items": [
     {
-      "vendor": "CrowdStrike",
-      "title": "CrowdStrike to acquire Zscaler in $43.9B all-stock deal, adding network security to the Falcon platform",
-      "summary": "CrowdStrike announced a definitive agreement to acquire Zscaler in an all-stock transaction valued at approximately $43.9 billion. Zscaler shareholders receive 1.135 CrowdStrike shares per share (about $260.41, a 34% premium). The deal brings Zscaler's Zero Trust Exchange and SASE portfolio onto the Falcon platform, with Zscaler's $3.9B ARR and roughly 8,000 customers CrowdStrike doesn't yet have; the combined company is expected to start with more than $10B in ARR. Zscaler CEO Jay Chaudhry will run the Zscaler business and join CrowdStrike's board. The transaction is expected to close in the second half of CrowdStrike's fiscal 2028, pending shareholder and regulatory approval; both companies operate independently until then.",
-      "why_it_matters": "This is the biggest platform-consolidation move in security in years: the endpoint leader is buying the SSE leader, directly answering Palo Alto Networks' platformization pitch. Expect CrowdStrike reps to lead with 'one platform, one data layer, one Falcon Flex contract' and Zscaler's 50%-of-the-Fortune-500 footprint. Until close it's a roadmap story, not a shipped integration \u2014 customers should not be told the products are already unified, and Zscaler renewals in the interim stay on Zscaler paper.",
-      "url": "https://www.businesswire.com/news/home/20261123522174/en/CrowdStrike-to-Acquire-Zscaler-Bringing-Network-Security-and-Zero-Trust-to-the-Falcon-Platform",
+      "vendor": "HPE",
+      "title": "HPE posts record Q4 FY26: revenue up 50% to $14.55B, lifts FY27 guide sharply on AI demand",
+      "summary": "HPE reported fiscal Q4 2026 revenue of $14.55 billion, up 50% year over year, with Cloud & AI revenue up 69% to $11.3 billion and server revenue up 95% to $8.8 billion. AI systems orders hit $4.5 billion, nearly double the prior quarter. HPE raised its fiscal 2027 revenue outlook to $59.4-63.1 billion (27-35% growth), up from 13-17% previously, and lifted adjusted EPS guidance to $5.05-5.35.",
+      "why_it_matters": "Two presales-relevant signals: HPE's CEO says supply constraints for memory, flash, and networking components will persist into the back half of 2028, so AI infrastructure lead times and pricing stay a live customer conversation; and HPE's raised guide confirms the AI server build-out is still accelerating, which strengthens the case for sizing AI-ready infrastructure now rather than deferring.",
+      "url": "https://www.morningstar.com/news/marketwatch/20261123447/hpe-just-posted-its-strongest-growth-ever-but-its-stock-is-sinking",
       "tag": "competitive",
       "published": "2026-11-23"
     },
     {
-      "vendor": "CrowdStrike",
-      "title": "CrowdStrike Q3 FY27: record $419M net new ARR, ARR up 27% to $6.26B; Falcon Guardian crosses $100M ARR in year one",
-      "summary": "CrowdStrike reported fiscal Q3 2027 results alongside the Zscaler deal: total revenue of $1.58B (up 28%), ending ARR of $6.26B (up 27%), and record net new ARR of $419M. Falcon Guardian, its AI-agent security offering, crossed $100M in ARR in its first year. The quarter also included the Fiddler and Dreadnode AI-security acquisitions and expanded partnerships with Anthropic and OpenAI. CrowdStrike raised its FY27 net new ARR growth guidance by 1,060 basis points to 45% at the midpoint.",
-      "why_it_matters": "Falcon Guardian crossing $100M ARR in its first year is a concrete proof point that AI-agent security is now a real budget line, not a roadmap slide \u2014 useful when a customer asks whether anyone is actually buying agent security. The record net new ARR also gives CrowdStrike reps a momentum story to pair with the Zscaler acquisition in competitive deals against Palo Alto Networks.",
-      "url": "https://www.morningstar.com/news/business-wire/20261123147150/crowdstrike-reports-third-quarter-fiscal-year-2027-financial-results",
+      "vendor": "Cohesity",
+      "title": "Cohesity joins OpenAI Daybreak Defense Network to red-team its products with GPT Cyber Models",
+      "summary": "Cohesity announced it will use OpenAI GPT Cyber Models (Daybreak Red and Daybreak Blue, via the OpenAI Trusted Access for Cyber program) to test its own products for security weaknesses in a controlled, isolated environment, starting with its identity threat detection and response (ITDR) software. The AI-driven testing complements Cohesity's existing static analysis, dependency scanning, and third-party penetration testing, with validated findings fed into its product development and security processes.",
+      "why_it_matters": "A useful secure-by-design talking point for Cohesity deals: the vendor is now using frontier cyber models to attack its own code before shipping, starting with identity security, which is where most ransomware chains begin. Ask competitors what equivalent adversarial testing they run on their own products, and frame it for customers who ask how a backup vendor proves its own software is hardened.",
+      "url": "https://www.prnewswire.com/apac/news-releases/cohesity-joins-openai-daybreak-defense-network-to-strengthen-product-security-302948733.html",
       "tag": "competitive",
-      "published": "2026-11-23"
+      "published": "2026-11-24"
     }
   ],
   "prompt_of_the_day": {
     "category": "Customer outreach",
-    "prompt": "Draft a short customer outreach email about CrowdStrike's announcement today (Nov 23, 2026) that it will acquire Zscaler in a $43.9B all-stock deal (1.135 CrowdStrike shares per Zscaler share, ~34% premium, expected to close in the second half of CrowdStrike's fiscal 2028). Key facts to use: the combined company will start with over $10B in ARR, Zscaler brings its Zero Trust Exchange and SASE portfolio plus ~8,000 customers CrowdStrike doesn't have yet, Zscaler CEO Jay Chaudhry will run the Zscaler business and join CrowdStrike's board, and both companies operate independently until close. Write two versions: one for an existing CrowdStrike customer who also uses Zscaler, and one for a Zscaler-only customer. Each should be under 150 words, lead with what changes for them (one Falcon Flex contract, one platform, one data layer eventually), state plainly what does NOT change until close, and end with one discovery question about their zero-trust or AI-agent security plans. Keep the tone direct and factual \u2014 no hype about the products being unified today."
+    "prompt": "Draft a short customer outreach email for a presales SE. Context: HPE just reported fiscal Q4 2026 revenue of $14.55B (up 50% YoY) with AI systems orders of $4.5B, and raised its FY27 revenue guidance to $59.4-63.1B; HPE's CEO also said supply constraints for memory, flash, and networking components will persist into the back half of 2028. The email should: (1) open with the supply-constraint fact as the reason to talk now, not a sales pitch; (2) ask two discovery questions about the customer's AI infrastructure plans and current lead-time pain; (3) propose a 30-minute session to size an AI-ready infrastructure refresh before component availability tightens further; (4) keep it under 150 words, technical and direct, no hype. Give me two versions: one for a CIO and one for an infrastructure manager."
   }
 }
