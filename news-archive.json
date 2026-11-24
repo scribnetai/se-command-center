@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-11-24",
+    "items": [
+      {
+        "vendor": "HPE",
+        "title": "HPE posts record Q4 FY26: revenue up 50% to $14.55B, lifts FY27 guide sharply on AI demand",
+        "summary": "HPE reported fiscal Q4 2026 revenue of $14.55 billion, up 50% year over year, with Cloud & AI revenue up 69% to $11.3 billion and server revenue up 95% to $8.8 billion. AI systems orders hit $4.5 billion, nearly double the prior quarter. HPE raised its fiscal 2027 revenue outlook to $59.4-63.1 billion (27-35% growth), up from 13-17% previously, and lifted adjusted EPS guidance to $5.05-5.35.",
+        "why_it_matters": "Two presales-relevant signals: HPE's CEO says supply constraints for memory, flash, and networking components will persist into the back half of 2028, so AI infrastructure lead times and pricing stay a live customer conversation; and HPE's raised guide confirms the AI server build-out is still accelerating, which strengthens the case for sizing AI-ready infrastructure now rather than deferring.",
+        "url": "https://www.morningstar.com/news/marketwatch/20261123447/hpe-just-posted-its-strongest-growth-ever-but-its-stock-is-sinking",
+        "tag": "competitive",
+        "published": "2026-11-23"
+      },
+      {
+        "vendor": "Cohesity",
+        "title": "Cohesity joins OpenAI Daybreak Defense Network to red-team its products with GPT Cyber Models",
+        "summary": "Cohesity announced it will use OpenAI GPT Cyber Models (Daybreak Red and Daybreak Blue, via the OpenAI Trusted Access for Cyber program) to test its own products for security weaknesses in a controlled, isolated environment, starting with its identity threat detection and response (ITDR) software. The AI-driven testing complements Cohesity's existing static analysis, dependency scanning, and third-party penetration testing, with validated findings fed into its product development and security processes.",
+        "why_it_matters": "A useful secure-by-design talking point for Cohesity deals: the vendor is now using frontier cyber models to attack its own code before shipping, starting with identity security, which is where most ransomware chains begin. Ask competitors what equivalent adversarial testing they run on their own products, and frame it for customers who ask how a backup vendor proves its own software is hardened.",
+        "url": "https://www.prnewswire.com/apac/news-releases/cohesity-joins-openai-daybreak-defense-network-to-strengthen-product-security-302948733.html",
+        "tag": "competitive",
+        "published": "2026-11-24"
+      }
+    ]
+  },
+  {
     "date": "2026-11-23",
     "items": [
       {
