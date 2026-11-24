@@ -1,4 +1,7 @@
 # Changelog
+## 2026-11-24
+- Morning briefing: 2 items (HPE, Cohesity). Archive updated.
+
 
 ## 2026-11-23
 - Morning briefing: 2 items (CrowdStrike, CrowdStrike). Archive updated.
