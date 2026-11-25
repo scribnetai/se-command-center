@@ -1,28 +1,55 @@
 {
-  "date": "2026-11-24",
-  "updated_at": "2026-11-24T07:16:10-05:00",
+  "date": "2026-11-25",
+  "updated_at": "2026-11-25T07:20:00-05:00",
   "items": [
     {
-      "vendor": "HPE",
-      "title": "HPE posts record Q4 FY26: revenue up 50% to $14.55B, lifts FY27 guide sharply on AI demand",
-      "summary": "HPE reported fiscal Q4 2026 revenue of $14.55 billion, up 50% year over year, with Cloud & AI revenue up 69% to $11.3 billion and server revenue up 95% to $8.8 billion. AI systems orders hit $4.5 billion, nearly double the prior quarter. HPE raised its fiscal 2027 revenue outlook to $59.4-63.1 billion (27-35% growth), up from 13-17% previously, and lifted adjusted EPS guidance to $5.05-5.35.",
-      "why_it_matters": "Two presales-relevant signals: HPE's CEO says supply constraints for memory, flash, and networking components will persist into the back half of 2028, so AI infrastructure lead times and pricing stay a live customer conversation; and HPE's raised guide confirms the AI server build-out is still accelerating, which strengthens the case for sizing AI-ready infrastructure now rather than deferring.",
-      "url": "https://www.morningstar.com/news/marketwatch/20261123447/hpe-just-posted-its-strongest-growth-ever-but-its-stock-is-sinking",
+      "vendor": "CrowdStrike",
+      "title": "CrowdStrike to acquire Zscaler in $43.9B all-stock deal, adding Zero Trust network security to Falcon",
+      "summary": "CrowdStrike announced a definitive agreement to acquire Zscaler in an all-stock transaction valued at approximately $43.9 billion, with Zscaler shareholders receiving 1.135 CrowdStrike shares per share. The deal folds Zscaler's Zero Trust Exchange and SASE into the Falcon platform, creating a combined company with over $10 billion in ARR. Closing is expected in the second half of CrowdStrike's fiscal 2028, pending shareholder and regulatory approval; both companies operate independently until then.",
+      "why_it_matters": "This is the biggest platform-consolidation move in security this year and it directly changes SE conversations: CrowdStrike can now pitch endpoint plus network (ZTNA/SASE) on one platform, narrowing Palo Alto's native-network edge, while Zscaler customers should expect a Falcon Flex contracting story long before any shipped integration. Expect every SSE and XDR incumbent to reframe their roadmap against it this week \u2014 ask customers evaluating SASE or XDR consolidation how a combined Falcon-plus-Zero-Trust-Exchange roadmap changes their shortlist, and don't let anyone sell the integration as done before close.",
+      "url": "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion/",
       "tag": "competitive",
       "published": "2026-11-23"
     },
     {
-      "vendor": "Cohesity",
-      "title": "Cohesity joins OpenAI Daybreak Defense Network to red-team its products with GPT Cyber Models",
-      "summary": "Cohesity announced it will use OpenAI GPT Cyber Models (Daybreak Red and Daybreak Blue, via the OpenAI Trusted Access for Cyber program) to test its own products for security weaknesses in a controlled, isolated environment, starting with its identity threat detection and response (ITDR) software. The AI-driven testing complements Cohesity's existing static analysis, dependency scanning, and third-party penetration testing, with validated findings fed into its product development and security processes.",
-      "why_it_matters": "A useful secure-by-design talking point for Cohesity deals: the vendor is now using frontier cyber models to attack its own code before shipping, starting with identity security, which is where most ransomware chains begin. Ask competitors what equivalent adversarial testing they run on their own products, and frame it for customers who ask how a backup vendor proves its own software is hardened.",
-      "url": "https://www.prnewswire.com/apac/news-releases/cohesity-joins-openai-daybreak-defense-network-to-strengthen-product-security-302948733.html",
+      "vendor": "Nutanix",
+      "title": "Nutanix CEO Rajiv Ramaswami to step down; Q1 FY27 beats with ARR up 15% to $2.63B",
+      "summary": "Nutanix announced its board is working with CEO Rajiv Ramaswami to recruit his successor; he will step down once a successor starts, or by April 30, 2027 at the latest, then serve as an advisor through September 2027. Alongside the news, Nutanix reported Q1 fiscal 2027 revenue of $772.4 million (up 15%) and ARR of $2.63 billion (up 15%), with record 32.1% non-GAAP operating margin, and confirmed the Ryax Technologies acquisition closed to add GPU scheduling to its Kubernetes and enterprise AI products.",
+      "why_it_matters": "Leadership transitions at a key VMware alternative are a presales signal, not just governance news: expect competitors to probe Nutanix roadmap continuity in deals, and expect Nutanix reps to lean on the strong quarter and the AI-platform story (Ryax GPU scheduling, external-storage support) to steady accounts. For VMware displacement conversations, the succession is a question to ask about, not a conclusion \u2014 Ramaswami stays until a successor is in place.",
+      "url": "https://www.globenewswire.com/news-release/2026/11/24/3409862/0/en/nutanix-reports-first-quarter-fiscal-2027-financial-results.html",
       "tag": "competitive",
       "published": "2026-11-24"
+    },
+    {
+      "vendor": "Dell Technologies",
+      "title": "PowerMaxOS 10.5 adds MCP conversational management, up to 29% higher IOPS, and Cyber Detect ransomware scans",
+      "summary": "Dell released PowerMaxOS 10.5, available now as a non-disruptive upgrade at no extra charge under an active support contract. It adds Model Context Protocol-based conversational management (ask about capacity and performance in plain language via ChatGPT, Claude, or Gemini \u2014 query-only, admins keep control of changes), cache-aware PowerPath multipathing with up to 29% higher IOPS on cache-hit random reads, and Cyber Detect ransomware scanning of immutable snapshots with a claimed 99.99% detection confidence. Cyber Detect needs a separate license and a supported PowerEdge server.",
+      "why_it_matters": "A concrete refresh and competitive talking point for high-end storage deals: the MCP management layer is a genuine differentiator for AI-ops-minded customers, and Cyber Detect answers the 'prove the last clean copy' question in recovery conversations. Note the caveats in discovery \u2014 the MCP piece ships later this year, Cyber Detect is separately licensed, and the 29% IOPS figure is a cache-hit random-read workload on a PowerMax 8500.",
+      "url": "https://chipdispatch.com/articles/dell-puts-powermax-on-the-chatbot-diet-mcp-29-iops-99-99-malware-scan",
+      "tag": "launch",
+      "published": "2026-11-23"
+    },
+    {
+      "vendor": "Cisco",
+      "title": "Cisco updates nginx advisory (Nov 24): critical nginx RCE flaws, proof-of-concept code available",
+      "summary": "Cisco updated its November 2026 nginx advisory to version 1.3 on November 24, covering five CVEs in nginx (CVE-2026-113425, CVE-2026-121810, CVE-2026-123007, CVE-2026-123633, CVE-2026-123634) that can lead to remote code execution, fixed in nginx 1.31.9 (mainline) and 1.30.7 (stable). Cisco is still investigating which products are affected; Vulnerability Management (formerly Kenna.VM) and Webex Assistant for Meetings are confirmed affected. Proof-of-concept exploit code is available, and the advisory's severity rating was revised from Critical to High.",
+      "why_it_matters": "nginx is embedded widely enough that this is a 'check your estate' advisory, not a single-product patch: ask customers running Cisco collaboration and security products which ones embed nginx and whether they are on the fixed releases. The PoC availability plus the still-open affected-products list means this advisory will keep growing \u2014 treat it as a standing item to re-check, and use it as a reason to inventory Cisco products that bundle third-party components.",
+      "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s",
+      "tag": "cve",
+      "published": "2026-11-24"
+    },
+    {
+      "vendor": "NVIDIA",
+      "title": "Huang: Vera Rubin platform to generate $40B revenue per gigawatt, up from $25B on Grace Blackwell",
+      "summary": "NVIDIA CEO Jensen Huang said the next-generation Vera Rubin platform will generate about $40 billion in revenue per gigawatt of compute, up from roughly $25 billion per gigawatt on the Grace Blackwell platform \u2014 a 60% increase driven by higher GPU pricing and expanded CPU and networking content. Morgan Stanley estimates a Vera Rubin VR200 rack at roughly $7.8 million, up from about $3.99 million for a GB300 rack. Vera Rubin has been shipping since August.",
+      "why_it_matters": "A useful number for AI infrastructure sizing and ROI conversations: NVIDIA is explicitly monetizing more per gigawatt, which means customers should expect higher per-rack pricing even as performance per watt improves. Use it to frame total-cost discussions for AI factory builds \u2014 the platform economics are moving upmarket, and per-rack capex assumptions from the Blackwell era will understate Rubin-era budgets.",
+      "url": "https://www.fool.com/investing/2026/11/25/jensen-huang-says-nvidias-next-gen-vera-rubin-chip/",
+      "tag": "competitive",
+      "published": "2026-11-25"
     }
   ],
   "prompt_of_the_day": {
     "category": "Customer outreach",
-    "prompt": "Draft a short customer outreach email for a presales SE. Context: HPE just reported fiscal Q4 2026 revenue of $14.55B (up 50% YoY) with AI systems orders of $4.5B, and raised its FY27 revenue guidance to $59.4-63.1B; HPE's CEO also said supply constraints for memory, flash, and networking components will persist into the back half of 2028. The email should: (1) open with the supply-constraint fact as the reason to talk now, not a sales pitch; (2) ask two discovery questions about the customer's AI infrastructure plans and current lead-time pain; (3) propose a 30-minute session to size an AI-ready infrastructure refresh before component availability tightens further; (4) keep it under 150 words, technical and direct, no hype. Give me two versions: one for a CIO and one for an infrastructure manager."
+    "prompt": "Draft a short customer outreach email for a presales SE. Context: on November 23, 2026, CrowdStrike announced a definitive agreement to acquire Zscaler in an all-stock deal valued at approximately $43.9 billion (1.135 CrowdStrike shares per Zscaler share), folding Zscaler's Zero Trust Exchange and SASE into the Falcon platform; the deal is expected to close in the second half of CrowdStrike's fiscal 2028, and both companies operate independently until then. The email should: (1) open with the deal as the reason to talk now \u2014 endpoint plus network security consolidating onto one platform; (2) ask two discovery questions about the customer's current SSE/ZTNA and XDR setup and any consolidation plans; (3) propose a 30-minute session to map how a combined Falcon-plus-Zero-Trust-Exchange roadmap would affect their shortlist, while being honest that integration ships only after close; (4) keep it under 150 words, technical and direct, no hype. Give me two versions: one for a CISO and one for a network security architect."
   }
 }
