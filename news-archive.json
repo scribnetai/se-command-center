@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-26",
+    "items": [
+      {
+        "vendor": "Cisco",
+        "title": "Cisco nginx advisory updated to v1.5 (Nov 26): Catalyst Center now listed as affected, fixes TBD",
+        "summary": "Cisco updated its November 2026 nginx advisory twice today (v1.4 and v1.5). Catalyst Center is now confirmed affected (bugs CSCwx92298/CSCwx92322) with fixed releases 3.3.3 and 3.4.1 still TBD, and the update also pins fixed releases for Nexus 3000/9000 switches in standalone NX-OS mode (10.3.11 in Dec 2026, 10.4.9 in Jan 2027, 10.5.7 in Dec 2026, 10.6.5 in Feb 2027, 10.7.1 in Dec 2026) and ISE 3.5 (Patch 5, Dec 2026). The five nginx CVEs (CVE-2026-113425, CVE-2026-121810, CVE-2026-123007, CVE-2026-123633, CVE-2026-123634) can lead to remote code execution; proof-of-concept exploit code is available and Cisco reports no known malicious use.",
+        "why_it_matters": "Yesterday's briefing flagged this advisory as a standing item to re-check, and it grew the same day: Catalyst Center is a core management plane for most Cisco campus customers, so any account running it now has a named exposure with no fixed release yet. Use the update as the reason to ask Catalyst Center and Nexus customers which release train they are on and to get the 3.3.3/3.4.1 upgrade on their change calendar now, rather than waiting for the fix to land. The Nexus dates also give a concrete patching timeline to plan around.",
+        "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s",
+        "tag": "cve",
+        "published": "2026-11-26"
+      }
+    ]
+  },
+  {
     "date": "2026-11-25",
     "items": [
       {
@@ -869,38 +883,6 @@
         "summary": "HPE expanded its Private Cloud AI offering so customers can combine NVIDIA H200 and RTX PRO 6000 Blackwell Server Edition GPUs in a single cluster, with scheduling by workload priority and quota. Developer-access features are scheduled for late 2026, with a self-service developer experience in 2027.",
         "why_it_matters": "Mixed-GPU clusters let customers match GPU cost to workload instead of standardizing on one accelerator, which is a real TCO talking point in private-AI deals. The staged developer rollout is also a reason to time follow-ups rather than pitch the full vision today.",
         "url": "https://www.tradingview.com/news/gurufocus:3e2a038e0094b:0-hpe-stocks-gain-4-1-with-mixed-gpu-private-ai-expansion/",
-        "tag": "launch",
-        "published": "2026-10-26"
-      }
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "items": [
-      {
-        "vendor": "Dell Technologies",
-        "title": "Honeywell launches Forge Plant Cognition at Dangote's Lekki refinery on Dell AI infrastructure and NVIDIA AI",
-        "summary": "Honeywell Technologies launched Forge Plant Cognition, an industrial/physical AI platform for refining, petrochemical and LNG operators, built with NVIDIA AI and accelerated computing and Dell Technologies' AI infrastructure. First deployment is Dangote's Lekki refinery in Nigeria, one of the world's largest single-train refineries, targeting higher throughput. Honeywell estimates, based on preliminary data, more than 29 cents per barrel in operational benefit \u2014 over $60 million a year in gross benefit at full-capacity throughput for that facility (vendor estimate, not guaranteed).",
-        "why_it_matters": "A named, production-scale reference for Dell AI infrastructure outside the usual hyperscaler/AI-lab story: industrial and OT-adjacent customers with existing plants. Useful proof point when an SE conversation is about AI on owned infrastructure for operations, not model training \u2014 and a reminder the Dell/NVIDIA factory pitch now has a refinery-scale deployment attached.",
-        "url": "https://www.businesswire.com/news/home/20261026802169/en/Honeywell-Technologies-Launches-Forge-Plant-Cognition-with-Dangote-Built-with-NVIDIA-AI-and-Dell-Technologies-Capabilities",
-        "tag": "launch",
-        "published": "2026-10-26"
-      },
-      {
-        "vendor": "NVIDIA",
-        "title": "SWI Compute emerges from stealth as Preferred NVIDIA Cloud Partner with ~$1B in NVIDIA systems ordered",
-        "summary": "SWI Compute, part of Euronext Amsterdam-listed SWI Group, emerged from stealth to build and operate NVIDIA AI factories, starting in Europe. It became a Preferred NVIDIA Cloud Partner in August, says it has ordered approximately $1 billion of NVIDIA systems and signed its first customers, backed by 3.6 GW of secured power capacity. Its first large-scale UK factory starts at 30 MW with close to 7,000 Rubin GPUs and 3,500 Vera CPUs in Vera Rubin NVL72 racks on Quantum-X800 InfiniBand and Spectrum-X Ethernet, expected online by end of 2027, as the first phase of a UK campus planned to grow to 530 MW and a step toward 2.3 GW by 2029 (company roadmap claims).",
-        "why_it_matters": "Power, not GPUs, is the stated bottleneck \u2014 SWI spent six years securing grid access before ordering silicon. For datacenter presales this is the competitive frame shifting: neocloud AI capacity in Europe will be sold on secured megawatts and Vera Rubin NVL72 density. Expect customers to ask how Dell/HPE/Cisco factory offers compare on power and time-to-capacity, not just rack specs.",
-        "url": "https://www.prnewswire.com/news-releases/swi-compute-emerges-from-stealth-to-turn-gigawatts-of-power-into-nvidia-ai-factories-starting-in-europe-302918805.html",
-        "tag": "competitive",
-        "published": "2026-10-26"
-      },
-      {
-        "vendor": "Palo Alto Networks",
-        "title": "Palo Alto Networks unveils Cortex XDR One, unifying XDR and agentic endpoint security in a single sensor",
-        "summary": "Palo Alto Networks announced Cortex XDR One, merging Cortex XDR with Cortex Agentic Endpoint Security (built on the Koi team it brought in-house) into one interface and one lightweight sensor. It is aimed at threats to both traditional operating systems and autonomous AI agents \u2014 coding agents, copilots, MCP servers and personal AI tools that inherit user permissions. Capabilities Palo Alto describes include real-time inventory and governance of AI artifacts and shadow AI on endpoints, runtime guardrails against prompt injection and destructive commands, OS-level process-chain monitoring, and small language models running on the sensor itself to block fileless threats offline. Regional launch coverage ran Oct 26; Palo Alto's own product blog is dated Oct 19 \u2014 verify GA status and licensing against the current price book before quoting it as available.",
-        "why_it_matters": "This is Palo Alto's direct move against CrowdStrike's endpoint stronghold in the agentic era: 'EDR without integrated agentic security is incomplete' is their framing. The discovery question for any endpoint deal is now what AI agents and MCP servers are already running on customer endpoints and who inventories them. Note the standalone Agentic Endpoint Security / targeted-sensor option also lets Palo Alto land alongside an incumbent third-party EDR instead of requiring a rip-and-replace.",
-        "url": "https://cxotoday.com/media-coverage/palo-alto-networks-unveils-cortex-xdr-one-to-reinvent-endpoint-security-for-the-agentic-ai-era/",
         "tag": "launch",
         "published": "2026-10-26"
       }
