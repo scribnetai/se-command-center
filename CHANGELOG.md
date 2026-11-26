@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-11-26
+- Morning briefing: 1 item (Cisco). Archive updated.
+
 ## 2026-11-25
 - Morning briefing: 5 items (CrowdStrike, Nutanix, Dell Technologies, Cisco, NVIDIA). Archive updated.
 
