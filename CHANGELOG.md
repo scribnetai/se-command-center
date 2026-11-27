@@ -1,4 +1,6 @@
 # Changelog
+## 2026-11-27
+- Morning briefing: no new updates. Archive updated.
 
 ## 2026-11-26
 - Morning briefing: 1 item (Cisco). Archive updated.
