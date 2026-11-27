@@ -1,19 +1,9 @@
 {
-  "date": "2026-11-26",
-  "updated_at": "2026-11-26T07:25:00-05:00",
-  "items": [
-    {
-      "vendor": "Cisco",
-      "title": "Cisco nginx advisory updated to v1.5 (Nov 26): Catalyst Center now listed as affected, fixes TBD",
-      "summary": "Cisco updated its November 2026 nginx advisory twice today (v1.4 and v1.5). Catalyst Center is now confirmed affected (bugs CSCwx92298/CSCwx92322) with fixed releases 3.3.3 and 3.4.1 still TBD, and the update also pins fixed releases for Nexus 3000/9000 switches in standalone NX-OS mode (10.3.11 in Dec 2026, 10.4.9 in Jan 2027, 10.5.7 in Dec 2026, 10.6.5 in Feb 2027, 10.7.1 in Dec 2026) and ISE 3.5 (Patch 5, Dec 2026). The five nginx CVEs (CVE-2026-113425, CVE-2026-121810, CVE-2026-123007, CVE-2026-123633, CVE-2026-123634) can lead to remote code execution; proof-of-concept exploit code is available and Cisco reports no known malicious use.",
-      "why_it_matters": "Yesterday's briefing flagged this advisory as a standing item to re-check, and it grew the same day: Catalyst Center is a core management plane for most Cisco campus customers, so any account running it now has a named exposure with no fixed release yet. Use the update as the reason to ask Catalyst Center and Nexus customers which release train they are on and to get the 3.3.3/3.4.1 upgrade on their change calendar now, rather than waiting for the fix to land. The Nexus dates also give a concrete patching timeline to plan around.",
-      "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nginx-nov-2026-e8jska2s",
-      "tag": "cve",
-      "published": "2026-11-26"
-    }
-  ],
+  "date": "2026-11-27",
+  "updated_at": "2026-11-27T07:25:00-05:00",
+  "items": [],
   "prompt_of_the_day": {
-    "category": "Customer outreach",
-    "prompt": "Draft a short customer outreach email for a presales SE. Context: on November 26, 2026, Cisco updated its nginx security advisory to version 1.5. Catalyst Center is now confirmed affected by five nginx remote-code-execution CVEs (CVE-2026-113425, CVE-2026-121810, CVE-2026-123007, CVE-2026-123633, CVE-2026-123634) with fixed releases 3.3.3 and 3.4.1 still TBD; Nexus 3000/9000 switches in standalone NX-OS mode have dated fixes starting December 2026, and ISE 3.5 gets Patch 5 in December 2026. Proof-of-concept exploit code is available; Cisco reports no known malicious use. The email should: (1) tell the customer plainly that Catalyst Center is now on the affected list and the fix is not yet out; (2) ask which Catalyst Center release they run and whether their Nexus estate is on an affected NX-OS train; (3) propose a 30-minute session to map exposure and pre-schedule the 3.3.3/3.4.1 upgrade; (4) keep it under 150 words, technical and direct, no hype. Give me two versions: one for a network operations manager and one for a CISO."
+    "category": "Call prep",
+    "prompt": "Act as a presales SE preparing for a year-end infrastructure review call with an existing datacenter customer. Draft a discovery agenda I can use on the call. It should: (1) surface upcoming renewals and end-of-life dates across their VMware (vSphere/VCF), storage (Dell PowerStore/PowerScale or Everpure FlashArray), and backup (Cohesity or Rubrik) estate; (2) ask three questions that reveal whether their patching and CVE remediation is keeping up with this month's advisories (Cisco nginx flaws, Dell PowerStore SDNAS, VMware vCenter); (3) probe for 2027 budget priorities \u2014 AI infrastructure, cyber resilience, or hybrid cloud expansion \u2014 and which one has funding already approved; (4) end with one concrete next step I can propose before the call ends. Keep the agenda under 300 words, technical and direct, no sales fluff. Give me the agenda plus the exact opening line to use on the call."
   }
 }
